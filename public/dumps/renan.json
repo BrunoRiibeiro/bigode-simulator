@@ -2,7 +2,7 @@
 	"questions": [
 		{
 			"id": "q0001",
-			"type": "tf",
+			"type": "boolean",
 			"prompt": "Identity and Alarm Management (RAM) is enabled by default after account registration and can be used free of charge.",
 			"options": ["A. True", "B. False"],
 			"answer": ["A"],
@@ -25,7 +25,7 @@
 		},
 		{
 			"id": "q0003",
-			"type": "tf",
+			"type": "boolean",
 			"prompt": "Virtualization technology can virtualize a physical server into multiple VMs, improving the hardware performance of the physical server.",
 			"options": ["A. True", "B. False"],
 			"answer": ["B"],
@@ -34,7 +34,7 @@
 		},
 		{
 			"id": "q0004",
-			"type": "tf",
+			"type": "boolean",
 			"prompt": "Huawei Cloud uses Identity and Access Management (IAM) projects to group and isolate resources in different regions.",
 			"options": ["A. True", "B. False"],
 			"answer": ["B"],
@@ -131,7 +131,7 @@
 		},
 		{
 			"id": "q0012",
-			"type": "tf",
+			"type": "boolean",
 			"prompt": "The underlying physical resources of an Elastic Cloud Server (ECS) can be shared between users, but those of a Bare Metal Server (BMS) are exclusive to a single user.",
 			"options": ["A. True", "B. False"],
 			"answer": ["A"],
@@ -140,7 +140,7 @@
 		},
 		{
 			"id": "q0013",
-			"type": "tf",
+			"type": "boolean",
 			"prompt": "HUAWEI CLOUD Elastic Cloud Servers (ECSs) can be online migrated across accounts and regions.",
 			"options": ["A. True", "B. False"],
 			"answer": ["A"],
@@ -219,7 +219,7 @@
 		},
 		{
 			"id": "q0019",
-			"type": "tf",
+			"type": "boolean",
 			"prompt": "Huawei Cloud Virtual Private Cloud (VPC) allows you to customize your virtual networks and deploy ECSs across AZs.",
 			"options": ["A. True", "B. False"],
 			"answer": ["A"],
@@ -251,7 +251,7 @@
 		},
 		{
 			"id": "q0022",
-			"type": "tf",
+			"type": "boolean",
 			"prompt": "Huawei Cloud Classic VPN consists of VPN gateways and VPN connections. A VPN connection is an egress gateway device that provides an Internet egress for a VPC.",
 			"options": ["A. True", "B. False"],
 			"answer": ["A"],
@@ -260,7 +260,7 @@
 		},
 		{
 			"id": "q0023",
-			"type": "tf",
+			"type": "boolean",
 			"prompt": "A public NAT gateway enables cloud or on-premises servers in a private subnet to share an EIP to access the Internet or provide services accessible from the Internet. Cloud servers are Elastic Cloud Servers (ECSs) and Bare Metal Servers (BMSs) in a Virtual Private Cloud (VPC). On-premises servers are servers in on-premises data centers that are connected to a VPC through Direct Connect or Virtual Private Network (VPN).",
 			"options": ["A. True", "B. False"],
 			"answer": ["A"],
@@ -283,7 +283,7 @@
 		},
 		{
 			"id": "q0025",
-			"type": "tf",
+			"type": "boolean",
 			"prompt": "You can configure an Object Storage Service (OBS) bucket policy to allow only one specific user to perform GET operations on a certain object in a bucket.",
 			"options": ["A. True", "B. False"],
 			"answer": ["A"],
@@ -376,7 +376,7 @@
 		},
 		{
 			"id": "q0032",
-			"type": "tf",
+			"type": "boolean",
 			"prompt": "Huawei Cloud Object Storage Service (OBS) can store image files. You can create an Image Management Service (IMS) private image by importing an image file from an OBS bucket.",
 			"options": ["A. True", "B. False"],
 			"answer": ["A"], "explanation": "",
@@ -384,7 +384,7 @@
 		},
 		{
 			"id": "q0033",
-			"type": "tf",
+			"type": "boolean",
 			"prompt": "To use Cloud Trace Service (CTS) on HUAWEI CLOUD, you need to enable CTS and manually create a tracker that will identify and track all cloud services that you use.",
 			"options": ["A. True", "B. False"],
 			"answer": ["A"],
@@ -421,7 +421,7 @@
 		},
 		{
 			"id": "q0036",
-			"type": "tf",
+			"type": "boolean",
 			"prompt": "A company plans to use Log Tank Service (LTS) to manage logs of a newly deployed Elastic Cloud Server (ECS). After installing ICAgent on the ECS, engineers can view the ECS on the “Host Management” page of LTS. However, the host status is offline. The possible cause is incorrect AK/SK.",
 			"options": ["A. True", "B. False"],
 			"answer": ["B"],
@@ -430,7 +430,7 @@
 		},
 		{
 			"id": "q0037",
-			"type": "tf",
+			"type": "boolean",
 			"prompt": "O&M personnel can use technical means such as monitoring and log analysis to detect and respond to service faults, shortening service interruption and ensuring service continuity.",
 			"options": ["A. True", "B. False"],
 			"answer": ["A"],
@@ -504,7 +504,7 @@
 		},
 		{
 			"id": "q0043",
-			"type": "tf",
+			"type": "boolean",
 			"prompt": "You need to exercise caution when selecting the DB engine because the DB engine cannot be changed after a Relational Database Service (RDS) instance is created.",
 			"options": ["A. True", "B. False"],
 			"answer": ["A"],
