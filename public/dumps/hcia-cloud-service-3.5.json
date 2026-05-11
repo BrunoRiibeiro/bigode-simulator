@@ -4713,7 +4713,7 @@
 			"prompt": "Web Application Firewall supports three deployment modes: cloud mode, exclusive mode and () mode.",
 			"options": [],
 			"answer": [
-				"ELB"
+				"Standalone mode"
 	  ],
 	  "explanation": "",
 	  "tags": []
