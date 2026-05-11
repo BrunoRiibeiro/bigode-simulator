@@ -1,0 +1,4821 @@
+{
+	"questions": [
+		{
+			"id": "q0001",
+			"type": "single",
+			"prompt": "Which of the following parameters will not affect the cost calculation of the bare metal server BMS?",
+			"options": [
+				"A. Memory capacity",
+				"B. Disk size",
+				"C. CPU Specifications",
+				"D. Number of network cards"
+			],
+			"answer": [
+				"D"
+			],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0002",
+			"type": "single",
+			"prompt": "Which of the following descriptions of content delivery network (CDN) services is wrong?",
+			"options": [
+				"A. CDN services must be resolved through public domain names, so you need to apply for a domain name before you can use CDN normally.",
+				"B. CDN service can shorten the access delay of users to view content, improve the response speed of users accessing websites and the availability of websites.",
+				"C. CDN service distributes the source site content to all CDN nodes by deploying node servers in various locations on the network, so that users can get the required content nearby.",
+				"D. CDN service has the characteristics of simple access, rich and easy-to-use self-service configuration of the console, and open API interface."
+			],
+			"answer": [
+				"A"
+			],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0003",
+			"type": "single",
+			"prompt": "Which of the following descriptions about the intelligent line resolution provided by Huawei Cloud is wrong?",
+			"options": [
+				"A. Intelligent line resolution function supports distinguishing the source and type of visitor IP by operator",
+				"B. Intelligent line resolution function supports distinguishing the source and type of visitor IP by region",
+				"C. Both public domain names and intranet domain names support the use of intelligent line resolution function",
+				"D. Only public domain names support the use of intelligent line resolution function"
+			],
+			"answer": [
+				"C"
+			],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0004",
+			"type": "single",
+			"prompt": "Which of the following is not a management operation of the Elastic Load Balancing service ELB?",
+			"options": [
+				"A. Query elastic load balancing",
+				"B. Enable elastic load balancing",
+				"C. Delete elastic load balancing",
+				"D. Listen to elastic load balancing"
+			],
+			"answer": [
+				"D"
+			],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0005",
+			"type": "single",
+			"prompt": "When purchasing services on the Huawei Cloud platform, billing issues are often involved. Huawei Cloud's billing models generally include on-demand billing, monthly/annual package, and competitive bidding. Which of the following descriptions of the billing model is correct?",
+			"options": [
+				"A. Pay-as-you-go is a post-payment model that charges based on the actual duration or amount of service used.",
+				"B. Monthly/annual packages are post-paid models and are charged based on a fixed purchase cycle.",
+				"C. Monthly/annual packages are suitable for scenarios where service resources can be activated or deleted at any time.",
+				"D. Bidding is a prepaid model. Compared with on-demand billing, it can be charged according to actual usage time with a lower discount."
+			],
+			"answer": [
+				"A"
+			],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0006",
+			"type": "single",
+			"prompt": "Which of the following descriptions about Huawei Cloud peer connection is wrong?",
+			"options": [
+				"A. Peering connections can be used to achieve intranet communication between different VPCs",
+				"B. When configuring a peer connection, you need to configure routing information on the local VPC and the peer VPC.",
+				"C. The prerequisite for creating a peer connection is that the local and remote subnets are the same.",
+				"D. Peer-to-peer connections can be used across accounts"
+			],
+			"answer": [
+				"C"
+			],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0007",
+			"type": "single",
+			"prompt": "Which of the following services can be used by the elastic cloud server on Huawei Cloud to build a logically completely isolated network area?",
+			"options": [
+				"A. Elastic Scaling Service AS",
+				"B. Virtual Private Cloud Service VPC",
+				"C. Load Balancing Service ELB",
+				"D. NAT Gateway Service"
+			],
+			"answer": [
+				"B"
+			],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0008",
+			"type": "single",
+			"prompt": "Which user with the following permissions can perform any operation on OBS resources?",
+			"options": [
+				"A. Tenant Administrator",
+				"B. OBS Viewer",
+				"C. Tenant Guest",
+				"D. OBS Buckets Viewer"
+			],
+			"answer": [
+				"A"
+			],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0009",
+			"type": "single",
+			"prompt": "Which of the following descriptions about Elastic Cloud Server (ECS) is wrong?",
+			"options": [
+				"A. Provides multiple types of elastic cloud servers to meet different usage scenarios. Each type of elastic cloud server includes multiple specifications and supports specification changes.",
+				"B. Supports purchasing cloud servers in annual/monthly, on-demand, and competitive bidding modes to meet different application scenarios",
+				"C. Automatically adjust elastic computing resources according to business needs and strategies to efficiently match business requirements",
+				"D. Based on the Dynaudio architecture, cloud servers have no virtualization overhead and performance loss, and 100% of computing resources are released"
+			],
+			"answer": [
+				"D"
+			],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0010",
+			"type": "single",
+			"prompt": "Engineer A deployed the Nginx service through containers and virtual machines respectively. Which of the following descriptions about the comparison between containers and virtual machines in this scenario is wrong?",
+			"options": [
+				"A. Containers are highly portable and easy to deploy",
+				"B. Containers start faster than virtual machines",
+				"C. Containers provide better isolation than virtual machines",
+				"D. Containers are lighter than virtual machines"
+			],
+			"answer": [
+				"C"
+			],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0011",
+			"type": "single",
+			"prompt": "Which of the following descriptions about the relationship between bare metal servers and other services is wrong?",
+			"options": [
+				"A. You can mount a cloud disk to a bare metal server and expand the capacity of the cloud disk at any time.",
+				"B. You can create a bare metal server through mirroring to improve the deployment efficiency of bare metal servers",
+				"C. After applying for a bare metal server, install the Agent plug-in and complete the relevant configuration, and then you can view the monitoring data of the bare metal server in the cloud monitoring service",
+				"D. You can customize the scaling configuration and scaling strategy to scale the bare metal server, saving resources and manpower operation and maintenance costs"
+			],
+			"answer": [
+				"D"
+			],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0012",
+			"type": "single",
+			"prompt": "A company's video website is deployed on Huawei Cloud. It purchased a public network domain name resolution service to provide services. During use, it was found that users who accessed the website through operator B complained that the website access speed was slow, while the speed of accessing the website through operators A and C was normal. Which of the following methods is the most effective to solve this problem?",
+			"options": [
+				"A. Create an intranet domain name to ensure faster access between cloud hosts",
+				"B. Expand the bandwidth of existing IP to ensure sufficient bandwidth resources",
+				"C. Add a new public network line of operator B and configure intelligent line resolution on Huawei Cloud",
+				"D. Create reverse resolution to improve the reputation of the domain name"
+			],
+			"answer": [
+				"C"
+			],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0013",
+			"type": "single",
+			"prompt": "Which of the following is not one of the main functions of Web Application Firewall (WAF)?",
+			"options": [
+				"A. Prevent sensitive information leakage",
+				"B. Website Anti-Crawler",
+				"C. Web page tamper-proofing",
+				"D. Brute force attack protection for elastic cloud servers"
+			],
+			"answer": [
+				"D"
+			],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0014",
+			"type": "single",
+			"prompt": "Which of the following descriptions about VPN gateway is wrong?",
+			"options": [
+				"A. VPN gateway can be used to establish secure and reliable encrypted communication between the virtual private cloud and the enterprise data center or other regional VPCs.",
+				"B. The VPN gateway needs to correspond to the user's local gateway.",
+				"C. VPN gateway is the entry gateway device established in the virtual private cloud.",
+				"D. Each VPN gateway can correspond to multiple VPN connections."
+			],
+			"answer": [
+				"C"
+			],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0015",
+			"type": "single",
+			"prompt": "Which of the following is not a specification type of Huawei Cloud Elastic Cloud Server ECS?",
+			"options": [
+				"A. Customized performance type",
+				"B. Memory Optimized",
+				"C. High Performance Computing",
+				"D. High Performance Computing"
+			],
+			"answer": [
+				"A"
+			],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0016",
+			"type": "single",
+			"prompt": "An enterprise uses Huawei Cloud Elastic Cloud Server to carry business. Due to obvious peaks and troughs in business access, engineers hope to change the number of business instances in real time according to business conditions to ensure high resource utilization and low cost. The front end uses Huawei Cloud Elastic Load Balancing Service to implement front-end traffic forwarding. In order to improve the provisioning speed and ensure business reliability, which of the following operations is not recommended?",
+			"options": [
+				"A. Create a mirror image of the server that has installed your own software to facilitate subsequent distribution",
+				"B. Use the elastic scaling service to create a scaling group based on the instance image and formulate a scaling strategy based on the business traffic",
+				"C. Make a backup of the server that has installed your own software, and manually use the backup to create a new server to cope with peak traffic",
+				"D. Add the servers in the elastic scaling group to the anti-affinity cloud server group to ensure business reliability"
+			],
+			"answer": [
+				"C"
+			],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0017",
+			"type": "single",
+			"prompt": "Which of the following descriptions about Huawei Cloud SFS capacity-based and SFS Turbo file storage types is wrong?",
+			"options": [
+				"A. At the same price, SFS capacity type has a larger capacity than SFS Turbo",
+				"B. SFS capacity type has higher latency than SFS Turbo",
+				"C. For the same capacity, SFS capacity type costs more than SFS Turbo",
+				"D. SFS capacity type has higher bandwidth than SFS Turbo standard type"
+			],
+			"answer": [
+				"C"
+			],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0018",
+			"type": "single",
+			"prompt": "Which of the following descriptions about elastic scaling services is wrong?",
+			"options": [
+				"A. Auto-scaling supports health checks on instance status",
+				"B. Auto-scaling can automatically adjust the number of instances in a scaling group according to the set policy",
+				"C. Auto-scaling supports instance protection for specific instances in a scaling group",
+				"D. Auto Scaling does not support viewing the instance status in a scaling group"
+			],
+			"answer": [
+				"D"
+			],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0019",
+			"type": "single",
+			"prompt": "Which of the following descriptions about Huawei Cloud is wrong?",
+			"options": [
+				"A. Huawei Cloud is divided into Huawei Cloud China and Huawei Cloud International",
+				"B. A Huawei Cloud account can only log in to Huawei Cloud, and cannot log in to other Huawei services",
+				"C. After the real-name authentication is completed, the relevant information cannot be changed",
+				"D. Real-name authentication is divided into individual customer real-name authentication and corporate customer real-name authentication"
+			],
+			"answer": [
+				"B"
+			],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0020",
+			"type": "single",
+			"prompt": "In order for a user to remotely connect to an ECS running the Linux operating system via SSH, which of the following ports should be opened in the security group inbound direction?",
+			"options": [
+				"A. 53",
+				"B. 80",
+				"C. 22",
+				"D. 3389"
+			],
+			"answer": [
+				"C"
+			],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0021",
+			"type": "single",
+			"prompt": "Which of the following descriptions about the role of VLAN is wrong?",
+			"options": [
+				"A. Increase the interface bandwidth of the physical switch",
+				"B. Enhance network security",
+				"C. Improve the robustness of the network",
+				"D. Isolate broadcast domains"
+			],
+			"answer": [
+				"A"
+			],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0022",
+			"type": "single",
+			"prompt": "When configuring the Elastic Load Balancing (ELB) service in Huawei Cloud, the allocation strategy used is the weighted round-robin algorithm. There are 2 ECSs in the backend server group, of which ECS-1 has a weight of 2 and ECS-2 has a weight of 1. There are currently 6 user requests forwarded to the backend server group. How many requests do ECS-1 and ECS-2 need to process respectively?",
+			"options": [
+				"A. ECS-1 processes 4, ECS-2 processes 2",
+				"B. ECS-1 processed 6, ECS-2 processed 0",
+				"C. ECS-1 processes 3, ECS-2 processes 3",
+				"D. ECS-1 processes 2, ECS-2 processes 4"
+			],
+			"answer": [
+				"A"
+			],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0023",
+			"type": "single",
+			"prompt": "SFS can manage file system permissions through IAM. Which of the following is not a capacity-based policy type for SFS?",
+			"options": [
+				"A. SFS Administrator",
+				"B. SFS WriteOnlyAccess",
+				"C. SFS ReadOnlyAccess",
+				"D. SFS FullAccess"
+			],
+			"answer": [
+				"B"
+			],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0024",
+			"type": "single",
+			"prompt": "Cloud computing can convert similar resources into resource pools and decompose resources into the smallest units. Which feature of cloud computing does this reflect?",
+			"options": [
+				"A. On-demand self-service",
+				"B. Measurable services",
+				"C. Resource pooling",
+				"D. Extensive Internet access"
+			],
+			"answer": [
+				"C"
+			],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0025",
+			"type": "single",
+			"prompt": "Which of the following is not a storage category provided by Huawei Cloud Object Storage Service OBS?",
+			"options": [
+				"A. Archive Storage",
+				"B. Low-frequency access storage",
+				"C. Backup storage",
+				"D. Standard storage"
+			],
+			"answer": [
+				"C"
+			],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0026",
+			"type": "single",
+			"prompt": "When e-commerce platforms encounter large-scale promotional activities such as \"Double 11\", \"Double 12\", and \"618\", the number of business visits increases rapidly in a short period of time, and only lasts for a few days or even hours. In this case, which two services do we usually use to save IT costs to the maximum extent while meeting business needs?",
+			"options": [
+				"A. Enable ELB and EIP services",
+				"B. Enable ENAT and ELB services",
+				"C. Enable CDN and AS services",
+				"D. Enable ELB and AS services"
+			],
+			"answer": [
+				"D"
+			],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0027",
+			"type": "single",
+			"prompt": "Which of the following is not an advantage of NAS compared to SAN?",
+			"options": [
+				"A. NAS supports multiple protocols and operating systems",
+				"B. Optimized for block data transfer",
+				"C. NAS has an independent file system",
+				"D. Optimized for file sharing"
+			],
+			"answer": [
+				"B"
+			],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0028",
+			"type": "single",
+			"prompt": "While using the object storage service, Huawei Cloud tenants can configure which of the following functions to receive notifications of object deletion?",
+			"options": [
+				"A. Lifecycle rules",
+				"B. Anti-hotlinking",
+				"C. Event Notification",
+				"D. Static website hosting"
+			],
+			"answer": [
+				"C"
+	  ],
+	  "explanation": "",
+	  "tags": []
+		},
+		{
+			"id": "q0029",
+			"type": "single",
+			"prompt": "A user uses Huawei Cloud Elastic Cloud Server to build a business website. The backend uses Huawei Cloud relational database to store business data. When the database is configured correctly, it is found that the business website cannot communicate with the database. Which of the following possible scenarios is wrong?",
+			"options": [
+				"A. The ECS and the relational database are in two different VPCs, and peer connections are not configured, so they cannot communicate normally.",
+				"B. The password of the elastic cloud server is different from the password of the relational database, so normal communication is not possible.",
+				"C. The relational database port configured for the business website in the elastic cloud server is wrong and communication cannot be normal",
+				"D. The elastic cloud server and relational database are in two different security groups. The security group does not open the connection port, so normal communication is not possible."
+			],
+			"answer": [
+				"B"
+			],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0030",
+			"type": "single",
+			"prompt": "A user has activated the Cloud Audit Service on Huawei Cloud, but has not configured the correct OBS bucket dump policy. What will happen?",
+			"options": [
+				"A. Management event tracking is automatically deleted",
+				"B. Unable to extend the audit data storage period",
+				"C. The cloud audit service will not be able to audit resources",
+				"D. No impact, cloud audit and OBS can work together normally"
+			],
+			"answer": [
+				"C"
+			],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0031",
+			"type": "single",
+			"prompt": "A user needs to apply for an ECS in Huawei Cloud to build WordPress. Which of the following commands for building WordPress in the Centos operating system is correct?",
+			"options": [
+				"A. Install Nginx: wget http://nginx.org/XXOXXX.rpm",
+				"B. Unzip the wordpress package: chmod -R777 wordpress",
+				"C. Set Nginx to start at boot: systemctl enable nginx",
+				"D. Start Nginx: service nginx reload"
+			],
+			"answer": [
+				"C"
+			],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0032",
+			"type": "single",
+			"prompt": "If two VPCs in the same region need to communicate, which of the following methods is the most economical?",
+			"options": [
+				"A. Purchase an elastic public IP",
+				"B. Apply for cloud dedicated line",
+				"C. Create SNAT rules",
+				"D. Create a peer connection"
+			],
+			"answer": [
+				"D"
+			],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0033",
+			"type": "single",
+			"prompt": "Which of the following application scenarios is not suitable for data storage in cloud hard disks?",
+			"options": [
+				"A. Data warehouse",
+				"B. Development and testing",
+				"C. High Performance Computing",
+				"D. Storage of massive video and image files"
+			],
+			"answer": [
+				"D"
+			],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0034",
+			"type": "single",
+			"prompt": "Which of the following is not a typical application scenario of the elastic scaling service AS?",
+			"options": [
+				"A. Interactive Forum",
+				"B. Live video streaming sites",
+				"C. E-commerce platform",
+				"D. Image processing"
+			],
+			"answer": [
+				"D"
+			],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0035",
+			"type": "single",
+			"prompt": "Which of the following descriptions about purchasing and deleting Huawei Cloud bare metal servers is wrong?",
+			"options": [
+				"A. Huawei Cloud Bare Metal Servers do not support on-demand purchases",
+				"B. Huawei Cloud Bare Metal Server charges include hard disk and elastic public IP fees",
+				"C. After purchasing the HUAWEI CLOUD Bare Metal service, you can only release resources by canceling the subscription",
+				"D. Huawei Cloud Bare Metal Server supports changing the operating system, and the price difference between different operating systems will be automatically deducted"
+			],
+			"answer": [
+				"A"
+			],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0036",
+			"type": "single",
+			"prompt": "If a user wants to regularly back up the data on the cloud hard disk mounted on the cloud server, which method is the most efficient?",
+			"options": [
+				"A. Set up a cloud disk automatic backup policy and make it effective on the cloud disk that needs to be backed up",
+				"B. Set the cloud disk automatic mirroring strategy and make it effective on the cloud disk that needs to be backed up",
+				"C. Ask the operation and maintenance personnel to regularly create images",
+				"D. Ask the operation and maintenance personnel to take snapshots regularly"
+			],
+			"answer": [
+				"A"
+			],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0037",
+			"type": "single",
+			"prompt": "Which of the following cloud services supports dynamic adjustment of the number of cloud hosts through policies?",
+			"options": [
+				"A. IMS",
+				"B. SG",
+				"C. VPN",
+				"D. AS"
+			],
+			"answer": [
+				"D"
+			],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0038",
+			"type": "single",
+			"prompt": "Which of the following scenarios is not applicable to Huawei Cloud Enterprise Cloud Center Solution?",
+			"options": [
+				"A. Business Management",
+				"B. Corporate listing",
+				"C. Start-up",
+				"D. Migrate to the cloud"
+			],
+			"answer": [
+				"B"
+			],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0039",
+			"type": "single",
+			"prompt": "Which of the following descriptions of the application scenarios of the cloud monitoring service CES is wrong?",
+			"options": [
+				"A. Monitor basic indicators such as CPU usage, memory usage, disk IO, etc. of ECS or BMS",
+				"B. Support log analysis and log visualization",
+				"C. Send an alarm message when the monitoring data reaches the alarm threshold according to the alarm rules created by the user",
+				"D. Detectable site response time, packet loss rate, etc."
+			],
+			"answer": [
+				"B"
+			],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0040",
+			"type": "single",
+			"prompt": "A tenant rents a virtual machine from a cloud service provider for daily use and returns the virtual machine to the cloud service provider after use. This reflects which key feature of cloud services?",
+			"options": [
+				"A. Extensive network access",
+				"B. Rapid elastic scaling",
+				"C. Location-independent resource pool",
+				"D. Pay-per-use"
+			],
+			"answer": [
+				"D"
+			],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0041",
+			"type": "single",
+			"prompt": "In which of the following states can a cloud disk backup be created?",
+			"options": [
+				"A. Available",
+				"B. Deleting",
+				"C. Deletion failed",
+				"D. Creating"
+			],
+			"answer": [
+				"A"
+			],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0042",
+			"type": "single",
+			"prompt": "Which of the following scenarios is Huawei Cloud Log Service not applicable to?",
+			"options": [
+				"A. Quickly locate network faults",
+				"B. Rationally optimize business performance",
+				"C. Log collection and analysis",
+				"D. Data access analysis"
+			],
+			"answer": [
+				"D"
+			],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0043",
+			"type": "single",
+			"prompt": "Elastic IP provides independent public IP resources, including public IP addresses and public network egress bandwidth services. Which of the following descriptions about EIP is wrong?",
+			"options": [
+				"A. An elastic public network IP can only be bound to one cloud resource at a time.",
+				"B. Elastic public IP can be used across regions",
+				"C. Line types include: full dynamic BGP line, preferred BGP line, static BGP line",
+				"D. Can be managed through the management console or API"
+			],
+			"answer": [
+				"B"
+			],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0044",
+			"type": "single",
+			"prompt": "GaussDB is based on the Shared-Nothing architecture. Which of the following statements about the advantages of this architecture is wrong?",
+			"options": [
+				"A. Data is fully shared between nodes",
+				"B. Adding nodes to achieve performance expansion",
+				"C. Parallel processing mechanism, easy to expand",
+				"D. Internal processing automation and parallelization"
+			],
+			"answer": [
+				"A"
+			],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0045",
+			"type": "single",
+			"prompt": "Huawei Cloud covers multiple PaaS development production lines. Which production line can help enterprises quickly build data operation capabilities and achieve integrated batch, stream, and interactive data governance?",
+			"options": [
+				"A. NetaStudio",
+				"B. DataArts Studio",
+				"C. CodeArts",
+				"D. ModelArts"
+			],
+			"answer": [
+				"B"
+			],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0046",
+			"type": "single",
+			"prompt": "In cloud computing, which of the following is a computing resource?",
+			"options": [
+				"A. OSD",
+				"B. GPU",
+				"C. SSD",
+				"D. NIC"
+			],
+			"answer": [
+				"B"
+			],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0047",
+			"type": "single",
+			"prompt": "Which of the following is not a main function of Huawei Cloud Database Security Service?",
+			"options": [
+				"A. Discovery and desensitization of sensitive data",
+				"B. Anti-crawler",
+				"C. Database Firewall",
+				"D. Database Audit"
+			],
+			"answer": [
+				"B"
+			],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0048",
+			"type": "single",
+			"prompt": "Which of the following descriptions about public cloud virtual private networks (VPNs) is wrong?",
+			"options": [
+				"A. Fast deployment, real-time effect, no need to configure VPN devices on user DC to complete the connection between local data center and cloud services",
+				"B. The user's local DC can be interconnected with the VPC on the cloud, and the business can be quickly expanded to the cloud to achieve hybrid cloud deployment",
+				"C. Encrypts the transmitted data based on IKE and IPsec mechanisms, providing a high reliability mechanism",
+				"D. Use the Internet to build an IPsec encrypted channel, which is cheaper than cloud dedicated line services."
+			],
+			"answer": [
+				"A"
+			],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0049",
+			"type": "single",
+			"prompt": "Which of the following descriptions about content delivery network CDN is wrong?",
+			"options": [
+				"A. Improved the response speed and availability of websites for users",
+				"B. CDN is a layer of intelligent virtual network built on the existing Internet",
+				"C. It solves the problems of large user traffic and uneven distribution of network points, but at the same time increases the load on network bandwidth",
+				"D. Deploy node servers throughout the network to distribute the source site content to all CDN nodes"
+			],
+			"answer": [
+				"C"
+			],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0050",
+			"type": "single",
+			"prompt": "Which of the following options is the smallest unit for Kubernetes creation, management, and scheduling?",
+			"options": [
+				"A. Pod",
+				"B. Process",
+				"C. Virtual Machine",
+				"D. Container"
+			],
+			"answer": [
+				"A"
+			],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0051",
+			"type": "single",
+			"prompt": "Which of the following technologies does Huawei Cloud Disk Service EVS use to ensure data reliability?",
+			"options": [
+				"A. Four copies",
+				"B. Dual copies",
+				"C. Three copies",
+				"D. Five copies"
+			],
+			"answer": [
+				"C"
+			],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0052",
+			"type": "single",
+			"prompt": "Which of the following descriptions about using NAT gateway and directly binding elastic public IP for elastic cloud servers is wrong?",
+			"options": [
+				"A. When an ECS is configured with both SNAT and elastic public IP, SNAT will be used for forwarding first.",
+				"B. How to directly bind the elastic public IP address to the elastic cloud server as an exclusive IP address",
+				"C. NAT gateway provides SNAT and DNAT functions, allowing multiple elastic cloud servers to share elastic public IP",
+				"D. Both can achieve the purpose of elastic cloud server access to the public network"
+			],
+			"answer": [
+				"A"
+			],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0053",
+			"type": "single",
+			"prompt": "A user uses Huawei Cloud CES to monitor his business system on the cloud, but during use, he finds that the monitoring data can only be saved for two days. If the user wants to extend the retention time of the monitoring data, which of the following measures can be taken?",
+			"options": [
+				"A. Expand the capacity of the cloud disk mounted on the cloud server",
+				"B. Do not purchase any services and manually set the retention period of monitoring data",
+				"C. Purchase SFS service and mount the service to the cloud server",
+				"D. Purchase OBS service and set up data dump"
+			],
+			"answer": [
+				"C"
+			],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0054",
+			"type": "single",
+			"prompt": "By default, the IAM users created by the administrator do not have any permissions. Which of the following descriptions of permissions in IAM is wrong?",
+			"options": [
+				"A. After the IAM user is authorized, the user can operate the cloud service based on the authorized permissions.",
+				"B. The permissions granted by IAM are divided into roles and policies according to the granularity",
+				"C. FullAccess type permissions mean that the user has read-only permissions for all services except the unified identity authentication service.",
+				"D. The created IAM user needs to be added to a user group and a policy or role must be granted to the user group so that users in the user group can obtain the corresponding permissions."
+			],
+			"answer": [
+				"C"
+			],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0055",
+			"type": "single",
+			"prompt": "Which of the following descriptions about dynamically expanding resources in Huawei Cloud Auto Scaling Service AS is correct?",
+			"options": [
+				"A. Not subject to cooldown time restrictions, resources can be adjusted as needed at any time",
+				"B. Applicable to scenarios where demand changes regularly. You can adjust resources by configuring timing strategies and cycle strategies.",
+				"C. When the scaling policy conditions are met, the system automatically changes the maximum number of instances to initiate scaling activities.",
+				"D. Applicable to scenarios where business requirements change frequently and without fixed rules. Resources can be adjusted by configuring alarm policies."
+			],
+			"answer": [
+				"D"
+			],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0056",
+			"type": "single",
+			"prompt": "Which of the following descriptions about the advantages of Huawei Cloud Enterprise Host Security Service HSS is wrong?",
+			"options": [
+				"A. Agent takes up little resources and is already built into the cloud server, so no additional installation is required.",
+				"B. Provide comprehensive protection before, during and after the event to reduce the risk of intrusion",
+				"C. Supports installing Agent on Huawei Cloud ECS, BMS, and offline hosts",
+				"D. Possessing a rich detection library to provide precise protection"
+			],
+			"answer": [
+				"A"
+			],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0057",
+			"type": "single",
+			"prompt": "Objects stored in OBS buckets can be shared with others through URLs. Which of the following protocols is used in the sharing process?",
+			"options": [
+				"A. HTTP",
+				"B. ICMP",
+				"C. SMTP",
+				"D. FTP"
+			],
+			"answer": [
+				"A"
+			],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0058",
+			"type": "single",
+			"prompt": "In an IT system, there is a possibility that the bound elastic public IP address may be blocked due to attacks. When configuring a NAT gateway to access the public network, which of the following measures is recommended for users to provide high reliability of the system?",
+			"options": [
+				"A. Configure multiple DNAT rules in one VPC subnet",
+				"B. Bind multiple EIP addresses when configuring DNAT rules",
+				"C. Configure multiple SNAT rules in one VPC subnet",
+				"D. When configuring SNAT rules, bind multiple EIP addresses"
+			],
+			"answer": [
+				"C"
+			],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0059",
+			"type": "single",
+			"prompt": "Which of the following descriptions about the log group of Huawei Cloud Log Service is wrong?",
+			"options": [
+				"A. Log group is the basic unit for log management in Cloud Log Service.",
+				"B. Log groups can create log streams and set log storage time",
+				"C. Log group creation types are divided into user creation (active) and cloud service creation (passive)",
+				"D. Log group is the basic unit for log reading and writing"
+			],
+			"answer": [
+				"D"
+			],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0060",
+			"type": "single",
+			"prompt": "Which of the following descriptions about Huawei Cloud Elastic File Service (SFS) is wrong?",
+			"options": [
+				"A. SFS is actually NAS file storage",
+				"B. It stores files and organizes and presents data in a hierarchical structure of files and folders",
+				"C. Support data sharing",
+				"D. Cannot be used alone, must be mounted on a cloud server"
+			],
+			"answer": [
+				"D"
+			],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0061",
+			"type": "single",
+			"prompt": "In order to facilitate the subsequent security analysis and problem location of cloud resources, a customer dumped the event files of cloud auditing into the OBS bucket. Which of the following storage types is suitable for storing CIS event files?",
+			"options": [
+				"A. Low-frequency access storage",
+				"B. Archive Storage",
+				"C. Standard storage",
+				"D. High-frequency access storage"
+			],
+			"answer": [
+				"C"
+			],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0062",
+			"type": "single",
+			"prompt": "Users can take snapshots of cloud disks mounted on ECS. In which of the following locations will the snapshot data be stored?",
+			"options": [
+				"A. In the user's OBS",
+				"B. In this cloud hard disk",
+				"C. In the user's SFS",
+				"D. ECS system disk"
+			],
+			"answer": [
+				"B"
+			],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0063",
+			"type": "single",
+			"prompt": "Which of the following configuration items does a Huawei Cloud tenant not need to set when uploading objects using the object storage service?",
+			"options": [
+				"A. Object size",
+				"B. KMS encryption",
+				"C. Storage path",
+				"D. Storage Class"
+			],
+			"answer": [
+				"A"
+			],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0064",
+			"type": "single",
+			"prompt": "Which of the following descriptions about the use of elastic load balancing is wrong?",
+			"options": [
+				"A. Allocate service node pressure",
+				"B. Traffic can be forwarded across availability zones to achieve real-time business disaster recovery",
+				"C. Only supports traffic forwarding of Layer 4 protocols TCP/UDP",
+				"D. If a backend server fails, elastic load balancing will distribute new requests to other healthy backend servers."
+			],
+			"answer": [
+				"C"
+			],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0065",
+			"type": "single",
+			"prompt": "Initially, the IAM user created by the administrator does not have any permissions, and permissions need to be assigned to the user. Which of the following descriptions about IAM authorization is wrong?",
+			"options": [
+				"A. Policies can accurately define the specific operations and resources of permissions.",
+				"B. After adding the IAM user to the \"admin\" user group, the IAM user can operate and use all cloud resources",
+				"C. A user group is a collection of users. IA can implement batch authorization of users through user groups.",
+				"D. A fine-grained authorization mechanism that allows roles to define permissions"
+			],
+			"answer": [
+				"D"
+			],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0066",
+			"type": "single",
+			"prompt": "A tenant has deployed a MySQL database in a Huawei Cloud ECS instance. As the business volume continues to increase, the user finds that the number of concurrent connections to the database is insufficient and the disk OPS cannot meet business needs. Which of the following services can be recommended to solve this problem?",
+			"options": [
+				"A. File Storage SFS",
+				"B. Object Storage (OBS)",
+				"C. Cloud Database RDS",
+				"D. Elastic Load Balancing (ELB)"
+			],
+			"answer": [
+				"C"
+			],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0067",
+			"type": "single",
+			"prompt": "Which of the following descriptions about VPN gateway bandwidth is wrong?",
+			"options": [
+				"A. You can configure alarm rules in Cloud Monitoring to monitor bandwidth",
+				"B. The total bandwidth of VPN connections can exceed the bandwidth of the VPN gateway",
+				"C. When the network traffic exceeds the VPN bandwidth during VPN use, it may cause network congestion and VPN connection interruption.",
+				"D. The bandwidth size of the local VPN gateway is the bandwidth shared by all VPN connections created based on the gateway."
+			],
+			"answer": [
+				"B"
+			],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0068",
+			"type": "single",
+			"prompt": "What are Regions usually divided on?",
+			"options": [
+				"A. Geographic location and network latency",
+				"B. Cluster Server",
+				"C. Available to go (AZ)"
+	  ],
+	  "answer": [
+		  "A"
+	  ],
+	  "explanation": "",
+	  "tags": []
+		},
+		{
+			"id": "q0069",
+			"type": "single",
+			"prompt": "A shopping mall has deployed a video security system with more than 100 high-definition cameras installed to monitor the security of important places such as entrances and exits. The backend application of this system is deployed on the ECS instance of Huawei Cloud, and the data disk mounted on the ECS is used to store video data. One week after the system went online, it was discovered that the data disk capacity was insufficient. Which of the following services can the user use to quickly solve the problem of insufficient storage?",
+			"options": [
+				"A. Content Delivery Network (CDN)",
+				"B. Cloud Backup Service CBR",
+				"C. Object Storage OBS",
+				"D. Multiple cloud servers ECS"
+			],
+			"answer": [
+				"C"
+			],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0070",
+			"type": "single",
+			"prompt": "When a virtual machine on a physical host fails, it will not affect other virtual machines on the physical host. Which feature of virtualization technology is this?",
+			"options": [
+				"A. Isolation",
+				"B. Partitioning",
+				"C. Independence",
+				"D. Packaging"
+			],
+			"answer": [
+				"A"
+			],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0071",
+			"type": "single",
+			"prompt": "If a virtual machine needs to communicate with other virtual machines, which of the following is necessary?",
+			"options": [
+				"A. The physical server where the virtual machine is located needs to be connected to the Internet",
+				"B. Port binding needs to be configured on the physical server",
+				"C. Port binding needs to be configured on the physical switch",
+				"D. You need to add at least one network card to the virtual machine"
+			],
+			"answer": [
+				"D"
+			],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0072",
+			"type": "single",
+			"prompt": "Cloud computing has gone through a long period of development since its birth before finally establishing its current business model. Which of the following does not belong to the computing model of cloud computing?",
+			"options": [
+				"A. Core Computing",
+				"B. Distributed Computing",
+				"C. Centralized computing",
+				"D. Grid computing"
+			],
+			"answer": [
+				"A"
+			],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0073",
+			"type": "single",
+			"prompt": "Which of the following descriptions about the \"expected number of instances\" in the elastic scaling service is wrong?",
+			"options": [
+				"A. Triggering the scaling policy fails to adjust the expected number of instances",
+				"B. You can trigger scaling activities by manually adjusting the expected number of instances",
+				"C. The expected number of instances cannot be less than the minimum number of instances",
+				"D. The expected number of instances cannot be greater than the maximum number of instances"
+			],
+			"answer": [
+				"A"
+			],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0074",
+			"type": "single",
+			"prompt": "Which of the following descriptions about cloud hard disk backup is wrong?",
+			"options": [
+				"A. The backup data of the cloud disk is stored together with the data of the cloud disk itself.",
+				"B. Cloud hard disk supports online backup, and the cloud server does not need to be shut down during the backup process",
+				"C. Cloud disk backup supports both manual backup and automatic backup",
+				"D. Support restoring backup to cloud disk, and also support creating new cloud disk through backup"
+			],
+			"answer": [
+				"A"
+			],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0075",
+			"type": "single",
+			"prompt": "Which of the following is not a key performance feature of the cloud database RDS?",
+			"options": [
+				"A. High Availability",
+				"B. Backup and Recovery",
+				"C. Traffic cleaning",
+				"D. Performance Monitoring"
+			],
+			"answer": [
+				"C"
+			],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0076",
+			"type": "single",
+			"prompt": "In Huawei Cloud Cloud Monitoring Service, which of the following functions can users use to centrally manage the elastic cloud servers, cloud hard disks, elastic IPs and other resources involved in the business from the business dimension to improve operation and maintenance efficiency?",
+			"options": [
+				"A. Alarm function",
+				"B. Host Monitoring",
+				"C. Monitoring Panel",
+				"D. Resource Grouping"
+			],
+			"answer": [
+				"D"
+			],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0077",
+			"type": "single",
+			"prompt": "When Huawei Cloud tenants use the object storage service OBS, if they want to retain multiple versions of an object, which of the following methods can be used to achieve this?",
+			"options": [
+				"A. Modify storage class",
+				"B. Enable multi-version control",
+				"C. Enable log management",
+				"D. Configure lifecycle rules"
+			],
+			"answer": [
+				"B"
+			],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0078",
+			"type": "single",
+			"prompt": "Huawei Cloud Disk Backup provides redundant backup for data stored in the cloud disk to ensure high reliability. Which of the following descriptions about cloud disk backup is wrong?",
+			"options": [
+				"A. Save the data of the cloud hard disk at a specified time, but it must be set manually and cannot be set for automatic backup",
+				"B. Stored separately from cloud disk data, stored in object storage (OBS)",
+				"C. Located in the same AZ as the cloud disk, cloud server backup supports cross-region replication",
+				"D. Recover data and resume business by restoring the backup to a cloud disk or creating a new cloud disk from the backup"
+			],
+			"answer": [
+				"A"
+			],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0079",
+			"type": "single",
+			"prompt": "A new media company deployed its business system on Huawei Cloud. Its business includes streaming, archiving, editing, transcoding, content distribution, video on demand, etc., which requires multiple hosts to collaborate on the same media file. Based on the above requirements, which type of storage service is most suitable for this customer?",
+			"options": [
+				"A. DES",
+				"B. SFS",
+				"C. OBS"
+	  ],
+	  "answer": [
+		  "B"
+	  ],
+	  "explanation": "",
+	  "tags": []
+		},
+		{
+			"id": "q0080",
+			"type": "single",
+			"prompt": "An image is a template used to create a server or disk, which contains an operating system, business data or application software. The image service IMS can provide users with image lifecycle management capabilities. Which of the following descriptions about images is wrong?",
+			"options": [
+				"A. Market images are third-party images that provide pre-installed operating systems, application environments, and various software.",
+				"B. Private images are private images shared by other users",
+				"C. Public images are system images provided by the cloud platform",
+				"D. Shared images do not support encryption"
+			],
+			"answer": [
+				"B"
+			],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0081",
+			"type": "single",
+			"prompt": "Which of the following descriptions about the hierarchical structure of domain names is wrong?",
+			"options": [
+				"A. A second-level domain name, such as \"abc.example.com\", is a subdomain of a first-level domain. A primary domain can usually only have one second-level domain name.",
+				"B. Top-level domains are distinguished by the domain name suffix. For example, \".com\" is a common top-level domain, indicating that it is used for commercial purposes.",
+				"C. The primary domain name, such as \"example.com\", is a subdomain of the top-level domain and corresponds to the first-level domain server",
+				"D. The root domain is \".\", which is the highest level domain name and is usually omitted when used."
+			],
+			"answer": [
+				"A"
+			],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0082",
+			"type": "single",
+			"prompt": "When creating a scaling policy in Huawei Cloud Auto Scaling Service, which of the following policies can be selected to achieve dynamic resource expansion?",
+			"options": [
+				"A. Cycle Strategy",
+				"B. Random Strategy",
+				"C. Timing strategy",
+				"D. Alert strategy"
+			],
+			"answer": [
+				"D"
+	  ],
+	  "explanation": "",
+	  "tags": []
+		},
+		{
+			"id": "q0083",
+			"type": "single",
+			"prompt": "Which of the following technologies or devices does the network security isolation function of Huawei Cloud Virtual Private Cloud (VPC) not rely on?",
+			"options": [
+				"A. Hardware firewall",
+				"B. Software Firewall",
+				"C. Switch",
+				"D. Elastic IP"
+			],
+			"answer": [
+				"D"
+			],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0084",
+			"type": "single",
+			"prompt": "Through the elastic file service SFS, users can be provided with high-performance file storage (NAS) functions that can be expanded on demand. Which of the following descriptions about the elastic file service is wrong?",
+			"options": [
+				"A. Can perfectly support the latest NFS v4.2 protocol",
+				"B. The file system supports KMS encryption",
+				"C. Support file sharing across availability zones",
+				"D. Can support both NFS protocol and CIFS protocol at the same time"
+			],
+			"answer": [
+				"A"
+			],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0085",
+			"type": "single",
+			"prompt": "Huawei Cloud Object Storage Service OBS can use which of the following methods to encrypt data on the server side?",
+			"options": [
+				"A. Enable HTTPS protocol",
+				"B. Apply for an SSL certificate",
+				"C. Enable multi-version control",
+				"D. Apply for data encryption service"
+			],
+			"answer": [
+				"D"
+			],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0086",
+			"type": "single",
+			"prompt": "A cloud host in a Huawei Cloud tenant's VPC accesses the public network. In order to save elastic public IP resources and prevent the cloud host IP from being directly exposed to the public network, which of the following NAT gateway functions can the administrator configure to meet this requirement?",
+			"options": [
+				"A. Public network SNAT",
+				"B. Private Network SNAT",
+				"C. Public network DNAT",
+				"D. Private network DNAT"
+			],
+			"answer": [
+				"A"
+			],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0087",
+			"type": "single",
+			"prompt": "Cloud monitoring service CES provides users with a three-dimensional monitoring platform for elastic cloud servers, bandwidth and other resources, and provides users with a variety of usage scenarios. Which of the following descriptions of CES application scenarios is wrong?",
+			"options": [
+				"A. Provide compliance testing of customer business system platforms and resources, as well as compliance review of customers’ own business systems",
+				"B. Send an alarm message when the monitoring data reaches the alarm threshold according to the alarm rules created by the user",
+				"C. Provide HTTP (HTTPS), TCP, UDP, and PING detection protocols to detect the site's response time, packet loss rate, etc.",
+				"D. Monitor basic indicators such as CPU usage, memory usage, disk IO, etc. of ECS or BMS"
+			],
+			"answer": [
+				"A"
+			],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0088",
+			"type": "single",
+			"prompt": "Which of the following descriptions about the cloud hard disk encryption function is wrong?",
+			"options": [
+				"A. When creating a backup through a cloud disk, the encryption properties of the backup are consistent with the source cloud disk.",
+				"B. After a blank cloud disk is created, the encryption attribute cannot be changed",
+				"C. When creating a snapshot through a cloud disk, the encryption properties of the snapshot do not need to be consistent with the source cloud disk",
+				"D. When creating a cloud disk through an image, the encryption properties of the cloud disk are consistent with the image source cloud disk"
+			],
+			"answer": [
+				"C"
+			],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0089",
+			"type": "single",
+			"prompt": "The cloud service purchased by the user only includes the operating environment of the application. Which of the following modes does this scenario belong to?",
+			"options": [
+				"A. IaaS",
+				"B. PaaS",
+				"C. SaaS",
+				"D. NaaS"
+			],
+			"answer": [
+				"B"
+			],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0090",
+			"type": "single",
+			"prompt": "Scenarios for big data analysis, such as advertising precision marketing, e-commerce, and Internet of Vehicles, usually require high server memory. Which type of elastic cloud server can you recommend to users?",
+			"options": [
+				"A. Disk Enhanced",
+				"B. High Performance Computing",
+				"C. Memory Optimized",
+				"D. Ultra-high I/O type"
+			],
+			"answer": [
+				"C"
+			],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0091",
+			"type": "single",
+			"prompt": "Which of the following standard operating system images can be provided by public cloud platforms and is visible to all users?",
+			"options": [
+				"A. Private image",
+				"B. Public images",
+				"C. Market Mirror",
+				"D. Shared images"
+			],
+			"answer": [
+				"B"
+			],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0092",
+			"type": "single",
+			"prompt": "Which of the following descriptions about hybrid cloud is wrong?",
+			"options": [
+				"A. Enable business resources to flow between public and private clouds",
+				"B. Applications can only be deployed in public clouds",
+				"C. Unified management of enterprise resources in public and private clouds",
+				"D. Achieve optimal resource allocation through hybrid cloud"
+			],
+			"answer": [
+				"B"
+			],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0093",
+			"type": "single",
+			"prompt": "Which of the following descriptions about the over-collection of Cloud Log Service LTS is wrong?",
+			"options": [
+				"A. You can turn off \"Continue to collect logs when exceeding quota\" in the Quota Center of Cloud Log Service.",
+				"B. When the log exceeds the monthly free quota, log collection will be automatically suspended by default",
+				"C. After turning off the log collection switch, the excess logs will continue to be stored in LTS, and LTS will charge log storage fees",
+				"D. The log collection switch of the cloud log service and the application operation and maintenance management is synchronized. That is, if the user turns off the \"continue to collect logs when exceeding the quota\" switch in the application operation and maintenance management service, the switch of the cloud log service will also be turned off."
+			],
+			"answer": [
+				"B"
+			],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0094",
+			"type": "single",
+			"prompt": "Which of the following methods can Huawei Cloud tenants use to solve the problem of insufficient disk capacity of relational databases?",
+			"options": [
+				"A. Switch operating system",
+				"B. Reinstall the operating system",
+				"C. Expand disk capacity",
+				"D. Change the database instance"
+			],
+			"answer": [
+				"C"
+			],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0095",
+			"type": "single",
+			"prompt": "Which of the following represents a general computing enhanced elastic cloud server?",
+			"options": [
+				"A. m3.large.8",
+				"B. c3.large.2",
+				"C. s3.large.2",
+				"D. s3.small.1"
+			],
+			"answer": [
+				"B"
+			],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0096",
+			"type": "single",
+			"prompt": "Which of the following is not a product advantage of SFS?",
+			"options": [
+				"A. Based on HTTP and HTTPS security protocols, support data encryption upload",
+				"B. Access data through standard protocols and seamlessly adapt to mainstream applications for data reading and writing",
+				"C. The capacity of the file system can be dynamically increased or decreased according to demand without interrupting the application",
+				"D. Multiple cloud servers can access and share files together"
+			],
+			"answer": [
+				"A"
+			],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0097",
+			"type": "single",
+			"prompt": "Cloud computing is a computing model that provides dynamic and scalable virtualized resources as a service through the Internet. Which of the following descriptions of cloud computing is wrong?",
+			"options": [
+				"A. Cloud computing is not a single technology, but a model",
+				"B. Users can use resources anytime and anywhere through cloud computing, provided that the network is accessible",
+				"C. Through cloud computing, users can use resources including networks, servers, storage, applications and services, etc.",
+				"D. Cloud computing resources can be quickly supplied and released, reflecting the on-demand self- service characteristics of cloud computing."
+			],
+			"answer": [
+				"D"
+			],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0098",
+			"type": "single",
+			"prompt": "Which of the following does not belong to the concept of Huawei Cloud Object Storage Service OBS?",
+			"options": [
+				"A. AS domain",
+				"B. Bucket",
+				"C. Object",
+				"D. AK and SK"
+			],
+			"answer": [
+				"A"
+			],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0099",
+			"type": "single",
+			"prompt": "Which of the following descriptions about Cloud Log Service LTS is wrong?",
+			"options": [
+				"A. LTS can query the collected log data simply and quickly through keyword query, fuzzy query, etc.",
+				"B. Users can specify log streams when writing data and store different types of logs in different categories",
+				"C. Cloud Log Service can collect ELB log data",
+				"D. After the cloud service and the cloud log service are connected, users need to actively create log groups and log streams."
+			],
+			"answer": [
+				"D"
+			],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0100",
+			"type": "single",
+			"prompt": "A user created two virtual private clouds (VPCs) in the \"Beijing 4\" region of Huawei Cloud. Two elastic cloud servers (ECS-A and ECS-B) were applied for in VPC1, and one elastic cloud server (ECS- C) was applied for in VPC2. By default, how do the three elastic servers communicate?",
+			"options": [
+				"A. ECS-A and ECS-B can communicate; ECS-A and ECS-C cannot communicate; ECS-B and ECS-C cannot communicate either.",
+				"B. ECS-A and ECS-B can communicate: ECS-A and ECS-C cannot communicate: ECS-B and ECS-C can communicate",
+				"C. ECS-A, ECS-B, and ECS-C servers cannot communicate with each other",
+				"D. ECS-A, ECS-B, and ECS-C can communicate with each other"
+			],
+			"answer": [
+				"A"
+			],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0101",
+			"type": "single",
+			"prompt": "Huawei Cloud tenants need to use VMs to deploy their application systems. This application system requires a highly secure isolated environment. Which type of cloud service is recommended for tenants?",
+			"options": [
+				"A. Cloud Container Engine (CCE)",
+				"B. Elastic Cloud Server ECS",
+				"C. Dedicated Hosting",
+				"D. Bare Metal Server BMS"
+			],
+			"answer": [
+				"C"
+			],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0102",
+			"type": "single",
+			"prompt": "Which of the following descriptions of the characteristics of cloud computing scenarios is wrong?",
+			"options": [
+				"A. Cloud documents allow multiple people to edit documents at the same time, and the documents do not need to be saved locally, which is safe and reliable.",
+				"B. Users can upload local photos to the cloud album anytime and anywhere",
+				"C. Cloud Music can provide thousands of music resources, and users can choose songs to listen to according to their preferences.",
+				"D. Cloud video can provide thousands of video resources, and users need to download the videos to their local computer before watching them."
+			],
+			"answer": [
+				"D"
+			],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0103",
+			"type": "single",
+			"prompt": "Huawei Cloud provides customers with a variety of service support plans, and has supported professional technical services for the entire process before, during, and after cloud migration. Which of the following is not a customer support service provided by Huawei Cloud?",
+			"options": [
+				"A. Self-service",
+				"B. Professional Training",
+				"C. Service Guarantee",
+				"D. Intelligent Customer Service"
+			],
+			"answer": [
+				"B"
+			],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0104",
+			"type": "single",
+			"prompt": "Which of the following is not involved in the configuration process of Huawei's public cloud peer connection service?",
+			"options": [
+				"A. Configure subnet",
+				"B. Create a peer connection",
+				"C. Create a VPN connection",
+				"D. Create a VPC"
+			],
+			"answer": [
+				"C"
+			],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0105",
+			"type": "single",
+			"prompt": "Which of the following options is not a type of ECS instance?",
+			"options": [
+				"A. Memory intensive",
+				"B. Elastic expansion type",
+				"C. Computational Intensive",
+				"D. General"
+			],
+			"answer": [
+				"B"
+			],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0106",
+			"type": "single",
+			"prompt": "A shared cloud hard disk is a block-level storage device that supports concurrent read and write access by multiple cloud servers. Which of the following descriptions about shared cloud hard disks is correct?",
+			"options": [
+				"A. Shared cloud disks can be mounted to 512 elastic cloud servers at the same time",
+				"B. Support cross-zone mounting",
+				"C. Can be mounted to multiple cloud servers, supporting elastic cloud servers and bare metal servers",
+				"D. Shared cloud disks can be mounted as data disks or system disks"
+			],
+			"answer": [
+				"C"
+			],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0107",
+			"type": "single",
+			"prompt": "Which of the following is not a component of an object in object storage?",
+			"options": [
+				"A. Metadata",
+				"B. Key",
+				"C. Data",
+				"D. volume"
+			],
+			"answer": [
+				"D"
+			],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0108",
+			"type": "single",
+			"prompt": "Which of the following descriptions about Huawei Cloud Database PostgreSQL is wrong?",
+			"options": [
+				"A. Supports monitoring of key performance indicators of database instances and database engines",
+				"B. Supports 1 write and 15 reads, with an expansion ratio of 0.9",
+				"C. Applicable to Internet websites, location application systems, complex data object processing and other application scenarios",
+				"D. Provides a variety of security strategies to protect database and user privacy"
+			],
+			"answer": [
+				"B"
+			],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0109",
+			"type": "single",
+			"prompt": "Which of the following descriptions about Huawei Cloud Log Service log dump is wrong?",
+			"options": [
+				"A. The log dump page shows an abnormal dump status. The reason may be that the OBS bucket has been deleted.",
+				"B. After the log is dumped, LTS will not delete the dumped content",
+				"C. Log data that exceeds the storage time will be automatically deleted.",
+				"D. Logs dumped to OBS can only be downloaded in JSON format"
+			],
+			"answer": [
+				"D"
+			],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0110",
+			"type": "single",
+			"prompt": "Which of the following descriptions of DNAT rules for Huawei Cloud public network is wrong?",
+			"options": [
+				"A. When the cloud host wants to provide services to users on the Internet, it is necessary to configure DNAT rules.",
+				"B. If multiple cloud hosts are required to provide services to the Internet, multiple DNAT rules need to be created",
+				"C. SNAT and DNAT appear in pairs. If DNAT is configured, SNAT needs to be configured at the same time. Otherwise, the rule will not take effect.",
+				"D. DNAT can bind elastic public IP through IP mapping or port mapping"
+			],
+			"answer": [
+				"C"
+			],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0111",
+			"type": "multi",
+			"prompt": "Which of the following options reflect the characteristics of fast elastic scaling of cloud computing? (Multiple choice)",
+			"options": [
+				"A. Engineer C expanded the capacity of a cloud server in a cluster on the cloud computing platform to 10 during the Double 11 period, and restored it to 4 a week later.",
+				"B. Engineer B upgraded the CPU of an existing elastic cloud server from 2 to 4 on Huawei public cloud",
+				"C. Engineer A purchased an elastic cloud server on Huawei public cloud",
+				"D. Engineer D's cloud server was reclaimed by the cloud computing platform after it expired due to non- renewal."
+			],
+			"answer": [
+				"A",
+				"B"
+			],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0112",
+			"type": "multi",
+			"prompt": "Which of the following descriptions of Huawei Cloud's relational database service are correct? (Multiple choice)",
+			"options": [
+				"A. No need for users to purchase and install any software or hardware",
+				"B. Pay by resource usage",
+				"C. For scenarios with high reliability requirements, support for master-slave and distributed deployment",
+				"D. Easy to use, flexible management, visible and controllable"
+			],
+			"answer": [
+				"A",
+				"B",
+				"D"
+			],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0113",
+			"type": "multi",
+			"prompt": "Which of the following are application scenarios of Virtual Private Cloud (VPC)? (Multiple choice)",
+			"options": [
+				"A. Web applications or websites are hosted in VPC. You can use VPC just like using a normal network.",
+				"B. Cloud-based dedicated network, each virtual private cloud (VPC) represents a private network, which is logically isolated from other VPC.",
+				"C. Cloud VPC connection: When VPCs in the same or different regions need to be interconnected, this can be achieved through peer connection, cloud connection or VPN.",
+				"D. Hybrid cloud deployment: For users who have built their own local data center (IDC), they can use virtual private network VPN, cloud dedicated line or cloud connection to achieve interconnection between VPC on the cloud and IDC off the cloud."
+			],
+			"answer": [
+				"A",
+				"B",
+				"C",
+				"D"
+			],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0114",
+			"type": "multi",
+			"prompt": "Which of the following are typical application scenarios of the elastic scaling service AS? (Multiple choice)",
+			"options": [
+				"A. Image Processing",
+				"B. Interactive Forum",
+				"C. Live video streaming website",
+				"D. E-commerce platform"
+			],
+			"answer": [
+				"B",
+				"C",
+				"D"
+			],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0115",
+			"type": "multi",
+			"prompt": "Which of the following may be the reason why you cannot log in to a Windows virtual machine remotely? (Multiple choice)",
+			"options": [
+				"A. The \"Remote Settings\" of the cloud host operating system being accessed has the option \"Do not allow connection to computer\" checked.",
+				"B. The corresponding port is not allowed in the security group",
+				"C. Firewall configuration abnormality",
+				"D. No elastic IP is bound"
+	  ],
+	  "answer": [
+		  "A",
+		  "B",
+		  "C",
+		  "D"
+	  ],
+	  "explanation": "",
+	  "tags": []
+		},
+		{
+			"id": "q0116",
+			"type": "multi",
+			"prompt": "Which of the following descriptions about cloud disk backup are wrong? (Multiple choice)",
+			"options": [
+				"A. Cloud hard disk supports online backup, and the cloud server needs to be shut down during the backup process",
+				"B. Cloud disk backup supports both manual backup and automatic backup",
+				"C. The backup data of the cloud disk is stored together with the data of the cloud disk itself",
+				"D. Supports restoring backups to cloud drives, and also supports creating new cloud drives from backups"
+			],
+			"answer": [
+				"A",
+				"C"
+			],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0117",
+			"type": "multi",
+			"prompt": "Which of the following descriptions about Bare Metal Service BMS are correct? (Multiple choice)",
+			"options": [
+				"A. BMS is more suitable for cloud-based business scenarios with high performance requirements",
+				"B. BMS is a free public cloud service",
+				"C. BMS is more suitable for OA business cloud scenarios",
+				"D. BMS can release resources in minutes"
+			],
+			"answer": [
+				"A",
+				"D"
+			],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0118",
+			"type": "multi",
+			"prompt": "Which of the following descriptions are correct regarding Region and AZ of public cloud infrastructure? (Multiple choice)",
+			"options": [
+				"A. AZ is divided based on geographical location and network latency, and services within the area can be billed independently",
+				"B. Region allows users to select nearby cloud data centers with lower latency, avoiding the high latency problem of physical long-distance transmission",
+				"C. AZ is a physically isolated resource area. Different AZs have independent wind, fire, water, and electricity.",
+				"D. Region can be divided into general region and exclusive region"
+			],
+			"answer": [
+				"B",
+				"C",
+				"D"
+			],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0119",
+			"type": "multi",
+			"prompt": "Which of the following components does Huawei Cloud's cloud security service system include? (Multiple choice)",
+			"options": [
+				"A. Data Security",
+				"B. Cybersecurity",
+				"C. Computing Security and Security Management",
+				"D. Application Security"
+			],
+			"answer": [
+				"A",
+				"B",
+				"C",
+				"D"
+			],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0120",
+			"type": "multi",
+			"prompt": "Which of the following statements are correct about the relationship between accounts and IAM users? (Multiple choice)",
+			"options": [
+				"A. The account can modify the resource usage permissions of IAM users at any time",
+				"B. IAM users do not need to pay any fees for resources, all fees are charged to the account",
+				"C. The account can revoke the resource usage permissions of IAM users at any time",
+				"D. The account can manage the budget of each IAM user. Once the budget of an IAM user is used up, it will not be able to purchase services."
+			],
+			"answer": [
+				"A",
+				"B",
+				"C",
+				"D"
+			],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0121",
+			"type": "multi",
+			"prompt": "A tenant purchased a Huawei Cloud bare metal server based on business needs. The tenant completed the deployment of key business clusters in a short period of time after the purchase, and during the operation, the business did not experience any downtime or other failures. Which of the following characteristics of bare metal servers are reflected in this scenario? (Multiple choice)",
+			"options": [
+				"A. No operation and maintenance required",
+				"B. Safe and reliable",
+				"C. Agile deployment",
+				"D. Resource Sharing"
+			],
+			"answer": [
+				"B",
+				"C",
+				"D"
+			],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0122",
+			"type": "multi",
+			"prompt": "When two ECSs in the same VPC cannot communicate with each other, which of the following factors need to be checked? (Multiple choice)",
+			"options": [
+				"A. Check the port",
+				"B. Check security group rules",
+				"C. Check the internal network card information of the elastic cloud server",
+				"D. Check network ACL"
+			],
+			"answer": [
+				"A",
+				"B",
+				"C",
+				"D"
+			],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0123",
+			"type": "multi",
+			"prompt": "Which of the following descriptions about public network NAT gateways are correct? (Multiple choice)",
+			"options": [
+				"A. A VPC can only be associated with one NAT gateway.",
+				"B. Multiple rules under the same NAT gateway can reuse the same elastic public IP",
+				"C. SNAT and DNAT can share the same elastic public IP, saving elastic public IP resources",
+				"D. Multiple SNAT rules can be added to each subnet in the VPC"
+			],
+			"answer": [
+				"B",
+				"C"
+			],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0124",
+			"type": "multi",
+			"prompt": "Which of the following relational database services does Huawei Cloud provide? (Multiple choice)",
+			"options": [
+				"A. GaussDB (openGauss)",
+				"B. GaussDB (for Mongo)",
+				"C. GaussDB (for Influx)",
+				"D. GaussDB (for MySQL)"
+			],
+			"answer": [
+				"A",
+				"D"
+			],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0125",
+			"type": "multi",
+			"prompt": "Which of the following cloud service resource indicators can Huawei Cloud Monitoring Service monitor? (Multiple choice)",
+			"options": [
+				"A. Virtual Private Cloud",
+				"B. Elastic Cloud Server",
+				"C. Elastic scaling",
+				"D. Elastic Load Balancing"
+			],
+			"answer": [
+				"A",
+				"B",
+				"C",
+				"D"
+			],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0126",
+			"type": "multi",
+			"prompt": "Which of the following descriptions about containers and virtual machines are wrong? (Multiple choice)",
+			"options": [
+				"A. The underlying container requires the physical host to have an OS environment",
+				"B. Each virtual machine can deploy an OS environment to run applications",
+				"C. Each container can deploy an OS environment to run applications",
+				"D. The underlying virtual machine requires the physical host to have an OS environment"
+			],
+			"answer": [
+				"C",
+				"D"
+			],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0127",
+			"type": "multi",
+			"prompt": "Huawei Cloud's Cloud Log Service LTS supports real-time log collection and multiple collection methods. Which of the following collection methods supported by Cloud Log Service are correct? (Multiple choice)",
+			"options": [
+				"A. API/SDK access: You can view the use of API/SDK/connecting logs to the cloud log service",
+				"B. Self-built software access, configure the path of the host log to be collected into the log stream, and ICAgent will collect logs according to the log collection rules",
+				"C. Self-built software access, configure the path of the host log to be collected into the log stream, and ICAgent will collect logs according to the log collection rules",
+				"D. VPN access, by importing AK/SK, to enable local data center to backup and manage cloud log services"
+			],
+			"answer": [
+				"A",
+				"B",
+				"C",
+				"D"
+			],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0128",
+			"type": "multi",
+			"prompt": "Which of the following operations does Huawei Cloud Database RDS backup policy support? (Multiple choice)",
+			"options": [
+				"A. Turn off automatic backup",
+				"B. Set the backup time period",
+				"C. Set the backup cycle",
+				"D. Set the number of days to retain backups"
+			],
+			"answer": [
+				"A",
+				"B",
+				"C",
+				"D"
+			],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0129",
+			"type": "multi",
+			"prompt": "Which of the following options are common features of RDS for MySQL and RDS for PostgreSQL? (Multiple choice)",
+			"options": [
+				"A. Support full data backup",
+				"B. Support elastic scaling",
+				"C. Support read-write separation",
+				"D. Support AS dual-machine hot standby"
+			],
+			"answer": [
+				"A",
+				"B",
+				"C"
+			],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0130",
+			"type": "multi",
+			"prompt": "What functions can be achieved by configuring lifecycle rules? (Multiple choice)",
+			"options": [
+				"A. Regularly convert the storage class of the object",
+				"B. Cleaning up the debris",
+				"C. Scheduled deletion of specified objects in a bucket",
+				"D. Delete bucket"
+			],
+			"answer": [
+				"A",
+				"C"
+			],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0131",
+			"type": "multi",
+			"prompt": "Public clouds provide many types of elastic cloud servers, including but not limited to which ones? (Multiple choice)",
+			"options": [
+				"A. Bare metal server",
+				"B. GPU Acceleration",
+				"C. Disk Enhanced",
+				"D. General computing"
+			],
+			"answer": [
+				"B",
+				"C",
+				"D"
+			],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0132",
+			"type": "multi",
+			"prompt": "Which of the following descriptions of the CS operation and usage rules of Huawei Cloud ECS are correct? (Multiple choice)",
+			"options": [
+				"A. It is prohibited to use ECS to launch network attacks on external systems, such as DDoS attacks, CC attacks, and Web attacks.",
+				"B. It is prohibited to deploy any illegal websites and applications on ECS",
+				"C. It is prohibited to use ECS to conduct false transactions such as fake orders and fake advertisements on e-commerce websites",
+				"D. Without the authorization of the external system subject, it is prohibited to use CS to initiate scanning, penetration and other detection activities on the external system."
+			],
+			"answer": [
+				"A",
+				"B",
+				"C",
+				"D"
+			],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0133",
+			"type": "multi",
+			"prompt": "In Huawei Cloud, which of the following reasons may cause the file system to fail to mount? (Multiple choice)",
+			"options": [
+				"A. The shared path in the mount command is entered wrongly",
+				"B. The DNS used to access the file system is wrong",
+				"C. The file system has been deleted",
+				"D. The file system capacity is too large"
+			],
+			"answer": [
+				"A",
+				"B",
+				"C"
+			],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0134",
+			"type": "multi",
+			"prompt": "A tenant built a technical forum through Huawei Cloud. As the number of forum users continued to increase, many users began to complain that the access speed of the forum was getting slower and slower. Please analyze the possible causes of this problem and the corresponding solutions? (Multiple choice)",
+			"options": [
+				"A. There may be a malicious hacker attack on the website. It is recommended that tenants apply for Anti- DDos traffic cleaning service",
+				"B. The forum users may have too much traffic. We suggest that the tenant increase the bandwidth of the EIP.",
+				"C. The forum's data storage capacity may be insufficient. It is recommended that tenants purchase more data storage.",
+				"D. The CPU and memory usage of the cloud server may be too high. It is recommended that tenants apply for elastic scaling service AS and elastic load balancing service."
+			],
+			"answer": [
+				"A",
+				"B",
+				"C",
+				"D"
+			],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0135",
+			"type": "multi",
+			"prompt": "Which of the following descriptions about elastic public IP are correct? (Multiple choice)",
+			"options": [
+				"A. Elastic public IP provides independent public IP resources, including public IP addresses and public network export bandwidth services",
+				"B. Elastic public IP can be flexibly bound and unbound to resources such as elastic cloud servers, bare metal servers, virtual IPs, elastic load balancing, and NAT gateways",
+				"C. Elastic public IP service only supports on-demand billing",
+				"D. Elastic public IP can be added to shared bandwidth to reduce bandwidth usage costs"
+			],
+			"answer": [
+				"A",
+				"B",
+				"D"
+			],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0136",
+			"type": "multi",
+			"prompt": "Which of the following services can enable intercommunication between the VPC internal network and the external network? (Multiple choice)",
+			"options": [
+				"A. Elastic IP",
+				"B. NAT Gateway",
+				"C. VPN",
+				"D. ELB"
+			],
+			"answer": [
+				"A",
+				"B",
+				"C"
+			],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0137",
+			"type": "multi",
+			"prompt": "Which of the following options are management actions of elastic scaling policies? (Multiple choice)",
+			"options": [
+				"A. Replication Scaling Strategy",
+				"B. Create a scaling policy",
+				"C. Delete a scaling policy",
+				"D. Modify the scaling policy"
+			],
+			"answer": [
+				"B",
+				"C",
+				"D"
+			],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0138",
+			"type": "multi",
+			"prompt": "Elastic scaling enables application systems to automatically adjust resources on demand. Which of the following descriptions of how elastic scaling services adjust resources are wrong? (Multiple choice)",
+			"options": [
+				"A. On-demand resource adjustment includes dynamic resource adjustment, planned resource adjustment, manual resource adjustment and intelligent resource adjustment",
+				"B. Manually adjust resources by modifying the expected number of instances or manually moving in or removing instances to adjust resources.",
+				"C. Plan to adjust resources by triggering timing strategies or alarm strategies to adjust resources",
+				"D. Dynamically adjust resources by triggering periodic policies to adjust resources"
+			],
+			"answer": [
+				"A",
+				"C",
+				"D"
+			],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0139",
+			"type": "multi",
+			"prompt": "Each region of Huawei Cloud corresponds to a project by default. This project is preset by the system and is used to isolate resources between physical regions. Which of the following descriptions of projects are correct? (Multiple choice)",
+			"options": [
+				"A. Sources in a project can be transferred",
+				"B. Projects can be created across regions",
+				"C. Sub-projects can be created in the project to make resource permission control more precise",
+				"D. The default project name of the region cannot be modified"
+			],
+			"answer": [
+				"A",
+				"C"
+			],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0140",
+			"type": "multi",
+			"prompt": "A social networking site was built based on Huawei Cloud's virtual private cloud VPC, load balancing ELB, cloud server ECS, and cloud database RDS. It originally only provided EB pure dynamic text information exchange. With the rise of live streaming, the operation team wanted to add live streaming services to the existing system to meet the needs of users across the country to watch live streaming quickly anytime and anywhere. What other services need to be enabled on Huawei Cloud to support this business? (Multiple choice)",
+			"options": [
+				"A. Content Delivery Network (CDN)",
+				"B. High Performance Computing",
+				"C. Object Storage OBS",
+				"D. Elastic scaling AS"
+			],
+			"answer": [
+				"A",
+				"C",
+				"D"
+			],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0141",
+			"type": "multi",
+			"prompt": "Which of the following VPN protocols do not support encryption of transmitted data packets? (Multiple choice)",
+			"options": [
+				"A. IPSec VPN",
+				"B. PPTP VPN",
+				"C. BGP/MPLS VPN",
+				"D. L2TP VPN"
+			],
+			"answer": [
+				"B",
+				"C",
+				"D"
+			],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0142",
+			"type": "multi",
+			"prompt": "What advantages does cloud computing bring to enterprise digital transformation? (Multiple choice)",
+			"options": [
+				"A. Improve operational efficiency",
+				"B. Cost savings",
+				"C. Improve hardware utilization",
+				"D. Improve data security"
+			],
+			"answer": [
+				"A",
+				"B",
+				"C",
+				"D"
+			],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0143",
+			"type": "multi",
+			"prompt": "Which of the following image replication scenarios does Huawei Cloud support? (Multiple choice)",
+			"options": [
+				"A. Copying non-encrypted images across regions",
+				"B. Replicate encrypted images across regions",
+				"C. Copy the encrypted image to a non-encrypted image",
+				"D. Copy an encrypted image to a non-encrypted image"
+			],
+			"answer": [
+				"A",
+				"C",
+				"D"
+			],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0144",
+			"type": "multi",
+			"prompt": "Which of the following are the main functions of Cloud Trace Service CTS? (Multiple choice)",
+			"options": [
+				"A. Operating system monitoring",
+				"B. Recording audit logs",
+				"C. Audit log query",
+				"D. Audit log dump"
+			],
+			"answer": [
+				"B",
+				"C",
+				"D"
+			],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0145",
+			"type": "multi",
+			"prompt": "Enterprises usually use the image service IMS when migrating their business to the cloud. Which of the following private image creation methods does it support? (Multiple choice)",
+			"options": [
+				"A. Whole machine image",
+				"B. Data disk image",
+				"C. System disk image",
+				"D. Volume mirroring"
+			],
+			"answer": [
+				"A",
+				"B",
+				"C"
+			],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0146",
+			"type": "multi",
+			"prompt": "Which of the following options are the advantages of Huawei's Dynaudio architecture? (Multiple choice)",
+			"options": [
+				"A. Cloud-edge-device collaboration",
+				"B. Extremely stable performance",
+				"C. Excellent performance",
+				"D. Extremely low cost"
+			],
+			"answer": [
+				"A",
+				"B",
+				"C",
+				"D"
+			],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0147",
+			"type": "multi",
+			"prompt": "Which of the following descriptions of cloud computing deployment models are correct? (Multiple choice)",
+			"options": [
+				"A. Public clouds are usually built by operators or cloud service providers and sold or leased to the public.",
+				"B. Hybrid cloud is generally built by operators or cloud service providers, integrating the features of public cloud and private cloud, and is sold or leased to the public.",
+				"C. Private cloud is usually deployed within the enterprise for internal use",
+				"D. Industry clouds generally have the characteristics of a certain industry and belong to \"large private clouds\" or \"small public clouds\""
+			],
+			"answer": [
+				"A",
+				"B",
+				"C",
+				"D"
+			],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0148",
+			"type": "multi",
+			"prompt": "Which of the following options are necessary parameters when applying for an Elastic Cloud Server (ECS) in Huawei Cloud? (Multiple choice)",
+			"options": [
+				"A. OS",
+				"B. Memory",
+				"C. CPU",
+				"D. Hard disk space"
+			],
+			"answer": [
+				"A",
+				"B",
+				"C",
+				"D"
+			],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0149",
+			"type": "multi",
+			"prompt": "Which of the following statements about elastic cloud servers is correct? (Multiple choice)",
+			"options": [
+				"A. Users can create and delete virtual machines, reinstall, switch 0s, and power on and off.",
+				"B. Users can view information about their cloud server resources through the console interface",
+				"C. Users can add and unload extended network cards, add EIPs, mount and unmount disks, apply for keypairs, etc.",
+				"D. Users can flexibly and conveniently use public images, private images or shared images to apply for elastic cloud servers"
+			],
+			"answer": [
+				"A",
+				"B",
+				"C",
+				"D"
+			],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0150",
+			"type": "multi",
+			"prompt": "In the cloud migration scenario of enterprise business, customers need different types of image service IMS to adapt to different application scenarios. Which of the following enterprise business cloud migration scenarios can image service IMS meet? (Multiple choice)",
+			"options": [
+				"A. Enterprises need to build container images",
+				"B. Enterprises need to install mirror environments in batches",
+				"C. Enterprises need to deploy specific business operating system environments",
+				"D. Enterprises need to back up the image environment of cloud server instances"
+			],
+			"answer": [
+				"B",
+				"C",
+				"D"
+			],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0151",
+			"type": "multi",
+			"prompt": "Which of the following descriptions of the comparison between physical servers and bare metal servers are correct? (Multiple choice)",
+			"options": [
+				"A. Bare metal servers have a short deployment cycle and simpler operation and maintenance",
+				"B. Bare metal servers inherit the characteristics of physical servers, without virtualization overhead and performance loss",
+				"C. Physical servers lack flexibility and performance improvement has bottlenecks",
+				"D. Bare metal server resources can be shared with multiple users"
+			],
+			"answer": [
+				"A",
+				"B",
+				"C"
+			],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0152",
+			"type": "multi",
+			"prompt": "Which of the following key service capabilities does Huawei Cloud provide? (Multiple choice)",
+			"options": [
+				"A. Huawei Cloud continues to launch new cloud services",
+				"B. Huawei Cloud’s low prices",
+				"C. Huawei Cloud Ultra-Speed Network",
+				"D. Faster and more powerful next-generation computing instances"
+			],
+			"answer": [
+				"A",
+				"B",
+				"C",
+				"D"
+			],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0153",
+			"type": "multi",
+			"prompt": "Which of the following services can achieve long-term data storage by configuring the OBS dump service? (Multiple choice)",
+			"options": [
+				"A. CTS",
+				"B. AOM",
+				"C. CES",
+				"D. LTS"
+			],
+			"answer": [
+				"A",
+				"B",
+				"C",
+				"D"
+			],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0154",
+			"type": "multi",
+			"prompt": "Which of the following descriptions of the Bare Metal Service (BMS) on Huawei Cloud are correct? (Multiple choice)",
+			"options": [
+				"A. Resource distribution can be achieved within minutes",
+				"B. Suitable for light office scenarios such as enterprise OA",
+				"C. Applicable to high-performance computing scenarios such as supercomputing, gene sequencing, and artificial intelligence",
+				"D. Support VPC, security group isolation, and support host security related component integration"
+			],
+			"answer": [
+				"A",
+				"C"
+			],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0155",
+			"type": "multi",
+			"prompt": "Which of the following services can Cloud Log Service collect logs for? (Multiple choice)",
+			"options": [
+				"A. BMS",
+				"B. VPC",
+				"C. AS",
+				"D. ECS"
+			],
+			"answer": [
+				"A",
+				"B",
+				"C",
+				"D"
+			],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0156",
+			"type": "multi",
+			"prompt": "For which of the following cloud resources can Huawei Cloud Data Encryption Service DE provide encryption services? (Multiple choice)",
+			"options": [
+				"A. Object Storage (OBS)",
+				"B. Image Service IMS",
+				"C. Document Database Service (DDS)",
+				"D. EVS"
+			],
+			"answer": [
+				"A",
+				"B",
+				"C",
+				"D"
+			],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0157",
+			"type": "multi",
+			"prompt": "What are the alarm levels of Huawei Cloud Monitoring? (Multiple choice)",
+			"options": [
+				"A. Important",
+				"B. Tips",
+				"C. Secondary",
+				"D. Emergency"
+			],
+			"answer": [
+				"A",
+				"B",
+				"C",
+				"D"
+			],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0158",
+			"type": "multi",
+			"prompt": "Which of the following are advantages of cloud monitoring service CES? (Multiple choice)",
+			"options": [
+				"A. Real-time reporting of raw sampling data, providing real-time monitoring of cloud services, triggering alarms in real time and notifying users",
+				"B. The cloud monitoring service is automatically activated, which allows you to easily view the service status and set alarm rules",
+				"C. When the status of a cloud service triggers an alarm, the cloud monitoring service can automatically recover from the alarm through a pre-set mechanism.",
+				"D. By enabling the message notification service in the alarm rules, users can be informed of business alarm information in the first place"
+			],
+			"answer": [
+				"A",
+				"B",
+				"C",
+				"D"
+			],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0159",
+			"type": "multi",
+			"prompt": "A user configured the cloud log service for the EC server on Huawei Cloud, but could not view the original logs on the cloud log console. Which of the following reasons may be the cause? (Multiple choice)",
+			"options": [
+				"A. The user has not installed the ICAgent log collection tool on the ECS",
+				"B. The \"Continue to collect logs when the quota is exceeded\" switch is not turned on",
+				"C. The current account is in arrears",
+				"D. The user configured the wrong collection path"
+			],
+			"answer": [
+				"A",
+				"B",
+				"C",
+				"D"
+			],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0160",
+			"type": "multi",
+			"prompt": "Which of the following descriptions of the advantages and features of object storage OBS are correct? (Multiple choice)",
+			"options": [
+				"A. Supports read and write access to both block devices and file classes",
+				"B. Hundreds of billions of objects, tens of millions of concurrent",
+				"C. Multiple protection and authorization management",
+				"D. Stable data and reliable business"
+			],
+			"answer": [
+				"B",
+				"C",
+				"D"
+			],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0161",
+			"type": "multi",
+			"prompt": "Which of the following strategies does Huawei Cloud use to protect the security of inbound and outbound access traffic to elastic cloud servers in VPC? (Multiple choice)",
+			"options": [
+				"A. IPsec VPN",
+				"B. Network ACL",
+				"C. Fingerprint Authentication",
+				"D. Security Group"
+			],
+			"answer": [
+				"B",
+				"D"
+			],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0162",
+			"type": "multi",
+			"prompt": "Which of the following parts does the cluster architecture of Document Database Service (DDS) consist of? (Multiple choice)",
+			"options": [
+				"A. mongos (routing)",
+				"B. Shard",
+				"C. Configuration"
+	  ],
+	  "answer": [
+		  "A",
+		  "B",
+		  "C"
+	  ],
+	  "explanation": "",
+	  "tags": []
+		},
+		{
+			"id": "q0163",
+			"type": "multi",
+			"prompt": "Which of the following scenarios is the object storage OBS service applicable to? (Multiple choice)",
+			"options": [
+				"A. Gene sequencing",
+				"B. Static Website",
+				"C. Big Data Analysis",
+				"D. Log Archiving"
+			],
+			"answer": [
+				"A",
+				"B",
+				"C",
+				"D"
+			],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0164",
+			"type": "multi",
+			"prompt": "Which types of scaling policies does Huawei Cloud Auto Scaling Instance support? (Multiple choice)",
+			"options": [
+				"A. Email trigger strategy",
+				"B. Timing Strategy",
+				"C. Cycle-shortening strategy",
+				"D. Alert strategy"
+			],
+			"answer": [
+				"B",
+				"C",
+				"D"
+			],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0165",
+			"type": "multi",
+			"prompt": "Which of the following descriptions about the advantages of the elastic scaling service AS are correct? (Multiple choice)",
+			"options": [
+				"A. Dynamically adjust resources",
+				"B. Improve business fault tolerance",
+				"C. Can improve system security",
+				"D. Can simplify the complexity of business operations"
+			],
+			"answer": [
+				"A",
+				"B",
+				"D"
+			],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0166",
+			"type": "multi",
+			"prompt": "Which of the following descriptions about Huawei Cloud security are correct? (Multiple choice)",
+			"options": [
+				"A. Cloud security includes data security, application security, management security, etc.",
+				"B. When selecting a security group, users can choose the system-provided security group or manually create a custom security group.",
+				"C. Key Management KMS is a secure and reliable SSH key pair hosting service that helps users centrally manage SSH key pairs and protect the security of SSH key pairs.",
+				"D. WAF firewall can provide host management, risk prevention, intrusion detection, advanced defense, security operation, web page tampering prevention and other functions"
+			],
+			"answer": [
+				"A",
+				"B"
+			],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0167",
+			"type": "multi",
+			"prompt": "Unified identity authentication (IAM) is the basic service for permission management provided by Huawei Cloud. Which of the following descriptions of IAM functions are correct? (Multiple choice)",
+			"options": [
+				"A. DIAM can provide detailed cloud service auditing capabilities",
+				"B. Enterprises can set up IAM user groups to grant authorization to IAM users in batches",
+				"C. IA can provide protection when users perform sensitive operations",
+				"D. Enterprises can allocate purchased cloud service resources to different IAM users to achieve refined permission management"
+			],
+			"answer": [
+				"A",
+				"B",
+				"C",
+				"D"
+			],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0168",
+			"type": "multi",
+			"prompt": "Which of the following technologies or devices can isolate broadcast domains? (Multiple choice)",
+			"options": [
+				"A. Hub",
+				"B. Router",
+				"C. VLAN",
+				"D. Firewall"
+			],
+			"answer": [
+				"B",
+				"C",
+				"D"
+			],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0169",
+			"type": "multi",
+			"prompt": "For which of the following services can the elastic file service SFS provide storage resources? (Multiple choice)",
+			"options": [
+				"A. INS",
+				"B. ECS",
+				"C. BMS",
+				"D. CCE"
+			],
+			"answer": [
+				"B",
+				"D"
+			],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0170",
+			"type": "multi",
+			"prompt": "Which of the following functions does Huawei Cloud Enterprise Host Security HSS mainly include? (Multiple choice)",
+			"options": [
+				"A. Malware Detection",
+				"B. Weak Password Detection",
+				"C. Remote login detection",
+				"D. Software vulnerability detection"
+			],
+			"answer": [
+				"A",
+				"B",
+				"C",
+				"D"
+			],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0171",
+			"type": "multi",
+			"prompt": "Which of the following descriptions are advantages of GaussDB database products? (Multiple choice)",
+			"options": [
+				"A. Compatible with SQL2003 standard syntax + enterprise extension pack",
+				"B. 2048 node expansion capability, excellent linear ratio",
+				"C. Disaster recovery across AZs in the same city, no data loss, recovery in minutes",
+				"D. Support high throughput and strong consistency transaction capabilities"
+			],
+			"answer": [
+				"A",
+				"B",
+				"C",
+				"D"
+			],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0172",
+			"type": "multi",
+			"prompt": "Huawei Cloud can provide a variety of network services to meet different scenario requirements. When the user's local data center needs to establish a high-speed, low-latency, stable and secure dedicated connection channel with Huawei Cloud VPC, which of the following cloud services are not suitable? (Multiple choice)",
+			"options": [
+				"A. Enterprise Routing ER",
+				"B. Elastic Load Balancing (ELB)",
+				"C. Cloud dedicated line DC",
+				"D. Cloud Link CC"
+			],
+			"answer": [
+				"A",
+				"B"
+			],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0173",
+			"type": "multi",
+			"prompt": "Which of the following descriptions of the advantages of Huawei Cloud relational database services are correct? (Multiple choice)",
+			"options": [
+				"A. You only need to pay for the RDS rental fee",
+				"B. Users are responsible for database version switching and upgrades",
+				"C. No need to purchase and install any software or hardware",
+				"D. Higher requirements for database administrators"
+			],
+			"answer": [
+				"A",
+				"C"
+			],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0174",
+			"type": "multi",
+			"prompt": "Which of the following descriptions about Region in Huawei Cloud are correct? (Multiple choice)",
+			"options": [
+				"A. Multiple regions in an AZ are connected by high-speed optical fibers to meet the needs of users to build high-availability systems across regions.",
+				"B. Share public services such as elastic computing, object storage, and VPC networks within the same region",
+				"C. Dedicated Region refers to a dedicated region that only carries the same type of business or only provides business services to specific tenants.",
+				"D. General Region refers to the Region that provides general cloud services to public tenants."
+			],
+			"answer": [
+				"B",
+				"C",
+				"D"
+			],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0175",
+			"type": "multi",
+			"prompt": "Which of the following options are correct about the relationship between Host Machine and Guest Machine? (Multiple choice)",
+			"options": [
+				"A. After using virtualization technology, a host machine can only run one hypervisor at a time",
+				"B. With virtualization technology, multiple guest machines can run on one host machine",
+				"C. After using virtualization technology, a Guest Machine can only run on the Host Machine that created it",
+				"D. After using virtualization technology, a guest machine can use the resources of multiple host machines at the same time"
+			],
+			"answer": [
+				"A",
+				"B"
+			],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0176",
+			"type": "multi",
+			"prompt": "Which of the following methods does Huawei Cloud Bare Metal Server BMS use to ensure data security? (Multiple choice)",
+			"options": [
+				"A. With the isolation of physical machines, users have exclusive computing resources, and the data stored on high-performance and high-reliability servers is safe and reliable.",
+				"B. BMS without local hard disk, supports booting from cloud hard disk, supports backup service based on multi-cloud hard disk consistency snapshot technology, and ensures data security",
+				"C. Bare metal servers with local hard disks, support for RAID, data redundancy storage, and improved fault tolerance",
+				"D. Supports automatic data backup. Business data does not need to be configured. By default, it is automatically backed up to the shared space of object storage OBS to ensure data recoverability."
+			],
+			"answer": [
+				"A",
+				"C"
+			],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0177",
+			"type": "multi",
+			"prompt": "A user uses the elastic file service to provide storage resources for an elastic cloud host. Which of the following operations will cause file system access exceptions? (Multiple choice)",
+			"options": [
+				"A. The data volume is large and there are many small files",
+				"B. Modify the file system DNS and version information",
+				"C. Modify the elastic cloud service security group configuration to prohibit access to all ports except the external business port 80",
+				"D. Expand the file system"
+			],
+			"answer": [
+				"B",
+				"C"
+			],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0178",
+			"type": "multi",
+			"prompt": "Which of the following descriptions of concepts related to Huawei Cloud's elastic scaling service are wrong? (Multiple choice)",
+			"options": [
+				"A. The expected value in elastic scaling refers to the minimum number of instances in the scaling group during business peaks.",
+				"B. The image in the scaling configuration can be a public image provided by Huawei Cloud.",
+				"C. The alarm strategy in the elastic scaling strategy can be set to elastically expand capacity every 3 hours",
+				"D. In Huawei Cloud elastic scaling, the same elastic cloud server cannot exist in two scaling groups at the same time."
+			],
+			"answer": [
+				"A",
+				"C"
+			],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0179",
+			"type": "multi",
+			"prompt": "What are the ways to subscribe to cloud audit events? (Multiple choice)",
+			"options": [
+				"A. Telephone",
+				"B. SMS",
+				"C. Email",
+				"D. WeChat"
+			],
+			"answer": [
+				"B",
+				"C"
+			],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0180",
+			"type": "multi",
+			"prompt": "Which of the following descriptions about Layer 4 load balancing and Layer 7 load balancing are correct? (Multiple choice)",
+			"options": [
+				"A. Layer 4 load balancing does not support encrypted transmission, but Layer 7 load balancing does support encrypted transmission",
+				"B. Layer 4 load balancing has higher forwarding efficiency and faster data transmission than Layer 7 load balancing.",
+				"C. Both Layer 4 load balancing and Layer 7 load balancing support encrypted transmission",
+				"D. Layer 7 load balancing has higher forwarding efficiency and faster data transmission than Layer 4 load balancing."
+			],
+			"answer": [
+				"A",
+				"B"
+			],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0181",
+			"type": "multi",
+			"prompt": "Which of the following applications are suitable for running on general-purpose computing ECS instances? (Multiple choice)",
+			"options": [
+				"A. Lightweight database",
+				"B. Machine Learning",
+				"C. Enterprise Portal",
+				"D. Large in-memory database"
+			],
+			"answer": [
+				"A",
+				"C"
+			],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0182",
+			"type": "multi",
+			"prompt": "Which of the following operations can users perform on Huawei Cloud relational database? (Multiple choice)",
+			"options": [
+				"A. Switching availability strategy",
+				"B. Restart",
+				"C. Delete",
+				"D. Expand disk capacity"
+			],
+			"answer": [
+				"A",
+				"B",
+				"C",
+				"D"
+			],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0183",
+			"type": "multi",
+			"prompt": "Customer A applied for VPC service on Huawei and created three subnets, Subnet A, Subnet C and Subnet B, under the virtual private cloud. Different application servers were built in each subnet. Now, Subnet B should be able to access Subnet A, but Subnet C should not be able to access Subnet A. Subnet A can access both Subnet B and Subnet C. How can this requirement be met? (Multiple choice)",
+			"options": [
+				"A. Configure the inbound rule of the network ACL associated with subnet A to allow access to subnet B and deny access to subnet C. Configure the outbound rule of the network ACL associated with subnet A to allow access to subnet B and subnet C. Configure the inbound rule of the network ACL associated with subnet A to only allow access to subnet B and deny access to subnet C.",
+				"B. Configure the rules. The outbound rule of the network ACL associated with subnet A is to allow access to subnets B and C.",
+				"C. Configure the inbound rule of the network ACL associated with subnet A to deny access to subnet C only, and do not configure rules for subnet B. The outbound rule of the network ACL associated with subnet A is to allow access to subnet B and subnet C.",
+				"D. Configure the inbound rule of the network ACL associated with subnet A to allow only subnet B to access, and do not configure rules for the subnet. Do not configure the outbound rule of the network ACL associated with subnet A."
+			],
+			"answer": [
+				"A",
+				"B"
+			],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0184",
+			"type": "multi",
+			"prompt": "When users create a whole machine image on Huawei Cloud, which of the following image sources are supported? (Multiple choice)",
+			"options": [
+				"A. Cloud Server",
+				"B. Bare Metal Server",
+				"C. Cloud Server Backup",
+				"D. Image file"
+			],
+			"answer": [
+				"A",
+				"C"
+			],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0185",
+			"type": "multi",
+			"prompt": "A certain business uses Huawei Cloud Elastic Load Balancing Service to distribute access traffic to multiple backend servers according to the allocation strategy, providing external service capabilities. Which of the following descriptions of how elastic load balancing works are wrong? (Multiple choice)",
+			"options": [
+				"A. Different business traffic can be forwarded through the same load balancer",
+				"B. Different business traffic can be monitored and forwarded using the same listener",
+				"C. The business port monitored by the listener needs to be consistent with the backend health check port",
+				"D. The listener forwards the configured request to the corresponding backend server group. If no forwarding policy is configured, the request will not be forwarded."
+			],
+			"answer": [
+				"B",
+				"D"
+			],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0186",
+			"type": "multi",
+			"prompt": "The network of a large data center is divided into east-west traffic and north-south traffic according to the traffic direction. Which of the following belong to north-south traffic? (Multiple choice)",
+			"options": [
+				"A. Traffic generated by customers accessing virtual machines in data centers through the Internet",
+				"B. Traffic generated by virtual machines accessing each other across data centers",
+				"C. Traffic generated by mutual access between virtual machines within the data center",
+				"D. Traffic generated by virtual machine hot migration"
+			],
+			"answer": [
+				"A",
+				"B"
+			],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0187",
+			"type": "multi",
+			"prompt": "Which of the following are basic characteristics of cloud computing? (Multiple choice)",
+			"options": [
+				"A. On-demand self-service",
+				"B. Rapid elastic scaling",
+				"C. Resource pooling",
+				"D. Extensive Internet access"
+			],
+			"answer": [
+				"A",
+				"B",
+				"C",
+				"D"
+			],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0188",
+			"type": "multi",
+			"prompt": "Which of the following are common service models of cloud computing? (Multiple choice)",
+			"options": [
+				"A. Saas (Software as a Service)",
+				"B. Paas (Platform as a Service)",
+				"C. IaaS (Infrastructure as a Service)",
+				"D. Faas (Function as a Service)"
+			],
+			"answer": [
+				"A",
+				"B",
+				"C"
+			],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0189",
+			"type": "multi",
+			"prompt": "Which of the following access methods does Cloud Log Service LTS support? (Multiple choice)",
+			"options": [
+				"A. VPN access",
+				"B. Cloud service access",
+				"C. API Access",
+				"D. SDK access"
+			],
+			"answer": [
+				"B",
+				"C",
+				"D"
+			],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0190",
+			"type": "multi",
+			"prompt": "Which of the following are features of Huawei Cloud Object Storage Service OBS? (Multiple choice)",
+			"options": [
+				"A. Provide cross-domain resource sharing",
+				"B. Provide anti-hotlink protection",
+				"C. Encryption Server",
+				"D. Support lifecycle management"
+			],
+			"answer": [
+				"A",
+				"B",
+				"C",
+				"D"
+			],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0191",
+			"type": "multi",
+			"prompt": "Which of the following descriptions about Huawei Cloud China Site and International Site are wrong? (Multiple choice)",
+			"options": [
+				"A. Huawei Cloud China and International accounts can be used interchangeably",
+				"B. Users in China cannot access international site resources",
+				"C. HUAWEI CLOUD has deployed availability zones in Hong Kong, Singapore, and Thailand",
+				"D. Huawei Cloud has dedicated data center service platforms in all overseas countries"
+			],
+			"answer": [
+				"A",
+				"B",
+				"D"
+			],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0192",
+			"type": "multi",
+			"prompt": "Huawei Cloud supports the creation of bare metal servers based on cloud disks, that is, the system disk of the bare metal server is a cloud disk. Which of the following are the advantages of bare metal servers based on cloud disks? (Multiple choice)",
+			"options": [
+				"A. Start from the cloud hard disk to shorten the delivery time",
+				"B. Support system disk migration to ensure service reliability",
+				"C. Support image export to reuse the configuration of existing bare metal servers on other machines",
+				"D. Supports full machine backup, data is more secure"
+			],
+			"answer": [
+				"A",
+				"B",
+				"C",
+				"D"
+			],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0193",
+			"type": "multi",
+			"prompt": "The monitoring in Huawei Cloud Monitoring Service CES includes host monitoring, site monitoring, etc. Which of the following descriptions of the two monitoring functions are wrong? (Multiple choice)",
+			"options": [
+				"A. Host monitoring can collect monitoring indicators automatically reported by ECS/BMS",
+				"B. Host monitoring actively collects more than 40 monitoring indicators such as CPU, memory, disk, network, etc.",
+				"C. Site monitoring requires real users to access remote servers and monitor the availability, connectivity, and other issues of remote servers.",
+				"D. Site monitoring can detect response time and issue alerts on monitoring results"
+			],
+			"answer": [
+				"B",
+				"C",
+				"D"
+			],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0194",
+			"type": "multi",
+			"prompt": "Which of the following network file sharing protocols does NAS support? (Multiple choice)",
+			"options": [
+				"A. NTFS",
+				"B. CIFS",
+				"C. FTP",
+				"D. NFS"
+			],
+			"answer": [
+				"B",
+				"C",
+				"D"
+			],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0195",
+			"type": "multi",
+			"prompt": "What functions does the Enterprise Host Security Service (HSS) provide to help enterprises build a server security system and reduce the main security risks currently faced by servers? (Multiple choice)",
+			"options": [
+				"A. Intrusion Detection and Advanced Defense",
+				"B. Host management and risk prevention",
+				"C. Web page tamper-proofing",
+				"D. Security Operations"
+			],
+			"answer": [
+				"A",
+				"B",
+				"C",
+				"D"
+			],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0196",
+			"type": "multi",
+			"prompt": "Which of the following are acceleration scenarios supported by Huawei Cloud CDN? (Multiple choice)",
+			"options": [
+				"A. Website acceleration",
+				"B. Full site acceleration",
+				"C. File download acceleration",
+				"D. On-demand acceleration"
+			],
+			"answer": [
+				"A",
+				"B",
+				"C",
+				"D"
+			],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0197",
+			"type": "multi",
+			"prompt": "In Huawei Cloud, which of the following descriptions of anti-affinity cloud server groups are wrong? (Multiple choice)",
+			"options": [
+				"A. The ECSs in the anti-affinity CVM group are located in different availability zones",
+				"B. The ECSs in the anti-affinity CVM group are located on different bare metal servers.",
+				"C. The ECSs in the anti-affinity CCS group are located in different regions",
+				"D. The ECSs in the anti-affinity cloud server group must be located on different physical hosts."
+			],
+			"answer": [
+				"A",
+				"B",
+				"C"
+			],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0198",
+			"type": "multi",
+			"prompt": "For which services can Huawei's public cloud elastic file service SFS provide shared access services? (Multiple choice)",
+			"options": [
+				"A. OBS",
+				"B. BMS",
+				"C. ECS",
+				"D. NAS"
+			],
+			"answer": [
+				"B",
+				"C",
+				"D"
+			],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0199",
+			"type": "multi",
+			"prompt": "Which of the following are the advantages of Huawei Cloud relational database services? (Multiple choice)",
+			"options": [
+				"A. No need to purchase and install any software or hardware",
+				"B. Only need to pay for RDS rental",
+				"C. Reduce DBA skill requirements and costs",
+				"D. User upgrades the database version"
+			],
+			"answer": [
+				"A",
+				"B",
+				"C"
+			],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0200",
+			"type": "multi",
+			"prompt": "Compared with traditional IT systems, what advantages does the public cloud have? (Multiple choice)",
+			"options": [
+				"A. High resource utilization, diverse billing models, and the ability to choose different models of cloud services on demand",
+				"B. After the business is on the cloud, there is no need for operation and maintenance personnel to participate, and the cloud platform will perform automated operation and maintenance",
+				"C. Faster business launch, with rich and highly available templates and solutions for business deployment",
+				"D. Support multiple security protection and traffic control methods to meet various business needs"
+			],
+			"answer": [
+				"A",
+				"C",
+				"D"
+			],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0201",
+			"type": "tf",
+			"prompt": "Cloud Trace Service CTS is a paid service, which includes fees for activating the tracker, event tracking, and storage and retrieval of events within 7 days.",
+			"options": [
+				"A. True",
+				"B. False"
+			],
+			"answer": [
+				"B"
+			],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0202",
+			"type": "tf",
+			"prompt": "Cloud database RDS is a stable, reliable, elastic, and easy-to-manage online cloud database service based on the cloud computing platform; Cloud database RDS can support MySQL, PostgreSQL, and SQL Server engines.",
+			"options": [
+				"A. True",
+				"B. False"
+			],
+			"answer": [
+				"A"
+			],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0203",
+			"type": "tf",
+			"prompt": "Cloud resolution service refers to the process of converting commonly used domain names (such as www.example.com) into IP addresses (such as 192.1.2.3) used for computer connections. One domain name can only correspond to one IP address.",
+			"options": [
+				"A. True",
+				"B. False"
+			],
+			"answer": [
+				"B"
+			],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0204",
+			"type": "tf",
+			"prompt": "Elastic load balancing automatically distributes access traffic to multiple cloud servers, expanding the application system's external service capabilities and achieving a higher level of application fault tolerance.",
+			"options": [
+				"A. True",
+				"B. False"
+			],
+			"answer": [
+				"A"
+			],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0205",
+			"type": "tf",
+			"prompt": "In Huawei Cloud, the same Elastic File Service (SFS) file system can be mounted on multiple cloud servers at the same time.",
+			"options": [
+				"A. True",
+				"B. False"
+			],
+			"answer": [
+				"A"
+			],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0206",
+			"type": "tf",
+			"prompt": "Virtual private cloud VPC can set up security groups to control instance traffic. The setting range of security group protocol port is 0-65535.",
+			"options": [
+				"A. True",
+				"B. False"
+			],
+			"answer": [
+				"A"
+			],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0207",
+			"type": "tf",
+			"prompt": "OBS Browser+ can be installed on Windows operating system, but not on Linux operating system.",
+			"options": [
+				"A. True",
+				"B. False"
+			],
+			"answer": [
+				"A"
+			],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0208",
+			"type": "tf",
+			"prompt": "In cloud computing, hardware of the same type but different models can form a resource pool.",
+			"options": [
+				"A. True",
+				"B. False"
+			],
+			"answer": [
+				"A"
+			],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0209",
+			"type": "tf",
+			"prompt": "When a tenant uses a private image to create an elastic cloud server, he can specify the size of its system disk. The system disk capacity of the newly deployed cloud server can be smaller than the system disk of the image.",
+			"options": [
+				"A. True",
+				"B. False"
+			],
+			"answer": [
+				"B"
+			],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0210",
+			"type": "tf",
+			"prompt": "When using Huawei Cloud VPN service and IPSec VPN to achieve communication between VPC on the cloud and IDC off the cloud, encryption and decryption verification is performed on the firewalls/routers at both ends.",
+			"options": [
+				"A. True",
+				"B. False"
+			],
+			"answer": [
+				"A"
+			],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0211",
+			"type": "tf",
+			"prompt": "When backing up data through the cloud backup service CBR, it usually has a significant impact on the performance of the cloud hard disk, causing a bottleneck in the hard disk performance and affecting the normal operation of the business. Therefore, in order to ensure the reliability of business data as much as possible, it is recommended to perform backup in the early morning when there is no data written to the disk.",
+			"options": [
+				"A. True",
+				"B. False"
+			],
+			"answer": [
+				"B"
+			],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0212",
+			"type": "tf",
+			"prompt": "Before using Huawei Cloud's Cloud Audit Service CTS, you need to activate the Cloud Audit Service first. When activating the Cloud Audit Service, the system needs to manually create an event tracker named system. You can create multiple trackers of this type as needed. The tracker will automatically identify and associate all cloud services used by the current tenant, and record all operations of the current tenant in the tracker.",
+			"options": [
+				"A. True",
+				"B. False"
+			],
+			"answer": [
+				"A"
+			],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0213",
+			"type": "tf",
+			"prompt": "When using the elastic file storage service SFS, after the file system is deleted, the data stored in the file system will also be deleted and cannot be recovered.",
+			"options": [
+				"A. True",
+				"B. False"
+			],
+			"answer": [
+				"A"
+			],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0214",
+			"type": "tf",
+			"prompt": "Cloud servers with different operating systems can be added to the same elastic load balancing backend server group.",
+			"options": [
+				"A. True",
+				"B. False"
+			],
+			"answer": [
+				"A"
+			],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0215",
+			"type": "tf",
+			"prompt": "Two elastic cloud servers in the same VPC can belong to different AZ.",
+			"options": [
+				"A. True",
+				"B. False"
+			],
+			"answer": [
+				"A"
+			],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0216",
+			"type": "tf",
+			"prompt": "Huawei Cloud Database RDS has a database backup function. After the RDS instance is deleted, the corresponding backup file will be automatically deleted.",
+			"options": [
+				"A. True",
+				"B. False"
+			],
+			"answer": [
+				"A"
+			],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0217",
+			"type": "tf",
+			"prompt": "Huawei Cloud CDN supports both public network resource acceleration and intranet acceleration.",
+			"options": [
+				"A. True",
+				"B. False"
+			],
+			"answer": [
+				"B"
+			],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0218",
+			"type": "tf",
+			"prompt": "In Huawei Cloud Object Storage OBS, object policy is the policy for objects in bucket policy. The difference is that object policy is only for one object, while the policy for objects in bucket policy can be configured for multiple objects or all objects in the bucket.",
+			"options": [
+				"A. True",
+				"B. False"
+			],
+			"answer": [
+				"A"
+			],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0219",
+			"type": "tf",
+			"prompt": "Log in to OBS Browser+ only supports authentication login via AK/SE authentication",
+			"options": [
+				"A. True",
+				"B. False"
+			],
+			"answer": [
+				"B"
+			],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0220",
+			"type": "tf",
+			"prompt": "Users can select a dedicated host in the DeH console to create a cloud server; they can also choose to create a cloud server on a specified dedicated host when creating a cloud server.",
+			"options": [
+				"A. True",
+				"B. False"
+			],
+			"answer": [
+				"A"
+			],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0221",
+			"type": "tf",
+			"prompt": "Log data can be divided into structured data and unstructured data. Structured data refers to data that can be described by numbers or a unified data model, with strict length and format. Unstructured data refers to data that is not easy to express using a two-dimensional logical table in a database, with an irregular or incomplete data structure and no predefined data model.",
+			"options": [
+				"A. True",
+				"B. False"
+			],
+			"answer": [
+				"A"
+			],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0222",
+			"type": "tf",
+			"prompt": "The scaling bandwidth policy of the elastic scaling service AS in Huawei Cloud only supports alarm policy and timing policy.",
+			"options": [
+				"A. True",
+				"B. False"
+			],
+			"answer": [
+				"B"
+			],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0223",
+			"type": "tf",
+			"prompt": "When using a Huawei Cloud ECS running Windows to create a system disk image, you need to install vm-tools in the initial ECS to ensure that the new virtual machines released using the image can be customized.",
+			"options": [
+				"A. True",
+				"B. False"
+			],
+			"answer": [
+				"A"
+			],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0224",
+			"type": "tf",
+			"prompt": "In Huawei Cloud, if you want an ECS to have access to the public network, you must bind an elastic IP to the ECS.",
+			"options": [
+				"A. True",
+				"B. False"
+			],
+			"answer": [
+				"A"
+			],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0225",
+			"type": "tf",
+			"prompt": "In HUAWEI Cloud, elastic cloud server instances and extended elastic network cards can belong to different VPCs or security groups.",
+			"options": [
+				"A. True",
+				"B. False"
+			],
+			"answer": [
+				"B"
+			],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0226",
+			"type": "tf",
+			"prompt": "Elastic scaling services can automatically adjust their business resources through strategies based on users' business needs.",
+			"options": [
+				"A. True",
+				"B. False"
+			],
+			"answer": [
+				"A"
+			],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0227",
+			"type": "tf",
+			"prompt": "The local hard disk in the bare metal server is backed up through consistent snapshot technology, which can avoid data inconsistency problems caused by the time difference of backup creation, and supports the creation of private images through backup.",
+			"options": [
+				"A. True",
+				"B. False"
+			],
+			"answer": [
+				"B"
+			],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0228",
+			"type": "tf",
+			"prompt": "Just like creating a VPN, after the user creates a public NAT gateway, Huawei Cloud will automatically assign a public IP address to the gateway.",
+			"options": [
+				"A. True",
+				"B. False"
+			],
+			"answer": [
+				"A"
+			],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0229",
+			"type": "tf",
+			"prompt": "In the business scenario of IMS environment image service, users can migrate business data to the cloud by creating a cloud hard disk through data disk imaging.",
+			"options": [
+				"A. True",
+				"B. False"
+			],
+			"answer": [
+				"A"
+			],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0230",
+			"type": "tf",
+			"prompt": "Huawei Cloud Unified Identity Authentication Service IAM, which is enabled by default after user registration and is free to use",
+			"options": [
+				"A. True",
+				"B. False"
+			],
+			"answer": [
+				"A"
+			],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0231",
+			"type": "tf",
+			"prompt": "In Huawei Cloud, a NAT gateway can add both SNAT and DNAT rules at the same time, and the two rules can share one elastic public IP.",
+			"options": [
+				"A. True",
+				"B. False"
+			],
+			"answer": [
+				"A"
+			],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0232",
+			"type": "tf",
+			"prompt": "Huawei's public cloud elastic file service SFS can implement fine-grained permission management to ensure user permission security without the need for other public cloud services.",
+			"options": [
+				"A. True",
+				"B. False"
+			],
+			"answer": [
+				"A"
+			],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0233",
+			"type": "tf",
+			"prompt": "If a physical machine is virtualized into multiple virtual machines, the physical machine is called the Host Machine, and the OS running on it is called the Host OS; the virtual machine is called the Guest Machine, and the OS running on it is called the Guest OS.",
+			"options": [
+				"A. True",
+				"B. False"
+			],
+			"answer": [
+				"A"
+			],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0234",
+			"type": "tf",
+			"prompt": "Before using the Cloud Audit CTS service on Huawei Cloud, tenants need to activate the Cloud Audit service first and manually create a tracker to identify and associate all cloud services of the current tenant in order to monitor the business in an all-round way.",
+			"options": [
+				"A. True",
+				"B. False"
+			],
+			"answer": [
+				"B"
+			],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0235",
+			"type": "tf",
+			"prompt": "Through the cloud monitoring service CES, the operating system and log content of the elastic cloud service ECS instance can be monitored, and the alarm function is supported.",
+			"options": [
+				"A. True",
+				"B. False"
+			],
+			"answer": [
+				"A"
+			],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0236",
+			"type": "tf",
+			"prompt": "Users can add or delete monitoring charts of instance resources of key concern on the cloud monitoring overview homepage. As the object of important concern instances, it can support multi- indicator comparison function, which is convenient for timely viewing every time logging into the cloud monitoring platform.",
+			"options": [
+				"A. True",
+				"B. False"
+			],
+			"answer": [
+				"A"
+			],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0237",
+			"type": "tf",
+			"prompt": "Under the same VPC, multiple subnet segments can be created. Different subnet segments cannot be repeated, but subnet segments can be expanded according to later business needs.",
+			"options": [
+				"A. True",
+				"B. False"
+			],
+			"answer": [
+				"A"
+			],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0238",
+			"type": "tf",
+			"prompt": "In Huawei Cloud, an elastic cloud server can be bound to multiple virtual IPs, and multiple virtual IPs can come from different virtual private clouds.",
+			"options": [
+				"A. True",
+				"B. False"
+			],
+			"answer": [
+				"B"
+			],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0239",
+			"type": "tf",
+			"prompt": "One ECS can be bound to multiple elastic public IP addresses.",
+			"options": [
+				"A. True",
+				"B. False"
+			],
+			"answer": [
+				"A"
+			],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0240",
+			"type": "tf",
+			"prompt": "The relational database service RDS has a database backup function. After the RDS instance is deleted, the corresponding backup file will be automatically retained.",
+			"options": [
+				"A. True",
+				"B. False"
+			],
+			"answer": [
+				"B"
+			],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0241",
+			"type": "tf",
+			"prompt": "When the application type of the elastic load balancing service ELB is public network, only UDP, HITP, and HITPS protocols are supported.",
+			"options": [
+				"A. True",
+				"B. False"
+			],
+			"answer": [
+				"B"
+			],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0242",
+			"type": "tf",
+			"prompt": "Huawei Cloud's cloud hard disk service is based on dual-copy technology to ensure data security and reliability. For certain data, the database is replicated into two copies by default, and these copies are stored on different nodes in the cluster according to a certain distributed storage algorithm.",
+			"options": [
+				"A. True",
+				"B. False"
+			],
+			"answer": [
+				"B"
+			],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0243",
+			"type": "tf",
+			"prompt": "Using Huawei Cloud NAT Gateway, hosts in VPC can access public network resources without binding elastic public IP.",
+			"options": [
+				"A. True",
+				"B. False"
+			],
+			"answer": [
+				"B"
+			],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0244",
+			"type": "tf",
+			"prompt": "The multi-version control function of object storage OBS is enabled for the entire bucket. The multi- version control function cannot be enabled for a folder or file in the bucket.",
+			"options": [
+				"A. True",
+				"B. False"
+			],
+			"answer": [
+				"A"
+			],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0245",
+			"type": "tf",
+			"prompt": "HUAWEI CLOUD can group and isolate resources through the IAM project function, and group and isolate resources in different areas: users can create IAM projects to isolate resources from different projects of the enterprise, implement personnel management and authority allocation, and meet the use and management needs of cloud resources by multi-level organizations of the enterprise.",
+			"options": [
+				"A. True",
+				"B. False"
+			],
+			"answer": [
+				"B"
+			],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0246",
+			"type": "tf",
+			"prompt": "Object storage OBS is an Internet-accessible service that provides a Web service interface based on the HITP/HTTPS protocol. Users can connect to the Internet anytime and anywhere and access and manage data stored in OBS through the OBS management console or various OBS tools. In addition, OBS supports SDK and OBS API interfaces, which allow users to conveniently manage their data stored on OBS and develop various types of upper-level business applications.",
+			"options": [
+				"A. True",
+				"B. False"
+			],
+			"answer": [
+				"A"
+			],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0247",
+			"type": "tf",
+			"prompt": "Huawei Cloud SFS Turbo supports offline IDC access through cloud dedicated lines, VPNs, and cloud connections.",
+			"options": [
+				"A. True",
+				"B. False"
+			],
+			"answer": [
+				"A"
+			],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0248",
+			"type": "tf",
+			"prompt": "Huawei's public cloud peer connection service can be applied for not only between VPCs of the same tenant, but also across tenants in the same region. However, after the configuration on the local side is completed, it needs to wait for the other end's consent to accept it before it can take effect.",
+			"options": [
+				"A. True",
+				"B. False"
+			],
+			"answer": [
+				"A"
+			],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0249",
+			"type": "tf",
+			"prompt": "Huawei Virtual Private Cloud VPC supports customized virtual private networks and also supports deployment of elastic cloud servers across availability zones.",
+			"options": [
+				"A. True",
+				"B. False"
+			],
+			"answer": [
+				"A"
+			],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0250",
+			"type": "tf",
+			"prompt": "The SFS Turbo file system does not support system policies, so the created SFS custom policy is only valid for the SFS file system and not for the SFS Turbo file system.",
+			"options": [
+				"A. True",
+				"B. False"
+			],
+			"answer": [
+				"B"
+			],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0251",
+			"type": "tf",
+			"prompt": "Logs can record important information during system operation. Operation and maintenance personnel can locate the system based on the records in the logs and perform troubleshooting based on the relevant information.",
+			"options": [
+				"A. True",
+				"B. False"
+			],
+			"answer": [
+				"A"
+			],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0252",
+			"type": "tf",
+			"prompt": "Huawei Cloud host monitoring function supports monitoring elastic cloud servers and bare metal servers.",
+			"options": [
+				"A. True",
+				"B. False"
+			],
+			"answer": [
+				"A"
+			],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0253",
+			"type": "tf",
+			"prompt": "Huawei Cloud Auto Scaling Service AS supports automatic scaling within a single AZ and also supports automatic scaling across AZs within a Region.",
+			"options": [
+				"A. True",
+				"B. False"
+			],
+			"answer": [
+				"A"
+			],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0254",
+			"type": "tf",
+			"prompt": "Huawei Cloud object storage service OBS has no restrictions on storage capacity and number of objects.",
+			"options": [
+				"A. True",
+				"B. False"
+			],
+			"answer": [
+				"A"
+			],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0255",
+			"type": "tf",
+			"prompt": "An AZ (Availability Zone) is a collection of one or more physical data centers with independent wind, fire, water, and electricity. There are multiple computing, storage, and network resource pools in the AZ to meet the needs of different specifications.",
+			"options": [
+				"A. True",
+				"B. False"
+			],
+			"answer": [
+				"A"
+			],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0256",
+			"type": "tf",
+			"prompt": "Huawei Cloud host monitoring can monitor basic monitoring indicators such as Ecs CPU usage without using Agent plug-in.",
+			"options": [
+				"A. True",
+				"B. False"
+			],
+			"answer": [
+				"A"
+			],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0257",
+			"type": "tf",
+			"prompt": "After the Elastic Cloud Server on Huawei Cloud is successfully created, users can use the Elastic Cloud Server on the cloud anytime and anywhere, just like using their own local PC or physical server.",
+			"options": [
+				"A. True",
+				"B. False"
+			],
+			"answer": [
+				"A"
+			],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0258",
+			"type": "tf",
+			"prompt": "Logs can complete the operation and maintenance of networks, servers and other equipment and services throughout the entire life cycle.",
+			"options": [
+				"A. True",
+				"B. False"
+			],
+			"answer": [
+				"B"
+			],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0259",
+			"type": "tf",
+			"prompt": "After the relational database is successfully created, if the specifications (CPU and memory) do not meet the requirements, you can change the specifications.",
+			"options": [
+				"A. True",
+				"B. False"
+			],
+			"answer": [
+				"A"
+			],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0260",
+			"type": "tf",
+			"prompt": "Huawei Cloud Database RDS backup data is stored in OBS and supports one-click recovery.",
+			"options": [
+				"A. True",
+				"B. False"
+			],
+			"answer": [
+				"A"
+			],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0261",
+			"type": "tf",
+			"prompt": "Huawei Cloud DNS service provides reverse resolution function. Based on VPC network, it can associate the intranet domain name valid in VPC with the private IP address, and convert the domain name into a private IP address through DNS.",
+			"options": [
+				"A. True",
+				"B. False"
+			],
+			"answer": [
+				"B"
+			],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0262",
+			"type": "tf",
+			"prompt": "In Huawei Cloud, after uninstalling the cloud hard disk EVS from the elastic cloud server and mounting it to another elastic cloud server, the data on the cloud hard disk will be automatically reset to zero.",
+			"options": [
+				"A. True",
+				"B. False"
+			],
+			"answer": [
+				"B"
+			],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0263",
+			"type": "tf",
+			"prompt": "The bare metal server IB network is provisioned by selecting specifications that support the IB network when creating the BMS, and has the characteristics of low latency and high bandwidth.",
+			"options": [
+				"A. True",
+				"B. False"
+			],
+			"answer": [
+				"A"
+			],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0264",
+			"type": "tf",
+			"prompt": "In each of the two regions of Huawei Cloud, there is a VPC with two subnets. You only need to create a VPC Peering at each end to achieve interoperability between the two VPCs.",
+			"options": [
+				"A. True",
+				"B. False"
+			],
+			"answer": [
+				"B"
+			],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0265",
+			"type": "tf",
+			"prompt": "Tenants can customize the capacity of the cloud hard disk service EVS they apply for according to their own needs, but the disk type cannot be selected.",
+			"options": [
+				"A. True",
+				"B. False"
+			],
+			"answer": [
+				"B"
+			],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0266",
+			"type": "tf",
+			"prompt": "When a tenant has business on the cloud, the tenant can rent a bandwidth for use by all elastic cloud servers, which can help the enterprise save network operating costs and improve operation and maintenance efficiency.",
+			"options": [
+				"A. True",
+				"B. False"
+			],
+			"answer": [
+				"A"
+			],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0267",
+			"type": "tf",
+			"prompt": "OBS supports uploading both files and folders to OBS buckets.",
+			"options": [
+				"A. True",
+				"B. False"
+			],
+			"answer": [
+				"A"
+			],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0268",
+			"type": "tf",
+			"prompt": "When logging in to Huawei's Elastic Cloud Server using the CloudShell tool in the console remote login, you can use the elastic IP or the ECS private IP.",
+			"options": [
+				"A. True",
+				"B. False"
+			],
+			"answer": [
+				"A"
+			],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0269",
+			"type": "tf",
+			"prompt": "When switching the operating system of an elastic cloud server purchased using the \"annual/monthly package\" method, switching from a free operating system to another free operating system is not supported.",
+			"options": [
+				"A. True",
+				"B. False"
+			],
+			"answer": [
+				"B"
+			],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0270",
+			"type": "tf",
+			"prompt": "The measurable nature of cloud computing is mainly for billing the cloud computing resources purchased by users.",
+			"options": [
+				"A. True",
+				"B. False"
+			],
+			"answer": [
+				"B"
+			],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0271",
+			"type": "tf",
+			"prompt": "The cloud monitoring service CES cannot see the memory usage and disk usage of the elastic cloud server. This may be because the current operating system is Linux.",
+			"options": [
+				"A. True",
+				"B. False"
+			],
+			"answer": [
+				"B"
+			],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0272",
+			"type": "tf",
+			"prompt": "In each of the two regions of Huawei Cloud, there is a VPC with two subnets. You only need to create a VPN connection at each end to achieve interoperability between the two VPCs, and you can add the two subnets to the VPN in the VPN connection.",
+			"options": [
+				"A. True",
+				"B. False"
+			],
+			"answer": [
+				"A"
+			],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0273",
+			"type": "tf",
+			"prompt": "Even if you configure security group rules in Huawei Cloud, it will not affect the communication between two elastic cloud servers in the same security group.",
+			"options": [
+				"A. True",
+				"B. False"
+			],
+			"answer": [
+				"B"
+			],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0274",
+			"type": "tf",
+			"prompt": "Cloud computing is a computing model that can provide dynamically scalable virtualized resources to users as services through the Internet. End users need to manage the infrastructure behind the cloud computing service.",
+			"options": [
+				"A. True",
+				"B. False"
+			],
+			"answer": [
+				"B"
+			],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0275",
+			"type": "tf",
+			"prompt": "Cloud computing types can be divided into public cloud, private cloud and diversified cloud according to the model allocation. Huawei Cloud belongs to diversified cloud.",
+			"options": [
+				"A. True",
+				"B. False"
+			],
+			"answer": [
+				"B"
+			],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0276",
+			"type": "tf",
+			"prompt": "Elastic load balancing automatically distributes access traffic to multiple cloud servers, expanding the application system's external service capabilities and improving application security.",
+			"options": [
+				"A. True",
+				"B. False"
+			],
+			"answer": [
+				"B"
+			],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0277",
+			"type": "tf",
+			"prompt": "Cloud computing is a computing model that can provide dynamically scalable virtualized resources to users in the form of services through the Internet.",
+			"options": [
+				"A. True",
+				"B. False"
+			],
+			"answer": [
+				"A"
+			],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0278",
+			"type": "tf",
+			"prompt": "Cloud backup service CBR can provide backup protection services for a variety of resources, maximize the security and accuracy of user data, and ensure business security; cloud backup is suitable for scenarios of data backup and recovery as well as rapid business migration and deployment. Through CBR service, the business RTO=0 and RPO=0 can be achieved.",
+			"options": [
+				"A. True",
+				"B. False"
+			],
+			"answer": [
+				"B"
+			],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0279",
+			"type": "tf",
+			"prompt": "When a user logs in to an elastic cloud server using VNC, the interface prompts that the authentication is successful, but the system screen is black and there is no response to input. This may be because the elastic cloud server has been logged in by other users using VNC.",
+			"options": [
+				"A. True",
+				"B. False"
+			],
+			"answer": [
+				"A"
+			],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0280",
+			"type": "tf",
+			"prompt": "Public NAT Gateway can provide network address translation services for cloud hosts (elastic cloud servers, bare metal servers) in a virtual private cloud or servers in a local data center that access a virtual private cloud through a cloud dedicated line/VPN, so that multiple cloud hosts can share elastic public IPs to access the Internet or provide Internet services.",
+			"options": [
+				"A. True",
+				"B. False"
+			],
+			"answer": [
+				"A"
+			],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0281",
+			"type": "tf",
+			"prompt": "In order to prevent resource abuse, quotas for each service resource are limited in the IAM service, and strict restrictions are placed on the number of users and usage rights. If a higher quota is required, it can be purchased by paying.",
+			"options": [
+				"A. True",
+				"B. False"
+			],
+			"answer": [
+				"B"
+			],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0282",
+			"type": "tf",
+			"prompt": "Use classic VPN to achieve network interconnection between area A and area B in Huawei Cloud. The remote gateway address in the VPN connection in area A should be consistent with the remote gateway address in the VPN connection in area B.",
+			"options": [
+				"A. True",
+				"B. False"
+			],
+			"answer": [
+				"B"
+			],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0283",
+			"type": "tf",
+			"prompt": "Rapid elastic scaling includes many types. In addition to manual expansion or reduction, Huawei Cloud also supports automatic expansion or reduction according to preset policies. Scaling can be to increase or decrease the number of servers, or to increase or decrease the resources of a single server.",
+			"options": [
+				"A. True",
+				"B. False"
+			],
+			"answer": [
+				"A"
+			],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0284",
+			"type": "tf",
+			"prompt": "Huawei Cloud provides three billing methods: on-demand, package (monthly, annual), and bidding, allowing users to flexibly choose to purchase elastic cloud servers. Among them, only on-demand billing can save costs.",
+			"options": [
+				"A. True",
+				"B. False"
+			],
+			"answer": [
+				"B"
+			],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0285",
+			"type": "tf",
+			"prompt": "Container is a lightweight operating system virtualization solution with the advantages of being lightweight, standardized, and able to start in seconds.",
+			"options": [
+				"A. True",
+				"B. False"
+			],
+			"answer": [
+				"A"
+			],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0286",
+			"type": "tf",
+			"prompt": "Elastic Cloud Server supports authentication using secret keys. You must first use the password acquisition function provided by the management console to parse the secret key file used when creating the Elastic Cloud Server into a password.",
+			"options": [
+				"A. True",
+				"B. False"
+			],
+			"answer": [
+				"A"
+			],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0287",
+			"type": "tf",
+			"prompt": "Huawei Cloud sends user business alarm text messages through the message notification service SMN.",
+			"options": [
+				"A. True",
+				"B. False"
+			],
+			"answer": [
+				"A"
+			],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0288",
+			"type": "tf",
+			"prompt": "IAM projects group and isolate resources within the same area, which is a logical isolation.",
+			"options": [
+				"A. True",
+				"B. False"
+			],
+			"answer": [
+				"B"
+			],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0289",
+			"type": "tf",
+			"prompt": "In Huawei Cloud, if you do not install the Cloudbase-Init tool before creating a private image, you will not be able to customize the elastic cloud server of the Windows operating system, and you can only use the original password of the image to log in to the elastic cloud server.",
+			"options": [
+				"A. True",
+				"B. False"
+			],
+			"answer": [
+				"A"
+			],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0290",
+			"type": "text",
+			"prompt": "() The service provides the functions of collecting, storing and querying various cloud resource operation records, which can be used to support common application scenarios such as security analysis, compliance auditing, resource tracking and problem location.",
+			"options": [],
+			"answer": [
+				"CTS"
+	  ],
+	  "explanation": "",
+	  "tags": []
+		},
+		{
+			"id": "q0291",
+			"type": "text",
+			"prompt": "() is Huawei’s cloud AI chip.",
+			"options": [],
+			"answer": [
+				"scend 910"
+	  ],
+	  "explanation": "",
+	  "tags": []
+		},
+		{
+			"id": "q0292",
+			"type": "text",
+			"prompt": "Through (), users can record operation events related to ECS, OBS, and SFS for future query, audit, and backtracking.",
+			"options": [],
+			"answer": [
+				"CTS"
+	  ],
+	  "explanation": "",
+	  "tags": []
+		},
+		{
+			"id": "q0293",
+			"type": "text",
+			"prompt": "In Huawei Cloud, to remotely connect to an elastic cloud server with Windows operating system through Remote Desktop RDP, the security group needs to open port () in the inbound direction.",
+			"options": [],
+			"answer": [
+				"3389"
+	  ],
+	  "explanation": "",
+	  "tags": []
+		},
+		{
+			"id": "q0294",
+			"type": "text",
+			"prompt": "In Huawei Cloud, () images are visible to all users, including pre-installed operating systems and public applications.",
+			"options": [],
+			"answer": [
+				"Public mirror"
+	  ],
+	  "explanation": "",
+	  "tags": []
+		},
+		{
+			"id": "q0295",
+			"type": "text",
+			"prompt": "Huawei public cloud can provide tenants with flexible and elastic cloud physical servers. This service is called ().",
+			"options": [],
+			"answer": [
+				"Error MS"
+	  ],
+	  "explanation": "",
+	  "tags": []
+		},
+		{
+			"id": "q0296",
+			"type": "text",
+			"prompt": "Cloud server group is a logical division of cloud servers. In addition to supporting fault domains, it also supports (). ECSs in the same cloud server group can be created on different hosts in a dispersed manner to improve business reliability.",
+			"options": [],
+			"answer": [
+				"Availability Zone"
+	  ],
+	  "explanation": "",
+	  "tags": []
+		},
+		{
+			"id": "q0297",
+			"type": "text",
+			"prompt": "Web Application Firewall supports three deployment modes: cloud mode, exclusive mode and () mode.",
+			"options": [],
+			"answer": [
+				"ELB"
+	  ],
+	  "explanation": "",
+	  "tags": []
+		},
+		{
+			"id": "q0298",
+			"type": "text",
+			"prompt": "Cloud backup service CBR mainly consists of backup, storage library and ()",
+			"options": [],
+			"answer": [
+				"Strategy"
+	  ],
+	  "explanation": "",
+	  "tags": []
+		},
+		{
+			"id": "q0299",
+			"type": "text",
+			"prompt": "Objects are the basic units of data storage in OBS, including Key, Metadata, and Data. () refers to the description information of the object, which is uploaded to OBS in the form of key-value pairs.",
+			"options": [],
+			"answer": [
+				"Metadata"
+	  ],
+	  "explanation": "",
+	  "tags": []
+		},
+		{
+			"id": "q0300",
+			"type": "text",
+			"prompt": "Through the () service, the access traffic can be distributed to the traffic distribution control service of multiple elastic cloud servers at the back end according to the forwarding strategy. The external service capabilities of the application system can be expanded through traffic distribution, and the fault tolerance of the application can be improved.",
+			"options": [],
+			"answer": [
+				"ELB"
+	  ],
+	  "explanation": "",
+	  "tags": []
+		},
+		{
+			"id": "q0301",
+			"type": "text",
+			"prompt": "Create a peer connection between VPC1 and VPC2. By default, VPC2 cannot access the public network through VPC1's EIP. Tenants can use NAT gateway services or configure () servers to allow the elastic cloud servers under VPC2 to access the Internet through the elastic cloud servers bound to the EIP under VPC1.",
+			"options": [],
+			"answer": [
+				"SNAT"
+	  ],
+	  "explanation": "",
+	  "tags": []
+		},
+		{
+			"id": "q0302",
+			"type": "text",
+			"prompt": "Huawei Cloud's load balancing provides traffic distribution services for multiple cloud servers, supporting layer 4 and layer 7 traffic forwarding, where layer () traffic forwarding is based on identifying relevant fields in the HTTP/HTTPS protocol message header.",
+			"options": [],
+			"answer": [
+				"7"
+			],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0303",
+			"type": "text",
+			"prompt": "Web Application Firewall supports two deployment modes: cloud mode and () mode.",
+			"options": [],
+			"answer": [
+				"Exclusive"
+	  ],
+	  "explanation": "",
+	  "tags": []
+		},
+		{
+			"id": "q0304",
+			"type": "text",
+			"prompt": "In Huawei Cloud's elastic scaling service, () is a collection of instances with the same application scenario and is the basic unit for starting and stopping scaling strategies and performing scaling activities.",
+			"options": [],
+			"answer": [
+				"Telescopic group"
+	  ],
+	  "explanation": "",
+	  "tags": []
+		},
+		{
+			"id": "q0305",
+			"type": "text",
+			"prompt": "In daily life, when personal information or photos need to be stored for a long time, you can buy a cloud disk and save the data in the cloud. In essence, the cloud disk belongs to the () layer service in cloud computing.",
+			"options": [],
+			"answer": [
+				"SAAS"
+	  ],
+	  "explanation": "",
+	  "tags": []
+		},
+		{
+			"id": "q0306",
+			"type": "text",
+			"prompt": "When creating an OBS bucket, users can set different bucket ACL policies, including private, public read, public read and write, etc. If the user wants only the user to manage and access the bucket, the bucket policy needs to be set to ()",
+			"options": [],
+			"answer": [
+				"Private"
+	  ],
+	  "explanation": "",
+	  "tags": []
+		}
+	]
+}

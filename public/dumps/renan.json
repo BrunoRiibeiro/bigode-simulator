@@ -1,0 +1,557 @@
+{
+	"questions": [
+		{
+			"id": "q0001",
+			"type": "tf",
+			"prompt": "Identity and Alarm Management (RAM) is enabled by default after account registration and can be used free of charge.",
+			"options": ["A. True", "B. False"],
+			"answer": ["A"],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0002",
+			"type": "single",
+			"prompt": "Cloud computing is a computing mode that provides dynamic, scalable virtualized resources as services over the Internet. Which of the following resources cannot be obtained through cloud computing?",
+			"options": [
+				"A. SATA storage",
+				"B. Office applicatino",
+		  		"C. Digital router",
+				"D. CPU"
+			],
+			"answer": ["B"],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0003",
+			"type": "tf",
+			"prompt": "Virtualization technology can virtualize a physical server into multiple VMs, improving the hardware performance of the physical server.",
+			"options": ["A. True", "B. False"],
+			"answer": ["B"],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0004",
+			"type": "tf",
+			"prompt": "Huawei Cloud uses Identity and Access Management (IAM) projects to group and isolate resources in different regions.",
+			"options": ["A. True", "B. False"],
+			"answer": ["B"],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0005",
+			"type": "multi",
+			"prompt": "Which of the following statements about cloud computing features are true?",
+			"options": [
+				"A. On-demand deployment",
+				"B. All resources maintained by customers",
+				"C. Dynamic resource scaling",
+				"D. Virtualization technology"
+			],
+			"answer": ["A", "B", "C", "D"],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0006",
+			"type": "single",
+			"prompt": "Which of the following elastic cloud services is an out-of-the-box search service designed for enterprise digitalization?",
+			"options": [
+				"A. KooMessage", 
+				"B. KooPhone",
+				"C. KooSearch",
+				"D. KooMap"
+			],
+			"answer": ["C"],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0007",
+			"type": "text",
+			"prompt": "An enterprise has built a large-scale data center that spans multiple countries and cities. To achieve digital transformation, improve data center resource utilization, separate computing from data, shorten service rollout time, and enhance disaster tolerance capabilities, the enterprise decides to perform cloud-based reconstruction. In this case, the enterprise should preferably select the ____ deployment mode. ____",
+			"options": [],
+			"answer": ["onsite"],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0008",
+			"type": "single",
+			"prompt": "Which of the following cloud services can use policies to dynamically adjust the number of cloud servers deployed?",
+			"options": [
+				"A. Image Management Service (IMS)",
+				"B. Virtual Private Network (VPN)",
+				"C. Security Group (SG)",
+				"D. Auto Scaling (AS)"
+			],
+			"answer": ["D"],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0009",
+			"type": "text",
+			"prompt": "Cloud Container Engine (CCE) provides highly scalable, high-performance, enterprise-class ____ clusters for you to run Docker containers. With CCE, you can easily deploy, manage, and scale containerized applications in the cloud.",
+			"options": [],
+			"answer": ["Kubernetes"],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0010",
+			"type": "single",
+			"prompt": "Which of the following images is provided by the public cloud platform and visible to all users?",
+			"options": [
+				"A. Shared image",
+				"B. Private image",
+				"C. Public image",
+				"D. Marketplace image"
+			],
+			"answer": ["C"],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0011",
+			"type": "multi",
+			"prompt": "Which of the following statements are false about Auto Scaling (AS)?",
+			"options": [
+				"A. Public images provided by Huawei Cloud can be used in AS configurations.",
+				"B. The expected number of instances of an AS group is the minimum number of instances in the AS group during peak hours.",
+				"C. An alarm policy can be used to increase the number of instances in an AS group every three hours.",
+				"D. An Elastic Cloud Server (ECS) instance cannot be a member of two AS groups."
+			],
+			"answer": ["A", "C", "D"],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0012",
+			"type": "tf",
+			"prompt": "The underlying physical resources of an Elastic Cloud Server (ECS) can be shared between users, but those of a Bare Metal Server (BMS) are exclusive to a single user.",
+			"options": ["A. True", "B. False"],
+			"answer": ["A"],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0013",
+			"type": "tf",
+			"prompt": "HUAWEI CLOUD Elastic Cloud Servers (ECSs) can be online migrated across accounts and regions.",
+			"options": ["A. True", "B. False"],
+			"answer": ["A"],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0014",
+			"type": "single",
+			"prompt": "An enterprise plans to use Huawei Cloud Elastic Cloud Server (ECS) to run large-memory datasets and services with high network requirements. There are large data volume and many data access requests, and the data needs to be rapidly transferred and processed. In this scenario, which of the following ECS types is suitable?",
+			"options": [
+				"A. Ultra-high I/O",
+				"B. Memory-optimized",
+				"C. Large-memory",
+				"D. High-performance computing"
+			],
+			"answer": ["A"],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0015",
+			"type": "single",
+			"prompt": "An enterprise needs to install self-proprietary software in CentOS 7.6 and create a private image of the OS to quickly deploy services on Huawei Cloud. Which of the following image creation methods is false?",
+			"options": [
+				"A. Use the CentOS 7.6 public image provided by Huawei Cloud to create an Elastic Cloud Server (ECS), install the self-proprietary software on the ECS, and use the ECS to create a private image.",
+				"B. Use the ISO image provided by CentOS to create an ECS, install the self-proprietary software on the ECS, and use the ECS to create a private image.",
+				"C. Install CentOS 7.6 and the self-proprietary software on a local PC (not a VM), create an image on the PC, and import the image to Huawei Cloud IMS as a private image.",
+				"D. On another cloud platform, create a RAW image containing CentOS 7.6 and the self-proprietary software. Export the image from the cloud platform and then import it to Huawei Cloud IMS as a private image."
+			],
+			"answer": ["C"],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0016",
+			"type": "single",
+			"prompt": "Which of the following Auto Scaling (AS) policies can be used to implement dynamic resource scaling?",
+			"options": [
+				"A. Alarm",
+				"B. Periodic",
+				"C. Random",
+				"D. Scheduled"
+			],
+			"answer": ["A"],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0017",
+			"type": "multi",
+			"prompt": "Which of the following statements about the remote login to a Huawei Cloud Bare Metal Server (BMS) are false?",
+			"options": [
+				"A. You can remotely log in to a Windows BMS through PuTTY from your local computer.",
+				"B. You can remotely log in to a Windows BMS through the Microsoft Terminal Services Client (MSTSC) from your local computer.",
+				"C. You can remotely log in to a Linux BMS through PuTTY from your local computer.",
+				"D. You can remotely log in to a Linux BMS through MSTSC from your local computer."
+			],
+			"answer": ["A", "B", "C", "D"],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0018",
+			"type": "multi",
+			"prompt": "Someone in a company wants to build a website on Huawei Cloud and plans to connect its on-premises data center to the cloud. Which of the following solutions are feasible?",
+			"options": [
+				"A. Use Cloud Connect to build a high-speed network channel between the on-premises data center and the cloud.",
+				"B. Use Direct Connect to set up a dedicated connection between the on-premises data center and a VPC and use Cloud Connect to connect this VPC to other VPCs.",
+				"C. Use VPC Peering to connect the on-premises data center to the cloud.",
+				"D. Use Virtual Private Network (VPN) to establish an encrypted network channel between the on-premises data center and the cloud."
+			],
+			"answer": ["B", "D"],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0019",
+			"type": "tf",
+			"prompt": "Huawei Cloud Virtual Private Cloud (VPC) allows you to customize your virtual networks and deploy ECSs across AZs.",
+			"options": ["A. True", "B. False"],
+			"answer": ["A"],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0020",
+			"type": "text",
+			"prompt": "A ____ uses the protocol and port you configure to receive requests from the clients and forwards the requests to the backend servers in a backend server group based on the defined load balancing algorithm.",
+			"options": [],
+			"answer": ["Listener"],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0021",
+			"type": "single",
+			"prompt": "Which of the following statements about backend server groups in Elastic Load Balance (ELB) is incorrect?",
+			"options": [
+				"A. Backend servers in a backend server group can run the same OS or different OSs.",
+				"B. Backend servers and the associated load balancer can be in the same VPC but different AZs.",
+				"C. The higher the weight, the fewer the number of requests that will be routed to the backend server.",
+				"D. Inbound security group rules must be configured to allow traffic over backend server ports and the health check port. Otherwise, health check exceptions may occur."
+			],
+			"answer": ["C"],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0022",
+			"type": "tf",
+			"prompt": "Huawei Cloud Classic VPN consists of VPN gateways and VPN connections. A VPN connection is an egress gateway device that provides an Internet egress for a VPC.",
+			"options": ["A. True", "B. False"],
+			"answer": ["A"],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0023",
+			"type": "tf",
+			"prompt": "A public NAT gateway enables cloud or on-premises servers in a private subnet to share an EIP to access the Internet or provide services accessible from the Internet. Cloud servers are Elastic Cloud Servers (ECSs) and Bare Metal Servers (BMSs) in a Virtual Private Cloud (VPC). On-premises servers are servers in on-premises data centers that are connected to a VPC through Direct Connect or Virtual Private Network (VPN).",
+			"options": ["A. True", "B. False"],
+			"answer": ["A"],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0024",
+			"type": "single",
+			"prompt": "Huawei Cloud Virtual Private Cloud (VPC) provides an isolated and private virtual network environment for cloud resources. Which of the following statements is true about the network connectivity in a VPC?",
+			"options": [
+				"A. By default, two VPCs are isolated from each other. Direct Connect can be used for communication between the VPCs.",
+				"B. By default, VPCs are isolated from each other. A private network NAT gateway cannot be used to enable connectivity between two VPCs.",
+				"C. Two subnets in the same VPC are isolated by default. A VPC peering connection is required to enable communications between the subnets.",
+				"D. By default, ECSs in a subnet can communicate with each other. Security group rules can be configured to isolate networks of the ECSs."
+			],
+			"answer": ["D"],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0025",
+			"type": "tf",
+			"prompt": "You can configure an Object Storage Service (OBS) bucket policy to allow only one specific user to perform GET operations on a certain object in a bucket.",
+			"options": ["A. True", "B. False"],
+			"answer": ["A"],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0026",
+			"type": "single",
+			"prompt": "Which of the following is not a storage class of HUAWEI CLOUD Object Storage Service (OBS)?",
+			"options": [
+				"A. Infrequent Access",
+				"B. Archive",
+				"C. Standard",
+				"D. Backup"
+			],
+			"answer": ["A"],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0027",
+			"type": "single",
+			"prompt": "Which of the following permissions allows you to perform any operation on Object Storage Service (OBS) resources?",
+			"options": [
+				"A. OBS Viewer",
+				"B. OBS Bucket Viewer",
+				"C. Tenant Guest",
+				"D. Tenant Administrator"
+			],
+			"answer": ["D"],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0028",
+			"type": "single",
+			"prompt": "Shared Elastic Volume Service (EVS) disks are block storage devices that support concurrent reads and writes from multiple cloud servers. Which of the following statements about shared EVS disks is false?",
+			"options": [
+				"A. Cloud servers that EVS supports include Elastic Cloud Servers (ECSs) and Bare Metal Servers (BMSs).",
+				"B. A shared EVS disk can be attached to multiple servers.",
+				"C. One can share disk data between cloud servers by simply attaching a shared disk to multiple servers.",
+				"D. The device type of a shared EVS disk can either be VBD or SCSI."
+			],
+			"answer": ["A"],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0029",
+			"type": "single",
+			"prompt": "Which of the following operations is supported by Elastic Volume Service (EVS) data disks but not supported by EVS system disks?",
+			"options": [
+				"A. Disk deletion",
+				"B. Disk encryption",
+				"C. Capacity expansion",
+				"D. Disk detachment from a running server"
+			],
+			"answer": ["C"],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0030",
+			"type": "single",
+			"prompt": "Which of the following statements is correct about Elastic Volume Service (EVS) encryption?",
+			"options": [
+				"A. If an EVS disk is created from an image, the disk encryption attribute is kept consistent with the image.",
+				"B. If a snapshot is created for a disk, the snapshot encryption attribute can be different from the disk.",
+				"C. If a backup is created for a disk, the backup encryption attribute is kept consistent with the disk.",
+				"D. The encryption attribute cannot be changed after an empty EVS disk is created."
+			],
+			"answer": ["D"],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0031",
+			"type": "single",
+			"prompt": "A new media company deploys its service system on HUAWEI CLOUD. Its services include streaming media, archiving, editing, transcoding, content distribution, and video on demand. Multiple users need to access the same media files. Which of the following services is the most suitable one for the company?",
+			"options": [
+				"A. SFS",
+				"B. EVS",
+				"C. OBS",
+				"D. DES"
+			],
+			"answer": ["A"],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0032",
+			"type": "tf",
+			"prompt": "Huawei Cloud Object Storage Service (OBS) can store image files. You can create an Image Management Service (IMS) private image by importing an image file from an OBS bucket.",
+			"options": ["A. True", "B. False"],
+			"answer": ["A"], "explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0033",
+			"type": "tf",
+			"prompt": "To use Cloud Trace Service (CTS) on HUAWEI CLOUD, you need to enable CTS and manually create a tracker that will identify and track all cloud services that you use.",
+			"options": ["A. True", "B. False"],
+			"answer": ["A"],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0034",
+			"type": "multi",
+			"prompt": "Which of the following statements about Cloud Eye are correct?",
+			"options": [
+				"A. If you select 50 monitored objects and a monitoring template with 20 metrics in Cloud Eye, you can create a maximum of 1,000 alarms at once.",
+				"B. An alarm rule can be set on the Cloud Eye to trigger auto scaling when the ECS usage reaches the defined threshold.",
+				"C. The alarm rules of Cloud Eye must be created individually.",
+				"D. The server monitoring of Cloud Eye can only monitor the operating system (OS), and not processes."
+			],
+			"answer": ["A", "B"],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0035",
+			"type": "single",
+			"prompt": "A user applies for an Elastic Cloud Server (ECS) from HUAWEI CLOUD for service system deployment. To collect logs from the ECS for O&M, which of the following is the correct sequence of operations?",
+			"options": [
+				"A. Create a log stream → Create a log group → Configure collection paths and rules → Install ICAgent → View logs",
+				"B. Create a log stream → Create a log group → Install ICAgent → Configure collection paths and rules → View logs",
+				"C. Configure collection paths and rules → Create a log group → Create a log stream → Install ICAgent → View logs",
+				"D. Create a log group → Create a log stream → Install ICAgent → Configure collection paths and rules → View logs"
+			],
+			"answer": ["B"],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0036",
+			"type": "tf",
+			"prompt": "A company plans to use Log Tank Service (LTS) to manage logs of a newly deployed Elastic Cloud Server (ECS). After installing ICAgent on the ECS, engineers can view the ECS on the “Host Management” page of LTS. However, the host status is offline. The possible cause is incorrect AK/SK.",
+			"options": ["A. True", "B. False"],
+			"answer": ["B"],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0037",
+			"type": "tf",
+			"prompt": "O&M personnel can use technical means such as monitoring and log analysis to detect and respond to service faults, shortening service interruption and ensuring service continuity.",
+			"options": ["A. True", "B. False"],
+			"answer": ["A"],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0038",
+			"type": "single",
+			"prompt": "Which of the following services can be used to monitor metrics of workloads running on HUAWEI CLOUD, such as the CPU usage of an Elastic Cloud Server (ECS)?",
+			"options": [
+				"A. Log Tank Service (LTS)",
+				"B. Auto Scaling (AS)",
+				"C. Cloud Eye",
+				"D. Cloud Trace Service (CTS)"
+			],
+			"answer": ["C"],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0039",
+			"type": "text",
+			"prompt": "_____ collects, stores, and queries cloud resource operation records for security analysis, compliance audit, resource tracing, and fault locating. (Fill in the abbreviation of the service.)",
+			"options": [],
+			"answer": ["CTS"],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0040",
+			"type": "multi",
+			"prompt": "Which of the following services can be monitored by Cloud Eye?",
+			"options": [
+				"A. Elastic Cloud Server (ECS)",
+				"B. Virtual Private Cloud (VPC)",
+				"C. Elastic Load Balance (ELB)",
+				"D. Auto Scaling (AS)"
+			],
+			"answer": ["A", "B", "C", "D"],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0041",
+			"type": "single",
+			"prompt": "GaussDB is based on a share-nothing architecture. Which of the following is not an advantage of this architecture?",
+			"options": [
+				"A. Automated internal parallel processing",
+				"B. Data sharing among nodes",
+				"C. Parallel processing mechanisms to make it easy to scale",
+				"D. Performance expansion by adding nodes"
+			],
+			"answer": ["B"],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0042",
+			"type": "multi",
+			"prompt": "Which of the following are included in the HUAWEI CLOUD security service system?",
+			"options": [
+				"A. Application security",
+				"B. Network security",
+				"C. Computing security and security management",
+				"D. Data security"
+			],
+			"answer": ["A", "B", "C", "D"],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0043",
+			"type": "tf",
+			"prompt": "You need to exercise caution when selecting the DB engine because the DB engine cannot be changed after a Relational Database Service (RDS) instance is created.",
+			"options": ["A. True", "B. False"],
+			"answer": ["A"],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0044",
+			"type": "single",
+			"prompt": "Which of the following is not a main function of HUAWEI CLOUD Web Application Firewall (WAF)?",
+			"options": [
+				"A. Anti-crawler protection",
+				"B. Defense against brute-force attacks on Elastic Cloud Servers (ECSs)",
+				"C. Information leakage prevention",
+				"D. Web tamper protection"
+			],
+			"answer": ["B"],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0045",
+			"type": "single",
+			"prompt": "Which of the following is not a key feature of Relational Database Service (RDS)?",
+			"options": [
+				"A. Backup and restoration",
+				"B. Traffic cleaning",
+				"C. High availability",
+				"D. Performance monitoring"
+			],
+			"answer": ["B"],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0046",
+			"type": "multi",
+			"prompt": "Which of the following scenarios benefit from HUAWEI CLOUD Content Delivery Network (CDN)?",
+			"options": [
+				"A. Video on demand (VOD) acceleration",
+				"B. File download acceleration",
+				"C. Website acceleration",
+				"D. Whole site acceleration"
+			],
+			"answer": ["A", "B", "C", "D"],
+			"explanation": "",
+			"tags": []
+		}
+	]
+}

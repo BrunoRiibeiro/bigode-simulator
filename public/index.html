@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="author" content="Bruno Ribeiro">
+		<title>bigode simulator</title>
+		<link rel="icon" href="/img/bigode.png">
+		<link rel="shortcut icon" href="/favicon.ico">
+		<link rel="stylesheet" href="/css/style.css">
+	</head>
+	<body>
+		<div class="app">
+			<header class="app__header">
+				<img src="/img/icon.png" style="width: 100px; object-fit: cover;">
+				<h1>bigode simulator</h1>
+			</header>
+
+			<main class="app__content">
+				<section class="panel panel--loader">
+					<h2>Configuration</h2>
+
+					<div class="field">
+						<label for="jsonFile">Select a question dump</label>
+						<select id="jsonPreset">
+							<option value="">Select...</option>
+							<option value="/dumps/hcia-cloud-service-3.5.json">HCIA Cloud Service 3.5v</option>
+							<option value="/dumps/renan.json">HCIA Cloud Service 3.5v (Prova Renan)</option>
+							<option value="/dumps/hccdp-gaussdb.json">HCCDP GaussDB</option>
+							<option value="">HCIP Cloud Service (coming soon...)</option>
+						</select>
+					</div>
+
+					<div class="field">
+						<label for="jsonFile">
+							Or upload your own (.json) file
+							<input id="jsonFile" type="file" accept=".json,application/json">
+						</label>
+					</div>
+
+					<div class="field">
+						<label>
+							Mock exam mode
+							<small class="field__hint">
+								Traditional (show answers at the end) · One-by-one (show answers
+								after each question)
+							</small>
+						</label>
+						<div class="exam-mode-toggle" role="group" aria-label="Mock exam mode">
+							<button type="button" class="exam-mode-toggle__btn is-active" data-mode="full">Traditional</button>
+							<button type="button" class="exam-mode-toggle__btn" data-mode="step">One-by-one</button>
+						</div>
+						<input type="hidden" id="examMode" value="full" />
+					</div>
+
+					<div class="field">
+						<label for="questionCount">Number of questions</label>
+						<input id="questionCount" type="number" min="1" value="60" />
+					</div>
+
+					<div class="actions">
+						<button id="generateExamBtn" type="button" disabled>Generate mock exam</button>
+						<!-- <button id="newExamBtn" type="button">Draw new mock
+							exam</button> -->
+						<button id="resetAppBtn" type="button">Reset</button>
+					</div>
+
+					<p id="bankInfo" class="bank-info">No question dump loaded.</p>
+					<p id="statusMessage" class="status" aria-live="polite"></p>
+				</section>
+
+				<section id="examSection" class="hidden">
+					<div class="section-header">
+						<h2>Mock Exam</h2>
+						<div id="examMeta" class="meta"></div>
+					</div>
+
+					<form id="examForm">
+						<div id="questionsContainer"></div>
+						<div class="actions">
+							<button id="nextQuestionBtn" type="button" class="hidden">Next question</button>
+							<button id="submitExamBtn" type="submit">Finish mock exam</button>
+						</div>
+					</form>
+				</section>
+
+				<section id="resultSection" class="hidden">
+					<div class="section-header">
+						<h2>Result</h2>
+						<div id="resultSummary"></div>
+					</div>
+
+					<div id="resultList"></div>
+				</section>
+			</main>
+		</div>
+
+		<script defer src="js/utils.js"></script>
+		<script defer src="js/app-state.js"></script>
+		<script defer src="js/question-issues.js"></script>
+		<script defer src="js/file-loader.js"></script>
+		<script defer src="js/exam-service.js"></script>
+		<script defer src="js/exam-view.js"></script>
+		<script defer src="js/result-view.js"></script>
+		<script defer src="js/main.js"></script>
+	</body>
+</html>

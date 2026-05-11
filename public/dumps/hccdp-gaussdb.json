@@ -1,0 +1,2176 @@
+{
+	"questions": [
+		{
+			"id": "q0001",
+			"type": "single",
+			"prompt": "In the GaussDB logical architecture, which of the following components is responsible for providing the management interfaces and tools for daily cluster operation and maintenance and configuration management? (1 poit)",
+			"options": [
+				"A.  CN",
+				"B.  DN",
+				"C.  GTM",
+				"D.  OM"
+			],
+			"answer": ["D"],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0002",
+			"type": "single",
+			"prompt": "In the following command, which of the following options can I use to export the definition of table t1 as a custom archive? (1 point)",
+			"options": [
+				"A.  gs_dump postgres -U u1 -W Huawei@123 -p 16000 -s -t t1 -f /data/t1.sql –F c",
+				"B.  gs_dump postgres -U u1 -W Huawei@123 -p 16000 -s -t t1 -f /data/t1.sql –F p",
+				"C.  gs_dump postgres -U u1 -W Huawei@123 -p 16000 -s -t t1 -f /data/t1.sql –f c",
+				"D.  gs_dump postgres -U u1 -W Huawei@123 -p 16000 -s -t t1 -f /data/t1.sql –f t"
+			],
+			"answer": ["A"],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0003",
+			"type": "single",
+			"prompt": "Which of the following descriptions about user management is wrong? (1 point)",
+			"options": [
+				"A. If other database objects are created under the deleted user, you need to add a CASCADE field to cascade the objects that depend on that user",
+				"B. Databases created by deleted users can be deleted using cascade cascade",
+				"C. Cascading objects cannot be deleted if they are locked",
+				"D. When creating a user, you can set the validity period of the user and the limit on the number of connections"
+			],
+			"answer": ["B"],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0004",
+			"type": "single",
+			"prompt": "In the GaussDB primary/standby deployment mode, the deployment mode of 1 host plus 2 standby is adopted, which of the following characteristics is the embodiment of this mode? (1 point)",
+			"options": [
+				"A. Maximum Protection",
+				"B. Maximum Performance",
+				"C. Maximum Availability",
+				"D. Minimal loss"
+			],
+			"answer": ["A"],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0005",
+			"type": "single",
+			"prompt": "In the user database design of an online social platform, it is necessary to distribute data to the corresponding data nodes according to the age group of users. Which of the following options is best for this scenario? (1 point)",
+			"options": [
+				"A.  REPLICATION",
+				"B.  HASH",
+				"C.  RANGE",
+				"D.  LIST"
+			],
+			"answer": ["C"],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0006",
+			"type": "single",
+			"prompt": "Which of the following methods do I need to use to execute a given SQL statement that can extract the next row of the query result set and return a tuple? (1 point)",
+			"options": [
+				"A.  execute",
+				"B.  executemany",
+				"C.  fetchone",
+				"D.  fetchall"
+			],
+			"answer": ["C"],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0007",
+			"type": "single",
+			"prompt": "JDBC provides the function of linking code to the database, and is also a driver used to develop neighborhoods, but when using JDBC to link to the GaussDB database, you need to follow certain steps to prevent the database from linking. (1 point)",
+			"options": [
+				"A. Start, load the driver, connect to the database, execute SQL statements, process the result set, close the connection, and end",
+				"B. Start, connect to the database, load the driver, execute the SQL statement, process the result set, close the connection, and end",
+				"C. Start, load the driver, connect to the database, process the result set, execute the SQL statement, close the connection, and end",
+				"D. Start, load the driver, process the result set, execute the SQL statement, connect to the database, close the connection, and end"
+			],
+			"answer": ["A"],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0008",
+			"type": "single",
+			"prompt": "Which of the following interfaces is used in JDBC to establish a connection to the database and point to SQL statements? (1 point)",
+			"options": [
+				"A.  java.sql.ResultSet",
+				"B.  java.sql.Driver",
+				"C.  java.sql.Statement",
+				"D.  javax.sql.DataSource"
+			],
+			"answer": ["C"],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0009",
+			"type": "single",
+			"prompt": "In a relational database, a row represents a single data entity in a table, which contains a set of related data values. Each row consists of a series of columns (attributes) and their corresponding values. For example, a student information table contains information about multiple students that describe specific data items or characteristics of those students. Each line corresponds to the information of a student entity in the real world, which can represent a student's information, such as the student's name, age, gender, etc. What can each record in these tables be called? (1 point)",
+			"options": [
+				"A. Tuples",
+				"B. Relationships",
+				"C. Attributes",
+				"D. Mapping"
+			],
+			"answer": ["A"],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0010",
+			"type": "single",
+			"prompt": "Which of the following system views provides a list of real-time system active sessions and can be used to analyze the activity information of current system active users? (1 point)",
+			"options": [
+				"A.  SESSION_STAT",
+				"B.  SESSION_TIME",
+				"C.  SESSION_STAT_ACTIVITY",
+				"D.  SESSION_MEMORY_DETAIL"
+			],
+			"answer": ["C"],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0011",
+			"type": "single",
+			"prompt": "Which of the following is the correct way to calculate database cache hit ratio? (1 point)",
+			"options": [
+				"A.  tup_fetched /( tup_returned + tup_fetched)",
+				"B.  tup_returned /( tup_returned + tup_fetched)",
+				"C.  blks_read/( blks_read + blks_hit)",
+				"D.  blks_hit/(blks_read + blks_hit)"
+			],
+			"answer": ["D"],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0012",
+			"type": "single",
+			"prompt": "The refreshCNIpListTime parameter is used to control the time when JDBC obtains the list of available CNs, what is the default duration? (1 point)",
+			"options": [
+				"A. 1 second",
+				"B. 5 seconds",
+				"C. 10 seconds",
+				"D. 15 seconds"
+			],
+			"answer": ["C"],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0013",
+			"type": "single",
+			"prompt": "When using UGO to create a database evaluation task, which of the following is not the basic information that needs to be filled in? (1 point)",
+			"options": [
+				"A. Source database type",
+				"B. Connect the source database role",
+				"C. The host IP of the source database",
+				"D. Source database name"
+			],
+			"answer": ["B"],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0014",
+			"type": "single",
+			"prompt": "When using UGO tools to migrate database objects, where is the mapping of the configuration tablespace configured? (1 point)",
+			"options": [
+				"A. Connection Information Settings",
+				"B. User Password Settings",
+				"C. Migration configuration",
+				"D. Create a migration project"
+			],
+			"answer": ["C"],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0015",
+			"type": "single",
+			"prompt": "Before using DRS for migration implementation, you need to drill the migration plan. (1 point)",
+			"options": [
+				"A. Set up a drill environment",
+				"B. Emergency plan",
+				"C. Simulation scenario drills",
+				"D. Evaluation of migration options"
+			],
+			"answer": ["B"],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0016",
+			"type": "single",
+			"prompt": "When the application is deployed on an ECS and the ECS is in the same region and VPC as the GaussDB instance, which of the following connection methods is recommended? (1 point)",
+			"options": [
+				"A. DAS connection",
+				"B. Intranet connection",
+				"C. Public network connection",
+				"D. Command line connection"
+			],
+			"answer": ["B"],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0017",
+			"type": "single",
+			"prompt": "Which of the following views can I use to get the list of worker threads and secondary threads of the instance, and the user can judge the running status of the threads?",
+			"options": [
+				"A. SESSION_STAT",
+				"B. THREAD_WAIT_STATUS",
+				"C. POOLER_STATUS",
+				"D. REPLICATION_STAT"
+			],
+			"answer": ["B"],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0018",
+			"type": "single",
+			"prompt": "Which of the following characters is used for the IN placeholder of the SQL statement in the prepareStatement method of the JDBC Connection interface?",
+			"options": [
+				"A. *",
+				"B. ?",
+				"C. .",
+				"D. ~"
+			],
+			"answer": ["B"],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0019",
+			"type": "single",
+			"prompt": "Which of the following principles should be followed in the business design of a distributed database?",
+			"options": [
+				"A. Use a large number of distributed transactions, use it if you can, use it if you can't, and use it when you open the table, so as to maximize the distributed characteristics of the distributed database.",
+				"B. Reasonably design services and avoid distributed transactions as much as possible, so as to improve business concurrency, performance, and reduce complexity.",
+				"C. Write as the leader says.",
+				"D. I am a developer, and I can write as much as I want."
+			],
+			"answer": ["B"],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0020",
+			"type": "single",
+			"prompt": "When a customer uses DRS to migrate Oracle to GaussDB database, it can select the corresponding objects for data synchronization according to the business scenarioclass Which of the following does not include?",
+			"options": [
+				"A. Specify a part of the table under a schema to be synchronized to the same database",
+				"B. Synchronize all tables in a specified part of the schema to the same database",
+				"C. Specify some tables under the schema to synchronize to different databases",
+				"D. Fill in the object information that needs to be synchronized according to the template for synchronization"
+			],
+			"answer": ["C"],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0021",
+			"type": "single",
+			"prompt": "Which of the following views can help pinpoint feature-level fine-grained latency performance issues?",
+			"options": [
+				"A. SESSION_STAT",
+				"B. GSTAT_DATABASE",
+				"C. SESSION_STAT_ACTIVITY",
+				"D. WAIT_EVENTS"
+			],
+			"answer": ["D"],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0022",
+			"type": "single",
+			"prompt": "If I want to create an object under a SCHEMA, which permission do I need to grant to the operating user for that SCHEMA?",
+			"options": [
+				"A. Select",
+				"B. Create",
+				"C. Insert",
+				"D. Usage"
+			],
+			"answer": ["D"],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0023",
+			"type": "single",
+			"prompt": "When data in the database is mistakenly deleted, modified, or overwritten, it is necessary to select the appropriate time point as the recovery point and apply the corresponding transaction log. Which of the following options can help with a quick recovery?",
+			"options": [
+				"A. Full recovery",
+				"B. Incremental recovery",
+				"C. Differential recovery",
+				"D. PITR recovery"
+			],
+			"answer": ["D"],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0024",
+			"type": "single",
+			"prompt": "Which of the following performance views can I view the current node memory allocation and utilization of an instance?",
+			"options": [
+				"A. SESSION_STAT",
+				"B. SHARED_NODE_DETAIL",
+				"C. MEMORY_NODE_DETAIL",
+				"D. OS_THREADS"
+			],
+			"answer": ["C"],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0025",
+			"type": "single",
+			"prompt": "Which of the following descriptions of full backup and incremental backup is incorrect?",
+			"options": [
+				"A. Full backup means that all target data is backed up, including all data in the database at the backup time, and it takes a long time (proportional to the total amount of database data), and the complete database can be restored",
+				"B. Full backup always backs up all selected targets, even if the data has not changed since the last backup.",
+				"C. Incremental backup is differential backup, which only includes incremental modification of data from a specified point in time, and the time required is short (directly proportional to the incremental data and has nothing to do with the total amount of data).",
+				"D. Incremental backup can restore the complete database separately"
+			],
+			"answer": ["D"],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0026",
+			"type": "single",
+			"prompt": "In the GaussDB primary-standby deployment mode, the deployment mode of 1 host plus 2 standby machines is adopted.",
+			"options": [
+				"A. Maximum protection",
+				"B. Maximum performance",
+				"C. Maximum availability",
+				"D. Minimal loss"
+			],
+			"answer": ["A"],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0027",
+			"type": "single",
+			"prompt": "Which of the following descriptions of user management is correct?",
+			"options": [
+				"A. If other database objects are created under the deleted user, you need to add a CASCADE field to cascade and delete objects that depend on that user. For example, to delete a user named \"user1\" who has a table named \"table1\", you can use \"DROP USER user1 CASCADE; The statement is realized",
+				"B. You can use CASCADE cascade to delete the data created by the deleted user. For example, now to delete a user named \"user1\" who has a table named \"DB1\", you can use \"DROP USER user1 CASCADE; The statement is realized",
+				"C. If the cascaded object is in a locked state, you can use the CASCADE field to force deletion",
+				"D. When creating a user, you can set the validity period of the user and the limit on the number of connections. For example, to create a user named \"user1\" and set it to have the ability to use \"CREATE USER user1 VALID LIMIT '2050-12-31'; The statement is realized"
+			],
+			"answer": ["A"],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0028",
+			"type": "single",
+			"prompt": "The following are the answersEXPLAIN Which item is wrong in the description of the option behavior?",
+			"options": [
+				"A. EXPLAIN (costs off) - does not display cost information",
+				"B. EXPLAIN(analyze on, costs off) - executes the statement but does not display the cost information",
+				"C. EXPLAIN(costs off, timing on) - Execute an error because the analyze option needs to be turned on",
+				"D. EXPLAIN(nodes on, costs off) - Displays the number of nodes, but does not display the cost information"
+			],
+			"answer": ["D"],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0029",
+			"type": "single",
+			"prompt": "Which of the following SQL statements complies with the specification?",
+			"options": [
+				"A、SELECT * FROM t1 WHERE col1 = col1;",
+				"B、SELECT * FROM t1 WHERE col1 IS NOT NULL;",
+				"C、SELECT * FROM t1 WHERE col1 = NULL;",
+				"D、SELECT * FROM t1 WHERE col1 != NULL;"
+			],
+			"answer": ["B"],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0030",
+			"type": "single",
+			"prompt": "How long does WDR snapshot data retain?",
+			"options": [
+				"A. 1 day",
+				"B. 3 days",
+				"C. 7 days",
+				"D. 8 days"
+			],
+			"answer": ["D"],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0031",
+			"type": "single",
+			"prompt": "Which of the following descriptions of the characters is wrong?",
+			"options": [
+				"A. Roles are a logical concept used to assign permissions and manage access to database objects",
+				"B. A role is an individual using database system services, and the role can contain one or more users who can log in to the database",
+				"C. When the role needs to change the permissions of a user, you only need to modify the permissions of the relevant role, and you do not need to modify the permissions of each user one by one",
+				"D. GaussDB provides some predefined roles with specific permissions and functions. For example, there are superuser roles"
+			],
+			"answer": ["B"],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0032",
+			"type": "single",
+			"prompt": "When using DRS for database object synchronization, you can choose between table-level synchronization and library-level synchronization, which of the following descriptions about object synchronization is wrong?",
+			"options": [
+				"A. In library-level synchronization, synchronize some tables in the specified mode",
+				"B. In table-level synchronization, synchronize some tables in the specified mode",
+				"C. In table-level synchronization, unspecified tables are not synchronized",
+				"D. In library-level synchronization, synchronize all tables in the specified mode"
+			],
+			"answer": ["A"],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0033",
+			"type": "single",
+			"prompt": "Which of the following descriptions of grayscale upscaling is correct?",
+			"options": [
+				"A. The grayscale upgrade service is not perceptive, and the node does not crash",
+				"B. After upgrading, a shard will interrupt the service 3-4 times",
+				"C. Support major version upgrades and minor version upgrades of databases",
+				"D. Support online upgrade, upgrade node flash off once (within 5s)"
+			],
+			"answer": ["C"],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0034",
+			"type": "single",
+			"prompt": "What is the maximum number of columns supported by the partition key when value less than range partitioning is used?",
+			"options": [
+				"A. 3",
+				"B. 4",
+				"C. 5",
+				"D. 6"
+			],
+			"answer": ["B"],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0035",
+			"type": "single",
+			"prompt": "Which of the following should be sorted in descending order of priority when service precision is met?",
+			"options": [
+				"A. Integer, NUMERIC, floating point number",
+				"B. Floating point number, integer, NUMERIC",
+				"C. NUMERIC, integer, floating point number",
+				"D. Integer, floating point, and NUMERIC"
+			],
+			"answer": ["D"],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0036",
+			"type": "single",
+			"prompt": "Which of the following is the correct way to calculate the database cache hit ratio?",
+			"options": [
+				"A. tup_returned/(tup_returned + tup_fetched)",
+				"B. tup_fetched/(tup_returned + tup_fetched)",
+				"C. blks_read/(blks_read + blks_hit)",
+				"D. blks_hit/(blks_read + blks_hit)"
+			],
+			"answer": ["D"],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0037",
+			"type": "single",
+			"prompt": "Which of the following commands can be used to enable separation of rights?",
+			"options": [
+				"A. gs_guc reload -N all -I all -c \"enable_separation_of_duty=enable\"",
+				"B. gs_guc reload -N all -I all -c \"separation_of_duty=on\"",
+				"C. gs_guc reload -N all -I all -c \"enable_separation_of_duty=1\"",
+				"D. gs_guc reload -N all -I all -c \"enable_separation_of_duty=on\""
+			],
+			"answer": ["D"],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0038",
+			"type": "single",
+			"prompt": "In a variable assignment statement of the numeric type, which of the following cannot be the value of a variable?",
+			"options": [
+				"A. Integer",
+				"B. Characters",
+				"C. Expression",
+				"D. Decimals"
+			],
+			"answer": ["B"],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0039",
+			"type": "single",
+			"prompt": "During GaussDB SQL execution, which of the following is not a query and parsing task?",
+			"options": [
+				"A. Query rewriting",
+				"B. Lexical analysis",
+				"C. Syntax analysis",
+				"D. Semantic analysis"
+			],
+			"answer": ["A"],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0040",
+			"type": "single",
+			"prompt": "Which of the following statements about common database schemas is incorrect?",
+			"options": [
+				"A. In the shared disk architecture, each processing unit uses its own private CPU and memory, and shares the disk system.",
+				"B. In the shared disk architecture, when storage interfaces are saturated, computing nodes can be added to achieve higher performance.",
+				"C. The Shared Everything architecture is designed for a single host and transparently shares CPUs, memory, and I/Os.",
+				"D. In the Shared Nothing architecture, the system usually needs to distribute its data in different databases on multiple nodes."
+			],
+			"answer": ["B"],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0041",
+			"type": "single",
+			"prompt": "Which of the following data distribution modes has the highest data redundancy?",
+			"options": [
+				"A. Hash",
+				"B. List",
+				"C. Replication",
+				"D. Range"
+			],
+			"answer": ["C"],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0042",
+			"type": "single",
+			"prompt": "Which of the following database products cannot be used as the source database for UGO migration?",
+			"options": [
+				"A. MYSQL",
+				"B. ORACLE",
+				"C. DB2",
+				"D. SQLSERVER"
+			],
+			"answer": ["D"],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0043",
+			"type": "single",
+			"prompt": "Which of the following function types is not supported by GaussDB?",
+			"options": [
+				"A. IMMUTABLE",
+				"B. INPUTABLE",
+				"C. STABLE",
+				"D. VOLATILE"
+			],
+			"answer": ["B"],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0044",
+			"type": "single",
+			"prompt": "In the ACID feature of a global transaction, which of the following features defines that all operations in the entire transaction are either completed or not completed, and cannot be suspended in an intermediate phase?",
+			"options": [
+				"A. Persistence",
+				"B. Consistency",
+				"C. Isolation",
+				"D. Atomicity"
+			],
+			"answer": ["D"],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0045",
+			"type": "single",
+			"prompt": "Which of the following statements about materialized views is incorrect?",
+			"options": [
+				"A. The query performance of materialized views is improved compared with that of views.",
+				"B. Materialized views store query results in disks.",
+				"C. The update of a materialized view is the same as that of a view.",
+				"D. Different from views, materialized views need to use commands to obtain updated data from base tables."
+			],
+			"answer": ["C"],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0046",
+			"type": "single",
+			"prompt": "In the GaussDB logical architecture, which of the following components is responsible for shared configuration and service discovery (service registration and search)?",
+			"options": [
+				"A. ETCD",
+				"B. DN",
+				"C. OM",
+				"D. GTM"
+			],
+			"answer": ["A"],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0047",
+			"type": "single",
+			"prompt": "Which of the following scan operators is used to sequentially scan the HDFS storage engine?",
+			"options": [
+				"A. CstoreScan",
+				"B. ForeignScan",
+				"C. DfsScan",
+				"D. TidScan"
+			],
+			"answer": ["C"],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0048",
+			"type": "single",
+			"prompt": "Which of the following methods is used by DRS to connect to the source database during migration?",
+			"options": [
+				"A. ODBC",
+				"B. JDBC",
+				"C. Psycopg",
+				"D. Gsql"
+			],
+			"answer": ["B"],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0049",
+			"type": "single",
+			"prompt": "In GaussDB, which of the following data types will replace the DATE data type in ORA compatibility mode?",
+			"options": [
+				"A. Timestamp(0) without timezone",
+				"B. Timestamp(0) with timezone",
+				"C. Datetime",
+				"D. Interval"
+			],
+			"answer": ["A"],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0050",
+			"type": "single",
+			"prompt": "Which of the following parameter descriptions about the copy_to method of the psycopg driver is correct?",
+			"options": [
+				"A. Null: The text in the file represents NULL.",
+				"B. Text: A file-like object from which to read data.",
+				"C. Sep: The expected column delimiter in the table.",
+				"D. Columns: An iterable of column names to export. If not specified, no columns are exported."
+			],
+			"answer": ["A"],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0051",
+			"type": "single",
+			"prompt": "What is the default retention period of WDR snapshots?",
+			"options": [
+				"A. 3",
+				"B. 7",
+				"C. 8",
+				"D. 11"
+			],
+			"answer": ["C"],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0052",
+			"type": "single",
+			"prompt": "Which of the following task modes are supported by DRS?",
+			"options": [
+				"A. Full",
+				"B. Incremental",
+				"C. Full+Incremental",
+				"D. All of the above"
+			],
+			"answer": ["D"],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0053",
+			"type": "single",
+			"prompt": "Which of the following statements about the use of the INSERT statement is false?",
+			"options": [
+				"A. When inserting data in batches, the efficiency of executing multiple INSERT INTO VALUES() statements is higher than that of executing multiple INSERT INTO TABLE1 VALUES (),(),() statements.",
+				"B. Do not execute INSERT ON DUPLICATE KEY UPDATE on a table with multiple unique constraints.",
+				"C. INSERT ON DUPLICATE KEY UPDATE cannot be used to update columns with primary keys or unique constraints.",
+				"D. If INSERT ON DUPLICATE KEY UPDATE is used to insert multiple rows of data, the primary key or unique constraint conflicts are not allowed between these rows."
+			],
+			"answer": ["A"],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0054",
+			"type": "single",
+			"prompt": "Which of the following scan operators is used to access the HDFS storage engine?",
+			"options": [
+				"A. CstoreScan",
+				"B. ForeignScan",
+				"C. DfsScan",
+				"D. TidScan"
+			],
+			"answer": ["C"],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0055",
+			"type": "single",
+			"prompt": "When using UGO to create an evaluation task, how many evaluation tasks can a tenant create by default?",
+			"options": [
+				"A. 5",
+				"B. 10",
+				"C. 15",
+				"D. 20"
+			],
+			"answer": ["B"],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0056",
+			"type": "single",
+			"prompt": "Psycopg uses the connect method in the Connection class to connect to a database. Which of the following statements about the parameters in the connect method is true?",
+			"options": [
+				"A. conn_user: username",
+				"B. databasename: database name",
+				"C. connect_password: password",
+				"D. host: database IP address"
+			],
+			"answer": ["D"],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0057",
+			"type": "single",
+			"prompt": "Which of the following information is not mandatory when you create a database evaluation task?",
+			"options": [
+				"A. Source database type",
+				"B. Connection mode",
+				"C. Host type",
+				"D. Source database collection time"
+			],
+			"answer": ["D"],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0058",
+			"type": "single",
+			"prompt": "When using the gs_dump tool to export database objects, which of the following parameters should be used to specify the destination file?",
+			"options": [
+				"A. -U",
+				"B. -s",
+				"C. -f",
+				"D. -F"
+			],
+			"answer": ["C"],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0059",
+			"type": "single",
+			"prompt": "In gsql meta-commands, which of the following meta-commands can be used to connect to a new database?",
+			"options": [
+				"A. \\h",
+				"B. \\c",
+				"C. \\o",
+				"D. \\d"
+			],
+			"answer": ["B"],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0060",
+			"type": "single",
+			"prompt": "Which of the following formulas is used to calculate the final available memory for executing a job?",
+			"options": [
+				"A. max_process_memory+shared_memory+cstore_memory",
+				"B. max_process_memory+shared_memory-cstore_memory",
+				"C. max_process_memory-shared_memory+cstore_memory",
+				"D. max_process_memory-shared_memory-cstore_memory"
+			],
+			"answer": ["D"],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0061",
+			"type": "single",
+			"prompt": "If a program needs to invoke ODBC to complete the return of data in a column in the result set, which of the following ODBC interfaces needs to be invoked?",
+			"options": [
+				"A. SQLExecute",
+				"B. SQLGetData",
+				"C. SQLFetch",
+				"D. SQLResult"
+			],
+			"answer": ["B"],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0062",
+			"type": "single",
+			"prompt": "Which of the following statements about tablespaces is incorrect?",
+			"options": [
+				"A. If the partition or volume where the database is located is full and the space cannot be expanded logically, you can create and use tablespaces in different partitions until the system reconfigures the space.",
+				"B. The administrator can set the disk space occupied by the tablespace to prevent the tablespace from occupying other space in the same partition when the tablespace shares the partition with other data.",
+				"C. GaussDB has a built-in tablespace pg_default, which is used to store system dictionary tables.",
+				"D. Tablespaces can control the disk space occupied by database data. For example, when the usage of the disk where the tablespace is located reaches 90%, the database is set to read-only mode."
+			],
+			"answer": ["C"],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0063",
+			"type": "single",
+			"prompt": "Which of the following meta-commands is used to exit gsql?",
+			"options": [
+				"A. \\q",
+				"B. \\h",
+				"C. \\o",
+				"D. \\c"
+			],
+			"answer": ["A"],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0064",
+			"type": "single",
+			"prompt": "When connecting to a GaussDB instance, ensure that the ECS can communicate with the GaussDB instance. In which of the following cases do you not need to set security group rules for ECSs and GaussDB instances?",
+			"options": [
+				"A. The ECS and GaussDB instance are in the same AZ.",
+				"B. The ECS and GaussDB instance are in the same VPC.",
+				"C. The ECS and GaussDB instance are in the same subnet.",
+				"D. The ECS and GaussDB instance are in the same security group."
+			],
+			"answer": ["D"],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0065",
+			"type": "single",
+			"prompt": "Which of the following modules can be used to display the name, IP address, character set, and SQL window of the current database on the database management page of DAS?",
+			"options": [
+				"A. Schema list",
+				"B. Object list",
+				"C. Library information",
+				"D. Metadata collection"
+			],
+			"answer": ["C"],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0066",
+			"type": "single",
+			"prompt": "In which of the following commands, use the command in which of the following options to export the definition of Table 1 in a custom archive?",
+			"options": [
+				"A. gs_dump postgres -U u1 -W Huawei@123 -p 16000 -s -t t1 -f /data/t1.sql -F c",
+				"B. gs_dump postgres -U u1 -W Huawei@123 -p 16000 -s -t t1 -f /data/t1.sql -F p",
+				"C. gs_dump postgres -U u1 -W Huawei@123 -p 16000 -s -t t1 -f /data/t1.sql -f c",
+				"D. gs_dump postgres -U u1 -W Huawei@123 -p 16000 -s -t t1 -f /data/t1.sql -f t"
+			],
+			"answer": ["A"],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0067",
+			"type": "single",
+			"prompt": "Which of the following GaussDB versions supports JDBC?",
+			"options": [
+				"A, 1.0",
+				"B, 2.0",
+				"C, 3.0",
+				"D, 4.0"
+			],
+			"answer": ["D"],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0068",
+			"type": "single",
+			"prompt": "For the UTF-8 character set, how many Chinese characters can be stored in CHAR(3) when PG is compatible?",
+			"options": [
+				"A. 2",
+				"B. 3",
+				"C. 4",
+				"D. 5"
+			],
+			"answer": ["B"],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0069",
+			"type": "single",
+			"prompt": "Which of the following functions can be used to improve the readability of SQL statements on the SQL operation page of DAS?",
+			"options": [
+				"A. Execute SQL statements.",
+				"B. Implementation plan",
+				"C. Formatting",
+				"D. SQL prompt"
+			],
+			"answer": ["C"],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0070",
+			"type": "single",
+			"prompt": "The UGO is used to migrate objects. The migration process is as follows: 1. Migration 2. Object correction 3. Migration project creation 4. Verification & application 5. Migration plan. Which of the following is the correct migration process?",
+			"options": [
+				"A. 35214",
+				"B. 35124",
+				"C. 35241",
+				"D. 35142"
+			],
+			"answer": ["B"],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0071",
+			"type": "single",
+			"prompt": "When you run the Explain command to view an execution plan, which of the following formats cannot be set?",
+			"options": [
+				"A. TEXT",
+				"B. SQL",
+				"C. XML",
+				"D. JSON"
+			],
+			"answer": ["B"],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0072",
+			"type": "single",
+			"prompt": "What Are the Restoration Types of Log Archive Backup Data?",
+			"options": [
+				"A. Full restoration",
+				"B. Incremental restoration",
+				"C. Differential recovery",
+				"D. PITR recovery"
+			],
+			"answer": ["D"],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0073",
+			"type": "single",
+			"prompt": "After completing an evaluation task on the UGO, you can view the evaluation task information. Which of the following is not included in the evaluation task information?",
+			"options": [
+				"A. Analysis of the source database",
+				"B. Database schema",
+				"C. Migration duration evaluation",
+				"D. Target database assessment"
+			],
+			"answer": ["C"],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0074",
+			"type": "single",
+			"prompt": "When you use the UGO to view evaluation tasks, which of the following information cannot be obtained from the Source Database Analysis page?",
+			"options": [
+				"A. Basic information about the source database",
+				"B. Performance information",
+				"C. Compatibility between the source database and the target database",
+				"D. Characteristic analysis"
+			],
+			"answer": ["C"],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0075",
+			"type": "single",
+			"prompt": "Which of the following parameters is used to enable or disable the WDR snapshot function?",
+			"options": [
+				"A. wdr_snapshot_interval",
+				"B. enable_wdr_snapshot",
+				"C. wdr_snapshot_retention_days",
+				"D. create_wdr_snapshot"
+			],
+			"answer": ["B"],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0076",
+			"type": "single",
+			"prompt": "In the URL setting of JDBC, which of the following characters is used to separate parameters?",
+			"options": [
+				"A. #",
+				"B. ?",
+				"C. &",
+				"D. %"
+			],
+			"answer": ["C"],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0077",
+			"type": "single",
+			"prompt": "Which of the following tables can be used to obtain the begin_snap_id and end_snap_id specified when a WDR is generated?",
+			"options": [
+				"A. dbe_perf.session_stat",
+				"B. snapshot.snapshot",
+				"C. dbe_perf.database_stat",
+				"D. snapshot.snap_global_os_threads"
+			],
+			"answer": ["B"],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0078",
+			"type": "single",
+			"prompt": "Which of the following commands can be used to export the definition of a single table named t1?",
+			"options": [
+				"A. gs_dump postgres -U u1 -W Huawei@123 -p 16000 -s -t t1 -f /data/t1.sql -F c",
+				"B. gs_dump postgres -p 16000 -s -f -t t1 /data/all.sql",
+				"C. gs_dump postgres -p 16000 -f /data/all.sql",
+				"D. gs_dump postgres -p 16000 -s -f /data/all.sql -F c"
+			],
+			"answer": ["A"],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0079",
+			"type": "single",
+			"prompt": "If the dynamic memory usage of an instance keeps increasing, which of the following views can be used to locate the memory_context that is occupied?",
+			"options": [
+				"A. memory_node_detail",
+				"B. shared_memory_detail",
+				"C. session_memory_detail",
+				"D. global_threadpool_status"
+			],
+			"answer": ["C"],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0080",
+			"type": "single",
+			"prompt": "Which of the following mechanisms can greatly reduce the amount of data to be scanned?",
+			"options": [
+				"A. Clustering/Partial clustering",
+				"B. Partition pruning",
+				"C. Hash distribution",
+				"D. Avoiding data shuffle"
+			],
+			"answer": ["B"],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0081",
+			"type": "single",
+			"prompt": "Which of the following data distribution policies maps data to corresponding data nodes based on the specified column range?",
+			"options": [
+				"A. REPLICATION",
+				"B. HASH",
+				"C. RANGE",
+				"D. LIST"
+			],
+			"answer": ["C"],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0082",
+			"type": "single",
+			"prompt": "Which of the following is not a use case of EXECUTE IMMEDIATE?",
+			"options": [
+				"A. Dynamically calling a stored procedure",
+				"B. Dynamically calling an anonymous block",
+				"C. Dynamic query",
+				"D. Opening a dynamic cursor"
+			],
+			"answer": ["D"],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0083",
+			"type": "single",
+			"prompt": "For security reasons, the IP address of a database cannot be exposed to the public network. However, if you choose to migrate the database using a private line, the cost will be high. In this case, which of the following migration methods provided by DRS can be used to migrate data?",
+			"options": [
+				"A. Real-time migration",
+				"B. Backup migration",
+				"C. Real-time synchronization",
+				"D. Data subscription"
+			],
+			"answer": ["C"],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0084",
+			"type": "single",
+			"prompt": "When using UGO for syntax migration, database evaluation and migration are required. Which of the following statements about database evaluation and migration in UGO is incorrect?",
+			"options": [
+				"A. During data collection, if the connection to the source database is interrupted, the system's internal automatic retry mechanism will periodically test the connection to the source database and retry the connection.",
+				"B. The time for the next retry depends on the sum of the current time, the time required for checking the connection and testing the network stability, and the total retry sleep interval.",
+				"C. Once the database selection is confirmed, the operation can be changed from \"Confirm\" to \"Re-evaluate.\"",
+				"D. After the database selection is confirmed, the project status on the database evaluation page changes from \"Evaluation - Successful, waiting for target database confirmation\" to \"Migration project created.\""
+			],
+			"answer": ["C"],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0085",
+			"type": "single",
+			"prompt": "Which of the following drivers is used in GaussDB ODBC?",
+			"options": [
+				"A. psqlodbc",
+				"B. Oracle ODBC",
+				"C. DB2 ODBC",
+				"D. GaussDB ODBC"
+			],
+			"answer": ["A"],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0086",
+			"type": "single",
+			"prompt": "Which of the following is not a scan operator?",
+			"options": [
+				"A. SeqScan",
+				"B. CstoreScan",
+				"C. IndexScan",
+				"D. Append"
+			],
+			"answer": ["D"],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0087",
+			"type": "single",
+			"prompt": "On the SQL operation page of Huawei Cloud DAS, which of the following modes can be used to retain the previous result set and create a new tab to display the new result set each time an SQL statement is executed?",
+			"options": [
+				"A. Overwrite mode",
+				"B. Append mode",
+				"C. Accumulation mode",
+				"D. Update mode"
+			],
+			"answer": ["B"],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0088",
+			"type": "single",
+			"prompt": "Which of the following views can be used to obtain the list of instance worker threads or auxiliary threads, and determine the running status of the threads?",
+			"options": [
+				"A. SESSION_STAT",
+				"B. THREAD_WAIT_STATUS",
+				"C. POOLER_STATUS",
+				"D. REPLICATION_STAT"
+			],
+			"answer": ["B"],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0089",
+			"type": "single",
+			"prompt": "In the prepareStatement method of the JDBC Connection API, which of the following characters is used as the placeholder for the IN clause in an SQL statement?",
+			"options": [
+				"A. *",
+				"B. ?",
+				"C. .",
+				"D. ~"
+			],
+			"answer": ["B"],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0090",
+			"type": "single",
+			"prompt": "Which of the following principles should be followed in designing distributed database services?",
+			"options": [
+				"A. Use distributed transactions as much as possible. If they cannot be used, split tables to maximize the distributed features of the distributed database.",
+				"B. Design services properly to avoid distributed transactions as much as possible, thereby improving service concurrency and performance and reducing complexity.",
+				"C. Write the code as the leader says.",
+				"D. I am a developer. I can write the code as I want."
+			],
+			"answer": ["B"],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0091",
+			"type": "single",
+			"prompt": "When a customer uses DRS to migrate data from Oracle to GaussDB, they can select the corresponding objects for data synchronization based on the service scenario. Which of the following object types is not supported?",
+			"options": [
+				"A. Synchronizing some tables in a specified schema to the same database.",
+				"B. Synchronizing all tables in some specified schemas to the same database.",
+				"C. Synchronizing some tables in some specified schemas to different databases.",
+				"D. Synchronizing objects by filling in the required information based on a template."
+			],
+			"answer": ["C"],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0092",
+			"type": "single",
+			"prompt": "Which of the following views can help identify feature-level fine-grained latency performance issues?",
+			"options": [
+				"A. SESSION_STAT",
+				"B. GSTAT_DATABASE",
+				"C. SESSION_STAT_ACTIVITY",
+				"D. WAIT_EVENTS"
+			],
+			"answer": ["D"],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0093",
+			"type": "single",
+			"prompt": "In the design of a user database for an online social platform, data needs to be distributed to corresponding data nodes based on user age groups. Which of the following data distribution strategies is most suitable for this scenario?",
+			"options": [
+				"A. REPLICATION",
+				"B. HASH",
+				"C. RANGE",
+				"D. LIST"
+			],
+			"answer": ["C"],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0094",
+			"type": "single",
+			"prompt": "Which of the following permissions is required to grant an operation user to create objects in a schema?",
+			"options": [
+				"A. SELECT",
+				"B. CREATE",
+				"C. INSERT",
+				"D. USAGE"
+			],
+			"answer": ["D"],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0095",
+			"type": "single",
+			"prompt": "When data in a database is incorrectly deleted, modified, or overwritten, you need to select an appropriate time point as the recovery point and apply the corresponding transaction logs. Which of the following options can help quickly restore the data?",
+			"options": [
+				"A. Full restoration",
+				"B. Incremental restoration",
+				"C. Differential restoration",
+				"D. PITR"
+			],
+			"answer": ["D"],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0096",
+			"type": "single",
+			"prompt": "Which of the following performance views can be used to view the memory allocation and usage of the current node in an instance?",
+			"options": [
+				"A. SESSION_STAT",
+				"B. SHARED_NODE_DETAIL",
+				"C. MEMORY_NODE_DETAIL",
+				"D. OS_THREADS"
+			],
+			"answer": ["C"],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0097",
+			"type": "single",
+			"prompt": "Which of the following statements about full backup and incremental backup is false?",
+			"options": [
+				"A. A full backup backs up all target data, including all data in the database at the backup time point. It takes a long time (proportional to the total amount of database data) and can be used to restore the entire database.",
+				"B. A full backup always backs up all selected targets, even if the data has not changed since the last backup.",
+				"C. An incremental backup is a differential backup that contains only the incremental data modified after a specified time point. It takes a short time (proportional to the amount of incremental data, irrelevant to the total amount of data).",
+				"D. An incremental backup can be used to restore the entire database independently."
+			],
+			"answer": ["D"],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0098",
+			"type": "single",
+			"prompt": "In GaussDB primary/standby deployment mode, one primary node and two standby nodes are deployed. Which of the following features is this deployment mode an example of?",
+			"options": [
+				"A. Maximum protection",
+				"B. Maximum performance",
+				"C. Maximum availability",
+				"D. Minimum data loss"
+			],
+			"answer": ["A"],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0099",
+			"type": "single",
+			"prompt": "In the database design of an e-commerce platform, data needs to be distributed to corresponding data nodes based on the product price range. Which of the following data distribution policies is most suitable for this scenario?",
+			"options": [
+				"A. REPLICATION",
+				"B. HASH",
+				"C. RANGE",
+				"D. LIST"
+			],
+			"answer": ["C"],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0100",
+			"type": "single",
+			"prompt": "Which of the following statements about user management is true?",
+			"options": [
+				"A. If other database objects are created under the user to be deleted, you need to add the CASCADE clause to delete the objects that depend on the user. For example, to delete a user named \"user1\" who owns a table named \"table1\", you can use the statement \"DROP USER user1 CASCADE;\".",
+				"B. You can use the CASCADE clause to delete the data created by the user to be deleted. For example, to delete a user named \"user1\" who owns a table named \"DB1\", you can use the statement \"DROP USER user1 CASCADE;\".",
+				"C. If the cascaded objects are locked, you can use the CASCADE clause to forcibly delete them.",
+				"D. When creating a user, you can set the validity period and the maximum number of connections allowed for the user. For example, to create a user named \"user1\" and set the validity period, you can use the statement \"CREATE USER user1 VALID LIMIT '2050-12-31';\"."
+			],
+			"answer": ["A"],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0101",
+			"type": "single",
+			"prompt": "Which of the following statements about the behavior of the EXPLAIN option is incorrect?",
+			"options": [
+				"A. EXPLAIN(costs off) -- Does not display cost information.",
+				"B. EXPLAIN(analyze on, costs off) -- Executes the statement but does not display cost information.",
+				"C. EXPLAIN(costs off, timing on) -- Reports an error because the analyze option needs to be enabled.",
+				"D. EXPLAIN(nodes on, costs off) -- Displays the number of nodes but does not display cost information."
+			],
+			"answer": ["D"],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0102",
+			"type": "single",
+			"prompt": "Which of the following SQL statements is compliant with the specifications?",
+			"options": [
+				"A. SELECT * FROM t1 WHERE col1 = col1;",
+				"B. SELECT * FROM t1 WHERE col1 IS NOT NULL;",
+				"C. SELECT * FROM t1 WHERE col1 = NULL;",
+				"D. SELECT * FROM t1 WHERE col1!= NULL;"
+			],
+			"answer": ["B"],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0103",
+			"type": "single",
+			"prompt": "How long is WDR snapshot data retained?",
+			"options": [
+				"A. One day",
+				"B. 3 days",
+				"C. 7 days",
+				"D. 8 days"
+			],
+			"answer": ["D"],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0104",
+			"type": "single",
+			"prompt": "Which of the following statements about roles is incorrect?",
+			"options": [
+				"A. A role is a logical concept used to assign permissions and manage access to database objects.",
+				"B. A role is an individual who uses the database system service. A role can contain one or more users who can log in to the database.",
+				"C. When a role needs to change the rights of a user, the role only needs to change the rights of the related role, instead of changing the rights of each user one by one.",
+				"D. GaussDB provides some predefined roles with specific permissions and functions. For example, there is a super user role."
+			],
+			"answer": ["B"],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0105",
+			"type": "single",
+			"prompt": "When you use DRS to synchronize database objects, you can select table-level synchronization or database-level synchronization. Which of the following statements about object synchronization is incorrect?",
+			"options": [
+				"A. During database-level synchronization, some tables in a specified mode are synchronized.",
+				"B. During table-level synchronization, some tables in a specified schema are synchronized.",
+				"C. During table-level synchronization, unspecified tables are not synchronized.",
+				"D. During database-level synchronization, all tables in a specified schema are synchronized."
+			],
+			"answer": ["A"],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0106",
+			"type": "single",
+			"prompt": "Which of the following statements about gray upgrade is true?",
+			"options": [
+				"A. gray upgrade services are not sensed, and nodes are not intermittently disconnected.",
+				"B. After the upgrade, services will be interrupted for three to four times for a shard.",
+				"C. Major version upgrade and minor version upgrade of the database are supported.",
+				"D. Online upgrade is supported. The upgrade node is intermittently disconnected once (within 5s)."
+			],
+			"answer": ["C"],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0107",
+			"type": "boolean",
+			"prompt": "The hint syntax is added to the SQL to instruct the SQL optimizer to select a specific execution plan. Therefore, the hint syntax is preferentially used.",
+			"options": [ "A. True", "B. False" ],
+			"answer": ["B"],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0108",
+			"type": "boolean",
+			"prompt": "When a database administrator uses the UGO to migrate a database from the source database to the Oracle database, when creating a database evaluation task, the pre-check result of the DBA permission check is Warning. In this case, the evaluation project can be successfully created and the corresponding permission is automatically granted.",
+			"options": [ "A. True", "B. False" ],
+			"answer": ["B"],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0109",
+			"type": "boolean",
+			"prompt": "Engineer Jack needs to import a large data table, split it into multiple logically independent areas or partitions, and use multiple import tasks to concurrently import the data table. Each task is responsible for importing data of a region or partition. In this way, multiple import operations can be performed at the same time, improving the overall import speed. In addition, a single import task can be split into multiple import tasks for concurrent import. When multiple import tasks use the same GDS, you can use the + parameter to enable the GDS multi-thread concurrent import. It is recommended that GDS be mounted to different physical disks and NICs to avoid physical I/Os and network bottlenecks.",
+			"options": [ "A. True", "B. False" ],
+			"answer": ["A"],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0110",
+			"type": "boolean",
+			"prompt": "When ODBC applies for handles, different handles need to be requested for calling different interfaces.",
+			"options": [ "A. True", "B. False" ],
+			"answer": ["A"],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0111",
+			"type": "boolean",
+			"prompt": "When creating a database in GaussDB, the PG compatibility mode is used by default.",
+			"options": [ "A. True", "B. False" ],
+			"answer": ["B"],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0112",
+			"type": "boolean",
+			"prompt": "The backup and recovery of a distributed database are no different from those of a single-node database. Each data instance only needs to back up or recover its own data, and there is no relationship between the data instances.",
+			"options": [ "A. True", "B. False" ],
+			"answer": ["B"],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0113",
+			"type": "boolean",
+			"prompt": "GaussDB supports distributed strong consistency and can achieve RTO=0 and RPO<30 seconds.",
+			"options": [ "A. True", "B. False" ],
+			"answer": ["B"],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0114",
+			"type": "boolean",
+			"prompt": "GaussDB's GDS tool is used to address the issue of slow data import and export in distributed scenarios with large data volumes. In traditional distributed database import and export processes, problems such as slow block access and uneven data distribution often occur, leading to performance bottlenecks. The GDS tool solves the performance bottleneck of the coordinator node (CN) in traditional distributed import and export by performing data import and export operations in parallel on the data nodes (DNs), significantly improving the efficiency of import and export.",
+			"options": [ "A. True", "B. False" ],
+			"answer": ["A"],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0115",
+			"type": "boolean",
+			"prompt": "In Psycopg, a cursor is bound to the connection of the corresponding database instance throughout its entire lifecycle, and all commands are executed within the context of the database session.",
+			"options": [ "A. True", "B. False" ],
+			"answer": ["A"],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0116",
+			"type": "boolean",
+			"prompt": "In the ACID properties of transactions, atomicity refers to the requirement that a transaction must always keep the system in a consistent state.",
+			"options": [ "A. True", "B. False" ],
+			"answer": ["B"],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0117",
+			"type": "boolean",
+			"prompt": "ODBC serves as the central layer between applications and databases, responsible for transmitting SQL commands issued by applications to the database, and it does not parse SQL syntax itself.",
+			"options": [ "A. True", "B. False" ],
+			"answer": ["A"],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0118",
+			"type": "boolean",
+			"prompt": "An IT company needs to use the GaussDB database when developing software, so it is necessary to establish a connection between the software and the data. DBeaver is a universal database management tool and SQL client that supports MySQL, PostgreSQL, Oracle, DB2, MSSQL, and other databases compatible with JDBC. It provides a graphical interface for viewing database structures, executing SQL queries and scripts, browsing and exporting data, and modifying database structures, among other functions.",
+			"options": [ "A. True", "B. False" ],
+			"answer": ["A"],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0119",
+			"type": "boolean",
+			"prompt": "The source database profile is trained using massive business scenarios as samples and key database metrics as features, abstracting a comprehensive view of the database's information. This provides a solid data foundation for further accurate and rapid analysis of the source database's application scenarios, user operation habits, and other important information.",
+			"options": [ "A. True", "B. False" ],
+			"answer": ["A"],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0120",
+			"type": "boolean",
+			"prompt": "When the Explain command generates an execution plan, if CPU usage information needs to be displayed, it can be executed in combination with the analyze command.",
+			"options": [ "A. True", "B. False" ],
+			"answer": ["A"],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0121",
+			"type": "boolean",
+			"prompt": "Indexes are similar to the table of contents in a book. By using the keyword information in the index, you can find the corresponding information page in the book. The more indexes there are, the more the overall database performance improves.",
+			"options": [ "A. True", "B. False" ],
+			"answer": ["B"],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0122",
+			"type": "boolean",
+			"prompt": "After logging into the database, you must explicitly close the ResultSet and Statement objects. If these objects are not explicitly closed, it may lead to severe memory leaks. Additionally, closing the result set and statement will release the corresponding cursor in the database. If only the result set is closed, the cursor will not be released.",
+			"options": [ "A. True", "B. False" ],
+			"answer": ["A"],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0123",
+			"type": "boolean",
+			"prompt": "When a Java program uses batch SQL inserts, it is recommended to execute them using the Statement method.",
+			"options": [ "A. True", "B. False" ],
+			"answer": ["B"],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0124",
+			"type": "boolean",
+			"prompt": "The owner of a schema has all permissions on the objects within that schema by default, including the delete permission.",
+			"options": [ "A. True", "B. False" ],
+			"answer": ["A"],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0125",
+			"type": "boolean",
+			"prompt": "In the command \"gs_dump pg1 -p 16000 -s -f /data/all.sql -F c\", pg1 represents the name of the database to be backed up, -p 16000 specifies that the database port number is 16000, -s indicates exporting the database structure, -f /data/all.sql specifies the path and filename of the exported file, and -F c indicates exporting only the definitions of database objects such as tables, indexes, and views. Through this command, all object definitions in the database pg1 can be exported, and the exported file will be saved as all.sql in the /data directory.",
+			"options": [ "A. True", "B. False" ],
+			"answer": ["B"],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0126",
+			"type": "boolean",
+			"prompt": "Although the data dictionary stores the space occupied by tables and indexes, this information is insufficient for the optimizer. For example, a table may occupy a large amount of space, but it may contain no data at all.",
+			"options": [ "A. True", "B. False" ],
+			"answer": ["A"],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0127",
+			"type": "multi",
+			"prompt": "Which of the following options are valid values for the argtype parameter of a stored procedure?",
+			"options": [
+				"A. %ROW",
+				"B. %ROWTYPE",
+				"C. %TYPE",
+				"D. %%COLUNMTYPE"
+			],
+			"answer": ["B", "C"],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0128",
+			"type": "multi",
+			"prompt": "Which of the following statements about the SELECT statement are correct?",
+			"options": [
+				"A. The SELECT statement often uses wildcard fields \"*\"",
+				"B. Avoid performing ORDER BY, GROUP BY, or other operations that cause sorting on large fields",
+				"C. Avoid using subqueries in the SELECT target columns",
+				"D. Use count(distinct col) to calculate the number of non-nulls that are unique in a column."
+			],
+			"answer": ["A", "B", "C"],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0129",
+			"type": "multi",
+			"prompt": "When an energy customer uses DRS to migrate databases to GaussDB, which of the following permissions must the migration user have on databases in GaussDB?",
+			"options": [
+				"A. create",
+				"B. temp",
+				"C. select",
+				"D. connect",
+				"E. Usage"
+			],
+			"answer": ["A", "C", "D", "E"],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0130",
+			"type": "multi",
+			"prompt": "In a highly concurrent online payment system, the choice of isolation level is critical to ensure data consistency and repeatable reads. Which of the following statements about isolation levels are true?",
+			"options": [
+				"A. At the read uncommitted isolation level, the read data may be the result of other transactions that have not been committed.",
+				"B. The read committed isolation level ensures that transactions can read not only committed data, but also uncommitted data.",
+				"C. The repeatable read isolation level ensures that a transaction can read only the data committed before the transaction starts and does not read the modification committed by other concurrent transactions during the transaction execution.",
+				"D. In a high-concurrency environment, the serial isolation level is recommended to ensure data consistency and repeatable reads."
+			],
+			"answer": ["A", "C"],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0131",
+			"type": "multi",
+			"prompt": "Which of the following processes are involved in database object migration using the UGO?",
+			"options": [
+				"A. Migration",
+				"B. Migration plan",
+				"C. Object correction",
+				"D. Verification and application"
+			],
+			"answer": ["A", "B", "C", "D"],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0132",
+			"type": "multi",
+			"prompt": "You need to set the start time of the synchronization task properly to minimize the impact on the performance of the source and destination databases. Which of the following statements are correct about the DRS synchronization task?",
+			"options": [
+				"A. If the full synchronization fails due to network problems, the system automatically resumes the data for three times by default. If the full synchronization cannot be restored after three times of resuming the data, manually resumes the data.",
+				"B. If full synchronization fails due to non-network reasons, the system automatically resumes the synchronization until full synchronization is restored.",
+				"C. The task start time can be set to start immediately or later.",
+				"D. The task information page displays information about the source and target databases and synchronization types."
+			],
+			"answer": ["A", "C", "D"],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0133",
+			"type": "multi",
+			"prompt": "A large commercial bank chooses to migrate the original database to GaussDB. The number of original database nodes ranges from 2000 to 3000. The original database nodes are deployed on x86 servers to support core services on the open platform. A large amount of development is performed based on stored procedures to implement smooth service migration. The table structure needs to be rectified. Which of the following statements about the rectification solution are correct?",
+			"options": [
+				"A. For some common parameters and configuration tables, replication tables are used. The original MySQL cluster parameters can be different. The application needs to confirm that the same replication parameters are used.",
+				"B. For distribution tables (common tables and partitioned tables), distribution keys cannot be directly reused even if they have distribution keys. Distribution keys must be added for both distribution keys and non-distribution keys.",
+				"C. It is recommended that the primary key of GaussDB contain the distribution key. If the primary key of a service table is different from the distribution key, a global secondary index is created by default.",
+				"D. If a service table contains MySQL auto-increment columns, ensure that the table has a uniqueness constraint (bank database specifications). After the table is migrated to GaussDB, you can determine whether to delete the service table based on whether the auto-increment columns have service attributes."
+			],
+			"answer": ["A", "C", "D"],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0134",
+			"type": "multi",
+			"prompt": "Which of the following distribution modes are supported by GaussDB?",
+			"options": [
+				"A. Replication",
+				"B. Hash",
+				"C. List",
+				"D. Range"
+			],
+			"answer": ["A", "B", "C", "D"],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0135",
+			"type": "multi",
+			"prompt": "When you use the UGO to create a database object migration task, you need to enter the connection information of the destination database. Which of the following database connection information needs to be set?",
+			"options": [
+				"A. Database IP address",
+				"B. Database name",
+				"C. Database-driven",
+				"D. Database port",
+				"E. Database type"
+			],
+			"answer": ["A", "B", "D", "E"],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0136",
+			"type": "multi",
+			"prompt": "Which of the following options correctly describe the features of the real-time migration function in the DRS service?",
+			"options": [
+				"A. Only table data migration is supported.",
+				"B. It allows services to continue providing external access during the migration process to the greatest extent possible.",
+				"C. It effectively minimizes service system downtime and service impact.",
+				"D. It enables smooth migration of databases to the cloud."
+			],
+			"answer": ["B", "C", "D"],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0137",
+			"type": "multi",
+			"prompt": "Which of the following are advantages of partitioned tables?",
+			"options": [
+				"A. Different storage engines can be used.",
+				"B. Enhanced availability",
+				"C. Easier maintenance",
+				"D. Balanced I/O"
+			],
+			"answer": ["B", "C", "D"],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0138",
+			"type": "multi",
+			"prompt": "Which of the following statements about the selection of distribution columns for Hash-distributed tables are correct?",
+			"options": [
+				"A. The distribution column can only be set to a single field.",
+				"B. The column values should be relatively discrete to ensure that data is evenly distributed across all DNs.",
+				"C. Consider selecting the join condition in the query as the distribution column so that the Join task can be pushed down to the DNs for execution.",
+				"D. After implementing the Hash distribution strategy, data skewness must be checked to ensure that data is evenly distributed across all DNs."
+			],
+			"answer": ["B", "C", "D"],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0139",
+			"type": "multi",
+			"prompt": "In a Python program, which of the following methods can be used to execute a given SQL statement and extract the query result set?",
+			"options": [
+				"A. execute",
+				"B. executionany",
+				"C. fetchone",
+				"D. fetchall"
+			],
+			"answer": ["C", "D"],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0140",
+			"type": "multi",
+			"prompt": "Which of the following constraint types cannot be explicitly named?",
+			"options": [
+				"A. DEFAULT constraint",
+				"B. Unique constraint",
+				"C. Local cluster",
+				"D. Check constraint"
+			],
+			"answer": ["A"],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0141",
+			"type": "single",
+			"prompt": "Which of the following system views can be used to obtain a real-time list of active system sessions and analyze the activities of current active users?",
+			"options": [
+				"A. SESSION_STAT",
+				"B. SESSION_TIME",
+				"C. SESSION_STAT_ACTIVITY",
+				"D. SESSION_MEMORY_DETAIL"
+			],
+			"answer": ["C"],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0142",
+			"type": "single",
+			"prompt": "When using UGO for object migration, a transportation customer needs to create a mapping between the source and target tablespaces. In which scenario is tablespace mapping supported?",
+			"options": [
+				"A. Oracle to GaussDB",
+				"B. MySQL to GaussDB",
+				"C. Oracle to GaussDB (for MySQL)",
+				"D. Oracle to RDS for MySQL"
+			],
+			"answer": ["A"],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0143",
+			"type": "single",
+			"prompt": "In JDBC, which package provides better abstraction for connection management, distributed transactions, and existing connections?",
+			"options": [
+				"A. gauss.sql",
+				"B. java.sql",
+				"C. javac.sql",
+				"D. javax.sql"
+			],
+			"answer": ["D"],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0144",
+			"type": "single",
+			"prompt": "Which mode is used by default when creating a database in the distributed version of GaussDB?",
+			"options": [
+				"A. ORA",
+				"B. PG",
+				"C. TD",
+				"D. MySQL"
+			],
+			"answer": ["D"],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0145",
+			"type": "single",
+			"prompt": "What is the default execution interval for a WDR snapshot?",
+			"options": [
+				"A. 30 minutes",
+				"B. 1 hour",
+				"C. 2 hours",
+				"D. 3 hours"
+			],
+			"answer": ["B"],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0146",
+			"type": "single",
+			"prompt": "In a banking transfer scenario requiring data consistency and concurrency, which isolation level is most appropriate?",
+			"options": [
+				"A. READ UNCOMMITTED",
+				"B. READ COMMITTED",
+				"C. REPEATABLE READ",
+				"D. SERIALIZABLE"
+			],
+			"answer": ["C"],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0147",
+			"type": "single",
+			"prompt": "Which of the following statements about anonymous blocks is correct?",
+			"options": [
+				"A. Anonymous blocks are used for frequently executed scripts",
+				"B. Anonymous blocks are executed within a session but are not stored",
+				"C. The execution part of an anonymous block starts with DECLARE and ends with END",
+				"D. Anonymous blocks must contain at least two statements"
+			],
+			"answer": ["B"],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0148",
+			"type": "single",
+			"prompt": "When creating a database assessment task using UGO, which of the following is NOT mandatory?",
+			"options": [
+				"A. Specify the source database type (e.g., ORACLE-11G)",
+				"B. Specify the connection method (e.g., connection string or service name)",
+				"C. Specify the host type (e.g., hostname or IP)",
+				"D. Specify the data collection time (start and end time)",
+				"E. Specify the SSL type (e.g., disable SSL)"
+			],
+			"answer": ["D"],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0149",
+			"type": "single",
+			"prompt": "Which of the following statements about exporting SQL result sets in Huawei Cloud DAS is correct?",
+			"options": [
+				"A. The maximum SQL size is 5 MB",
+				"B. The maximum SQL size is 10 MB",
+				"C. The maximum SQL size is 15 MB",
+				"D. The maximum SQL size is 20 MB"
+			],
+			"answer": ["A"],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0150",
+			"type": "single",
+			"prompt": "Which join operator performs a merge join on two sorted data streams?",
+			"options": [
+				"A. Hashjoin",
+				"B. Full Join",
+				"C. Nestloop",
+				"D. Mergejoin"
+			],
+			"answer": ["D"],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0151",
+			"type": "single",
+			"prompt": "When using GaussDB JDBC with URL parameter autoBalance=priority2, which statement is correct?",
+			"options": [
+				"A. Connections are randomly distributed to any two nodes",
+				"B. Connections are evenly distributed into two groups (host1/host2 and host3/host4)",
+				"C. Connections are assigned to host2 only, with failover to others",
+				"D. Connections are balanced across the first two nodes, and fallback to the remaining nodes if they fail"
+			],
+			"answer": ["D"],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0152",
+			"type": "single",
+			"prompt": "Which of the following is NOT a GaussDB system privilege?",
+			"options": [
+				"A. sysadmin",
+				"B. remotedevice",
+				"C. createdb",
+				"D. auditadmin"
+			],
+			"answer": ["B"],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0153",
+			"type": "single",
+			"prompt": "Which statement about backup is incorrect?",
+			"options": [
+				"A. Supports cluster-level physical backup with OBS and full/incremental backups",
+				"B. Supports compression, flow control, and resumable backup",
+				"C. Full backup is fast and cannot independently restore a full database",
+				"D. Incremental backup depends on full backup for restoration"
+			],
+			"answer": ["C"],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0154",
+			"type": "single",
+			"prompt": "Which of the following is NOT part of pre-migration investigation?",
+			"options": [
+				"A. Migration method (full or incremental)",
+				"B. Migration tool selection",
+				"C. Data volume",
+				"D. Workload (TPS/QPS)",
+				"E. System specifications (CPU/memory)"
+			],
+			"answer": ["B"],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0155",
+			"type": "single",
+			"prompt": "Which table attribute cannot be modified using ALTER?",
+			"options": [
+				"A. Column attributes",
+				"B. Rename",
+				"C. Storage model (row/column)",
+				"D. Constraints"
+			],
+			"answer": ["C"],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0156",
+			"type": "single",
+			"prompt": "In which scenario are anonymous blocks applicable?",
+			"options": [
+				"A. Frequent execution",
+				"B. Repeated execution",
+				"C. Concurrent execution",
+				"D. One-time execution"
+			],
+			"answer": ["D"],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0157",
+			"type": "single",
+			"prompt": "Which Full SQL trace metric requires L2 level enabled?",
+			"options": [
+				"A. Db_time",
+				"B. Query_plan",
+				"C. Lock_start",
+				"D. Lock_wait_count"
+			],
+			"answer": ["C"],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0158",
+			"type": "single",
+			"prompt": "Which of the following is NOT an object management privilege in GaussDB?",
+			"options": [
+				"A. DROP (delete object)",
+				"B. UPDATE",
+				"C. DELETE",
+				"D. INSERT"
+			],
+			"answer": ["A"],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0159",
+			"type": "single",
+			"prompt": "For large tables during database transformation, which distribution strategy is recommended?",
+			"options": [
+				"A. Hash distribution",
+				"B. Replication distribution",
+				"C. Range distribution",
+				"D. List distribution"
+			],
+			"answer": ["A"],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0160",
+			"type": "single",
+			"prompt": "What is the default value of the refresh CN IP list time parameter?",
+			"options": [
+				"A. 1 second",
+				"B. 5 seconds",
+				"C. 10 seconds",
+				"D. 15 seconds"
+			],
+			"answer": ["C"],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0161",
+			"type": "single",
+			"prompt": "Which statement about sequences is incorrect?",
+			"options": [
+				"A. Sequence ensures uniqueness",
+				"B. Sequence names must be unique within a schema",
+				"C. \\d+ can be used to query sequence details",
+				"D. Sequence does not necessarily generate integers"
+			],
+			"answer": ["D"],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0162",
+			"type": "single",
+			"prompt": "Which statement about data distribution is incorrect?",
+			"options": [
+				"A. Replication has redundant copies",
+				"B. Hash distribution avoids overlap across DNs",
+				"C. List distribution maps data based on specified columns",
+				"D. Range distribution may have duplicate data at boundaries"
+			],
+			"answer": ["D"],
+			"explanation": "",
+			"tags": []
+		}
+	]
+}
