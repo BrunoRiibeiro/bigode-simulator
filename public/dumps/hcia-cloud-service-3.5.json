@@ -4688,7 +4688,7 @@
 			"type": "text",
 			"prompt": "Huawei public cloud can provide tenants with flexible and elastic cloud physical servers. This service is called ().",
 			"options": [],
-			"answer": [ "Error MS" ],
+			"answer": [ "BMS" ],
 			"explanation": "",
 			"tags": []
 		},
