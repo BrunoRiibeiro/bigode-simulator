@@ -444,9 +444,9 @@
 			],
 			"answer": [
 				"C"
-	  ],
-	  "explanation": "",
-	  "tags": []
+			],
+			"explanation": "",
+			"tags": []
 		},
 		{
 			"id": "q0029",
@@ -1080,12 +1080,12 @@
 				"A. Geographic location and network latency",
 				"B. Cluster Server",
 				"C. Available to go (AZ)"
-	  ],
-	  "answer": [
-		  "A"
-	  ],
-	  "explanation": "",
-	  "tags": []
+			],
+			"answer": [
+				"A"
+			],
+			"explanation": "",
+			"tags": []
 		},
 		{
 			"id": "q0069",
@@ -1255,12 +1255,12 @@
 				"A. DES",
 				"B. SFS",
 				"C. OBS"
-	  ],
-	  "answer": [
-		  "B"
-	  ],
-	  "explanation": "",
-	  "tags": []
+			],
+			"answer": [
+				"B"
+			],
+			"explanation": "",
+			"tags": []
 		},
 		{
 			"id": "q0080",
@@ -1306,9 +1306,9 @@
 			],
 			"answer": [
 				"D"
-	  ],
-	  "explanation": "",
-	  "tags": []
+			],
+			"explanation": "",
+			"tags": []
 		},
 		{
 			"id": "q0083",
@@ -1839,15 +1839,15 @@
 				"B. The corresponding port is not allowed in the security group",
 				"C. Firewall configuration abnormality",
 				"D. No elastic IP is bound"
-	  ],
-	  "answer": [
-		  "A",
-		  "B",
-		  "C",
-		  "D"
-	  ],
-	  "explanation": "",
-	  "tags": []
+			],
+			"answer": [
+				"A",
+				"B",
+				"C",
+				"D"
+			],
+			"explanation": "",
+			"tags": []
 		},
 		{
 			"id": "q0116",
@@ -2696,14 +2696,14 @@
 				"A. mongos (routing)",
 				"B. Shard",
 				"C. Configuration"
-	  ],
-	  "answer": [
-		  "A",
-		  "B",
-		  "C"
-	  ],
-	  "explanation": "",
-	  "tags": []
+			],
+			"answer": [
+				"A",
+				"B",
+				"C"
+			],
+			"explanation": "",
+			"tags": []
 		},
 		{
 			"id": "q0163",
@@ -4637,9 +4637,9 @@
 			"options": [],
 			"answer": [
 				"CTS"
-	  ],
-	  "explanation": "",
-	  "tags": []
+			],
+			"explanation": "",
+			"tags": []
 		},
 		{
 			"id": "q0291",
@@ -4648,9 +4648,9 @@
 			"options": [],
 			"answer": [
 				"scend 910"
-	  ],
-	  "explanation": "",
-	  "tags": []
+			],
+			"explanation": "",
+			"tags": []
 		},
 		{
 			"id": "q0292",
@@ -4659,9 +4659,9 @@
 			"options": [],
 			"answer": [
 				"CTS"
-	  ],
-	  "explanation": "",
-	  "tags": []
+			],
+			"explanation": "",
+			"tags": []
 		},
 		{
 			"id": "q0293",
@@ -4670,31 +4670,27 @@
 			"options": [],
 			"answer": [
 				"3389"
-	  ],
-	  "explanation": "",
-	  "tags": []
+			],
+			"explanation": "",
+			"tags": []
 		},
 		{
 			"id": "q0294",
 			"type": "text",
 			"prompt": "In Huawei Cloud, () images are visible to all users, including pre-installed operating systems and public applications.",
 			"options": [],
-			"answer": [
-				"Public mirror"
-	  ],
-	  "explanation": "",
-	  "tags": []
+			"answer": ["Public", "Public mirror"],
+			"explanation": "",
+			"tags": []
 		},
 		{
 			"id": "q0295",
 			"type": "text",
 			"prompt": "Huawei public cloud can provide tenants with flexible and elastic cloud physical servers. This service is called ().",
 			"options": [],
-			"answer": [
-				"Error MS"
-	  ],
-	  "explanation": "",
-	  "tags": []
+			"answer": [ "Error MS" ],
+			"explanation": "",
+			"tags": []
 		},
 		{
 			"id": "q0296",
@@ -4703,9 +4699,9 @@
 			"options": [],
 			"answer": [
 				"Availability Zone"
-	  ],
-	  "explanation": "",
-	  "tags": []
+			],
+			"explanation": "",
+			"tags": []
 		},
 		{
 			"id": "q0297",
@@ -4714,9 +4710,9 @@
 			"options": [],
 			"answer": [
 				"Standalone mode"
-	  ],
-	  "explanation": "",
-	  "tags": []
+			],
+			"explanation": "",
+			"tags": []
 		},
 		{
 			"id": "q0298",
@@ -4725,9 +4721,9 @@
 			"options": [],
 			"answer": [
 				"Strategy"
-	  ],
-	  "explanation": "",
-	  "tags": []
+			],
+			"explanation": "",
+			"tags": []
 		},
 		{
 			"id": "q0299",
@@ -4736,9 +4732,9 @@
 			"options": [],
 			"answer": [
 				"Metadata"
-	  ],
-	  "explanation": "",
-	  "tags": []
+			],
+			"explanation": "",
+			"tags": []
 		},
 		{
 			"id": "q0300",
@@ -4747,9 +4743,9 @@
 			"options": [],
 			"answer": [
 				"ELB"
-	  ],
-	  "explanation": "",
-	  "tags": []
+			],
+			"explanation": "",
+			"tags": []
 		},
 		{
 			"id": "q0301",
@@ -4758,9 +4754,9 @@
 			"options": [],
 			"answer": [
 				"SNAT"
-	  ],
-	  "explanation": "",
-	  "tags": []
+			],
+			"explanation": "",
+			"tags": []
 		},
 		{
 			"id": "q0302",
@@ -4780,9 +4776,9 @@
 			"options": [],
 			"answer": [
 				"Exclusive"
-	  ],
-	  "explanation": "",
-	  "tags": []
+			],
+			"explanation": "",
+			"tags": []
 		},
 		{
 			"id": "q0304",
@@ -4791,9 +4787,9 @@
 			"options": [],
 			"answer": [
 				"Telescopic group"
-	  ],
-	  "explanation": "",
-	  "tags": []
+			],
+			"explanation": "",
+			"tags": []
 		},
 		{
 			"id": "q0305",
@@ -4802,9 +4798,9 @@
 			"options": [],
 			"answer": [
 				"SAAS"
-	  ],
-	  "explanation": "",
-	  "tags": []
+			],
+			"explanation": "",
+			"tags": []
 		},
 		{
 			"id": "q0306",
@@ -4813,9 +4809,9 @@
 			"options": [],
 			"answer": [
 				"Private"
-	  ],
-	  "explanation": "",
-	  "tags": []
+			],
+			"explanation": "",
+			"tags": []
 		}
 	]
 }
