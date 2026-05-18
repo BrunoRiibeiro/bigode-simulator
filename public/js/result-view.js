@@ -17,6 +17,16 @@ window.ResultView = (function () {
 			.join("");
 	}
 
+	function formatAnswerList(values, separator) {
+		const list = Array.isArray(values) ? values : [];
+		if (!list.length) { return "—"; }
+		return list
+			.map(function (value) {
+				return AppUtils.escapeHtml(String(value));
+			})
+			.join(separator || ", ");
+	}
+
 	function buildResultItem(item) {
 		const statusText = item.isCorrect
 			? "Acertou"
@@ -30,6 +40,8 @@ window.ResultView = (function () {
 			? "result-item--wrong"
 			: "result-item--blank";
 
+		const answerSeparator = item.type === "text" ? " / " : ", ";
+
 		return (
 			'<article class="result-item ' + statusClass + '">' +
 			'<header class="result-item__header">' +
@@ -37,8 +49,8 @@ window.ResultView = (function () {
 			'<span class="result-item__status">' + statusText + "</span>" +
 			"</header>" +
 			'<div class="result-item__prompt">' + AppUtils.nl2br(item.prompt) + "</div>" +
-			"<p><strong>Marcada:</strong> " + (item.selected.length ? item.selected.join(", ") : "—") + "</p>" +
-			"<p><strong>Correta:</strong> " + item.correct.join(", ") + "</p>" +
+			"<p><strong>Marcada:</strong> " + formatAnswerList(item.selected, answerSeparator) + "</p>" +
+			"<p><strong>Correta:</strong> " + formatAnswerList(item.correct, answerSeparator) + "</p>" +
 			(item.options.length
 				? '<ul class="result-item__options">' + buildOptionList(item) + "</ul>"
 				: "") +

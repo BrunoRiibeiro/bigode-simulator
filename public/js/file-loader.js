@@ -47,6 +47,20 @@ window.FileLoader = (function () {
 		};
 	}
 
+	function normalizeTextAnswers(rawAnswer) {
+		if (Array.isArray(rawAnswer)) {
+			return rawAnswer
+				.map(function (answer) {
+					return String(answer || "").trim();
+				})
+				.filter(function (answer) {
+					return answer !== "";
+				});
+		}
+		const singleAnswer = String(rawAnswer || "").trim();
+		return singleAnswer ? [singleAnswer] : [];
+	}
+
 	function normalizeQuestion(rawQuestion, index) {
 		if (!rawQuestion || typeof rawQuestion !== "object") {
 			return null;
@@ -63,9 +77,11 @@ window.FileLoader = (function () {
 			})
 			: [];
 
-		const answers = AppUtils.normalizeAnswerList(rawQuestion.answer);
 		const rawType = String(rawQuestion.type || "").trim().toLowerCase();
 		const isTextQuestion = rawType === "text";
+		const answers = isTextQuestion
+			? normalizeTextAnswers(rawQuestion.answer)
+			: AppUtils.normalizeAnswerList(rawQuestion.answer);
 
 		if (!prompt || answers.length < 1) {
 			return null;
