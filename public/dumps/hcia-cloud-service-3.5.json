@@ -4185,13 +4185,13 @@
 		{
 			"id": "q0258",
 			"type": "boolean",
-			"prompt": "Logs can complete the operation and maintenance of networks, servers and other equipment and services throughout the entire life cycle.",
+			"prompt": "Logs can be used to support the operation and maintenance of networks, servers and other equipment and services throughout the entire life cycle.",
 			"options": [
 				"A. True",
 				"B. False"
 			],
 			"answer": [
-				"B"
+				"A"
 			],
 			"explanation": "",
 			"tags": []
