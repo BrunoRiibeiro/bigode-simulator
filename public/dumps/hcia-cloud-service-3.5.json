@@ -2075,12 +2075,7 @@
 				"C. Set the backup cycle",
 				"D. Set the number of days to retain backups"
 			],
-			"answer": [
-				"A",
-				"B",
-				"C",
-				"D"
-			],
+			"answer": [ "B", "C", "D" ],
 			"explanation": "",
 			"tags": []
 		},
