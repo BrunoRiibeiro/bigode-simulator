@@ -3,11 +3,11 @@ window.ResultView = (function () {
 		refs.summary.innerHTML =
 			'<div class="result-grid">' +
 			'<div class="result-box"><strong>Total</strong><span>' + result.totalQuestions + "</span></div>" +
-			'<div class="result-box"><strong>Respondidas</strong><span>' + result.answeredQuestions + "</span></div>" +
-			'<div class="result-box"><strong>Acertos</strong><span>' + result.correctCount + "</span></div>" +
-			'<div class="result-box"><strong>Erros</strong><span>' + result.wrongCount + "</span></div>" +
-			'<div class="result-box"><strong>Em branco</strong><span>' + result.blankCount + "</span></div>" +
-			'<div class="result-box"><strong>Aproveitamento</strong><span>' + AppUtils.formatPercent(result.scorePercent) + "</span></div>" +
+			'<div class="result-box"><strong>Answered</strong><span>' + result.answeredQuestions + "</span></div>" +
+			'<div class="result-box"><strong>Correct</strong><span>' + result.correctCount + "</span></div>" +
+			'<div class="result-box"><strong>Wrong</strong><span>' + result.wrongCount + "</span></div>" +
+			'<div class="result-box"><strong>Unanswered</strong><span>' + result.blankCount + "</span></div>" +
+			'<div class="result-box"><strong>Score</strong><span>' + AppUtils.formatPercent(result.scorePercent) + "</span></div>" +
 			"</div>";
 
 		refs.list.innerHTML = result.items
@@ -29,10 +29,10 @@ window.ResultView = (function () {
 
 	function buildResultItem(item) {
 		const statusText = item.isCorrect
-			? "Acertou"
+			? "Correct"
 			: item.isAnswered
-			? "Errou"
-			: "Em branco";
+			? "Wrong"
+			: "Unanswered";
 
 		const statusClass = item.isCorrect
 			? "result-item--correct"
@@ -49,13 +49,13 @@ window.ResultView = (function () {
 			'<span class="result-item__status">' + statusText + "</span>" +
 			"</header>" +
 			'<div class="result-item__prompt">' + AppUtils.nl2br(item.prompt) + "</div>" +
-			"<p><strong>Marcada:</strong> " + formatAnswerList(item.selected, answerSeparator) + "</p>" +
-			"<p><strong>Correta:</strong> " + formatAnswerList(item.correct, answerSeparator) + "</p>" +
+			"<p><strong>Selected:</strong> " + formatAnswerList(item.selected, answerSeparator) + "</p>" +
+			"<p><strong>Correct:</strong> " + formatAnswerList(item.correct, answerSeparator) + "</p>" +
 			(item.options.length
 				? '<ul class="result-item__options">' + buildOptionList(item) + "</ul>"
 				: "") +
 			(item.explanation
-				? '<div class="result-item__explanation"><strong>Explicação:</strong> ' + AppUtils.nl2br(item.explanation) + "</div>"
+				? '<div class="result-item__explanation"><strong>Explanation:</strong> ' + AppUtils.nl2br(item.explanation) + "</div>"
 				: "") +
 			"</article>"
 		);
@@ -76,8 +76,8 @@ window.ResultView = (function () {
 				}
 
 				const flags = [
-					item.selected.includes(key) ? "<em>Marcada</em>" : "",
-					item.correct.includes(key) ? "<strong>Correta</strong>" : ""
+					item.selected.includes(key) ? "<em>Selected</em>" : "",
+					item.correct.includes(key) ? "<strong>Correct</strong>" : ""
 				]
 					.filter(Boolean)
 					.join("");
