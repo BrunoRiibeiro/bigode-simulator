@@ -182,6 +182,7 @@ body {
 	border-radius: 999px;
 	font-size: 12px;
 	font-weight: 700;
+	border: 1px solid transparent;
 }
 
 .question-card__meta {
@@ -270,6 +271,24 @@ body {
 
 .result-item--wrong {
 	border-color: var(--color-warning);
+}
+
+.result-item--correct .result-item__status {
+	background: var(--color-success-bg);
+	color: #027a48;
+	border-color: var(--color-success);
+}
+
+.result-item--wrong .result-item__status {
+	background: var(--color-error-bg);
+	color: #b42318;
+	border-color: var(--color-error);
+}
+
+.result-item--blank .result-item__status {
+	background: var(--color-bg-soft);
+	color: var(--color-text-muted);
+	border-color: var(--color-neutral);
 }
 
 .result-item__options {
