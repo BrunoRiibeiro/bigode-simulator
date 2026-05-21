@@ -1,4 +1,53 @@
 window.ExamView = (function () {
+	function normalizeTextValue(value) {
+		return String(value || "")
+			.normalize("NFD")
+			.replace(/[\u0300-\u036f]/g, "")
+			.toLowerCase()
+			.replace(/[^\p{L}\p{N}]+/gu, " ")
+			.trim()
+			.replace(/\s+/g, " ");
+	}
+
+	function isTextAnswerCorrect(selectedAnswers, correctAnswers) {
+		const selected = Array.isArray(selectedAnswers) ? selectedAnswers : [];
+		const correct = Array.isArray(correctAnswers) ? correctAnswers : [];
+
+		if (!selected.length || !correct.length) { return false; }
+
+		return selected.some(function (selectedAnswer) {
+			const normalizedSelected = normalizeTextValue(selectedAnswer);
+
+			return correct.some(function (correctAnswer) {
+				return normalizeTextValue(correctAnswer) === normalizedSelected;
+			});
+		});
+	}
+
+	function getBooleanCorrectKey(question) {
+		if (!question || !question.optionValues) { return ""; }
+
+		return Object.keys(question.optionValues).find(function (key) {
+			return question.optionValues[key] === question.answer;
+		}) || "";
+	}
+
+	function isBooleanAnswerCorrect(question, selectedAnswers) {
+		const selected = Array.isArray(selectedAnswers) ? selectedAnswers : [];
+
+		if (!question || !question.optionValues || !selected.length) {
+			return false;
+		}
+
+		const selectedKey = selected[0];
+
+		if (!Object.prototype.hasOwnProperty.call(question.optionValues, selectedKey)) {
+			return false;
+		}
+
+		return question.optionValues[selectedKey] === question.answer;
+	}
+
 	function renderExam(examQuestions, refs) {
 		refs.container.innerHTML = examQuestions
 			.map(function (question, index) {
@@ -31,7 +80,8 @@ window.ExamView = (function () {
 				"</div>";
 		} else {
 			const inputType = question.type === "multiple" ? "checkbox" : "radio";
-			badgeText = question.type === "multiple" ? "Multiple choice" : "Single choice";
+			badgeText = question.type === "multiple" ? "Multiple choice" :
+				question.type === "boolean" ? "Boolean" : "Single choice";
 
 			const optionsHtml = question.options
 				.map(function (optionText, optionIndex) {
@@ -87,11 +137,7 @@ window.ExamView = (function () {
 			if (question.type === "text") {
 				const textInput = form.querySelector('input[name="' + inputName + '"]');
 				const value = textInput ? textInput.value.trim() : "";
-
-				answers[question.id] = value
-					? AppUtils.normalizeAnswerList([value])
-					: [];
-
+				answers[question.id] = value ? [value] : [];
 				return;
 			}
 
@@ -123,10 +169,7 @@ window.ExamView = (function () {
 		if (question.type === "text") {
 			const textInput = form.querySelector('input[name="' + inputName + '"]');
 			const value = textInput ? textInput.value.trim() : "";
-
-			return value
-				? AppUtils.normalizeAnswerList([value])
-				: [];
+			return value ? [value] : [];
 		}
 
 		const selected = Array.from(
@@ -139,36 +182,39 @@ window.ExamView = (function () {
 	}
 
 	function applyStepCorrection(form, question, selectedAnswers) {
-		const card = form.querySelector(
-			'[data-question-id="' + question.id + '"]'
-		);
-
+		const card = form.querySelector('[data-question-id="' + question.id + '"]');
 		if (!card) { return; }
 
-		const selected = AppUtils.normalizeAnswerList(selectedAnswers || []);
-		const correct = AppUtils.normalizeAnswerList(question.answer || []);
-		const isCorrectAnswer = AppUtils.sameAnswers(selected, correct);
+		const isTextQuestion = question.type === "text";
+		const isBooleanQuestion = question.type === "boolean";
+		const selected = isTextQuestion
+			? (Array.isArray(selectedAnswers) ? selectedAnswers : [])
+			: AppUtils.normalizeAnswerList(selectedAnswers || []);
+		const correct = isTextQuestion
+			? (Array.isArray(question.answer) ? question.answer : [])
+			: isBooleanQuestion
+			? (getBooleanCorrectKey(question) ? [getBooleanCorrectKey(question)] : [])
+			: AppUtils.normalizeAnswerList(question.answer || []);
+		const isCorrectAnswer = isTextQuestion
+			? isTextAnswerCorrect(selected, correct)
+			: isBooleanQuestion
+			? isBooleanAnswerCorrect(question, selected)
+			: AppUtils.sameAnswers(selected, correct);
 
-		card.classList.remove(
-			"question-card--correct",
-			"question-card--wrong",
-			"question-card--blank"
-		);
+		card.classList.remove("question-card--correct", "question-card--wrong",
+			"question-card--blank");
 
 		if (!selected.length) { card.classList.add("question-card--blank"); }
 		else if (isCorrectAnswer) { card.classList.add("question-card--correct"); }
 		else { card.classList.add("question-card--wrong"); }
 
-		if (question.type === "text") {
+		if (isTextQuestion) {
 			const textInput = card.querySelector('input[type="text"]');
 
 			if (textInput) {
 				textInput.disabled = true;
-				textInput.classList.remove(
-					"text-answer--correct",
-					"text-answer--wrong",
-					"text-answer--blank"
-				);
+				textInput.classList.remove("text-answer--correct",
+					"text-answer--wrong", "text-answer--blank");
 
 				if (!selected.length) { textInput.classList.add("text-answer--blank"); }
 				else if (isCorrectAnswer) { textInput.classList.add("text-answer--correct"); }

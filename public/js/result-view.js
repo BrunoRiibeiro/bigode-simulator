@@ -27,6 +27,31 @@ window.ResultView = (function () {
 			.join(separator || ", ");
 	}
 
+	function stripOptionPrefix(optionText) {
+		return String(optionText || "").replace(/^[A-Z]\.\s*/, "").trim();
+	}
+
+	function resolveAnswerLabel(item, answerKey) {
+		if (item.type !== "boolean") { return String(answerKey); }
+
+		const match = (item.options || []).find(function (optionText, index) {
+			return AppUtils.extractOptionKey(optionText, index) === answerKey;
+		});
+
+		return match ? stripOptionPrefix(match) : String(answerKey);
+	}
+
+	function formatDisplayAnswerList(item, values, separator) {
+		const list = Array.isArray(values) ? values : [];
+
+		if (!list.length) { return "—"; }
+
+		return list
+			.map(function (value) {
+				return AppUtils.escapeHtml(resolveAnswerLabel(item, value));
+			}).join(separator || ", ");
+	}
+
 	function buildResultItem(item) {
 		const statusText = item.isCorrect
 			? "Correct"
@@ -60,8 +85,8 @@ window.ResultView = (function () {
 			'</div>' +
 			"</header>" +
 			'<div class="result-item__prompt">' + AppUtils.nl2br(item.prompt) + "</div>" +
-			"<p><strong>Selected:</strong> " + formatAnswerList(item.selected, answerSeparator) + "</p>" +
-			"<p><strong>Correct:</strong> " + formatAnswerList(item.correct, answerSeparator) + "</p>" +
+			"<p><strong>Selected:</strong> " + formatDisplayAnswerList(item, item.selected, answerSeparator) + "</p>" +
+			"<p><strong>Correct:</strong> " + formatDisplayAnswerList(item, item.correct, answerSeparator) + "</p>" +
 			(item.options.length
 				? '<ul class="result-item__options">' + buildOptionList(item) + "</ul>"
 				: "") +

@@ -3384,12 +3384,10 @@
 			"type": "boolean",
 			"prompt": "Cloud Trace Service CTS is a paid service, which includes fees for activating the tracker, event tracking, and storage and retrieval of events within 7 days.",
 			"options": [
-				"A. True",
-				"B. False"
+				{"key": "A", "label": "True", "value": true },
+				{"key": "B", "label": "False", "value": false }
 			],
-			"answer": [
-				"B"
-			],
+			"answer": false,
 			"explanation": "",
 			"tags": []
 		},
@@ -3398,12 +3396,10 @@
 			"type": "boolean",
 			"prompt": "Cloud database RDS is a stable, reliable, elastic, and easy-to-manage online cloud database service based on the cloud computing platform; Cloud database RDS can support MySQL, PostgreSQL, and SQL Server engines.",
 			"options": [
-				"A. True",
-				"B. False"
+				{"key": "A", "label": "True", "value": true },
+				{"key": "B", "label": "False", "value": false }
 			],
-			"answer": [
-				"A"
-			],
+			"answer": true,
 			"explanation": "",
 			"tags": []
 		},
@@ -3412,12 +3408,10 @@
 			"type": "boolean",
 			"prompt": "Cloud resolution service refers to the process of converting commonly used domain names (such as www.example.com) into IP addresses (such as 192.1.2.3) used for computer connections. One domain name can only correspond to one IP address.",
 			"options": [
-				"A. True",
-				"B. False"
+				{ "key": "A", "label": "True", "value": true },
+				{ "key": "B", "label": "False", "value": false }
 			],
-			"answer": [
-				"B"
-			],
+			"answer": false,
 			"explanation": "",
 			"tags": []
 		},
@@ -3426,12 +3420,10 @@
 			"type": "boolean",
 			"prompt": "Elastic load balancing automatically distributes access traffic to multiple cloud servers, expanding the application system's external service capabilities and achieving a higher level of application fault tolerance.",
 			"options": [
-				"A. True",
-				"B. False"
+				{ "key": "A", "label": "True", "value": true },
+				{ "key": "B", "label": "False", "value": false }
 			],
-			"answer": [
-				"A"
-			],
+			"answer": true,
 			"explanation": "",
 			"tags": []
 		},
@@ -3440,12 +3432,10 @@
 			"type": "boolean",
 			"prompt": "In Huawei Cloud, the same Elastic File Service (SFS) file system can be mounted on multiple cloud servers at the same time.",
 			"options": [
-				"A. True",
-				"B. False"
+				{ "key": "A", "label": "True", "value": true },
+				{ "key": "B", "label": "False", "value": false }
 			],
-			"answer": [
-				"A"
-			],
+			"answer": true,
 			"explanation": "",
 			"tags": []
 		},
@@ -3454,12 +3444,10 @@
 			"type": "boolean",
 			"prompt": "Virtual private cloud VPC can set up security groups to control instance traffic. The setting range of security group protocol port is 0-65535.",
 			"options": [
-				"A. True",
-				"B. False"
+				{ "key": "A", "label": "True", "value": true },
+				{ "key": "B", "label": "False", "value": false }
 			],
-			"answer": [
-				"A"
-			],
+			"answer": true,
 			"explanation": "",
 			"tags": []
 		},
@@ -3468,12 +3456,10 @@
 			"type": "boolean",
 			"prompt": "OBS Browser+ can be installed on Windows operating system, but not on Linux operating system.",
 			"options": [
-				"A. True",
-				"B. False"
+				{ "key": "A", "label": "True", "value": true },
+				{ "key": "B", "label": "False", "value": false }
 			],
-			"answer": [
-				"A"
-			],
+			"answer": true,
 			"explanation": "",
 			"tags": []
 		},
@@ -3482,12 +3468,10 @@
 			"type": "boolean",
 			"prompt": "In cloud computing, hardware of the same type but different models can form a resource pool.",
 			"options": [
-				"A. True",
-				"B. False"
+				{ "key": "A", "label": "True", "value": true },
+				{ "key": "B", "label": "False", "value": false }
 			],
-			"answer": [
-				"A"
-			],
+			"answer": true,
 			"explanation": "",
 			"tags": []
 		},
@@ -3496,12 +3480,10 @@
 			"type": "boolean",
 			"prompt": "When a tenant uses a private image to create an elastic cloud server, he can specify the size of its system disk. The system disk capacity of the newly deployed cloud server can be smaller than the system disk of the image.",
 			"options": [
-				"A. True",
-				"B. False"
+				{ "key": "A", "label": "True", "value": true },
+				{ "key": "B", "label": "False", "value": false }
 			],
-			"answer": [
-				"B"
-			],
+			"answer": false,
 			"explanation": "",
 			"tags": []
 		},
@@ -3510,12 +3492,10 @@
 			"type": "boolean",
 			"prompt": "When using Huawei Cloud VPN service and IPSec VPN to achieve communication between VPC on the cloud and IDC off the cloud, encryption and decryption verification is performed on the firewalls/routers at both ends.",
 			"options": [
-				"A. True",
-				"B. False"
+				{ "key": "A", "label": "True", "value": true },
+				{ "key": "B", "label": "False", "value": false }
 			],
-			"answer": [
-				"A"
-			],
+			"answer": true,
 			"explanation": "",
 			"tags": []
 		},
@@ -3524,12 +3504,10 @@
 			"type": "boolean",
 			"prompt": "When backing up data through the cloud backup service CBR, it usually has a significant impact on the performance of the cloud hard disk, causing a bottleneck in the hard disk performance and affecting the normal operation of the business. Therefore, in order to ensure the reliability of business data as much as possible, it is recommended to perform backup in the early morning when there is no data written to the disk.",
 			"options": [
-				"A. True",
-				"B. False"
+				{ "key": "A", "label": "True", "value": true },
+				{ "key": "B", "label": "False", "value": false }
 			],
-			"answer": [
-				"B"
-			],
+			"answer": false,
 			"explanation": "",
 			"tags": []
 		},
@@ -3538,12 +3516,10 @@
 			"type": "boolean",
 			"prompt": "Before using Huawei Cloud's Cloud Audit Service CTS, you need to activate the Cloud Audit Service first. When activating the Cloud Audit Service, the system needs to manually create an event tracker named system. You can create multiple trackers of this type as needed. The tracker will automatically identify and associate all cloud services used by the current tenant, and record all operations of the current tenant in the tracker.",
 			"options": [
-				"A. True",
-				"B. False"
+				{ "key": "A", "label": "True", "value": true },
+				{ "key": "B", "label": "False", "value": false }
 			],
-			"answer": [
-				"A"
-			],
+			"answer": true,
 			"explanation": "",
 			"tags": []
 		},
@@ -3552,12 +3528,10 @@
 			"type": "boolean",
 			"prompt": "When using the elastic file storage service SFS, after the file system is deleted, the data stored in the file system will also be deleted and cannot be recovered.",
 			"options": [
-				"A. True",
-				"B. False"
+				{ "key": "A", "label": "True", "value": true },
+				{ "key": "B", "label": "False", "value": false }
 			],
-			"answer": [
-				"A"
-			],
+			"answer": true,
 			"explanation": "",
 			"tags": []
 		},
@@ -3566,12 +3540,10 @@
 			"type": "boolean",
 			"prompt": "Cloud servers with different operating systems can be added to the same elastic load balancing backend server group.",
 			"options": [
-				"A. True",
-				"B. False"
+				{ "key": "A", "label": "True", "value": true },
+				{ "key": "B", "label": "False", "value": false }
 			],
-			"answer": [
-				"A"
-			],
+			"answer": true,
 			"explanation": "",
 			"tags": []
 		},
@@ -3580,12 +3552,10 @@
 			"type": "boolean",
 			"prompt": "Two elastic cloud servers in the same VPC can belong to different AZ.",
 			"options": [
-				"A. True",
-				"B. False"
+				{ "key": "A", "label": "True", "value": true },
+				{ "key": "B", "label": "False", "value": false }
 			],
-			"answer": [
-				"A"
-			],
+			"answer": true,
 			"explanation": "",
 			"tags": []
 		},
@@ -3594,12 +3564,10 @@
 			"type": "boolean",
 			"prompt": "Huawei Cloud Database RDS has a database backup function. After the RDS instance is deleted, the corresponding backup file will be automatically deleted.",
 			"options": [
-				"A. True",
-				"B. False"
+				{ "key": "A", "label": "True", "value": true },
+				{ "key": "B", "label": "False", "value": false }
 			],
-			"answer": [
-				"A"
-			],
+			"answer": true,
 			"explanation": "",
 			"tags": []
 		},
@@ -3608,12 +3576,10 @@
 			"type": "boolean",
 			"prompt": "Huawei Cloud CDN supports both public network resource acceleration and intranet acceleration.",
 			"options": [
-				"A. True",
-				"B. False"
+				{ "key": "A", "label": "True", "value": true },
+				{ "key": "B", "label": "False", "value": false }
 			],
-			"answer": [
-				"B"
-			],
+			"answer": false,
 			"explanation": "",
 			"tags": []
 		},
@@ -3622,12 +3588,10 @@
 			"type": "boolean",
 			"prompt": "In Huawei Cloud Object Storage OBS, object policy is the policy for objects in bucket policy. The difference is that object policy is only for one object, while the policy for objects in bucket policy can be configured for multiple objects or all objects in the bucket.",
 			"options": [
-				"A. True",
-				"B. False"
+				{ "key": "A", "label": "True", "value": true },
+				{ "key": "B", "label": "False", "value": false }
 			],
-			"answer": [
-				"A"
-			],
+			"answer": true,
 			"explanation": "",
 			"tags": []
 		},
@@ -3636,12 +3600,10 @@
 			"type": "boolean",
 			"prompt": "Log in to OBS Browser+ only supports authentication login via AK/SE authentication",
 			"options": [
-				"A. True",
-				"B. False"
+				{ "key": "A", "label": "True", "value": true },
+				{ "key": "B", "label": "False", "value": false }
 			],
-			"answer": [
-				"B"
-			],
+			"answer": false,
 			"explanation": "",
 			"tags": []
 		},
@@ -3650,12 +3612,10 @@
 			"type": "boolean",
 			"prompt": "Users can select a dedicated host in the DeH console to create a cloud server; they can also choose to create a cloud server on a specified dedicated host when creating a cloud server.",
 			"options": [
-				"A. True",
-				"B. False"
+				{ "key": "A", "label": "True", "value": true },
+				{ "key": "B", "label": "False", "value": false }
 			],
-			"answer": [
-				"A"
-			],
+			"answer": true,
 			"explanation": "",
 			"tags": []
 		},
@@ -3664,12 +3624,10 @@
 			"type": "boolean",
 			"prompt": "Log data can be divided into structured data and unstructured data. Structured data refers to data that can be described by numbers or a unified data model, with strict length and format. Unstructured data refers to data that is not easy to express using a two-dimensional logical table in a database, with an irregular or incomplete data structure and no predefined data model.",
 			"options": [
-				"A. True",
-				"B. False"
+				{ "key": "A", "label": "True", "value": true },
+				{ "key": "B", "label": "False", "value": false }
 			],
-			"answer": [
-				"A"
-			],
+			"answer": true,
 			"explanation": "",
 			"tags": []
 		},
@@ -3678,12 +3636,10 @@
 			"type": "boolean",
 			"prompt": "The scaling bandwidth policy of the elastic scaling service AS in Huawei Cloud only supports alarm policy and timing policy.",
 			"options": [
-				"A. True",
-				"B. False"
+				{ "key": "A", "label": "True", "value": true },
+				{ "key": "B", "label": "False", "value": false }
 			],
-			"answer": [
-				"B"
-			],
+			"answer": false,
 			"explanation": "",
 			"tags": []
 		},
@@ -3692,12 +3648,10 @@
 			"type": "boolean",
 			"prompt": "When using a Huawei Cloud ECS running Windows to create a system disk image, you need to install vm-tools in the initial ECS to ensure that the new virtual machines released using the image can be customized.",
 			"options": [
-				"A. True",
-				"B. False"
+				{ "key": "A", "label": "True", "value": true },
+				{ "key": "B", "label": "False", "value": false }
 			],
-			"answer": [
-				"A"
-			],
+			"answer": true,
 			"explanation": "",
 			"tags": []
 		},
@@ -3706,12 +3660,10 @@
 			"type": "boolean",
 			"prompt": "In Huawei Cloud, if you want an ECS to have access to the public network, you must bind an elastic IP to the ECS.",
 			"options": [
-				"A. True",
-				"B. False"
+				{ "key": "A", "label": "True", "value": true },
+				{ "key": "B", "label": "False", "value": false }
 			],
-			"answer": [
-				"A"
-			],
+			"answer": true,
 			"explanation": "",
 			"tags": []
 		},
@@ -3720,12 +3672,10 @@
 			"type": "boolean",
 			"prompt": "In HUAWEI Cloud, elastic cloud server instances and extended elastic network cards can belong to different VPCs or security groups.",
 			"options": [
-				"A. True",
-				"B. False"
+				{ "key": "A", "label": "True", "value": true },
+				{ "key": "B", "label": "False", "value": false }
 			],
-			"answer": [
-				"B"
-			],
+			"answer": false,
 			"explanation": "",
 			"tags": []
 		},
@@ -3734,12 +3684,10 @@
 			"type": "boolean",
 			"prompt": "Elastic scaling services can automatically adjust their business resources through strategies based on users' business needs.",
 			"options": [
-				"A. True",
-				"B. False"
+				{ "key": "A", "label": "True", "value": true },
+				{ "key": "B", "label": "False", "value": false }
 			],
-			"answer": [
-				"A"
-			],
+			"answer": true,
 			"explanation": "",
 			"tags": []
 		},
@@ -3748,12 +3696,10 @@
 			"type": "boolean",
 			"prompt": "The local hard disk in the bare metal server is backed up through consistent snapshot technology, which can avoid data inconsistency problems caused by the time difference of backup creation, and supports the creation of private images through backup.",
 			"options": [
-				"A. True",
-				"B. False"
+				{ "key": "A", "label": "True", "value": true },
+				{ "key": "B", "label": "False", "value": false }
 			],
-			"answer": [
-				"B"
-			],
+			"answer": false,
 			"explanation": "",
 			"tags": []
 		},
@@ -3762,12 +3708,10 @@
 			"type": "boolean",
 			"prompt": "Just like creating a VPN, after the user creates a public NAT gateway, Huawei Cloud will automatically assign a public IP address to the gateway.",
 			"options": [
-				"A. True",
-				"B. False"
+				{ "key": "A", "label": "True", "value": true },
+				{ "key": "B", "label": "False", "value": false }
 			],
-			"answer": [
-				"A"
-			],
+			"answer": true,
 			"explanation": "",
 			"tags": []
 		},
@@ -3776,12 +3720,10 @@
 			"type": "boolean",
 			"prompt": "In the business scenario of IMS environment image service, users can migrate business data to the cloud by creating a cloud hard disk through data disk imaging.",
 			"options": [
-				"A. True",
-				"B. False"
+				{ "key": "A", "label": "True", "value": true },
+				{ "key": "B", "label": "False", "value": false }
 			],
-			"answer": [
-				"A"
-			],
+			"answer": true,
 			"explanation": "",
 			"tags": []
 		},
@@ -3790,12 +3732,10 @@
 			"type": "boolean",
 			"prompt": "Huawei Cloud Unified Identity Authentication Service IAM, which is enabled by default after user registration and is free to use",
 			"options": [
-				"A. True",
-				"B. False"
+				{ "key": "A", "label": "True", "value": true },
+				{ "key": "B", "label": "False", "value": false }
 			],
-			"answer": [
-				"A"
-			],
+			"answer": true,
 			"explanation": "",
 			"tags": []
 		},
@@ -3804,12 +3744,10 @@
 			"type": "boolean",
 			"prompt": "In Huawei Cloud, a NAT gateway can add both SNAT and DNAT rules at the same time, and the two rules can share one elastic public IP.",
 			"options": [
-				"A. True",
-				"B. False"
+				{ "key": "A", "label": "True", "value": true },
+				{ "key": "B", "label": "False", "value": false }
 			],
-			"answer": [
-				"A"
-			],
+			"answer": true,
 			"explanation": "",
 			"tags": []
 		},
@@ -3818,12 +3756,10 @@
 			"type": "boolean",
 			"prompt": "Huawei's public cloud elastic file service SFS can implement fine-grained permission management to ensure user permission security without the need for other public cloud services.",
 			"options": [
-				"A. True",
-				"B. False"
+				{ "key": "A", "label": "True", "value": true },
+				{ "key": "B", "label": "False", "value": false }
 			],
-			"answer": [
-				"A"
-			],
+			"answer": true,
 			"explanation": "",
 			"tags": []
 		},
@@ -3832,12 +3768,10 @@
 			"type": "boolean",
 			"prompt": "If a physical machine is virtualized into multiple virtual machines, the physical machine is called the Host Machine, and the OS running on it is called the Host OS; the virtual machine is called the Guest Machine, and the OS running on it is called the Guest OS.",
 			"options": [
-				"A. True",
-				"B. False"
+				{ "key": "A", "label": "True", "value": true },
+				{ "key": "B", "label": "False", "value": false }
 			],
-			"answer": [
-				"A"
-			],
+			"answer": true,
 			"explanation": "",
 			"tags": []
 		},
@@ -3846,12 +3780,10 @@
 			"type": "boolean",
 			"prompt": "Before using the Cloud Audit CTS service on Huawei Cloud, tenants need to activate the Cloud Audit service first and manually create a tracker to identify and associate all cloud services of the current tenant in order to monitor the business in an all-round way.",
 			"options": [
-				"A. True",
-				"B. False"
+				{ "key": "A", "label": "True", "value": true },
+				{ "key": "B", "label": "False", "value": false }
 			],
-			"answer": [
-				"B"
-			],
+			"answer": false,
 			"explanation": "",
 			"tags": []
 		},
@@ -3860,12 +3792,10 @@
 			"type": "boolean",
 			"prompt": "Through the cloud monitoring service CES, the operating system and log content of the elastic cloud service ECS instance can be monitored, and the alarm function is supported.",
 			"options": [
-				"A. True",
-				"B. False"
+				{ "key": "A", "label": "True", "value": true },
+				{ "key": "B", "label": "False", "value": false }
 			],
-			"answer": [
-				"A"
-			],
+			"answer": true,
 			"explanation": "",
 			"tags": []
 		},
@@ -3874,12 +3804,10 @@
 			"type": "boolean",
 			"prompt": "Users can add or delete monitoring charts of instance resources of key concern on the cloud monitoring overview homepage. As the object of important concern instances, it can support multi- indicator comparison function, which is convenient for timely viewing every time logging into the cloud monitoring platform.",
 			"options": [
-				"A. True",
-				"B. False"
+				{ "key": "A", "label": "True", "value": true },
+				{ "key": "B", "label": "False", "value": false }
 			],
-			"answer": [
-				"A"
-			],
+			"answer": true,
 			"explanation": "",
 			"tags": []
 		},
@@ -3888,12 +3816,10 @@
 			"type": "boolean",
 			"prompt": "Under the same VPC, multiple subnet segments can be created. Different subnet segments cannot be repeated, but subnet segments can be expanded according to later business needs.",
 			"options": [
-				"A. True",
-				"B. False"
+				{ "key": "A", "label": "True", "value": true },
+				{ "key": "B", "label": "False", "value": false }
 			],
-			"answer": [
-				"A"
-			],
+			"answer": true,
 			"explanation": "",
 			"tags": []
 		},
@@ -3902,12 +3828,10 @@
 			"type": "boolean",
 			"prompt": "In Huawei Cloud, an elastic cloud server can be bound to multiple virtual IPs, and multiple virtual IPs can come from different virtual private clouds.",
 			"options": [
-				"A. True",
-				"B. False"
+				{ "key": "A", "label": "True", "value": true },
+				{ "key": "B", "label": "False", "value": false }
 			],
-			"answer": [
-				"B"
-			],
+			"answer": false,
 			"explanation": "",
 			"tags": []
 		},
@@ -3916,12 +3840,10 @@
 			"type": "boolean",
 			"prompt": "One ECS can be bound to multiple elastic public IP addresses.",
 			"options": [
-				"A. True",
-				"B. False"
+				{ "key": "A", "label": "True", "value": true },
+				{ "key": "B", "label": "False", "value": false }
 			],
-			"answer": [
-				"A"
-			],
+			"answer": true,
 			"explanation": "",
 			"tags": []
 		},
@@ -3930,12 +3852,10 @@
 			"type": "boolean",
 			"prompt": "The relational database service RDS has a database backup function. After the RDS instance is deleted, the corresponding backup file will be automatically retained.",
 			"options": [
-				"A. True",
-				"B. False"
+				{ "key": "A", "label": "True", "value": true },
+				{ "key": "B", "label": "False", "value": false }
 			],
-			"answer": [
-				"B"
-			],
+			"answer": false,
 			"explanation": "",
 			"tags": []
 		},
@@ -3944,12 +3864,10 @@
 			"type": "boolean",
 			"prompt": "When the application type of the elastic load balancing service ELB is public network, only UDP, HTTP, and HTTPS protocols are supported.",
 			"options": [
-				"A. True",
-				"B. False"
+				{ "key": "A", "label": "True", "value": true },
+				{ "key": "B", "label": "False", "value": false }
 			],
-			"answer": [
-				"B"
-			],
+			"answer": false,
 			"explanation": "",
 			"tags": []
 		},
@@ -3958,12 +3876,10 @@
 			"type": "boolean",
 			"prompt": "Huawei Cloud's cloud hard disk service is based on dual-copy technology to ensure data security and reliability. For certain data, the database is replicated into two copies by default, and these copies are stored on different nodes in the cluster according to a certain distributed storage algorithm.",
 			"options": [
-				"A. True",
-				"B. False"
+				{ "key": "A", "label": "True", "value": true },
+				{ "key": "B", "label": "False", "value": false }
 			],
-			"answer": [
-				"B"
-			],
+			"answer": false,
 			"explanation": "",
 			"tags": []
 		},
@@ -3972,12 +3888,10 @@
 			"type": "boolean",
 			"prompt": "Using Huawei Cloud NAT Gateway, hosts in VPC can access public network resources without binding elastic public IP.",
 			"options": [
-				"A. True",
-				"B. False"
+				{ "key": "A", "label": "True", "value": true },
+				{ "key": "B", "label": "False", "value": false }
 			],
-			"answer": [
-				"B"
-			],
+			"answer": false,
 			"explanation": "",
 			"tags": []
 		},
@@ -3986,12 +3900,10 @@
 			"type": "boolean",
 			"prompt": "The multi-version control function of object storage OBS is enabled for the entire bucket. The multi- version control function cannot be enabled for a folder or file in the bucket.",
 			"options": [
-				"A. True",
-				"B. False"
+				{ "key": "A", "label": "True", "value": true },
+				{ "key": "B", "label": "False", "value": false }
 			],
-			"answer": [
-				"A"
-			],
+			"answer": true,
 			"explanation": "",
 			"tags": []
 		},
@@ -4000,12 +3912,10 @@
 			"type": "boolean",
 			"prompt": "HUAWEI CLOUD can group and isolate resources through the IAM project function, and group and isolate resources in different areas: users can create IAM projects to isolate resources from different projects of the enterprise, implement personnel management and authority allocation, and meet the use and management needs of cloud resources by multi-level organizations of the enterprise.",
 			"options": [
-				"A. True",
-				"B. False"
+				{ "key": "A", "label": "True", "value": true },
+				{ "key": "B", "label": "False", "value": false }
 			],
-			"answer": [
-				"B"
-			],
+			"answer": false,
 			"explanation": "",
 			"tags": []
 		},
@@ -4014,12 +3924,10 @@
 			"type": "boolean",
 			"prompt": "Object storage OBS is an Internet-accessible service that provides a Web service interface based on the HITP/HTTPS protocol. Users can connect to the Internet anytime and anywhere and access and manage data stored in OBS through the OBS management console or various OBS tools. In addition, OBS supports SDK and OBS API interfaces, which allow users to conveniently manage their data stored on OBS and develop various types of upper-level business applications.",
 			"options": [
-				"A. True",
-				"B. False"
+				{ "key": "A", "label": "True", "value": true },
+				{ "key": "B", "label": "False", "value": false }
 			],
-			"answer": [
-				"A"
-			],
+			"answer": true,
 			"explanation": "",
 			"tags": []
 		},
@@ -4028,12 +3936,10 @@
 			"type": "boolean",
 			"prompt": "Huawei Cloud SFS Turbo supports offline IDC access through cloud dedicated lines, VPNs, and cloud connections.",
 			"options": [
-				"A. True",
-				"B. False"
+				{ "key": "A", "label": "True", "value": true },
+				{ "key": "B", "label": "False", "value": false }
 			],
-			"answer": [
-				"A"
-			],
+			"answer": true,
 			"explanation": "",
 			"tags": []
 		},
@@ -4042,12 +3948,10 @@
 			"type": "boolean",
 			"prompt": "Huawei's public cloud peer connection service can be applied for not only between VPCs of the same tenant, but also across tenants in the same region. However, after the configuration on the local side is completed, it needs to wait for the other end's consent to accept it before it can take effect.",
 			"options": [
-				"A. True",
-				"B. False"
+				{ "key": "A", "label": "True", "value": true },
+				{ "key": "B", "label": "False", "value": false }
 			],
-			"answer": [
-				"A"
-			],
+			"answer": true,
 			"explanation": "",
 			"tags": []
 		},
@@ -4056,12 +3960,10 @@
 			"type": "boolean",
 			"prompt": "Huawei Virtual Private Cloud VPC supports customized virtual private networks and also supports deployment of elastic cloud servers across availability zones.",
 			"options": [
-				"A. True",
-				"B. False"
+				{ "key": "A", "label": "True", "value": true },
+				{ "key": "B", "label": "False", "value": false }
 			],
-			"answer": [
-				"A"
-			],
+			"answer": true,
 			"explanation": "",
 			"tags": []
 		},
@@ -4070,12 +3972,10 @@
 			"type": "boolean",
 			"prompt": "The SFS Turbo file system does not support system policies, so the created SFS custom policy is only valid for the SFS file system and not for the SFS Turbo file system.",
 			"options": [
-				"A. True",
-				"B. False"
+				{ "key": "A", "label": "True", "value": true },
+				{ "key": "B", "label": "False", "value": false }
 			],
-			"answer": [
-				"B"
-			],
+			"answer": false,
 			"explanation": "",
 			"tags": []
 		},
@@ -4084,12 +3984,10 @@
 			"type": "boolean",
 			"prompt": "Logs can record important information during system operation. Operation and maintenance personnel can locate the system based on the records in the logs and perform troubleshooting based on the relevant information.",
 			"options": [
-				"A. True",
-				"B. False"
+				{ "key": "A", "label": "True", "value": true },
+				{ "key": "B", "label": "False", "value": false }
 			],
-			"answer": [
-				"A"
-			],
+			"answer": true,
 			"explanation": "",
 			"tags": []
 		},
@@ -4098,12 +3996,10 @@
 			"type": "boolean",
 			"prompt": "Huawei Cloud host monitoring function supports monitoring elastic cloud servers and bare metal servers.",
 			"options": [
-				"A. True",
-				"B. False"
+				{ "key": "A", "label": "True", "value": true },
+				{ "key": "B", "label": "False", "value": false }
 			],
-			"answer": [
-				"A"
-			],
+			"answer": true,
 			"explanation": "",
 			"tags": []
 		},
@@ -4112,12 +4008,10 @@
 			"type": "boolean",
 			"prompt": "Huawei Cloud Auto Scaling Service AS supports automatic scaling within a single AZ and also supports automatic scaling across AZs within a Region.",
 			"options": [
-				"A. True",
-				"B. False"
+				{ "key": "A", "label": "True", "value": true },
+				{ "key": "B", "label": "False", "value": false }
 			],
-			"answer": [
-				"A"
-			],
+			"answer": true,
 			"explanation": "",
 			"tags": []
 		},
@@ -4126,12 +4020,10 @@
 			"type": "boolean",
 			"prompt": "Huawei Cloud object storage service OBS has no restrictions on storage capacity and number of objects.",
 			"options": [
-				"A. True",
-				"B. False"
+				{ "key": "A", "label": "True", "value": true },
+				{ "key": "B", "label": "False", "value": false }
 			],
-			"answer": [
-				"A"
-			],
+			"answer": true,
 			"explanation": "",
 			"tags": []
 		},
@@ -4140,12 +4032,10 @@
 			"type": "boolean",
 			"prompt": "An AZ (Availability Zone) is a collection of one or more physical data centers with independent wind, fire, water, and electricity. There are multiple computing, storage, and network resource pools in the AZ to meet the needs of different specifications.",
 			"options": [
-				"A. True",
-				"B. False"
+				{ "key": "A", "label": "True", "value": true },
+				{ "key": "B", "label": "False", "value": false }
 			],
-			"answer": [
-				"A"
-			],
+			"answer": true,
 			"explanation": "",
 			"tags": []
 		},
@@ -4154,12 +4044,10 @@
 			"type": "boolean",
 			"prompt": "Huawei Cloud host monitoring can monitor basic monitoring indicators such as Ecs CPU usage without using Agent plug-in.",
 			"options": [
-				"A. True",
-				"B. False"
+				{ "key": "A", "label": "True", "value": true },
+				{ "key": "B", "label": "False", "value": false }
 			],
-			"answer": [
-				"A"
-			],
+			"answer": true,
 			"explanation": "",
 			"tags": []
 		},
@@ -4168,12 +4056,10 @@
 			"type": "boolean",
 			"prompt": "After the Elastic Cloud Server on Huawei Cloud is successfully created, users can use the Elastic Cloud Server on the cloud anytime and anywhere, just like using their own local PC or physical server.",
 			"options": [
-				"A. True",
-				"B. False"
+				{ "key": "A", "label": "True", "value": true },
+				{ "key": "B", "label": "False", "value": false }
 			],
-			"answer": [
-				"A"
-			],
+			"answer": true,
 			"explanation": "",
 			"tags": []
 		},
@@ -4182,12 +4068,10 @@
 			"type": "boolean",
 			"prompt": "Logs can be used to support the operation and maintenance of networks, servers and other equipment and services throughout the entire life cycle.",
 			"options": [
-				"A. True",
-				"B. False"
+				{ "key": "A", "label": "True", "value": true },
+				{ "key": "B", "label": "False", "value": false }
 			],
-			"answer": [
-				"A"
-			],
+			"answer": true,
 			"explanation": "",
 			"tags": []
 		},
@@ -4196,12 +4080,10 @@
 			"type": "boolean",
 			"prompt": "After the relational database is successfully created, if the specifications (CPU and memory) do not meet the requirements, you can change the specifications.",
 			"options": [
-				"A. True",
-				"B. False"
+				{ "key": "A", "label": "True", "value": true },
+				{ "key": "B", "label": "False", "value": false }
 			],
-			"answer": [
-				"A"
-			],
+			"answer": true,
 			"explanation": "",
 			"tags": []
 		},
@@ -4210,12 +4092,10 @@
 			"type": "boolean",
 			"prompt": "Huawei Cloud Database RDS backup data is stored in OBS and supports one-click recovery.",
 			"options": [
-				"A. True",
-				"B. False"
+				{ "key": "A", "label": "True", "value": true },
+				{ "key": "B", "label": "False", "value": false }
 			],
-			"answer": [
-				"A"
-			],
+			"answer": true,
 			"explanation": "",
 			"tags": []
 		},
@@ -4224,12 +4104,10 @@
 			"type": "boolean",
 			"prompt": "Huawei Cloud DNS service provides reverse resolution function. Based on VPC network, it can associate the intranet domain name valid in VPC with the private IP address, and convert the domain name into a private IP address through DNS.",
 			"options": [
-				"A. True",
-				"B. False"
+				{ "key": "A", "label": "True", "value": true },
+				{ "key": "B", "label": "False", "value": false }
 			],
-			"answer": [
-				"B"
-			],
+			"answer": false,
 			"explanation": "",
 			"tags": []
 		},
@@ -4238,12 +4116,10 @@
 			"type": "boolean",
 			"prompt": "In Huawei Cloud, after uninstalling the cloud hard disk EVS from the elastic cloud server and mounting it to another elastic cloud server, the data on the cloud hard disk will be automatically reset to zero.",
 			"options": [
-				"A. True",
-				"B. False"
+				{ "key": "A", "label": "True", "value": true },
+				{ "key": "B", "label": "False", "value": false }
 			],
-			"answer": [
-				"B"
-			],
+			"answer": false,
 			"explanation": "",
 			"tags": []
 		},
@@ -4252,12 +4128,10 @@
 			"type": "boolean",
 			"prompt": "The bare metal server IB network is provisioned by selecting specifications that support the IB network when creating the BMS, and has the characteristics of low latency and high bandwidth.",
 			"options": [
-				"A. True",
-				"B. False"
+				{ "key": "A", "label": "True", "value": true },
+				{ "key": "B", "label": "False", "value": false }
 			],
-			"answer": [
-				"A"
-			],
+			"answer": true,
 			"explanation": "",
 			"tags": []
 		},
@@ -4266,12 +4140,10 @@
 			"type": "boolean",
 			"prompt": "In each of the two regions of Huawei Cloud, there is a VPC with two subnets. You only need to create a VPC Peering at each end to achieve interoperability between the two VPCs.",
 			"options": [
-				"A. True",
-				"B. False"
+				{ "key": "A", "label": "True", "value": true },
+				{ "key": "B", "label": "False", "value": false }
 			],
-			"answer": [
-				"B"
-			],
+			"answer": false,
 			"explanation": "",
 			"tags": []
 		},
@@ -4280,12 +4152,10 @@
 			"type": "boolean",
 			"prompt": "Tenants can customize the capacity of the cloud hard disk service EVS they apply for according to their own needs, but the disk type cannot be selected.",
 			"options": [
-				"A. True",
-				"B. False"
+				{ "key": "A", "label": "True", "value": true },
+				{ "key": "B", "label": "False", "value": false }
 			],
-			"answer": [
-				"B"
-			],
+			"answer": false,
 			"explanation": "",
 			"tags": []
 		},
@@ -4294,12 +4164,10 @@
 			"type": "boolean",
 			"prompt": "When a tenant has business on the cloud, the tenant can rent a bandwidth for use by all elastic cloud servers, which can help the enterprise save network operating costs and improve operation and maintenance efficiency.",
 			"options": [
-				"A. True",
-				"B. False"
+				{ "key": "A", "label": "True", "value": true },
+				{ "key": "B", "label": "False", "value": false }
 			],
-			"answer": [
-				"A"
-			],
+			"answer": true,
 			"explanation": "",
 			"tags": []
 		},
@@ -4308,12 +4176,10 @@
 			"type": "boolean",
 			"prompt": "OBS supports uploading both files and folders to OBS buckets.",
 			"options": [
-				"A. True",
-				"B. False"
+				{ "key": "A", "label": "True", "value": true },
+				{ "key": "B", "label": "False", "value": false }
 			],
-			"answer": [
-				"A"
-			],
+			"answer": true,
 			"explanation": "",
 			"tags": []
 		},
@@ -4322,12 +4188,10 @@
 			"type": "boolean",
 			"prompt": "When logging in to Huawei's Elastic Cloud Server using the CloudShell tool in the console remote login, you can use the elastic IP or the ECS private IP.",
 			"options": [
-				"A. True",
-				"B. False"
+				{ "key": "A", "label": "True", "value": true },
+				{ "key": "B", "label": "False", "value": false }
 			],
-			"answer": [
-				"A"
-			],
+			"answer": true,
 			"explanation": "",
 			"tags": []
 		},
@@ -4336,12 +4200,10 @@
 			"type": "boolean",
 			"prompt": "When switching the operating system of an elastic cloud server purchased using the \"annual/monthly package\" method, switching from a free operating system to another free operating system is not supported.",
 			"options": [
-				"A. True",
-				"B. False"
+				{ "key": "A", "label": "True", "value": true },
+				{ "key": "B", "label": "False", "value": false }
 			],
-			"answer": [
-				"B"
-			],
+			"answer": false,
 			"explanation": "",
 			"tags": []
 		},
@@ -4350,12 +4212,10 @@
 			"type": "boolean",
 			"prompt": "The measurable nature of cloud computing is mainly for billing the cloud computing resources purchased by users.",
 			"options": [
-				"A. True",
-				"B. False"
+				{ "key": "A", "label": "True", "value": true },
+				{ "key": "B", "label": "False", "value": false }
 			],
-			"answer": [
-				"B"
-			],
+			"answer": false,
 			"explanation": "",
 			"tags": []
 		},
@@ -4364,12 +4224,10 @@
 			"type": "boolean",
 			"prompt": "The cloud monitoring service CES cannot see the memory usage and disk usage of the elastic cloud server. This may be because the current operating system is Linux.",
 			"options": [
-				"A. True",
-				"B. False"
+				{ "key": "A", "label": "True", "value": true },
+				{ "key": "B", "label": "False", "value": false }
 			],
-			"answer": [
-				"B"
-			],
+			"answer": false,
 			"explanation": "",
 			"tags": []
 		},
@@ -4378,12 +4236,10 @@
 			"type": "boolean",
 			"prompt": "In each of the two regions of Huawei Cloud, there is a VPC with two subnets. You only need to create a VPN connection at each end to achieve interoperability between the two VPCs, and you can add the two subnets to the VPN in the VPN connection.",
 			"options": [
-				"A. True",
-				"B. False"
+				{ "key": "A", "label": "True", "value": true },
+				{ "key": "B", "label": "False", "value": false }
 			],
-			"answer": [
-				"A"
-			],
+			"answer": true,
 			"explanation": "",
 			"tags": []
 		},
@@ -4392,12 +4248,10 @@
 			"type": "boolean",
 			"prompt": "Even if you configure security group rules in Huawei Cloud, it will not affect the communication between two elastic cloud servers in the same security group.",
 			"options": [
-				"A. True",
-				"B. False"
+				{ "key": "A", "label": "True", "value": true },
+				{ "key": "B", "label": "False", "value": false }
 			],
-			"answer": [
-				"B"
-			],
+			"answer": false,
 			"explanation": "",
 			"tags": []
 		},
@@ -4406,12 +4260,10 @@
 			"type": "boolean",
 			"prompt": "Cloud computing is a computing model that can provide dynamically scalable virtualized resources to users as services through the Internet. End users need to manage the infrastructure behind the cloud computing service.",
 			"options": [
-				"A. True",
-				"B. False"
+				{ "key": "A", "label": "True", "value": true },
+				{ "key": "B", "label": "False", "value": false }
 			],
-			"answer": [
-				"B"
-			],
+			"answer": false,
 			"explanation": "",
 			"tags": []
 		},
@@ -4420,12 +4272,10 @@
 			"type": "boolean",
 			"prompt": "Cloud computing types can be divided into public cloud, private cloud and diversified cloud according to the model allocation. Huawei Cloud belongs to diversified cloud.",
 			"options": [
-				"A. True",
-				"B. False"
+				{ "key": "A", "label": "True", "value": true },
+				{ "key": "B", "label": "False", "value": false }
 			],
-			"answer": [
-				"B"
-			],
+			"answer": false,
 			"explanation": "",
 			"tags": []
 		},
@@ -4434,12 +4284,10 @@
 			"type": "boolean",
 			"prompt": "Elastic load balancing automatically distributes access traffic to multiple cloud servers, expanding the application system's external service capabilities and improving application security.",
 			"options": [
-				"A. True",
-				"B. False"
+				{ "key": "A", "label": "True", "value": true },
+				{ "key": "B", "label": "False", "value": false }
 			],
-			"answer": [
-				"B"
-			],
+			"answer": false,
 			"explanation": "",
 			"tags": []
 		},
@@ -4448,12 +4296,10 @@
 			"type": "boolean",
 			"prompt": "Cloud computing is a computing model that can provide dynamically scalable virtualized resources to users in the form of services through the Internet.",
 			"options": [
-				"A. True",
-				"B. False"
+				{ "key": "A", "label": "True", "value": true },
+				{ "key": "B", "label": "False", "value": false }
 			],
-			"answer": [
-				"A"
-			],
+			"answer": true,
 			"explanation": "",
 			"tags": []
 		},
@@ -4462,12 +4308,10 @@
 			"type": "boolean",
 			"prompt": "Cloud backup service CBR can provide backup protection services for a variety of resources, maximize the security and accuracy of user data, and ensure business security; cloud backup is suitable for scenarios of data backup and recovery as well as rapid business migration and deployment. Through CBR service, the business RTO=0 and RPO=0 can be achieved.",
 			"options": [
-				"A. True",
-				"B. False"
+				{ "key": "A", "label": "True", "value": true },
+				{ "key": "B", "label": "False", "value": false }
 			],
-			"answer": [
-				"B"
-			],
+			"answer": false,
 			"explanation": "",
 			"tags": []
 		},
@@ -4476,12 +4320,10 @@
 			"type": "boolean",
 			"prompt": "When a user logs in to an elastic cloud server using VNC, the interface prompts that the authentication is successful, but the system screen is black and there is no response to input. This may be because the elastic cloud server has been logged in by other users using VNC.",
 			"options": [
-				"A. True",
-				"B. False"
+				{ "key": "A", "label": "True", "value": true },
+				{ "key": "B", "label": "False", "value": false }
 			],
-			"answer": [
-				"A"
-			],
+			"answer": true,
 			"explanation": "",
 			"tags": []
 		},
@@ -4490,12 +4332,10 @@
 			"type": "boolean",
 			"prompt": "Public NAT Gateway can provide network address translation services for cloud hosts (elastic cloud servers, bare metal servers) in a virtual private cloud or servers in a local data center that access a virtual private cloud through a cloud dedicated line/VPN, so that multiple cloud hosts can share elastic public IPs to access the Internet or provide Internet services.",
 			"options": [
-				"A. True",
-				"B. False"
+				{ "key": "A", "label": "True", "value": true },
+				{ "key": "B", "label": "False", "value": false }
 			],
-			"answer": [
-				"A"
-			],
+			"answer": true,
 			"explanation": "",
 			"tags": []
 		},
@@ -4504,12 +4344,10 @@
 			"type": "boolean",
 			"prompt": "In order to prevent resource abuse, quotas for each service resource are limited in the IAM service, and strict restrictions are placed on the number of users and usage rights. If a higher quota is required, it can be purchased by paying.",
 			"options": [
-				"A. True",
-				"B. False"
+				{ "key": "A", "label": "True", "value": true },
+				{ "key": "B", "label": "False", "value": false }
 			],
-			"answer": [
-				"B"
-			],
+			"answer": false,
 			"explanation": "",
 			"tags": []
 		},
@@ -4518,12 +4356,10 @@
 			"type": "boolean",
 			"prompt": "Use classic VPN to achieve network interconnection between area A and area B in Huawei Cloud. The remote gateway address in the VPN connection in area A should be consistent with the remote gateway address in the VPN connection in area B.",
 			"options": [
-				"A. True",
-				"B. False"
+				{ "key": "A", "label": "True", "value": true },
+				{ "key": "B", "label": "False", "value": false }
 			],
-			"answer": [
-				"B"
-			],
+			"answer": false,
 			"explanation": "",
 			"tags": []
 		},
@@ -4532,12 +4368,10 @@
 			"type": "boolean",
 			"prompt": "Rapid elastic scaling includes many types. In addition to manual expansion or reduction, Huawei Cloud also supports automatic expansion or reduction according to preset policies. Scaling can be to increase or decrease the number of servers, or to increase or decrease the resources of a single server.",
 			"options": [
-				"A. True",
-				"B. False"
+				{ "key": "A", "label": "True", "value": true },
+				{ "key": "B", "label": "False", "value": false }
 			],
-			"answer": [
-				"A"
-			],
+			"answer": true,
 			"explanation": "",
 			"tags": []
 		},
@@ -4546,12 +4380,10 @@
 			"type": "boolean",
 			"prompt": "Huawei Cloud provides three billing methods: on-demand, package (monthly, annual), and bidding, allowing users to flexibly choose to purchase elastic cloud servers. Among them, only on-demand billing can save costs.",
 			"options": [
-				"A. True",
-				"B. False"
+				{ "key": "A", "label": "True", "value": true },
+				{ "key": "B", "label": "False", "value": false }
 			],
-			"answer": [
-				"B"
-			],
+			"answer": false,
 			"explanation": "",
 			"tags": []
 		},
@@ -4560,12 +4392,10 @@
 			"type": "boolean",
 			"prompt": "Container is a lightweight operating system virtualization solution with the advantages of being lightweight, standardized, and able to start in seconds.",
 			"options": [
-				"A. True",
-				"B. False"
+				{ "key": "A", "label": "True", "value": true },
+				{ "key": "B", "label": "False", "value": false }
 			],
-			"answer": [
-				"A"
-			],
+			"answer": true,
 			"explanation": "",
 			"tags": []
 		},
@@ -4574,12 +4404,10 @@
 			"type": "boolean",
 			"prompt": "Elastic Cloud Server supports authentication using secret keys. You must first use the password acquisition function provided by the management console to parse the secret key file used when creating the Elastic Cloud Server into a password.",
 			"options": [
-				"A. True",
-				"B. False"
+				{ "key": "A", "label": "True", "value": true },
+				{ "key": "B", "label": "False", "value": false }
 			],
-			"answer": [
-				"A"
-			],
+			"answer": true,
 			"explanation": "",
 			"tags": []
 		},
@@ -4588,12 +4416,10 @@
 			"type": "boolean",
 			"prompt": "Huawei Cloud sends user business alarm text messages through the message notification service SMN.",
 			"options": [
-				"A. True",
-				"B. False"
+				{ "key": "A", "label": "True", "value": true },
+				{ "key": "B", "label": "False", "value": false }
 			],
-			"answer": [
-				"A"
-			],
+			"answer": true,
 			"explanation": "",
 			"tags": []
 		},
@@ -4602,12 +4428,10 @@
 			"type": "boolean",
 			"prompt": "IAM projects group and isolate resources within the same area, which is a logical isolation.",
 			"options": [
-				"A. True",
-				"B. False"
+				{ "key": "A", "label": "True", "value": true },
+				{ "key": "B", "label": "False", "value": false }
 			],
-			"answer": [
-				"B"
-			],
+			"answer": false,
 			"explanation": "",
 			"tags": []
 		},
@@ -4616,12 +4440,10 @@
 			"type": "boolean",
 			"prompt": "In Huawei Cloud, if you do not install the Cloudbase-Init tool before creating a private image, you will not be able to customize the elastic cloud server of the Windows operating system, and you can only use the original password of the image to log in to the elastic cloud server.",
 			"options": [
-				"A. True",
-				"B. False"
+				{ "key": "A", "label": "True", "value": true },
+				{ "key": "B", "label": "False", "value": false }
 			],
-			"answer": [
-				"A"
-			],
+			"answer": true,
 			"explanation": "",
 			"tags": []
 		},
