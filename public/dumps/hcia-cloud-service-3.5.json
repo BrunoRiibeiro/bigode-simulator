@@ -3942,7 +3942,7 @@
 		{
 			"id": "q0241",
 			"type": "boolean",
-			"prompt": "When the application type of the elastic load balancing service ELB is public network, only UDP, HITP, and HITPS protocols are supported.",
+			"prompt": "When the application type of the elastic load balancing service ELB is public network, only UDP, HTTP, and HTTPS protocols are supported.",
 			"options": [
 				"A. True",
 				"B. False"
