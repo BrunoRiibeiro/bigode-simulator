@@ -40,13 +40,24 @@ window.ResultView = (function () {
 			? "result-item--wrong"
 			: "result-item--blank";
 
+		let badgeId = item.id;
+		const issueUrl = window.GitHubIssuesFeature ? window.GitHubIssuesFeature.buildIssueSearchUrl(item) : "";
+		const issueRef = window.GitHubIssuesFeature ? window.GitHubIssuesFeature.getQuestionRef(item) : "";
+		const issueLinkHtml = issueUrl ? '<a class="question-card__issue-link" href="' +
+			AppUtils.escapeHtml(issueUrl) + '" target="_blank" rel="noopener noreferrer" title="Open GitHub issues for ' +
+			AppUtils.escapeHtml(issueRef) + '">Discuss question</a>' : "";
+
 		const answerSeparator = item.type === "text" ? " / " : ", ";
 
 		return (
 			'<article class="result-item ' + statusClass + '">' +
 			'<header class="result-item__header">' +
 			"<h3>Question " + item.number + "</h3>" +
+			'<div class="question-card__meta">' +
+			'<span class="question-card__badge question-card__badge--id">' + badgeId + '</span>' +
 			'<span class="result-item__status">' + statusText + "</span>" +
+			issueLinkHtml +
+			'</div>' +
 			"</header>" +
 			'<div class="result-item__prompt">' + AppUtils.nl2br(item.prompt) + "</div>" +
 			"<p><strong>Selected:</strong> " + formatAnswerList(item.selected, answerSeparator) + "</p>" +
