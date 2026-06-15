@@ -93,7 +93,7 @@ async function loadPresetJson(filePath) {
 		clearExamAndResults();
 
 		refs.generateExamBtn.disabled = result.questions.length === 0;
-		setStatus('Dump "' + (filePath ||"").split('/').pop() + '" loaded successfully.', "success");
+		setStatus('Dump "' + (filePath ||"").split('/').pop().replace(/\.[^/.]+$/, "") + '" loaded successfully.', "success");
 
 	} catch (error) {
 		console.error(error);
