@@ -1,0 +1,410 @@
+{
+	"questions": [
+		{
+			"id": "q0001",
+			"type": "boolean",
+			"prompt": "Functional and API tests are conducted before an application is delivered, whereas the performance test can be done later.",
+			"options": [
+				{ "key": "A", "label": "True", "value": true },
+				{ "key": "B", "label": "False", "value": false }
+			],
+			"answer": false,
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0002",
+			"type": "boolean",
+			"prompt": "A code segment should have an easy-to-modify structure for good maintainability when implementing specific functions.",
+			"options": [
+				{ "key": "A", "label": "True", "value": true },
+				{ "key": "B", "label": "False", "value": false }
+			],
+			"answer": true,
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0003",
+			"type": "boolean",
+			"prompt": "Combining commit and merging permissions prevents attackers from exploiting them to implant malicious code.",
+			"options": [
+				{ "key": "A", "label": "True", "value": true },
+				{ "key": "B", "label": "False", "value": false }
+			],
+			"answer": false,
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0004",
+			"type": "boolean",
+			"prompt": "CodeArts Repo allows you to watermark your code to prevent infringement.",
+			"options": [
+				{ "key": "A", "label": "True", "value": true },
+				{ "key": "B", "label": "False", "value": false }
+			],
+			"answer": true,
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0005",
+			"type": "boolean",
+			"prompt": "If microservice joint commissioning fails during DevOps full-process delivery with CodeArts, the process turns back and starts again from the design phase.",
+			"options": [
+				{ "key": "A", "label": "True", "value": true },
+				{ "key": "B", "label": "False", "value": false }
+			],
+			"answer": false,
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0006",
+			"type": "boolean",
+			"prompt": "During DevOps full-process delivery with CodeArts, a Project Director (PD) assigns stories and breaks them down into sprint tasks in the planning and design phase, and focuses on delivery priority, technical and solution tasks, and impact on delivery.",
+			"options": [
+				{ "key": "A", "label": "True", "value": true },
+				{ "key": "B", "label": "False", "value": false }
+			],
+			"answer": false,
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0007",
+			"type": "boolean",
+			"prompt": "CodeArts Repo incorporates Huawei's experience in managing hundreds of billions of code lines. CodeArts Repo is a code hosting service that allows you to commit, push, pull, merge, clone, compare, and review code online, as well as create branches.",
+			"options": [
+				{ "key": "A", "label": "True", "value": true },
+				{ "key": "B", "label": "False", "value": false }
+			],
+			"answer": true,
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0008",
+			"type": "single",
+			"prompt": "What should Scrum Master do if a team member is always late for daily meetings?",
+			"options": [
+				"A. Ask the member to identify and remove bottlenecks.",
+				"B. Ignore the member and continue with the meeting.",
+				"C. Make a team decision on how to punish the latecomer.",
+				"D. Warn this team member."
+			],
+			"answer": ["A"],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0009",
+			"type": "single",
+			"prompt": "Which of the following metrics is not included in application monitoring?",
+			"options": [
+				"A. Total CPU cores",
+				"B. Total virtual memory",
+				"C. Process status",
+				"D. Disk read/write rate"
+			],
+			"answer": ["D"],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0010",
+			"type": "single",
+			"prompt": "Which of the following statements about a user story is false?",
+			"options": [
+				"A. What customers actually need is not documentation.",
+				"B. What customers actually need is the software implemented through documentation.",
+				"C. Short stories can help improve communication.",
+				"D. Short stories can help discover customers' real needs."
+			],
+			"answer": ["B"],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0011",
+			"type": "single",
+			"prompt": "All possible input data (a program's input fields) is divided into several parts (subsets), and then a few representative data items are selected from each subset for testing. What test method is this?",
+			"options": [
+				"A. Equivalence partitioning",
+				"B. Boundary value analysis",
+				"C. Cause-effect graph",
+				"D. Scenario analysis"
+			],
+			"answer": ["A"],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0012",
+			"type": "single",
+			"prompt": "When is the 5W1H method used?",
+			"options": [
+				"A. Test design",
+				"B. Test execution",
+				"C. Test strategy",
+				"D. Test report"
+			],
+			"answer": ["C"],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0013",
+			"type": "single",
+			"prompt": "How do you verify whether the service meets your consumer expectations?",
+			"options": [
+				"A. Web UI testing",
+				"B. Contract testing",
+				"C. API testing",
+				"D. Performance testing"
+			],
+			"answer": ["B"],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0014",
+			"type": "single",
+			"prompt": "Which one of the following services can detect cloud security risks, such as DDoS attacks, brute force attacks, web attacks, Trojan horses, zombies, abnormal behaviors, vulnerability attacks, and command and control (C&C)?",
+			"options": [
+				"A. Cloud Trace Service (CTS)",
+				"B. Identity and Access Management (IAM)",
+				"C. Situational Awareness (SA)",
+				"D. Cloud Bastion Host (CBH)"
+			],
+			"answer": ["C"],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0015",
+			"type": "single",
+			"prompt": "Which one of the following statements about Cloud Bastion Host (CBH) is incorrect?)",
+			"options": [
+				"A. CBH offers CBH instances and O&M expert services.",
+				"B. O&M personnel need to log in to the system every time they perform one-stop management on multiple resources.",
+				"C. All O&M activities are logged in real time.",
+				"D. CBH is compliant with security regulations and laws."
+			],
+			"answer": ["B"],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0016",
+			"type": "single",
+			"prompt": "What attack is this: After a user clicks a URL, the browser sends cookies to the attacker. The attacker then uses these cookies to access the website and email disguised as the user, and steals private information.",
+			"options": [
+				"A. Cross-site scripting (XSS)",
+				"B. SQL injection",
+				"C. Web shell",
+				"D. Malicious crawler scanning"
+			],
+			"answer": ["A"],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0017",
+			"type": "single",
+			"prompt": "1. Continues integration is an extension of continuous delivery. Developers perform build and unit tests once committing new code. The test result determines whether the new code and the original code can be correctly integrated. 2. Continuous delivery is an extension of continues integration to deploy code to the production-like environment, ensuring that new changes can be quickly released to customers. If the code is fine, then it can be manually deployed to the production environment. Which of the following is true?",
+			"options": [
+				"A. Both 1 and 2 are true.",
+				"B. 1 is true and 2 is false.",
+				"C. Both 1 and 2 are false.",
+				"D. 1 is false and 2 is true."
+			],
+			"answer": ["D"],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0018",
+			"type": "single",
+			"prompt": "Which of the following is true about continuous deployment?",
+			"options": [
+				"A. Automated release",
+				"B. Automated deployment to the test environment",
+				"C. No automated tests",
+				"D. Continuous deployment before continuous delivery"
+			],
+			"answer": ["A"],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0019",
+			"type": "single",
+			"prompt": "Who is responsible for recording and removing obstacles in the current sprint?",
+			"options": [
+				"A. Project manager",
+				"B. Product manager",
+				"C. Agile team",
+				"D. Scrum Master"
+			],
+			"answer": ["D"],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0020",
+			"type": "single",
+			"prompt": "Both the Agile manifesto and principles emphasize that customer satisfaction as one of the purposes of Agile development. Which of the following is the Agile principle for customer satisfaction?",
+			"options": [
+				"A. Our highest priority is to satisfy the customer through early and continuous delivery of valuable software.",
+				"B. Welcome changing requirements, even late in development. Agile processes harness change for the customer's competitive advantage.",
+				"C. Deliver working software frequently, from a couple of weeks to a couple of months, with a preference to the shorter timescale.",
+				"D. The most efficient and effective method of conveying information to and within a development team is face-to-face conversation."
+			],
+			"answer": ["A"],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0021",
+			"type": "single",
+			"prompt": "Which of the following statements about the Agile Manifesto is false?",
+			"options": [
+				"A. Deliver working software frequently, from a couple of weeks to a couple of months, with a preference to the shorter timescale.",
+				"B. Service personnel and developers only need to work together once a week instead of too often.",
+				"C. Working software is the primary measure of progress.",
+				"D. The best architectures, requirements, and designs come from self-organizing teams."
+			],
+			"answer": ["B"],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0022",
+			"type": "single",
+			"prompt": "Which of the following statements about VUCA is false?",
+			"options": [
+				"A. V: Volatility",
+				"B. U: Uncertainty",
+				"C. C: Complexity",
+				"D. A: Available"
+			],
+			"answer": ["D"],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0023",
+			"type": "multi",
+			"prompt": "Which capabilities are provided in the development phase of Huawei Cloud CodeArts?",
+			"options": [
+				"A. Build",
+				"B. Check",
+				"C. Artifact",
+				"D. Repo"
+			],
+			"answer": ["A", "B", "C", "D"],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0025",
+			"type": "multi",
+			"prompt": "Which capabilities are provided in the testing phase of Huawei Cloud CodeArts?",
+			"options": [
+				"A. Monitoring and alarmas",
+				"B. TestPlan",
+				"C. APITest",
+				"D. PerfTest"
+			],
+			"answer": ["B", "C", "D"],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0026",
+			"type": "multi",
+			"prompt": "Which of the following are features of CodeArts PerfTest?",
+			"options": [
+				"A. Millions of requests initiated in seconds",
+				"B. Monitoring of hundreds of metrics in seconds",
+				"C. Out-of-the-box and pay-per-use",
+				"D. HTTP/HTTPS/UDP/TCP support"
+			],
+			"answer": ["A", "C", "D"],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0027",
+			"type": "multi",
+			"prompt": "Which of the following are included in decoupling architecture projects by microservice containerization?",
+			"options": [
+				"A. Application infrastructure",
+				"B. Development process",
+				"C. Deployment & packaging",
+				"D. Application architecture"
+			],
+			"answer": ["A", "B", "C", "D"],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0028",
+			"type": "multi",
+			"prompt": "What are the three levels of system coupling?",
+			"options": [
+				"A. Code-level",
+				"B. Component-level",
+				"C. Data-level",
+				"D. Service-level"
+			],
+			"answer": ["A", "B", "D"],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0029",
+			"type": "multi",
+			"prompt": "Which of the following are functions of Database Security Service (DBSS)?",
+			"options": [
+				"A. Database audit",
+				"B. SQL injection attack detection",
+				"C. Risky operation identification",
+				"D. Asset management"
+			],
+			"answer": ["A", "B", "C"],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0030",
+			"type": "multi",
+			"prompt": "Which of the following are the test exit conditions?",
+			"options": [
+				"A. The cost of identifying defects is higher than the cost of the defects themselves.",
+				"B. All test cases have been designed.",
+				"C. The risks are acceptable.",
+				"D. The test exit or completion criteria have been met."
+			],
+			"answer": ["A", "C", "D"],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "q0027",
+			"type": "multi",
+			"prompt": "Which of the following are the purposes of version management?",
+			"options": [
+				"A. To back up data",
+				"B. To avoid conflicting versions",
+				"C. To make collaboration more efficient",
+				"D. To clarify responsibilities"
+			],
+			"answer": ["A", "B", "C", "D"],
+			"explanation": "",
+			"tags": []
+		}
+	]
+}
