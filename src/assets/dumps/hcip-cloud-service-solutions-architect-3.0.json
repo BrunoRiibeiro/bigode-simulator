@@ -1,0 +1,2245 @@
+{
+	"questions": [
+		{
+			"id": "rl0001",
+			"type": "boolean",
+			"prompt": "To migrate workloads to the cloud, an IT infrastructure resource pool for resource sharing is needed. This resource pool should include hardware resource pooling, software integration, and automated operations.",
+			"options": [
+				{"key": "A", "label": "True", "value": true},
+				{"key": "B", "label": "False", "value": false}
+			],
+			"answer": true,
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "rl0002",
+			"type": "boolean",
+			"prompt": "Auto Scaling supports four instance removal policies: oldest instance, newest instance, oldest instance created from oldest Auto Scaling configuration, and newest instance created from oldest Auto Scaling configuration. If you want to test a new Auto Scaling configuration but do not want to retain it in production, the oldest instance removal policy can help.",
+			"options": [
+				{"key": "A", "label": "True", "value": true},
+				{"key": "B", "label": "False", "value": false}
+			],
+			"answer": false,
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "rl0003",
+			"type": "boolean",
+			"prompt": "You can create an encrypted image using an external image file or an encrypted ECS. For an image file, select an external image file from an OBS bucket and register it as an encrypted private image (select KMS encryption and select a key). For an encrypted ECS, if the system disk of an ECS is encrypted, the private image created from this ECS will also be encrypted. The key used for encrypting the image must be the same as that used for encrypting the system disk.",
+			"options": [
+				{"key": "A", "label": "True", "value": true},
+				{"key": "B", "label": "False", "value": false}
+			],
+			"answer": true,
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "rl0004",
+			"type": "boolean",
+			"prompt": "A user has purchased an elastic IP (EIP) on Huawei Cloud for testing and the EIP is frozen due to account arrears. In this case, the EIP cannot be bound or unbound.",
+			"options": [
+				{"key": "A", "label": "True", "value": true},
+				{"key": "B", "label": "False", "value": false}
+			],
+			"answer": true,
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "rl0005",
+			"type": "boolean",
+			"prompt": "An Internet company created multiple security group rules. These rules are applied first based on the sequence of their security groups associated with cloud servers and then after based on the rule priorities in the group. In this way, security is guaranteed, but network performance suffers. To solve this problem, it is recommended that no more than 10 security groups be configured.",
+			"options": [
+				{"key": "A", "label": "True", "value": true},
+				{"key": "B", "label": "False", "value": false}
+			],
+			"answer": true,
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "rl0006",
+			"type": "boolean",
+			"prompt": "If an Internet enterprise uses Huawei Cloud to deploy web services, they can use Object Storage Service (OBS) to store dynamic files and Scalable File Service (SFS) to store static files.",
+			"options": [
+				{"key": "A", "label": "True", "value": true},
+				{"key": "B", "label": "False", "value": false}
+			],
+			"answer": false,
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "rl0007",
+			"type": "boolean",
+			"prompt": "Storage Disaster Recovery Service (SDRS) has the following advantages: consistent data, cost-effectiveness, flexible configuration, and ease of use. SDRS uses synchronous replication and asynchronous replication to keep data consistent.",
+			"options": [
+				{"key": "A", "label": "True", "value": true},
+				{"key": "B", "label": "False", "value": false}
+			],
+			"answer": false,
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "rl0008",
+			"type": "boolean",
+			"prompt": "A financial customer decided to use GaussDB to transform a distributed core transaction system. GaussDB delivers the following advantages: a distributed architecture, high scalability, 3DC geo-redundant disaster recovery, and a distributed optimizer.",
+			"options": [
+				{"key": "A", "label": "True", "value": true},
+				{"key": "B", "label": "False", "value": false}
+			],
+			"answer": true,
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "rl0009",
+			"type": "boolean",
+			"prompt": "Huawei Cloud is responsible for the security of its customers' cloud architectures. When customers deploy workloads on Huawei Cloud, Huawei Cloud is responsible for not only the security of the cloud services it provides, but also the security of the customers' applications powered by these cloud services.",
+			"options": [
+				{"key": "A", "label": "True", "value": true},
+				{"key": "B", "label": "False", "value": false}
+			],
+			"answer": false,
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "rl0010",
+			"type": "boolean",
+			"prompt": "Asymmetric keys are often used for encryption. An asymmetric key consists of a pair of associated public and private keys. The private key can be used only by trusted users. The public key can be sent to anyone who requests it.",
+			"options": [
+				{"key": "A", "label": "True", "value": true},
+				{"key": "B", "label": "False", "value": false}
+			],
+			"answer": true,
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "rl0011",
+			"type": "boolean",
+			"prompt": "In the digital transformation of enterprise IT systems, the move from being resource-centric and cloud-based to application-centric and cloud native is due to automating resource O&M.",
+			"options": [
+				{"key": "A", "label": "True", "value": true},
+				{"key": "B", "label": "False", "value": false}
+			],
+			"answer": false,
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "rl0012",
+			"type": "boolean",
+			"prompt": "A Docker image packages an application and its dependent environments (such as CPU and memory resources). It contains available file systems and other metadata, such as paths of executable files during image running. Therefore, Docker images are more secure than virtualization technologies.",
+			"options": [
+				{"key": "A", "label": "True", "value": true},
+				{"key": "B", "label": "False", "value": false}
+			],
+			"answer": false,
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "rl0013",
+			"type": "boolean",
+			"prompt": "Huawei Cloud SoftWare Repository for Container (SWR) offers intelligent node scheduling. This feature allocates image build tasks to the host nodes nearest the image address, followed by the region nodes currently idle. However, it does not support cross-region scheduling.",
+			"options": [
+				{"key": "A", "label": "True", "value": true},
+				{"key": "B", "label": "False", "value": false}
+			],
+			"answer": false,
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "rl0014",
+			"type": "boolean",
+			"prompt": "In Operator Service Center (OSC), a cloud native service center, the two major roles are service providers and service users. Service providers can subscribe to and use services only after service users release services in OSC.",
+			"options": [
+				{"key": "A", "label": "True", "value": true},
+				{"key": "B", "label": "False", "value": false}
+			],
+			"answer": false,
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "rl0015",
+			"type": "boolean",
+			"prompt": "Huawei Cloud Application Service Mesh (ASM) is fully compatible with Istio, both control and data plane. It interconnects with Cloud Container Engine (CCE), an enterprise-level service on Huawei Cloud, to provide you with out-of-the-box features.",
+			"options": [
+				{"key": "A", "label": "True", "value": true},
+				{"key": "B", "label": "False", "value": false}
+			],
+			"answer": true,
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "rl0016",
+			"type": "boolean",
+			"prompt": "API Gateway (APIG) hosts powerful, available, and secure APIs. You can open your services and data by directly providing open APIs to API callers or releasing them on the marketplace for monetization.",
+			"options": [
+				{"key": "A", "label": "True", "value": true},
+				{"key": "B", "label": "False", "value": false}
+			],
+			"answer": true,
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "rl0017",
+			"type": "boolean",
+			"prompt": "Cloud Service Engine (CSE) is a one-stop management platform for microservice solutions. It enables developers to stay focused on service platform O&M and improves product delivery efficiency and quality.",
+			"options": [
+				{"key": "A", "label": "True", "value": true},
+				{"key": "B", "label": "False", "value": false}
+			],
+			"answer": false,
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "rl0018",
+			"type": "boolean",
+			"prompt": "Application Performance Management (APM) monitors and manages cloud application performance and faults in real time, and provides professional analysis of distributed application performance. Agents support intrusive collection of data (about application and basic resources), helping O&M personnel quickly locate application problems and resolve performance bottlenecks in a distributed architecture.",
+			"options": [
+				{"key": "A", "label": "True", "value": true},
+				{"key": "B", "label": "False", "value": false}
+			],
+			"answer": true,
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "rl0019",
+			"type": "boolean",
+			"prompt": "In traditional O&M, personnel need to maintain both hardware and software. However, in cloud O&M, customers only need to maintain applications (such as in Cloud Container Engine (CCE) and Elastic Cloud Server (ECS)), while cloud vendors guarantee the rest.",
+			"options": [
+				{"key": "A", "label": "True", "value": true},
+				{"key": "B", "label": "False", "value": false}
+			],
+			"answer": true,
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "rl0020",
+			"type": "boolean",
+			"prompt": "Cloud Eye collects logs from hosts and cloud services, and displays the logs on the Cloud Eye console in an intuitive and orderly manner. You can also archive logs through the CES service for long-term storage.",
+			"options": [
+				{"key": "A", "label": "True", "value": true},
+				{"key": "B", "label": "False", "value": false}
+			],
+			"answer": false,
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "rl0021",
+			"type": "boolean",
+			"prompt": "During model training, ModelArts can be used to create a training job. After training is complete, the system generates a model and automatically downloads it to a local directory.",
+			"options": [
+				{"key": "A", "label": "True", "value": true},
+				{"key": "B", "label": "False", "value": false}
+			],
+			"answer": false,
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "rl0022",
+			"type": "boolean",
+			"prompt": "When purchasing an Elastic Cloud Server (ECS), you can install different types of virtualization software on the ECS. Not only that, you can create VMs using the virtualization software for nested virtualization.",
+			"options": [
+				{"key": "A", "label": "True", "value": true},
+				{"key": "B", "label": "False", "value": false}
+			],
+			"answer": false,
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "rl0023",
+			"type": "boolean",
+			"prompt": "An Internet company has deployed a new service system on Huawei Cloud. They want to assign different permissions to employees. It is recommended that the company use Identity and Access Management (IAM) for refined permissions management.",
+			"options": [
+				{"key": "A", "label": "True", "value": true},
+				{"key": "B", "label": "False", "value": false}
+			],
+			"answer": true,
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "rl0024",
+			"type": "boolean",
+			"prompt": "Compared with databases on the cloud, customers' on-premises databases are expensive, O&M is difficult, they can be constructed quickly, and operations are complex.",
+			"options": [
+				{"key": "A", "label": "True", "value": true},
+				{"key": "B", "label": "False", "value": false}
+			],
+			"answer": false,
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "rl0025",
+			"type": "boolean",
+			"prompt": "Asymmetric keys consist of associated public and private keys. The private key can be used only by trusted users. The public key can be sent to anyone.",
+			"options": [
+				{"key": "A", "label": "True", "value": true},
+				{"key": "B", "label": "False", "value": false}
+			],
+			"answer": true,
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "rl0026",
+			"type": "boolean",
+			"prompt": "Kata Containers makes VMs lightweight and runs OCI-compliant containers on VMs. Kubernetes can be used to orchestrate Kata containers.",
+			"options": [
+				{"key": "A", "label": "True", "value": true},
+				{"key": "B", "label": "False", "value": false}
+			],
+			"answer": true,
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "rl0027",
+			"type": "boolean",
+			"prompt": "Huawei Cloud SWR does NOT support cross-region scheduling.",
+			"options": [
+				{"key": "A", "label": "True", "value": true},
+				{"key": "B", "label": "False", "value": false}
+			],
+			"answer": false,
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "rl0028",
+			"type": "boolean",
+			"prompt": "FunctionGraph: You only need to manage servers, not edit code.",
+			"options": [
+				{"key": "A", "label": "True", "value": true},
+				{"key": "B", "label": "False", "value": false}
+			],
+			"answer": false,
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "rl0029",
+			"type": "boolean",
+			"prompt": "The Cloud Service Engine (CSE) registry process involves registration, query/cache, and point-to-point calling.",
+			"options": [
+				{"key": "A", "label": "True", "value": true},
+				{"key": "B", "label": "False", "value": false}
+			],
+			"answer": true,
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "rl0030",
+			"type": "boolean",
+			"prompt": "CSE is a one-stop management platform for microservice solutions.",
+			"options": [
+				{"key": "A", "label": "True", "value": true},
+				{"key": "B", "label": "False", "value": false}
+			],
+			"answer": true,
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "rl0031",
+			"type": "boolean",
+			"prompt": "Monolithic architecture is an outdated architecture that is no longer used.",
+			"options": [
+				{"key": "A", "label": "True", "value": true},
+				{"key": "B", "label": "False", "value": false}
+			],
+			"answer": false,
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "rl0032",
+			"type": "boolean",
+			"prompt": "ServiceStage is NOT suitable for application development.",
+			"options": [
+				{"key": "A", "label": "True", "value": true},
+				{"key": "B", "label": "False", "value": false}
+			],
+			"answer": false,
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "rl0033",
+			"type": "boolean",
+			"prompt": "Prometheus stores data as time series and needs Grafana for visualization.",
+			"options": [
+				{"key": "A", "label": "True", "value": true},
+				{"key": "B", "label": "False", "value": false}
+			],
+			"answer": true,
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "rl0034",
+			"type": "boolean",
+			"prompt": "In cloud O&M, customers only maintain applications, vendors guarantee the rest.",
+			"options": [
+				{"key": "A", "label": "True", "value": true},
+				{"key": "B", "label": "False", "value": false}
+			],
+			"answer": true,
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "rl0035",
+			"type": "boolean",
+			"prompt": "You can create an encrypted image using an external image file or an encrypted ECS. For an image file, select an external image file from an OBS bucket and register it as an encrypted private image (select KMS encryption and select a key). For an encrypted ECS, if the system disk of an ECS is encrypted, the private image created from this ECS will also be encrypted. The key used for encrypting the image must be the same as that used for encrypting the system disk.",
+			"options": [
+				{"key": "A", "label": "True", "value": true},
+				{"key": "B", "label": "False", "value": false}
+			],
+			"answer": true,
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "rl0036",
+			"type": "boolean",
+			"prompt": "When purchasing an Elastic Cloud Server (ECS), you can install different types of virtualization software on the ECS. Not only that, you can create VMs using the virtualization software for nested virtualization.",
+			"options": [
+				{"key": "A", "label": "True", "value": true},
+				{"key": "B", "label": "False", "value": false}
+			],
+			"answer": false,
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "rl0037",
+			"type": "boolean",
+			"prompt": "An Internet company has deployed a new service system on Huawei Cloud. They want to assign different permissions to employees. It is recommended that the company use Identity and Access Management (IAM) for refined permissions management.",
+			"options": [
+				{"key": "A", "label": "True", "value": true},
+				{"key": "B", "label": "False", "value": false}
+			],
+			"answer": true,
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "rl0038",
+			"type": "boolean",
+			"prompt": "You can enable one or more scaling policies for an Auto Scaling group. If you want to enable multiple scaling policies for an Auto Scaling group, you must ensure that the conditions specified in these policies do not conflict with each other.",
+			"options": [
+				{"key": "A", "label": "True", "value": true},
+				{"key": "B", "label": "False", "value": false}
+			],
+			"answer": true,
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "rl0039",
+			"type": "boolean",
+			"prompt": "A user has purchased an elastic IP (EIP) on Huawei Cloud for testing and the EIP is frozen due to account arrears. In this case, the EIP cannot be bound or unbound.",
+			"options": [
+				{"key": "A", "label": "True", "value": true},
+				{"key": "B", "label": "False", "value": false}
+			],
+			"answer": true,
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "rl0040",
+			"type": "boolean",
+			"prompt": "A medical institution plans to use Object Storage Service (OBS) to store medical imaging data and diagnostic data. As such data is seldom accessed, it is recommended that this medical institution store the data in the Infrequent Access storage class of OBS to reduce costs.",
+			"options": [
+				{"key": "A", "label": "True", "value": true},
+				{"key": "B", "label": "False", "value": false}
+			],
+			"answer": true,
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "rl0041",
+			"type": "boolean",
+			"prompt": "In the Internet era, data is crucial to everyone, not just individuals but countries, governments, and financial and health institutions. Data generated everyday by mission-critical applications, such as ERP, CRM, and email and document servers needs to be backed up daily, and full backups need to be performed on the weekends.",
+			"options": [
+				{"key": "A", "label": "True", "value": true},
+				{"key": "B", "label": "False", "value": false}
+			],
+			"answer": true,
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "rl0042",
+			"type": "boolean",
+			"prompt": "Database and Application Migration UGO (referred to as UGO) is a professional tool for migrating heterogeneous database objects and applications.",
+			"options": [
+				{"key": "A", "label": "True", "value": true},
+				{"key": "B", "label": "False", "value": false}
+			],
+			"answer": true,
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "rl0043",
+			"type": "single",
+			"prompt": "Relational databases generally organize data into tables, while non-relational databases generally use a simple key-value method to store data.",
+			"options": [
+				{"key": "A", "label": "True", "value": true},
+				{"key": "B", "label": "False", "value": false}
+			],
+			"answer": true,
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "rl0044",
+			"type": "boolean",
+			"prompt": "Huawei Cloud is responsible for the security of its customers' cloud architectures. When customers deploy workloads on Huawei Cloud, Huawei Cloud is responsible for not only the security of the cloud services it provides, but also the security of the customers' applications powered by these cloud services.",
+			"options": [
+				{"key": "A", "label": "True", "value": true},
+				{"key": "B", "label": "False", "value": false}
+			],
+			"answer": false,
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "rl0045",
+			"type": "boolean",
+			"prompt": "Cloud Eye collects logs from hosts and cloud services, and displays the logs on the Cloud Eye console in an intuitive and orderly manner. You can also archive logs through the CES service for long-term storage.",
+			"options": [
+				{"key": "A", "label": "True", "value": true},
+				{"key": "B", "label": "False", "value": false}
+			],
+			"answer": false,
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "rl0046",
+			"type": "boolean",
+			"prompt": "With increasingly complex IT architectures, many enterprises opt to have development and O&M departments with different goals. This shift makes systems more efficient by breaking down barriers between O&M personnel, developers, and quality assurance personnel.",
+			"options": [
+				{"key": "A", "label": "True", "value": true},
+				{"key": "B", "label": "False", "value": false}
+			],
+			"answer": true,
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "rl0047",
+			"type": "boolean",
+			"prompt": "Cloud Eye is a multi-dimensional resource monitoring service. You can use Cloud Eye to monitor resources, set alarm rules, identify resource exceptions, and quickly respond to resource changes.",
+			"options": [
+				{"key": "A", "label": "True", "value": true},
+				{"key": "B", "label": "False", "value": false}
+			],
+			"answer": true,
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "rl0048",
+			"type": "boolean",
+			"prompt": "Prometheus is an open source framework for system monitoring and alerting, and fundamentally stores all data as time series. Since Prometheus does not support charts or visualized display, it needs to work with Grafana.",
+			"options": [
+				{"key": "A", "label": "True", "value": true},
+				{"key": "B", "label": "False", "value": false}
+			],
+			"answer": true,
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "rl0049",
+			"type": "boolean",
+			"prompt": "During model training, ModelArts can be used to create a training job. After training is complete, the system generates a model and automatically downloads it to a local directory.",
+			"options": [
+				{"key": "A", "label": "True", "value": true},
+				{"key": "B", "label": "False", "value": false}
+			],
+			"answer": false,
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "rl0050",
+			"type": "boolean",
+			"prompt": "To migrate workloads to the cloud, an IT infrastructure resource pool for resource sharing is needed. This resource pool should include hardware resource pooling, software integration, and automated operations.",
+			"options": [
+				{"key": "A", "label": "True", "value": true},
+				{"key": "B", "label": "False", "value": false}
+			],
+			"answer": true,
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "rl0051",
+			"type": "boolean",
+			"prompt": "Auto Scaling supports four instance removal policies: oldest instance, newest instance, oldest instance created from oldest Auto Scaling configuration, and newest instance created from oldest Auto Scaling configuration. If you want to test a new Auto Scaling configuration but do not want to retain it in production, the oldest instance removal policy can help.",
+			"options": [
+				{"key": "A", "label": "True", "value": true},
+				{"key": "B", "label": "False", "value": false}
+			],
+			"answer": false,
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "rl0052",
+			"type": "boolean",
+			"prompt": "An Internet company created multiple security group rules. These rules are applied first based on the sequence of their security groups associated with cloud servers and then based on the rule priorities in the group. To solve this problem, it is recommended that no more than 10 security groups be configured.",
+			"options": [
+				{"key": "A", "label": "True", "value": true},
+				{"key": "B", "label": "False", "value": false}
+			],
+			"answer": true,
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "rl0053",
+			"type": "boolean",
+			"prompt": "If an Internet enterprise uses Huawei Cloud to deploy web services, they can use Object Storage Service (OBS) to store dynamic files and Scalable File Service (SFS) to store static files.",
+			"options": [
+				{"key": "A", "label": "True", "value": true},
+				{"key": "B", "label": "False", "value": false}
+			],
+			"answer": false,
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "rl0054",
+			"type": "boolean",
+			"prompt": "Asymmetric keys are often used for encryption. An asymmetric key consists of a pair of associated public and private keys. The private key can be used only by trusted users. The public key can be sent to anyone who requests it.",
+			"options": [
+				{"key": "A", "label": "True", "value": true},
+				{"key": "B", "label": "False", "value": false}
+			],
+			"answer": true,
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "rl0055",
+			"type": "boolean",
+			"prompt": "Serverless is a cloud computing model based on platform as a service (PaaS). Serverless computing is a mini-architecture. End users do not need to deploy, configure, or manage the servers required for code running.",
+			"options": [
+				{"key": "A", "label": "True", "value": true},
+				{"key": "B", "label": "False", "value": false}
+			],
+			"answer": true,
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "rl0056",
+			"type": "boolean",
+			"prompt": "API Gateway (APIG) hosts powerful, available, and secure APIs. You can open your services and data by directly providing open APIs to API callers or releasing them on the marketplace for monetization.",
+			"options": [
+				{"key": "A", "label": "True", "value": true},
+				{"key": "B", "label": "False", "value": false}
+			],
+			"answer": true,
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "rl0057",
+			"type": "boolean",
+			"prompt": "In software engineering, CI/CD refers to continuous integration and delivery or deployment. It connects the development team with O&M team by automating application building, testing, and deployment.",
+			"options": [
+				{"key": "A", "label": "True", "value": true},
+				{"key": "B", "label": "False", "value": false}
+			],
+			"answer": true,
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "rl0058",
+			"type": "boolean",
+			"prompt": "Cloud Service Engine (CSE) is a one-stop management platform for microservice solutions. It enables developers to stay focused on service platform O&M and improves product delivery efficiency and quality.",
+			"options": [
+				{"key": "A", "label": "True", "value": true},
+				{"key": "B", "label": "False", "value": false}
+			],
+			"answer": false,
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "rl0059",
+			"type": "boolean",
+			"prompt": "The Cloud Service Engine (CSE) registry and discovery process: 1) When a microservice starts, instance info is registered with CSE. 2) When the microservice needs to call other microservices, it queries instance info from the configuration center and caches it locally. 3) Cached address info is used to implement point-to-point calling between microservices.",
+			"options": [
+				{"key": "A", "label": "True", "value": true},
+				{"key": "B", "label": "False", "value": false}
+			],
+			"answer": true,
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "rl0060",
+			"type": "boolean",
+			"prompt": "Cloud Eye is a multi-dimensional resource monitoring service. You can use Cloud Eye to monitor resources, set alarm rules, identify resource exceptions, and quickly respond to resource changes.",
+			"options": [
+				{"key": "A", "label": "True", "value": true},
+				{"key": "B", "label": "False", "value": false}
+			],
+			"answer": true,
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "rl0061",
+			"type": "boolean",
+			"prompt": "Prometheus is an open source framework for system monitoring and alerting, and fundamentally stores all data as time series. Since Prometheus does not support charts or visualized display, it needs to work with Grafana.",
+			"options": [
+				{"key": "A", "label": "True", "value": true},
+				{"key": "B", "label": "False", "value": false}
+			],
+			"answer": true,
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "rl0062",
+			"type": "single",
+			"prompt": "To provide a better experience for players, a game company decides to optimize the performance of ECSs. They require a type of ECSs that can provide burst CPU power, high-performance computing, and mass storage while ensuring image rendering efficiency. Which of the following types of ECSs is recommended?",
+			"options": [
+				"A. General-computing",
+				"B. High-performance computing",
+				"C. Memory-optimized",
+				"D. Disk-intensive"
+			],
+			"answer": ["B"],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "rl0063",
+			"type": "single",
+			"prompt": "When using Auto Scaling for an application, you find that Auto Scaling has certain restrictions. Which of the following statements is false about the restrictions on using Auto Scaling?",
+			"options": [
+				"A. Only applications that are stateless and can be horizontally scaled can run on ECS instances in an Auto Scaling group.",
+				"B. There is a limit to the amount of user resources or capacity supported for an Auto Scaling group.",
+				"C. Auto Scaling can release ECS instances in an Auto Scaling group automatically, so the instances cannot be used to save application status information (such as session statuses) or related data (such as database data and logs)."
+			],
+			"answer": ["A"],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "rl0064",
+			"type": "single",
+			"prompt": "An Internet company uses Huawei Cloud to deploy its services. It created one VPC to deploy the development environment, and another VPC to deploy the test environment. If the development environment wants to connect to the test environment, which of the following needs to be confirmed before a VPC peering connection is created?",
+			"options": [
+				"A. The two VPCs are in the same region.",
+				"B. The two VPCs are configured with the same network ACL rules.",
+				"C. The two VPCs are in the same CIDR block.",
+				"D. The two VPCs are associated with the same security group."
+			],
+			"answer": ["A"],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "rl0065",
+			"type": "single",
+			"prompt": "Huawei Cloud provides public NAT gateways and private NAT gateways. Which of the following constraints is false for using public NAT gateways?",
+			"options": [
+				"A. Each Virtual Private Cloud (VPC) can have multiple public NAT gateways.",
+				"B. If both an Elastic IP Address (EIP) and a public NAT gateway have been configured for a server, data will be forwarded through the public NAT gateway.",
+				"C. Users can configure only one destination NAT (DNAT) rule for each port on a server. Each port can only be mapped to a single EIP.",
+				"D. Only one source NAT (SNAT) rule can be added for each VPC subnet."
+			],
+			"answer": ["B"],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "rl0066",
+			"type": "single",
+			"prompt": "To prevent illegal access from malicious users, an Internet company configures inbound and outbound network ACL rules on the company's subnets to control traffic in and out of the subnets. Which of the following statements is true about the priority of network ACL rules?",
+			"options": [
+				"A. The smaller the value, the lower the priority.",
+				"B. The smaller the value, the higher the priority.",
+				"C. The priority is not determined by configured values.",
+				"D. The larger the value, the higher the priority."
+			],
+			"answer": ["B"],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "rl0067",
+			"type": "single",
+			"prompt": "Compared with Object Storage Service (OBS) and Scalable File Service (SFS), which of the following protocols is used by Elastic Volume Service (EVS) to store data?",
+			"options": [
+				"A. NFS",
+				"B. HTTP",
+				"C. SCSI",
+				"D. CIFS"
+			],
+			"answer": ["C"],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "rl0068",
+			"type": "single",
+			"prompt": "Data Replication Service (DRS) supports real-time migration, backup migration, real-time synchronization, data subscription, and real-time disaster recovery. Real-time migration can be performed over multiple networks. Which of the following network types does not support real-time migration?",
+			"options": [
+				"A. VPC",
+				"B. Overlay",
+				"C. VPN",
+				"D. Public network"
+			],
+			"answer": ["B"],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "rl0069",
+			"type": "single",
+			"prompt": "Document Database Service (DDS) supports multiple DB instance types to meet different service scenarios. Which of the following is not a DDS instance type?",
+			"options": [
+				"A. Replica set",
+				"B. Cluster",
+				"C. Single node",
+				"D. Master/Backup"
+			],
+			"answer": ["D"],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "rl0070",
+			"type": "single",
+			"prompt": "A company has its own enterprise management system and wants to migrate its IT infrastructure to Huawei Cloud. Which of the following are true?",
+			"options": [
+				"A. They can enable Enterprise Management and assign permissions by organization and project.",
+				"B. They can use IAM to delegate Huawei Cloud account permissions to enterprise employees.",
+				"C. They can use Cloud Bastion Host (CBH) for identity and permissions management.",
+				"D. They can use federated identity authentication on Identity and Access Management (IAM)."
+			],
+			"answer": ["A"],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "rl0071",
+			"type": "single",
+			"prompt": "To improve the security of system architecture and of the workloads, a company plans to purchase Host Security Service (HSS). Which of the following functions is not provided by HSS?",
+			"options": [
+				"A. Detect all attack vectors and hacker intrusions in real time.",
+				"B. Authenticate login users to ensure identity security.",
+				"C. Configure account permissions to distinguish users who access servers from different departments of a company.",
+				"D. Evaluate server security, detect vulnerabilities and insecure configurations, and report risks."
+			],
+			"answer": ["C"],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "rl0072",
+			"type": "single",
+			"prompt": "The architecture is based on small functional blocks that focus on a single responsibility and function. A large complex application is constructed as a suite of modular services. Which of the following architectures is described above?",
+			"options": [
+				"A. Microservice architecture",
+				"B. Serverless architecture",
+				"C. Monolithic architecture",
+				"D. Service-oriented architecture (SOA)"
+			],
+			"answer": ["A"],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "rl0073",
+			"type": "single",
+			"prompt": "Service-oriented architecture (SOA) and microservice architecture are two common service-based architectures. Which of the following statements about the differences between the two architectures is false?",
+			"options": [
+				"A. The upgrade and release period of microservice architecture is shorter.",
+				"B. SOA has better scalability.",
+				"C. Both are still in use.",
+				"D. SOA uses an enterprise service bus (ESB) for system integration."
+			],
+			"answer": ["B"],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "rl0074",
+			"type": "single",
+			"prompt": "CI/CD is common for software projects/engineering. Which of the following statements about CI/CD is false?",
+			"options": [
+				"A. Continuous deployment extends continuous delivery so that software builds can be automatically deployed after passing all tests.",
+				"B. Continuous integration allows developers to submit content to the repository multiple times at any time.",
+				"C. Continuous delivery allows releasing verified code on a repository such as GitLab.",
+				"D. With continuous integration, developers can only submit content on their own by the end of a development cycle."
+			],
+			"answer": ["D"],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "rl0075",
+			"type": "single",
+			"prompt": "When a company releases an application traditionally, its services may be interrupted during background application upgrade or for other reasons. If the released version is faulty, the company needs to locate and rectify the fault and re-release the application again. The company plans to first release the new version on a smaller scale to locate and rectify faults before actual deployment. Which of the following grayscale release modes is recommended?",
+			"options": [
+				"A. Blue-green deployment",
+				"B. Canary release",
+				"C. A/B/C testing",
+				"D. Deep release"
+			],
+			"answer": ["B"],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "rl0076",
+			"type": "single",
+			"prompt": "An enterprise plans to migrate some services to Huawei Cloud. Which of the following statements is false about Log Tank Service (LTS)?",
+			"options": [
+				"A. When creating log groups and log streams, you are advised to create as many log groups and log streams as possible to prevent storage exceptions caused by insufficient groups and streams.",
+				"B. LTS allows you to query logs quickly and simply, and supports fuzzy query and keyword query.",
+				"C. For monitoring and log collection, install ICAgent on an ECS and use LTS and Application Operations Management (AOM).",
+				"D. Logs are stored for a limited time. For long-term log observation, back up or transfer important logs."
+			],
+			"answer": ["A"],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "rl0077",
+			"type": "single",
+			"prompt": "O&M models change with IT architecture evolution. Which of the following statements is false?",
+			"options": [
+				"A. O&M used to be something only customers did, but now both customers and cloud vendors share O&M responsibility.",
+				"B. System architectures are becoming increasingly complex, making O&M more difficult and requiring professional software.",
+				"C. Self-service and elasticity are basic requirements on cloud infrastructure.",
+				"D. With the popularization of cloud-native applications (such as microservices and containers), maintaining applications is now a priority for cloud O&M."
+			],
+			"answer": ["A"],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "rl0078",
+			"type": "single",
+			"prompt": "Huawei Cloud provides a full-stack enterprise intelligence solution for governments, enterprises, and developers. ModelArts is an important product in the solution. Which of the following statements is false about ModelArts?",
+			"options": [
+				"A. ModelArts provides team labeling.",
+				"B. A notebook instance can be used as a code development environment.",
+				"C. ModelArts is a one-stop AI development platform.",
+				"D. ModelArts allows models to be deployed as real-time or non-real-time services."
+			],
+			"answer": ["D"],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "rl0079",
+			"type": "single",
+			"prompt": "If a GaussDB(for Redis) instance is deployed on an ECS in the same region and VPC, which of the following cannot be used to establish a private network connection?",
+			"options": [
+				"A. A load balancer IP address",
+				"B. A private domain name",
+				"C. A private IP address",
+				"D. A reverse proxy IP address"
+			],
+			"answer": ["D"],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "rl0080",
+			"type": "single",
+			"prompt": "Compared with RDS, Huawei-developed GaussDB has many advantages in terms of system architecture. Which of the following statements about GaussDB is false?",
+			"options": [
+				"A. The shared storage is used. You do not need to buy additional storage when adding read replicas.",
+				"B. Multiple copies of storage are available. When the access traffic is heavy, the read and write performance of the database is greatly improved.",
+				"C. All update operations are only recorded in logs. The doublewrite buffer is no longer needed, reducing network bandwidth usage.",
+				"D. There is no standby instance. All read replicas are in the active state to offload read traffic from the primary node."
+			],
+			"answer": ["B"],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "rl0081",
+			"type": "single",
+			"prompt": "An Internet enterprise plans to migrate some data to a cloud database. The cloud database must meet the following requirements: flexible scalability, high availability, and better performance than traditional databases such as MySQL. Which of the following databases can meet the enterprise requirements?",
+			"options": [
+				"A. Database deployed on a high-performance Elastic Cloud Server (ECS)",
+				"B. Database deployed on a Bare Metal Server (BMS)",
+				"C. Primary/standby RDS instance",
+				"D. GaussDB"
+			],
+			"answer": ["D"],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "rl0082",
+			"type": "single",
+			"prompt": "An independent software vendor (ISV) often repeats environment deployments and configures services manually. The ISV plans to use Huawei Cloud Application Orchestration Service (AOS) to be more time- and cost-efficient. Which of the following AOS functions would help the ISV?",
+			"options": [
+				"A. Templates, which enable one-click deployment of software and resource provisioning.",
+				"B. Free application templates that meet all requirements of enterprise's diversified services.",
+				"C. Software lifecycle management, which enables one-click software upgrade and scaling.",
+				"D. Fixed templates, in which all the required resources are defined instead of manually set."
+			],
+			"answer": ["A"],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "rl0083",
+			"type": "single",
+			"prompt": "To adapt to changing service environments, a company plans to use the Service Mesh architecture to upgrade its aging IT system. Which of the following statements about Service Mesh is false?",
+			"options": [
+				"A. Service Mesh is a group of lightweight network proxies deployed with application services.",
+				"B. Service Mesh describes the network of microservices that make up applications and the interactions between applications.",
+				"C. Service Mesh is responsible for network invoking, rate limiting, outlier detection, and monitoring between services.",
+				"D. Each service is a unit with independent deployment, horizontal expansion, independent access, and automatic fault recovery."
+			],
+			"answer": ["D"],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "rl0084",
+			"type": "single",
+			"prompt": "An enterprise plans to migrate some services to Huawei Cloud. Which of the following statements is false about Log Tank Service (LTS)?",
+			"options": [
+				"A. When creating log groups and log streams, you are advised to create as many log groups and log streams as possible to prevent storage exceptions caused by insufficient groups and streams.",
+				"B. LTS allows you to query logs quickly and simply, and supports fuzzy query and keyword query.",
+				"C. For monitoring and log collection, install ICAgent on an ECS and use LTS and Application Operations Management (AOM).",
+				"D. Logs are stored for a limited time. For long-term log observation, back up or transfer important logs."
+			],
+			"answer": ["A"],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "rl0085",
+			"type": "single",
+			"prompt": "An Internet company deployed its services on Huawei Cloud. The O&M personnel found that traffic surged by 30% to 40% on every Friday evening, resulting in slow service response. The company decides to purchase new resources (such as using Auto Scaling and Elastic Cloud Server (ECS) together) on Huawei Cloud to solve this problem. To reduce costs, which of the following billing modes is the most cost-effective for purchasing ECSs?",
+			"options": [
+				"A. Spot price",
+				"B. Pay-per-use",
+				"C. Monthly subscription",
+				"D. Yearly subscription"
+			],
+			"answer": ["B"],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "rl0086",
+			"type": "single",
+			"prompt": "Elastic Load Balance (ELB) provides two types of load balancers: dedicated load balancers and shared load balancers. Which of the following statements is false about the advantages of dedicated load balancers and shared load balancers?",
+			"options": [
+				"A. Dedicated load balancers provide exclusive performance and multiple specifications that you can choose from based on your requirements.",
+				"B. Shared load balancers are deployed in clusters, providing high performance that meets your service requirements. You will be charged for the duration that each load balancer is running.",
+				"C. Dedicated load balancers support IPv4/IPv6 dual stack and can be deployed in multiple AZs.",
+				"D. Dedicated load balancers have exclusive use of underlying resources, ensuring robust performance."
+			],
+			"answer": ["B"],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "rl0087",
+			"type": "single",
+			"prompt": "Cloud Backup and Recovery (CBR) enables users to easily back up Elastic Cloud Servers (ECSs), Bare Metal Servers (BMSs), and Elastic Volume Service (EVS) disks. If there is a virus attack, accidental deletion, or software/hardware fault, users can restore data to any point in the past when the data was backed up. Which of the following scenarios is not supported by CBR?",
+			"options": [
+				"A. In-cloud backup",
+				"B. Outside-cloud backup",
+				"C. Service migration",
+				"D. Hybrid cloud backup"
+			],
+			"answer": ["B"],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "rl0088",
+			"type": "single",
+			"prompt": "Storage Disaster Recovery Service (SDRS) provides disaster recovery (DR) services for many cloud services, such as Elastic Cloud Server (ECS), Elastic Volume Service (EVS), and Dedicated Distributed Storage Service (DSS). There are many differences between DR and backup in terms of data protection. Which of the following statements is false about these differences?",
+			"options": [
+				"A. A DR system protects data but is more focused on guaranteeing service continuity. A backup system only ensures that backups generated at different points in time can be restored.",
+				"B. The highest-level DR can achieve zero RPO. A maximum of 24 executions in a day can be set in a backup policy, and the backups generated accordingly can be used to restore data to different backup points.",
+				"C. DR is used to protect from natural disasters, such as a fire and an earthquake. A DR site must be located within a safe distance from the production site. Backups provide protection from human error, virus attacks, and logic errors. They are used to restore the service system data. Usually, a system and its backup data are deployed in the same data center.",
+				"D. If a disaster occurs, such as an earthquake or a fire, a DR system only takes a few seconds to perform a failover, but a backup system takes several hours or even dozens of hours to restore data."
+			],
+			"answer": ["B"],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "rl0089",
+			"type": "single",
+			"prompt": "A bank wants to use Database and Application Migration UGO (referred to as UGO) to migrate its transactions from a traditional commercial database to a cloud database. To securely access the original database, which of the following services can be used by UGO as a proxy to connect to the destination database?",
+			"options": [
+				"A. VPC Endpoint (VPCEP)",
+				"B. Virtual Private Network (VPN)",
+				"C. VPC Peering",
+				"D. Cloud Connect (CC)"
+			],
+			"answer": ["A"],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "rl0090",
+			"type": "single",
+			"prompt": "Huawei Cloud Managed Threat Detection (MTD) is a security service that generates alarms for malicious activities and unauthorized behavior in a timely manner. Which of the following statements about MTD functions is false?",
+			"options": [
+				"A. MTD scans logs of a range of cloud services, including Host Security Service (HSS), Domain Name Service (DNS), and Web Application Firewall (WAF).",
+				"B. By default, MTD stores the alarms for the latest 30 days. To meet security compliance requirements, you can upload the MTD alarms to an OBS bucket for a long-term storage.",
+				"C. Users can upload intelligence lists and whitelists to Object Storage Service (OBS) buckets and asynchronously synchronize them to MTD. MTD preferentially associates the IP addresses and domain names in the lists for threat detection.",
+				"D. MTD displays threat alarms by severity. There are five severities: critical, high, medium, low, and informational."
+			],
+			"answer": ["D"],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "rl0091",
+			"type": "single",
+			"prompt": "A company has deployed multiple Kubernetes environments in their data center and uses Prometheus (deployed on an independent device) to monitor the environments together. The latest monitoring data of a Kubernetes environment cannot be obtained, but all services in that environment are accessible and running properly. What is a possible cause?",
+			"options": [
+				"A. The Prometheus Server is abnormal and cannot receive data.",
+				"B. The exporters component is abnormal. As a result, the monitoring data cannot be read by the Prometheus Server.",
+				"C. The Prometheus global alarm policy was incorrectly configured.",
+				"D. The alertmanager component is abnormal, and can be rectified with a restart."
+			],
+			"answer": ["A"],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "rl0092",
+			"type": "multi",
+			"prompt": "Which of the following scenarios is pay-per-use billing applicable to?",
+			"options": [
+				"A. Elastic Cloud Server (ECS) for enterprise official website deployment.",
+				"B. Object Storage Service (OBS) for training courses.",
+				"C. ECS on which the workload of a two-month event is deployed.",
+				"D. Elastic IP (EIP) for developing and testing a function."
+			],
+			"answer": ["B", "C", "D"],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "rl0093",
+			"type": "multi",
+			"prompt": "Which of the following statements are true about the two types of backups (Cloud server backup vs cloud disk backup)?",
+			"options": [
+				"A. Recommended scenario: Cloud server backup protects the entire cloud servers; cloud disk backup protects only the desired data disks because system disks do not contain application data.",
+				"B. Advantage: Cloud server backup backs up all disks of a server at the same time to avoid data inconsistencies that would result if the backups were performed at different times; cloud disk backup ensures data security inexpensively.",
+				"C. Backup speed: Cloud server backup is fast; cloud disk backup is slow.",
+				"D. Backup/restore object: Cloud server backup backs up all disks on cloud servers; cloud disk backup allows for backup of one or more specific disks on cloud servers."
+			],
+			"answer": ["A", "B", "D"],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "rl0094",
+			"type": "multi",
+			"prompt": "A customer has purchased the Huawei Cloud VPN service, but the VPN connection remains in disconnected state. Which of the following may cause this problem?",
+			"options": [
+				"A. The pre-shared keys and negotiation information at the two ends of the VPN connection are inconsistent.",
+				"B. The two ends of the VPN connection are not in the same region.",
+				"C. The IPsec policies at the two ends of the VPN connection are inconsistent.",
+				"D. The IKE policies at the two ends of the VPN connection are inconsistent."
+			],
+			"answer": ["A", "C", "D"],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "rl0095",
+			"type": "multi",
+			"prompt": "Which of the following statements are true about the precautions (SDRS)?",
+			"options": [
+				"A. If the DR site servers of a protection group are added to an enterprise project, the drill servers created will not be automatically added to the enterprise project.",
+				"B. If a custom route table is configured and associated with a subnet in the protection group VPC, the corresponding route table will not be automatically created in the drill VPC.",
+				"C. If the synchronization progress of replication pairs in the protection group is not all 100%, the created drill servers may fail to be started.",
+				"D. If an existing drill VPC is used for a new drill, the subnet ACL rule of the drill VPC will be different from that of the protection group VPC."
+			],
+			"answer": ["A", "B", "C"],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "rl0096",
+			"type": "multi",
+			"prompt": "Huawei Cloud database migration tools play an important role. Which of the following statements about the tools are true?",
+			"options": [
+				"A. Syntax migration: evaluates and converts heterogeneous database syntax.",
+				"B. Traffic replay: maintains awareness of service stability and performance in advance through service simulation.",
+				"C. Data verification: verifies log-based incremental data in real time.",
+				"D. Data migration: captures log-based data changes in real time."
+			],
+			"answer": ["A", "B"],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "rl0097",
+			"type": "multi",
+			"prompt": "Which of the following statements are true about the differences between a relational database and a non-relational database?",
+			"options": [
+				"A. Scalability: Relational databases have strong scalability.",
+				"B. Storage: Relational databases can normalize logical tables to avoid data duplication and save space; non-relational databases store data in data sets where data may be duplicated but is easier to read and write.",
+				"C. Storage structure: Relational databases use structured tables to store data, and non-relational databases can store semi-structured data.",
+				"D. Transaction: Relational databases support transactions, and non-relational databases do not support transactions."
+			],
+			"answer": ["B", "C", "D"],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "rl0098",
+			"type": "multi",
+			"prompt": "Which of the following threats can WAF defend against?",
+			"options": [
+				"A. Vulnerabilities in third-party service frameworks and plug-ins.",
+				"B. Streaming media attacks.",
+				"C. Server vulnerabilities.",
+				"D. Web page tampering."
+			],
+			"answer": ["A", "D"],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "rl0099",
+			"type": "multi",
+			"prompt": "Which of the following statements about CCE and CCI are true?",
+			"options": [
+				"A. Users do not need to create a cluster with CCI.",
+				"B. CCE and CCI intercommunicate through ingresses, not Services.",
+				"C. Both support Kata containers.",
+				"D. Both provide container services using Kubernetes clusters."
+			],
+			"answer": ["A", "C", "D"],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "rl0100",
+			"type": "multi",
+			"prompt": "Which of the following statements about common controllers Deployments and StatefulSets are true?",
+			"options": [
+				"A. Deployments run stateless services, while StatefulSets run stateful services.",
+				"B. Pods in a Deployment share storage. Pods in a StatefulSet each have their own independent storage.",
+				"C. Deployments run stateful services, while StatefulSets run stateless services.",
+				"D. Pods in a Deployment have fixed names, while those in a StatefulSet are named with random digits."
+			],
+			"answer": ["A", "B"],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "rl0101",
+			"type": "multi",
+			"prompt": "Which of the following statements about DevCloud and ServiceStage are true?",
+			"options": [
+				"A. You are advised to use DevCloud to develop new applications and manage projects.",
+				"B. They both support application lifecycle management.",
+				"C. DevCloud requires that developers develop programs locally.",
+				"D. You are advised to import developed applications to ServiceStage for O&M management."
+			],
+			"answer": ["A", "B", "D"],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "rl0102",
+			"type": "multi",
+			"prompt": "Which of the following statements about Cloud Eye are false?",
+			"options": [
+				"A. All applications need to be redeveloped to adapt to the cloud environment.",
+				"B. Logs that need to be stored for longer must be dumped to Elastic Volume Service (EVS) disks.",
+				"C. Users can set alarm rules to monitor log content in real time.",
+				"D. In addition to default metrics, users can create custom metrics."
+			],
+			"answer": ["A", "B"],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "rl0103",
+			"type": "multi",
+			"prompt": "Which of the following statements about AOM is false?",
+			"options": [
+				"A. The ICAgent installed on the host collects data about the process.",
+				"B. AOM enables you to customize alarm rules.",
+				"C. Host monitoring generally responds to...",
+				"D. AOM supports log management."
+			],
+			"answer": ["C"],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "rl0104",
+			"type": "multi",
+			"prompt": "Which of the following statements about ROMA Connect are true?",
+			"options": [
+				"A. Service integration (APIC) encapsulates existing backend services, data sources, and custom functions into RESTful APIs so that these assets can be accessed externally.",
+				"B. ROMA Connect is compatible with the MQTT protocol. It supports IoT device access, management, and control, as well as data collection.",
+				"C. Integration applications need to be created on the 'Instances' > 'View Console' page on the ROMA Connect console.",
+				"D. Data integration (FDI) supports the flexible conversion of multiple heterogeneous data sources."
+			],
+			"answer": ["A", "B", "C", "D"],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "rl0105",
+			"type": "multi",
+			"prompt": "Successful cloud-based architecture design requires appropriate product types and configurations and effective policy-based management. Which of the following measures reflect the five most essential factors for architecture design?",
+			"options": [
+				"A. Using Auto Scaling (AS) to adapt the system architecture to changing service requirements.",
+				"B. Configuring Web Application Firewall (WAF) in the system to ensure architecture security.",
+				"C. Using Storage Disaster Recovery Service (SDRS) to prevent data loss.",
+				"D. Purchasing ModelArts for AI-based system data analysis."
+			],
+			"answer": ["A", "B", "C"],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "rl0106",
+			"type": "multi",
+			"prompt": "System performance affects user experience and needs to be considered at the beginning of the architecture design process. Which of the following statements are true about performance during architecture design?",
+			"options": [
+				"A. During system design, the highest performing product should be selected to ensure the system runs efficiently and stably.",
+				"B. During system design, performance should be measured to check whether the IT architecture complies with system requirements.",
+				"C. During system design, products that meet the performance requirements should be selected, and expansion should be implemented only when performance is insufficient.",
+				"D. During system design, the requirement on product performance may change with service adjustment."
+			],
+			"answer": ["B", "C", "D"],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "rl0107",
+			"type": "multi",
+			"prompt": "You can view the basic information and execution logs of a bandwidth scaling policy. Policy execution logs record policy execution details. Which of the following details are included in policy execution logs?",
+			"options": [
+				"A. Target value",
+				"B. Execution time",
+				"C. Original value",
+				"D. Execution status"
+			],
+			"answer": ["A", "B", "C", "D"],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "rl0108",
+			"type": "multi",
+			"prompt": "Cloud Backup and Recovery (CBR) lets you back up Elastic Cloud Servers (ECSs) and Elastic Volume Service (EVS) disks with ease. Which of the following statements are true about the two types of backups (Cloud server backup vs cloud disk backup)?",
+			"options": [
+				"A. Recommended scenario: Cloud server backup protects the entire cloud servers; cloud disk backup protects only the desired data disks because system disks do not contain application data.",
+				"B. Advantage: Cloud server backup backs up all disks of a server at the same time to avoid data inconsistencies; cloud disk backup ensures data security inexpensively.",
+				"C. Backup speed: Cloud server backup is fast; cloud disk backup is slow.",
+				"D. Backup/restore object: Cloud server backup backs up all disks on cloud servers; cloud disk backup allows for backup of one or more specific disks on cloud servers."
+			],
+			"answer": ["A", "B", "D"],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "rl0109",
+			"type": "multi",
+			"prompt": "Network Quality of Service (QoS) uses basic technologies to improve the quality of network communication. Which of the following are included in QoS?",
+			"options": [
+				"A. Maximum/assured bandwidth (Gbit/s)",
+				"B. Maximum number of NICs",
+				"C. NIC multi-queues",
+				"D. Maximum PPS (10,000)"
+			],
+			"answer": ["A", "B", "C", "D"],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "rl0110",
+			"type": "multi",
+			"prompt": "Which of the following are involved when you create a virtual private cloud (VPC)?",
+			"options": [
+				"A. Route table",
+				"B. Switch",
+				"C. Private CIDR block",
+				"D. At least one subnet"
+			],
+			"answer": ["A", "C", "D"],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "rl0111",
+			"type": "multi",
+			"prompt": "To migrate workloads to the cloud, you need to consider network planning in terms of isolation, scalability, and connectivity. Match the following features with their descriptions.",
+			"options": [
+				"A. Connectivity: Virtual private clouds (VPCs) can communicate with each other, the internet, and on-premises networks.",
+				"B. Isolation: By default, VPCs cannot communicate with each other over a private network no matter whether they are in the same region.",
+				"C. Scalability: Networks can be expanded between different regions and VPCs."
+			],
+			"answer": ["A", "B", "C"],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "rl0112",
+			"type": "multi",
+			"prompt": "An individual user has deployed a personal blog platform on Huawei Cloud. The user shares their work experience on the blog but wants to store personal data separately. Which of the following services are recommended as cost-effective options?",
+			"options": [
+				"A. Scalable File Service (SFS)",
+				"B. Object Storage Service (OBS)",
+				"C. Dedicated Distributed Storage Service (DSS)",
+				"D. Dedicated Enterprise Storage Service (DESS)"
+			],
+			"answer": ["B"],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "rl0113",
+			"type": "multi",
+			"prompt": "Web Application Firewall (WAF) can examine website traffic, identify malicious request signatures, and defend against unknown threats. Which of the following are functions of WAF?",
+			"options": [
+				"A. WAF can examine only HTTP and HTTPS requests.",
+				"B. WAF supports cloud and dedicated deployment methods.",
+				"C. WAF does not affect web server performance as WAF engines do not run on the customer's web servers.",
+				"D. To use WAF, website servers must be deployed on Huawei Cloud."
+			],
+			"answer": ["A", "B", "C"],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "rl0114",
+			"type": "multi",
+			"prompt": "A company plans to migrate its application architecture to Huawei Cloud and secure it by purchasing the required security products. Match the security products to their descriptions.",
+			"options": [
+				"A. Managed Threat Detection (MTD): Monitors cloud service logs and reports alarms in real time.",
+				"B. Situation Awareness (SA): Collects and monitors the status, security events, and network activities of each network component in real time, enabling centralized alarm handling and audit.",
+				"C. Host Security Service (HSS): Checks the security assets of each cloud server and manages vulnerabilities and insecure settings to reduce security risks.",
+				"D. Web Application Firewall (WAF): Detects and mitigates security risks such as SQL injection and malicious crawlers."
+			],
+			"answer": ["A", "B", "C", "D"],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "rl0115",
+			"type": "multi",
+			"prompt": "Situation Awareness (SA) is a security management and situation analysis platform provided by Huawei Cloud. Which of the following statements about SA are true?",
+			"options": [
+				"A. SA standard and professional editions enable customers to view details about an attack source.",
+				"B. SA performs log correlation analysis to support attack detection, source tracing, and compliance audit.",
+				"C. Combined with big data mining and machine learning, SA can analyze and display threat posture and provide protection suggestions.",
+				"D. SA can display ECS security risks without HSS service."
+			],
+			"answer": ["A", "B", "C"],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "rl0116",
+			"type": "multi",
+			"prompt": "An Internet enterprise is challenged by frequent image processing, livestreaming/transcoding, and real-time data stream processing during peak hours. It plans to upload files to OBS to trigger a FunctionGraph function for data processing. Which of the following are true about this solution?",
+			"options": [
+				"A. Cloud Container Instance (CCI) serves as a compute engine to invoke the function to process uploaded files.",
+				"B. FunctionGraph only needs you to enable related cloud services and compile service logic, not configure or manage servers.",
+				"C. Function instances can be automatically scheduled to meet peak-hour requirements.",
+				"D. Uploading files to OBS will trigger the function for data processing."
+			],
+			"answer": ["B", "C", "D"],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "rl0117",
+			"type": "multi",
+			"prompt": "Cloud Container Engine (CCE) and Cloud Container Instance (CCI) from Huawei Cloud are elastic, powerful enterprise-class container services. Which of the following statements about the two services are true?",
+			"options": [
+				"A. Both provide container services using Kubernetes clusters.",
+				"B. Users do not need to create a cluster with CCI.",
+				"C. Both support Kata containers.",
+				"D. CCE and CCI intercommunicate through ingresses, not Services."
+			],
+			"answer": ["A", "B", "C"],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "rl0118",
+			"type": "multi",
+			"prompt": "The definition and architecture of cloud native technologies have changed going from Cloud Native 1.0 to 2.0. Which of the following are architecture design principles of Cloud Native 2.0?",
+			"options": [
+				"A. Microservice: loose coupling, service autonomy, and decentralization.",
+				"B. Distributed deployment: scalability, fault tolerance, and high availability.",
+				"C. DevSecOps: Security, Automation, Continuous Delivery.",
+				"D. Containerization: standardized and lightweight."
+			],
+			"answer": ["A", "B", "C", "D"],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "rl0119",
+			"type": "multi",
+			"prompt": "ServiceStage is an application management and O&M platform. Which of the following statements about ServiceStage are true?",
+			"options": [
+				"A. Web application hosting: multiple built-in runtime environments such as Tomcat, Java, Node.js, PHP, Python, and Docker.",
+				"B. Microservice application hosting: microservice framework, registry center, configuration center, governance center, distributed transaction, and dashboard.",
+				"C. DevSecOps platform: one-stop, end-to-end, secure and trusted cloud-native DevSecOps platform providing services such as project management, code hosting, pipeline, code check, build, deployment, and release.",
+				"D. Application lifecycle management: deployment and upgrade, auto scaling, dark launch, alarm monitoring, log analysis, and environment management."
+			],
+			"answer": ["A", "B", "D"],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "rl0120",
+			"type": "multi",
+			"prompt": "ServiceStage provides industry-leading microservice application solutions. Which of the following statements about ServiceStage are true?",
+			"options": [
+				"A. ServiceStage provides complete microservice governance policies, including fault tolerance, rate limiting, service degradation, circuit breaker, fault injection, and blacklist and whitelist.",
+				"B. ServiceStage provides service center, configuration center, dashboard, and dark launch capabilities.",
+				"C. Multiple Distributed Transaction Management (DTM) engine instances can read and write the same data table at the same time.",
+				"D. ServiceStage supports native microservice frameworks such as ServiceComb, Spring Cloud, Dubbo, and service mesh."
+			],
+			"answer": ["A", "B", "D"],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "rl0121",
+			"type": "multi",
+			"prompt": "In the cloud era, more and more applications are deployed in the distributed microservice architecture. Which of the following services can address issues of metric association, high maintenance costs, and non-ideal performance?",
+			"options": [
+				"A. Cloud Performance Test Service (CPTS)",
+				"B. Application Service Mesh (ASM)",
+				"C. Application Operations Management (AOM)",
+				"D. Application Performance Management (APM)"
+			],
+			"answer": ["B", "C", "D"],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "rl0122",
+			"type": "multi",
+			"prompt": "Application Operations Management (AOM) is a one-stop, multi-dimensional O&M platform for cloud applications. Which of the following statements are true?",
+			"options": [
+				"A. The ICAgent installed on a host automatically collects application information (such as process/component/container names).",
+				"B. AOM supports log management, allowing you to dump logs to Object Storage Service (OBS).",
+				"C. Host monitoring displays resource usage, trends, and alarms, so that you can quickly respond to malfunctioning hosts and ensure their smooth running.",
+				"D. AOM enables you to customize notification actions (such as sending email or message notifications when alarms are generated) to quickly detect exceptions and locate root causes."
+			],
+			"answer": ["A", "B", "C", "D"],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "rl0123",
+			"type": "multi",
+			"prompt": "Cloud native data lake MRS is a one-stop big data platform service provided by Huawei Cloud. Which of the following statements are true about using MRS?",
+			"options": [
+				"A. Decoupled storage and compute allows users to store data in OBS and use MRS clusters for data computing only. Object buckets are often used in big data decoupled storage and compute scenarios.",
+				"B. An MRS job is a program execution platform provided by MRS to process and analyze data.",
+				"C. The data processed by an MRS cluster is typically from OBS or HDFS. Data stored in OBS buckets can be imported to the cluster's HDFS for processing.",
+				"D. MRS supports the Huawei-developed CarbonData technique (a high-performance big data storage solution), which allows one copy of data to be used in multiple scenarios."
+			],
+			"answer": ["A", "B", "C", "D"],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "rl0124",
+			"type": "multi",
+			"prompt": "ROMA Connect is a full-stack application and data integration platform. Which of the following statements about ROMA Connect are true?",
+			"options": [
+				"A. Data Integration (FDI) supports the flexible conversion of multiple heterogeneous data sources by incorporating the data import capabilities of DRS and CDM.",
+				"B. Service integration (APIC) encapsulates existing backend services, data sources, and custom functions into RESTful APIs. APIC supports the full lifecycle management of APIs.",
+				"C. ROMA Connect is compatible with the MQTT protocol. It supports IoT device access, management, and control, as well as data collection.",
+				"D. Integration applications need to be created on the 'Instances' > 'View Console' page on the ROMA Connect console."
+			],
+			"answer": ["A", "B", "C", "D"],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "rl0125",
+			"type": "multi",
+			"prompt": "Scalability measures the ability of a system to increase or decrease in performance in responses to changes in processing demands. A highly scalable system can increase the processing capability with few changes. Which of the following scenarios reflect scaling out?",
+			"options": [
+				"A. The specifications of a batch of ECSs are changed from 2 vCPUs and 4 GiB to 4 vCPUs and 8 GiB.",
+				"B. Cloud Container Engine (CCE) is used to manage cloud containers.",
+				"C. A system uses Auto Scaling to automatically add instances to handle workloads.",
+				"D. Distributed Database Middleware (DDM) is used to deploy database instances."
+			],
+			"answer": ["B", "C"],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "rl0126",
+			"type": "multi",
+			"prompt": "The cloud-based costs can be controlled only when appropriate billing modes are adopted for cost-effective products. Which of the following scenarios is pay-per-use billing applicable to?",
+			"options": [
+				"A. Object Storage Service (OBS) for training courses.",
+				"B. Elastic Cloud Server (ECS) for enterprise official website deployment.",
+				"C. ECS on which the workload of a two-month event is deployed.",
+				"D. Elastic IP (EIP) for developing and testing a function."
+			],
+			"answer": ["A", "D"],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "rl0127",
+			"type": "multi",
+			"prompt": "An image is a regional resource. If you want to use a private image in another region, you can replicate it to the target region. Which of the following determine the time required for cross-region image replication?",
+			"options": [
+				"A. Number of concurrent tasks",
+				"B. Transport protocol",
+				"C. Image size",
+				"D. Network speed"
+			],
+			"answer": ["A", "C", "D"],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "rl0128",
+			"type": "multi",
+			"prompt": "A customer has purchased Elastic Cloud Servers (ECSs) to deploy services. To reduce costs, they plan to stop some ECSs when the access traffic is light. Which of the following basic resources are not billed after ECSs are stopped?",
+			"options": [
+				"A. Memory",
+				"B. vCPUs",
+				"C. System disks",
+				"D. Images"
+			],
+			"answer": ["A", "B"],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "rl0129",
+			"type": "multi",
+			"prompt": "A customer has purchased the Huawei Cloud VPN service, but the VPN connection remains in disconnected state after the configuration is complete. Which of the following may cause this problem?",
+			"options": [
+				"A. The IPsec policies at the two ends of the VPN connection are inconsistent.",
+				"B. The pre-shared keys and negotiation information at the two ends of the VPN connection are inconsistent.",
+				"C. The IKE policies at the two ends of the VPN connection are inconsistent.",
+				"D. The two ends of the VPN connection are not in the same region."
+			],
+			"answer": ["A", "B", "C"],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "rl0130",
+			"type": "multi",
+			"prompt": "A customer purchases elastic IPs (EIPs) and binds the EIPs to cloud resources. Which of the following resources can have EIPs bound?",
+			"options": [
+				"A. Bare Metal Server (BMS)",
+				"B. Elastic Cloud Server (ECS)",
+				"C. Elastic Load Balance (ELB)",
+				"D. NAT Gateway"
+			],
+			"answer": ["A", "B", "C", "D"],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "rl0131",
+			"type": "multi",
+			"prompt": "Huawei Cloud database migration tools play an important role in the overall database migration solution. Which of the following statements about the tools are true?",
+			"options": [
+				"A. Traffic replay: maintains awareness of service stability and performance in advance through service simulation.",
+				"B. Data migration: captures log-based data changes in a real time.",
+				"C. Data verification: verifies log-based incremental data in a real time.",
+				"D. Syntax migration: evaluates and converts heterogeneous database syntax."
+			],
+			"answer": ["A", "B", "C", "D"],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "rl0132",
+			"type": "multi",
+			"prompt": "Which of the following information items are collected by Database and Application Migration UGO?",
+			"options": [
+				"A. SQL traffic and container information",
+				"B. Database settings and objects",
+				"C. Database performance and object complexity",
+				"D. Object compatibility and syntax reconstruction points"
+			],
+			"answer": ["A", "B", "C", "D"],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "rl0133",
+			"type": "multi",
+			"prompt": "Web Application Firewall (WAF) is an application security product provided by Huawei Cloud. Which of the following threats can WAF defend against?",
+			"options": [
+				"A. Server vulnerabilities",
+				"B. Web page tampering",
+				"C. Streaming media attacks",
+				"D. Vulnerabilities in third-party service frameworks and plug-ins"
+			],
+			"answer": ["A", "B", "C", "D"],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "rl0134",
+			"type": "multi",
+			"prompt": "Web Application Firewall (WAF) can examine website traffic, identify malicious request signatures, and defend against unknown threats to protect origin servers from attacks and intrusions. Which of the following are functions of WAF?",
+			"options": [
+				"A. WAF can examine only HTTP and HTTPS requests.",
+				"B. WAF does not affect web server performance as WAF engines do not run on the customer's web servers.",
+				"C. WAF supports cloud and dedicated deployment methods.",
+				"D. To use WAF, website servers must be deployed on Huawei Cloud."
+			],
+			"answer": ["A", "B", "C"],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "rl0135",
+			"type": "multi",
+			"prompt": "An independent software vendor (ISV) often repeats environment deployments and configures services manually. Those processes take time and risk mistakes. In addition, individually maintaining multiple identical environments is expensive. The ISV plans to use Huawei Cloud Application Orchestration Service (AOS) to be more time- and cost-efficient. Which of the following AOS functions would help the ISV?",
+			"options": [
+				"A. Software lifecycle management, which enables one-click software upgrade and scaling",
+				"B. Free application templates, meets all requirements of enterprise's diversified services.",
+				"C. Fixed templates, in which all the required resources are defined instead of manually set",
+				"D. Templates, which enable one-click deployment of software and resource provisioning"
+			],
+			"answer": ["A", "D"],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "rl0136",
+			"type": "multi",
+			"prompt": "Kubernetes uses controllers to manage pods. A controller can create and manage multiple pods and provides replica control, rolling upgrade, and self-healing capabilities. Which of the following statements about common controllers Deployments and StatefulSets are true?",
+			"options": [
+				"A. Deployments run stateless services, while StatefulSets run stateful services.",
+				"B. Pods in a Deployment have fixed names, while those in a StatefulSet are named with random digits.",
+				"C. Deployments run stateful services, while StatefulSets run stateless services.",
+				"D. Pods in a Deployment share storage. Pods in a StatefulSet each have their own independent storage."
+			],
+			"answer": ["A", "D"],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "rl0137",
+			"type": "multi",
+			"prompt": "DevCloud helps you complete the entire process - from requirement breakdown, code commit and build, testing and verification, to deployment and O&M. Which of the following processes are valid DevCloud configurations?",
+			"options": [
+				"A. CodeHub: Create a code repository > Configure the Git client > Clone/Push code > End",
+				"B. CloudPipeline: Create a code check task > Create a build task > Create a deployment task > Configure the pipeline > End",
+				"C. CloudBuild: Configure the project > Configure the code repository > Configure the build workflow > Export the code > End",
+				"D. ProjectMan: Create a project > Add project members > Create work items > End"
+			],
+			"answer": ["A", "B", "D"],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "rl0138",
+			"type": "multi",
+			"prompt": "ServiceStage is an application management and O&M platform that lets you deploy, roll out, monitor, and maintain applications all in one place. Which of the following statements about ServiceStage are true?",
+			"options": [
+				"A. DevSecOps platform: one-stop, end-to-end, secure, and trusted cloud-native DevSecOps platform, provides services such as project management, code hosting, pipeline, code check, build, deployment, and release.",
+				"B. Web application hosting: multiple built-in runtime environments such as Tomcat, Java, Node.js, PHP, Python, and Docker.",
+				"C. Application lifecycle management: deployment and upgrade, auto scaling, dark launch, alarm monitoring, log analysis, and environment management.",
+				"D. Microservice application hosting: microservice framework, registry center, configuration center, governance center, distributed transaction, and dashboard."
+			],
+			"answer": ["A", "B", "C", "D"],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "rl0139",
+			"type": "multi",
+			"prompt": "A company that deployed Java applications on Huawei Cloud found that their performance deteriorated during peak external requests. Application Performance Management (APM) and Application Operations Management (AOM) were both proposed for performance monitoring. Which of the following statements are true?",
+			"options": [
+				"A. If application performance is poor, resource configurations (such as CPU and memory) need to be upgraded first.",
+				"B. AOM is more advantageous than APM and is recommended.",
+				"C. APM can quickly identify, locate, and handle application performance problems. It is ideal for Java applications.",
+				"D. APM comprehensively monitors calls and quickly analyzes and locates application performance problems. It is thus the best choice."
+			],
+			"answer": ["C", "D"],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "rl0140",
+			"type": "multi",
+			"prompt": "Network Quality of Service (QoS) uses basic technologies to improve the quality of network communication. You can query the QoS data of an ECS flavor from the specifications list. Which of the following are included in QoS?",
+			"options": [
+				"A. Maximum PPS (10,000)",
+				"B. Maximum number of NICs",
+				"C. NIC multi-queues",
+				"D. Maximum/assured bandwidth (Gbit/s)"
+			],
+			"answer": ["A", "B", "C", "D"],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "rl0141",
+			"type": "multi",
+			"prompt": "An Internet company deployed its services on Huawei Cloud. The O&M personnel found that traffic surged by 30% to 40% on every Friday evening. To reduce costs, which of the following billing modes is the most cost-effective for purchasing ECSs to handle this surge?",
+			"options": [
+				"A. Yearly subscription",
+				"B. Pay-per-use",
+				"C. Spot price",
+				"D. Monthly subscription"
+			],
+			"answer": ["C"],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "rl0142",
+			"type": "multi",
+			"prompt": "Huawei Cloud provides public NAT gateways and private NAT gateways. Which of the following constraints is false for using public NAT gateways?",
+			"options": [
+				"A. Users can configure only one destination NAT (DNAT) rule for each port on a server.",
+				"B. Each Virtual Private Cloud (VPC) can have multiple public NAT gateways.",
+				"C. Only one source NAT (SNAT) rule can be added for each VPC subnet.",
+				"D. If both an Elastic IP Address (EIP) and a public NAT gateway have been configured for a server, data will be forwarded through the public NAT gateway."
+			],
+			"answer": ["D"],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "rl0143",
+			"type": "multi",
+			"prompt": "An Internet company uses OBS for dynamic data. To meet audit requirements, they use a template to create a bucket policy. Which actions are NOT included in the template by default?",
+			"options": [
+				"A. GetObject",
+				"B. PutBucketPolicy",
+				"C. PutBucketAcl",
+				"D. DeleteBucket"
+			],
+			"answer": ["B", "C", "D"],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "rl0144",
+			"type": "multi",
+			"prompt": "Which of the following scenarios can Huawei Cloud Backup and Recovery (CBR) provide data protection for?",
+			"options": [
+				"A. Server breakdowns",
+				"B. Application update errors",
+				"C. Network failures",
+				"D. Accidental deletions"
+			],
+			"answer": ["B", "D"],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "rl0145",
+			"type": "multi",
+			"prompt": "An individual user deployed a blog on Huawei Cloud. Which services are recommended as cost-effective options for personal data storage?",
+			"options": [
+				"A. Scalable File Service (SFS)",
+				"B. Dedicated Enterprise Storage Service (DESS)",
+				"C. Object Storage Service (OBS)",
+				"D. Dedicated Distributed Storage Service (DSS)"
+			],
+			"answer": ["A", "C"],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "rl0146",
+			"type": "multi",
+			"prompt": "Which of the following statements is false about the differences between Disaster Recovery (DR) and backup?",
+			"options": [
+				"A. DR system takes a few seconds for failover, backup takes hours to restore.",
+				"B. The highest-level DR can achieve zero RPO. A maximum of 24 executions in a day can be set in a backup policy.",
+				"C. DR protects from natural disasters; Backup protects from human error/logic errors."
+			],
+			"answer": ["B"],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "rl0147",
+			"type": "multi",
+			"prompt": "Which of the following statements are true about EVS disk types?",
+			"options": [
+				"A. General purpose SSD is good for mainstream high-performance applications.",
+				"B. Ultra-high I/O is good for read/write-intensive applications.",
+				"C. Extreme SSD is good for databases and AI scenarios.",
+				"D. High I/O is good for applications with common workloads."
+			],
+			"answer": ["A", "B", "C", "D"],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "rl0148",
+			"type": "multi",
+			"prompt": "A bank uses UGO to migrate transactions. Which service can be used by UGO as a proxy to connect securely to the destination database?",
+			"options": [
+				"A. VPN",
+				"B. Cloud Connect",
+				"C. VPC Peering",
+				"D. VPC Endpoint (VPCEP)"
+			],
+			"answer": ["D"],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "rl0149",
+			"type": "multi",
+			"prompt": "Which of the following is NOT a Document Database Service (DDS) instance type?",
+			"options": [
+				"A. Single node",
+				"B. Cluster",
+				"C. Master/Backup",
+				"D. Replica set"
+			],
+			"answer": ["C"],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "rl0150",
+			"type": "multi",
+			"prompt": "Which of the following are true about the specified databases?",
+			"options": [
+				"A. Cassandra stores logs.",
+				"B. MongoDB provides key-value pairs.",
+				"C. Redis provides key-value pairs.",
+				"D. MySQL handles transactions."
+			],
+			"answer": ["C", "D"],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "rl0151",
+			"type": "multi",
+			"prompt": "Which of the following products is NOT designed to protect cloud workloads?",
+			"options": [
+				"A. Container Guard Service (CGS)",
+				"B. Database Security Service (DBSS)",
+				"C. Host Security Service (HSS)",
+				"D. Cloud Bastion Host (CBH)"
+			],
+			"answer": ["D"],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "rl0152",
+			"type": "multi",
+			"prompt": "Which statement about Managed Threat Detection (MTD) is false?",
+			"options": [
+				"A. Users can upload intelligence lists to OBS.",
+				"B. MTD stores alarms for 30 days by default.",
+				"C. MTD displays threat alarms in five severities.",
+				"D. MTD scans logs of HSS, DNS, and WAF."
+			],
+			"answer": ["C"],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "rl0153",
+			"type": "multi",
+			"prompt": "Which threats can Web Application Firewall (WAF) defend against?",
+			"options": [
+				"A. Server vulnerabilities",
+				"B. Streaming media attacks",
+				"C. Web page tampering",
+				"D. Vulnerabilities in third-party frameworks"
+			],
+			"answer": ["A", "C", "D"],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "rl0154",
+			"type": "multi",
+			"prompt": "A website suffers from a large number of malicious requests in a short period. Which service is most suitable for defending against this without affecting normal access?",
+			"options": [
+				"A. Advanced Anti-DDoS (AAD)",
+				"B. Situation Awareness (SA)",
+				"C. Host Security Service (HSS)",
+				"D. Web Application Firewall (WAF)"
+			],
+			"answer": ["A"],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "rl0155",
+			"type": "multi",
+			"prompt": "Which function is NOT provided by Host Security Service (HSS)?",
+			"options": [
+				"A. Detect attack vectors in real time.",
+				"B. Authenticate login users.",
+				"C. Configure account permissions to distinguish departments.",
+				"D. Evaluate server security."
+			],
+			"answer": ["C"],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "rl0156",
+			"type": "multi",
+			"prompt": "Which components run on a Kubernetes master node?",
+			"options": [
+				"A. API server",
+				"B. kubelet",
+				"C. Scheduler",
+				"D. etcd"
+			],
+			"answer": ["A", "C", "D"],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "rl0157",
+			"type": "multi",
+			"prompt": "Order the steps for using Docker (2-5-1-3-4 sequence).",
+			"options": [
+				"A. 5-3-2-1-4",
+				"B. 2-5-1-3-4",
+				"C. 1-2-3-4-5",
+				"D. 1-5-2-3-4"
+			],
+			"answer": ["B"],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "rl0158",
+			"type": "multi",
+			"prompt": "Which of the following is false about FunctionGraph?",
+			"options": [
+				"A. Allows online code editing and supports triggers like OBS.",
+				"B. Manages underlying compute resources.",
+				"C. No need to preconfigure compute/storage services.",
+				"D. To ensure reliability, you MUST configure an independent monitoring system."
+			],
+			"answer": ["D"],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "rl0159",
+			"type": "multi",
+			"prompt": "Which is false about Cloud Container Instance (CCI)?",
+			"options": [
+				"A. Has various network access modes.",
+				"B. Users manage Kubernetes clusters using CCI.",
+				"C. CCI does NOT call GPU compute resources.",
+				"D. CCI provides dedicated containers like Kata."
+			],
+			"answer": ["C"],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "rl0160",
+			"type": "multi",
+			"prompt": "Which of the following statements about YAML files are true?",
+			"options": [
+				"A. Supports object, array, and scalar types.",
+				"B. Can create stateless workloads.",
+				"C. Can create automated protocol files without management.",
+				"D. Can create stateful workloads."
+			],
+			"answer": ["A", "B", "D"],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "rl0161",
+			"type": "multi",
+			"prompt": "Which grayscale release mode is recommended to release on a smaller scale first?",
+			"options": [
+				"A. Canary release",
+				"B. Deep release",
+				"C. Blue-green deployment",
+				"D. A/B/C testing"
+			],
+			"answer": ["A"],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "rl0162",
+			"type": "multi",
+			"prompt": "Which statement about Service Mesh is false?",
+			"options": [
+				"A. Service Mesh is a group of lightweight proxies.",
+				"B. Describes the network of microservices.",
+				"C. Responsible for rate limiting and monitoring.",
+				"D. Each service unit has automatic fault recovery."
+			],
+			"answer": ["D"],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "rl0163",
+			"type": "multi",
+			"prompt": "Which of the following processes are valid DevCloud configurations?",
+			"options": [
+				"A. CodeHub repository configuration.",
+				"B. CloudPipeline: Check > Build > Deploy > Configure.",
+				"C. CloudBuild: Configure Repo > Workflow > Export.",
+				"D. ProjectMan item creation."
+			],
+			"answer": ["B", "C"],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "rl0164",
+			"type": "multi",
+			"prompt": "Which of the following statements about SOA is false?",
+			"options": [
+				"A. No obvious boundary between system and services.",
+				"B. Separately deployed services can be integrated.",
+				"C. SOA is loosely coupled.",
+				"D. The development cycle takes months."
+			],
+			"answer": ["A"],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "rl0165",
+			"type": "multi",
+			"prompt": "Prometheus monitoring data cannot be obtained but services are running. Cause?",
+			"options": [
+				"A. The exporters component is abnormal.",
+				"B. Alarm policy incorrectly configured.",
+				"C. Server is abnormal.",
+				"D. Alertmanager is abnormal."
+			],
+			"answer": ["A"],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "rl0166",
+			"type": "multi",
+			"prompt": "Which are true about APM and AOM for Java applications?",
+			"options": [
+				"A. APM monitors calls and locates problems. It is the best choice.",
+				"B. Upgrade CPU/Memory first.",
+				"C. AOM is more advantageous than APM.",
+				"D. APM is ideal for Java applications."
+			],
+			"answer": ["A", "D"],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "rl0167",
+			"type": "multi",
+			"prompt": "Which is false about Log Tank Service (LTS)?",
+			"options": [
+				"A. Allows fuzzy and keyword query.",
+				"B. Install ICAgent on ECS to use LTS.",
+				"C. Logs stored for a limited time.",
+				"D. Advised to create as many log groups as possible."
+			],
+			"answer": ["D"],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "rl0168",
+			"type": "multi",
+			"prompt": "Which is false about ModelArts?",
+			"options": [
+				"A. One-stop AI development platform.",
+				"B. Deployed as real-time or non-real-time services.",
+				"C. Provides team labeling.",
+				"D. Notebook instance used for development."
+			],
+			"answer": ["B"],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "rl0169",
+			"type": "multi",
+			"prompt": "Which of the following are true about MRS?",
+			"options": [
+				"A. Supports CarbonData technique.",
+				"B. MRS job is an execution platform.",
+				"C. Decoupled storage and compute allows OBS usage.",
+				"D. Data in OBS can be imported to HDFS."
+			],
+			"answer": ["A", "D"],
+			"explanation": "",
+			"tags": []
+		}
+	]
+}

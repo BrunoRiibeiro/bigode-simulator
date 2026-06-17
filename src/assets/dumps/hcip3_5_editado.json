@@ -1,0 +1,699 @@
+{
+	"questions": [
+		{
+			"id": "rl0001",
+			"type": "single",
+			"prompt": "Which of the following statements about Network ACLs is true?",
+			"options": [
+				"A. For security purposes, network ACLs only support deny rules.",
+				"B. An instance must have both a security group and a network ACL associated.",
+				"C. The larger the priority value, the lower the priority.",
+				"D. Network ACLs provide instance-level protection, so their rule configuration is more refined than that of a security group."
+			],
+			"answer": ["C"],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "rl0002",
+			"type": "single",
+			"prompt": "Which of the following statements about public and private NAT gateways is false?",
+			"options": [
+				"A. Public NAT gateways translate private IP into public IP.",
+				"B. A private NAT gateway can map a private IP to a transit IP through an SNAT rule.",
+				"C. Public NAT gateways can prevent private IPs of cloud servers from being exposed.",
+				"D. Both public and private NAT gateways can be configured with transit subnets to enable communications between networks with different IP ranges."
+			],
+			"answer": ["D"],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "rl0003",
+			"type": "single",
+			"prompt": "SFS Turbo is a shared file storage service. Which of the following use cases is SFS Turbo NOT recommended for?",
+			"options": [
+				"A. EDA simulation.",
+				"B. Personal blog websites.",
+				"C. AI training.",
+				"D. Autonomous driving training."
+			],
+			"answer": ["B"],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "rl0004",
+			"type": "single",
+			"prompt": "EVS supports multiple data protection methods such as 3-copy redundancy and snapshots. Which of the following statements about EVS data protection is false?",
+			"options": [
+				"A. EVS three-copy redundancy splits each piece of data into many 1 MiB data blocks; each data block is then replicated into three copies.",
+				"B. When standard snapshots are created for a disk, if the disk device type is SCSI, backup data will be stored in OBS. If the disk type is VBD, backup data will be stored locally on the disk.",
+				"C. EVS 3-copy redundancy stores data copies on different storage devices of storage nodes in the cluster based on a distributed storage algorithm.",
+				"D. Snapshots are used to back up data before high-risk operations or quickly restore data after misoperations or hacker attacks."
+			],
+			"answer": ["B"],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "rl0005",
+			"type": "single",
+			"prompt": "Which of the following statements about changing RDS specs is false?",
+			"options": [
+				"A. RDS instances with cloud disks can automatically adjust CPU specs.",
+				"B. RDS instances with High I/O disks can automatically scale up and down storage.",
+				"C. Changing specs will cause a brief interruption; determine whether to enable this function based on service requirements.",
+				"D. RDS instances with cloud disks can automatically adjust memory specs."
+			],
+			"answer": ["B"],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "rl0006",
+			"type": "single",
+			"prompt": "Which of the following statements about DAS is false?",
+			"options": [
+				"A. DAS can diagnose SQL statements, execute scheduled SQL tasks, sync DB table structures across instances, and allows you to import and export data.",
+				"B. DAS makes cloud and remote DB instance management simple, secure, and intelligent.",
+				"C. DAS is mainly for DB developers and workload auditors.",
+				"D. DAS provides a web-based console for basic SQL operations, advanced DB management, and intelligent O&M."
+			],
+			"answer": ["C"],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "rl0007",
+			"type": "single",
+			"prompt": "Which of the following statements about DRS is false?",
+			"options": [
+				"A. You can access the source DB during the migration.",
+				"B. DRS supports migration of both host data and DB data to the cloud.",
+				"C. DBs can be migrated with minimal downtime, often with no service interruptions at all.",
+				"D. Parallel processing accelerates the migration process."
+			],
+			"answer": ["B"],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "rl0008",
+			"type": "single",
+			"prompt": "Which of the following statements about Cloud Firewall (CFW) is false?",
+			"options": [
+				"A. CFW enables inter-VPC and global access control, combined with deep visibility and protection for internal service access traffic.",
+				"B. CFW protects the internet border and controls inbound traffic sent from the internet to cloud assets and outbound traffic sent from cloud assets to the internet.",
+				"C. CFW provides real-time intrusion detection and prevention, global unified access control, full traffic analysis, visualization, log audit, and source tracing analysis.",
+				"D. CFW automatically identifies and blocks network attacks including SQL injection, XSS, and web shell upload to protect the network border."
+			],
+			"answer": ["D"],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "rl0009",
+			"type": "single",
+			"prompt": "Which of the following statements about Huawei Cloud AAD is false?",
+			"options": [
+				"A. AAD not only protects Huawei Cloud hosts but also non-Huawei Cloud or IDC hosts.",
+				"B. CDN+AAD basic protection provides high-level basic network protection for cloud native users; it is suitable for security protection of cloud native service traffic.",
+				"C. If the ICP license is not obtained for a domain name connected to AAD, the related security protection may not take effect; you are advised to obtain the ICP license before configuring the domain name.",
+				"D. CDN+AAD advanced protection provides you with minimum bandwidth as long as the peak attack traffic does not exceed the basic protection bandwidth you purchase."
+			],
+			"answer": ["D"],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "rl0010",
+			"type": "single",
+			"prompt": "Which of the following is NOT a container runtime?",
+			"options": [
+				"A. containerd",
+				"B. Podman",
+				"C. Hypervisor",
+				"D. Docker"
+			],
+			"answer": ["C"],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "rl0011",
+			"type": "single",
+			"prompt": "Which of the following statements about Docker is false?",
+			"options": [
+				"A. Docker uses a C/S architecture which supports multiple virtualization technologies. Traditional virtualization relies on hypervisors. Apps in Docker containers can be started in seconds compared to minutes for apps in traditional VMs. In addition, Docker containers use system resources more efficiently.",
+				"B. Docker is the first system that allows containers to be portable on different machines. It simplifies the packaging of both applications and their libraries and dependencies.",
+				"C. Docker containers virtualize resources at the system layer and share the OS of the host machine. Traditional virtualization happens at the hardware layer where an OS is virtualized.",
+				"D. Docker runs on the system isolation of the OS, even on VMs. Traditional virtualization is of physical resources and runs at the hardware level."
+			],
+			"answer": ["A"],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "rl0012",
+			"type": "single",
+			"prompt": "Which of the following statements about CCI is false?",
+			"options": [
+				"A. CCI supports pay-per-use, monthly, and yearly billing.",
+				"B. You do not need to create or manage Kubernetes clusters with CCI.",
+				"C. CCI uses Kata containers.",
+				"D. CCI has various network access modes and supports L4 and L7 load balancing."
+			],
+			"answer": ["A"],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "rl0013",
+			"type": "single",
+			"prompt": "In ASM grayscale release, the OS that can access the grayscale can be selected, including iOS, Android, Windows, and macOS. Which dimension is NOT supported by ASM for grayscale release?",
+			"options": [
+				"A. OS (iOS, Android, Windows, macOS)",
+				"B. Browser type",
+				"C. Traffic ratio",
+				"D. Geographic location (region/country)"
+			],
+			"answer": ["D"],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "rl0014",
+			"type": "single",
+			"prompt": "Which of the following cannot be monitored by Cloud Eye?",
+			"options": [
+				"A. RDS",
+				"B. CCE",
+				"C. WAN quality",
+				"D. OBS"
+			],
+			"answer": ["C"],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "rl0015",
+			"type": "single",
+			"prompt": "Which of the following statements about Cloud Phone (CPH) is false?",
+			"options": [
+				"A. CPH is based on Huawei TaiShan servers; multiple cost-effective GPUs can be installed on a cloud phone.",
+				"B. Both TaiShan and phone systems use ARM architecture; this reduces compute overhead caused by instruction set conversion.",
+				"C. CPH allows mobile games to run on the cloud with GPU hardware acceleration.",
+				"D. CPH is a supplement to traditional phones, extending their functions, making it ideal for gaming needs."
+			],
+			"answer": ["D"],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "rl0016",
+			"type": "multi",
+			"prompt": "Which of the following formats are supported by IMS for both image import and export?",
+			"options": [
+				"A. VMDK",
+				"B. ZVHD",
+				"C. VHD",
+				"D. QCOW2"
+			],
+			"answer": [
+				"A",
+				"B",
+				"C",
+				"D"
+			],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "rl0017",
+			"type": "multi",
+			"prompt": "Which of the following statements about the ECS flavor c6s.6xlarge.2 are true?",
+			"options": [
+				"A. There is 48 GiB of memory.",
+				"B. There are 12 vCPUs.",
+				"C. There is 64 GB of memory.",
+				"D. There are 24 vCPUs."
+			],
+			"answer": [
+				"A",
+				"D"
+			],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "rl0018",
+			"type": "multi",
+			"prompt": "Which of the following virtualization types are supported by Huawei Cloud ECS?",
+			"options": [
+				"A. KVM",
+				"B. ESXi",
+				"C. QingTian",
+				"D. XEN"
+			],
+			"answer": [
+				"A",
+				"D"
+			],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "rl0019",
+			"type": "multi",
+			"prompt": "Which of the following statements about P2C VPNs are true?",
+			"options": [
+				"A. A VPN gateway is a virtual gateway of VPN on the cloud; it establishes secure private connections with clients.",
+				"B. A P2C VPN is based on the SSH protocol, which is an application-level data protection protocol suitable for encrypted access between sites in the same city.",
+				"C. A P2C VPN consists of the VPN gateway, customer gateway, VPN proxy service, and client.",
+				"D. A client with VPN client software deployed establishes a VPN connection with a server to remotely access cloud resources or services."
+			],
+			"answer": [
+				"A",
+				"D"
+			],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "rl0020",
+			"type": "multi",
+			"prompt": "A VPC peering connection is configured for two VPCs, but the ECSs in the VPCs cannot communicate with each other. Which of the following are possible causes?",
+			"options": [
+				"A. The route destination of the VPC peering connection overlaps with that of a DC or VPN connection.",
+				"B. After a VPC peering connection is configured, only ECSs associated with it can communicate with each other.",
+				"C. Network parameters such as routes are incorrectly configured.",
+				"D. After a VPC peering connection is configured, it is disabled by default and must be manually enabled."
+			],
+			"answer": [
+				"A",
+				"C"
+			],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "rl0021",
+			"type": "multi",
+			"prompt": "Which of the following descriptions of ELB load balancing algorithms are true?",
+			"options": [
+				"A. Weighted Round Robin: requests are forwarded to different backend servers based on weights that indicate their processing performance.",
+				"B. Weighted Least Connections: requests are hashed based on the source IP address, ensuring all requests from the same source IP are routed to the same backend server.",
+				"C. Source IP Hash: distributes requests to the backend with the smallest connections-to-weight ratio.",
+				"D. Connection ID: calculates the QUIC connection ID and routes requests with the same ID to the same backend server."
+			],
+			"answer": [
+				"A",
+				"D"
+			],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "rl0022",
+			"type": "multi",
+			"prompt": "Which of the following are recommended use cases for DSS?",
+			"options": [
+				"A. Interconnection with third-party public clouds.",
+				"B. HPC (High Performance Computing).",
+				"C. OLAP.",
+				"D. Mixed load applications such as interconnection with BMS and DCC (Dedicated Computing Cluster)."
+			],
+			"answer": [
+				"B",
+				"D"
+			],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "rl0023",
+			"type": "multi",
+			"prompt": "Which of the following statements about SFS are true?",
+			"options": [
+				"A. Both general purpose file systems and SFS Turbo file systems support the NFSv3 protocol. If an SFS Turbo file system needs to be mounted on Windows clients, the SMB protocol is recommended.",
+				"B. User C uses Amazon S3 storage interfaces to remotely call SFS to implement cross-cloud data transfer and meet cross-region access requirements.",
+				"C. User A plans to bind an EIP to a newly created SFS file system and upload data from an office computer to the file system for backup and sharing.",
+				"D. User B uses the lifecycle management of a general purpose file system to transition files that are not accessed for a long time to infrequent access storage to reduce costs."
+			],
+			"answer": [
+				"A",
+				"D"
+			],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "rl0024",
+			"type": "multi",
+			"prompt": "Which of the following statements about EVS disk capacity expansion are true?",
+			"options": [
+				"A. Both system disks and data disks can be expanded.",
+				"B. The disk capacity can be expanded anytime without interrupting services.",
+				"C. The disk capacity can only be expanded, not reduced.",
+				"D. Unattached disks cannot be expanded."
+			],
+			"answer": [
+				"A",
+				"C"
+			],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "rl0025",
+			"type": "multi",
+			"prompt": "Which of the following statements about how databases are classified are true?",
+			"options": [
+				"A. DBs can be classified as either OLTP or OLAP, depending on the application they are used for.",
+				"B. DBs can be classified as either open source or commercial, depending on the business model.",
+				"C. DBs can be classified as either storage or computing, depending on the architecture.",
+				"D. DBs can be classified as either relational or non-relational, depending on their data structure."
+			],
+			"answer": [
+				"A",
+				"B",
+				"D"
+			],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "rl0026",
+			"type": "multi",
+			"prompt": "GaussDB is a DB service with decoupled storage. Which of the following NoSQL engines are compatible with GaussDB?",
+			"options": [
+				"A. MongoDB",
+				"B. HBase",
+				"C. Kafka",
+				"D. Cassandra"
+			],
+			"answer": [
+				"A",
+				"D"
+			],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "rl0027",
+			"type": "multi",
+			"prompt": "In which of the following scenarios is serverless NOT a recommended option?",
+			"options": [
+				"A. Real-time processing of multimedia.",
+				"B. IoT data analysis.",
+				"C. Deploying a company portal.",
+				"D. Processing graphics rendering tasks."
+			],
+			"answer": [
+				"A",
+				"D"
+			],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "rl0028",
+			"type": "multi",
+			"prompt": "Which of the following statements about CCI are true?",
+			"options": [
+				"A. CCI supports mainstream container standards such as OCI and K8s APIs. It is compatible with hardware platforms, virtualization, and different architectures.",
+				"B. CCI supports per-second billing.",
+				"C. CCI allows users to create HPA policies to scale containers in or out within seconds.",
+				"D. CCI uses lightweight virtualization technology to ensure fast container startup and VM-level security."
+			],
+			"answer": [
+				"A",
+				"B",
+				"D"
+			],
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "rl0029",
+			"type": "boolean",
+			"prompt": "Cloud Phone (CPH) is built on TaiShan servers that use ARM architecture. This reduces compute overhead caused by instruction set conversion when apps are developed to run on cloud phones, providing a better user experience.",
+			"options": [
+				{ "key": "A", "label": "True", "value": true },
+				{ "key": "B", "label": "False", "value": false }
+			],
+			"answer": true,
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "rl0030",
+			"type": "boolean",
+			"prompt": "BMS are provisioned in a self-service manner after you specify the server type, image, network, and other required info. BMSs can be provisioned in seconds. BMSs are configured with SDI cards so only an image with an SDI driver can be used to install a BMS OS.",
+			"options": [
+				{ "key": "A", "label": "True", "value": true },
+				{ "key": "B", "label": "False", "value": false }
+			],
+			"answer": false,
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "rl0031",
+			"type": "boolean",
+			"prompt": "Both public and private NAT gateways can be configured with transit subnets to enable communications between networks with different IP address ranges.",
+			"options": [
+				{ "key": "A", "label": "True", "value": true },
+				{ "key": "B", "label": "False", "value": false }
+			],
+			"answer": false,
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "rl0032",
+			"type": "boolean",
+			"prompt": "An Enterprise Router can have different types of network instances attached and features powerful scalability and link reliability. It is suitable for complex cloud architectures. It uses Border Gateway Protocol to learn routes and dynamically select or switch between connections. This improves network scalability, O&M, and service continuity.",
+			"options": [
+				{ "key": "A", "label": "True", "value": true },
+				{ "key": "B", "label": "False", "value": false }
+			],
+			"answer": true,
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "rl0033",
+			"type": "boolean",
+			"prompt": "Beyond public and private DNS resolution, DNS also supports query logging and auditing. Users can query, audit, and backtrack DNS views or export any query logs.",
+			"options": [
+				{ "key": "A", "label": "True", "value": true },
+				{ "key": "B", "label": "False", "value": false }
+			],
+			"answer": true,
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "rl0034",
+			"type": "boolean",
+			"prompt": "DSS provides highly available, user-exclusive, high-performance file storage that can be scaled on demand and comes with various specs. DSS storage pool resources are physically isolated and can be interconnected with different types of compute services. In addition, data encryption is enabled for system disks and data disks by default, and user data security is ensured by multiple measures.",
+			"options": [
+				{ "key": "A", "label": "True", "value": true },
+				{ "key": "B", "label": "False", "value": false }
+			],
+			"answer": false,
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "rl0035",
+			"type": "boolean",
+			"prompt": "If a DB instance handles many read requests but only a few writes, you can create one or more read replicas in a region to handle the extra read pressure. Once read replicas are created, read and write requests are split: read replicas only handle read requests and primary instances only handle write requests. This greatly reduces the load on the instance.",
+			"options": [
+				{ "key": "A", "label": "True", "value": true },
+				{ "key": "B", "label": "False", "value": false }
+			],
+			"answer": false,
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "rl0036",
+			"type": "boolean",
+			"prompt": "DBSS provides database audit, DB encryption, access control, and DB O&M functions. It records user access to the DB in real time, generates fine-grained reports, and reports real-time alarms when attacks or risky operations are detected.",
+			"options": [
+				{ "key": "A", "label": "True", "value": true },
+				{ "key": "B", "label": "False", "value": false }
+			],
+			"answer": false,
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "rl0037",
+			"type": "boolean",
+			"prompt": "CBH is a unified security platform. It supports SSO, vulnerability detection, unified asset management, baseline check, and webpage tamper protection. CBH uses a protocol-based forward proxy and remote access isolation, and provides a unified O&M login portal to enable centralized management and O&M of cloud resources such as servers, cloud hosts, DBs, and app systems.",
+			"options": [
+				{ "key": "A", "label": "True", "value": true },
+				{ "key": "B", "label": "False", "value": false }
+			],
+			"answer": false,
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "rl0038",
+			"type": "boolean",
+			"prompt": "Kubernetes is a core open source project of the Apache community. It provides scheduling, deployment, running, service discovery, grayscale releases, and development for containerized microservices throughout their entire lifecycle. Kubernetes has become the de facto industry standard for container and serverless technologies.",
+			"options": [
+				{ "key": "A", "label": "True", "value": true },
+				{ "key": "B", "label": "False", "value": false }
+			],
+			"answer": false,
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "rl0039",
+			"type": "boolean",
+			"prompt": "With FunctionGraph, you only need to configure and manage servers. You do not need to edit code or set running conditions. FunctionGraph automatically and efficiently executes functions based on preset service scenarios.",
+			"options": [
+				{ "key": "A", "label": "True", "value": true },
+				{ "key": "B", "label": "False", "value": false }
+			],
+			"answer": false,
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "rl0040",
+			"type": "boolean",
+			"prompt": "CSE allows O&M personnel to focus on service platform development and management, improving product delivery efficiency and quality.",
+			"options": [
+				{ "key": "A", "label": "True", "value": true },
+				{ "key": "B", "label": "False", "value": false }
+			],
+			"answer": true,
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "rl0041",
+			"type": "boolean",
+			"prompt": "Istio is better able to resolve issues in cloud native service management, network connection, security management, and other service network governance scenarios.",
+			"options": [
+				{ "key": "A", "label": "True", "value": true },
+				{ "key": "B", "label": "False", "value": false }
+			],
+			"answer": true,
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "rl0042",
+			"type": "boolean",
+			"prompt": "ServiceStage supports Java, Go, PHP, Node.js, and Python. It is compatible with native ServiceComb, Spring Cloud, and Dubbo/Mesh. It also supports code commit, check, build, deployment, and release, streamlining the software development process.",
+			"options": [
+				{ "key": "A", "label": "True", "value": true },
+				{ "key": "B", "label": "False", "value": false }
+			],
+			"answer": true,
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "rl0043",
+			"type": "boolean",
+			"prompt": "Self-service and elasticity are basic features of cloud computing.",
+			"options": [
+				{ "key": "A", "label": "True", "value": true },
+				{ "key": "B", "label": "False", "value": false }
+			],
+			"answer": true,
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "rl0044",
+			"type": "boolean",
+			"prompt": "Both customers and cloud vendors are responsible for O&M under the shared responsibility model.",
+			"options": [
+				{ "key": "A", "label": "True", "value": true },
+				{ "key": "B", "label": "False", "value": false }
+			],
+			"answer": true,
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "rl0045",
+			"type": "boolean",
+			"prompt": "Increasing system architecture complexity will challenge O&M.",
+			"options": [
+				{ "key": "A", "label": "True", "value": true },
+				{ "key": "B", "label": "False", "value": false }
+			],
+			"answer": true,
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "rl0046",
+			"type": "boolean",
+			"prompt": "APM allows setting alarm rules for critical cloud services. When the condition of an alarm rule is met, multi-channel notifications including email, SMS, and HTTP/HTTPS alert users immediately for timely handling.",
+			"options": [
+				{ "key": "A", "label": "True", "value": true },
+				{ "key": "B", "label": "False", "value": false }
+			],
+			"answer": false,
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "rl0047",
+			"type": "boolean",
+			"prompt": "COC supports deterministic Huawei Cloud features such as management and batch O&M, making cloud-based O&M more mature and secure with compliance.",
+			"options": [
+				{ "key": "A", "label": "True", "value": true },
+				{ "key": "B", "label": "False", "value": false }
+			],
+			"answer": true,
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "rl0048",
+			"type": "boolean",
+			"prompt": "ModelArts supports Kubernetes clusters.",
+			"options": [
+				{ "key": "A", "label": "True", "value": true },
+				{ "key": "B", "label": "False", "value": false }
+			],
+			"answer": false,
+			"explanation": "",
+			"tags": []
+		},
+		{
+			"id": "Q-NEW-018",
+			"type": "drag_and_drop",
+			"prompt": "Match the EVS performance indicators with their definitions.",
+			"pairs": [
+				{
+					"label": "Latency",
+					"text": "Minimum interval between two consecutive read/write operations on an EVS disk."
+				},
+				{
+					"label": "Throughput",
+					"text": "Amount of data read from and written to an EVS disk per second."
+				},
+				{
+					"label": "IOPS",
+					"text": "Number of read/write operations performed by an EVS disk per second."
+				}
+			],
+			"options": []
+		}
+	]
+}
