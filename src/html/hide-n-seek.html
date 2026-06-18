@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Hide n Seek</title>
+		<link rel="icon" href="/img/bigode.png">
+		<link rel="shortcut icon" href="/favicon.ico">
+		<link rel="stylesheet" href="/css/style.css">
+	</head>
+	<body>
+		<div class="app">
+			<header class="app__header">
+				<img src="/img/icon.png" style="width: 100px; object-fit: cover;">
+				<h1>bigode simulator</h1>
+			</header>
+
+			<section class="panel">
+				<div class="field">
+					<label for="jsonPreset">Load a dump and show the full answer
+						key.</label>
+					<select id="jsonPreset">
+						<option value="">Select...</option>
+						<option value="/dumps/hccdp-cloud-native-devops.json">HCCDP Cloud
+						Native DevOps</option>
+						<option value="/dumps/hccdp-gaussdb.json">HCCDP GaussDB</option>
+						<option value="/dumps/hcia-cloud-service-3.5.json">HCIA Cloud
+						Service 3.5v</option>
+						<option
+								value="/dumps/hcip-cloud-service-solutions-architect-3.0.json">HCIP
+								Cloud Service Solutions Architect 3.0v</option>
+						<option
+								value="/dumps/hcip-cloud-service-solutions-architect-3.5.json">HCIP
+								Cloud Service Solutions Architect 3.5v</option>
+					</select>
+				</div>
+
+				<!--
+					<div class="field">
+					<label for="jsonFile">Or upload a local dump</label>
+					<input id="jsonFile" type="file" accept=".json,application/json" />
+					</div>
+				-->
+
+				<p id="bankInfo" class="bank-info">No question dump loaded.</p>
+				<p id="statusMessage" class="status" data-type="info"></p>
+			</section>
+
+			<section id="answerKeySection" class="panel hidden">
+				<div class="section-header">
+					<h2>Answer key</h2>
+				</div>
+
+				<div id="answerKeySummary"></div>
+				<div id="answerKeyList"></div>
+			</section>
+		</div>
+
+		<script src="/js/utils.js"></script>
+		<script src="/js/app-state.js"></script>
+		<script src="/js/file-loader.js"></script>
+		<script src="/js/hide-n-seek-view.js"></script>
+		<script src="/js/hide-n-seek-main.js"></script>
+	</body>
+</html>
