@@ -457,7 +457,7 @@
 				"C. A private IP address",
 				"D. A reverse proxy IP address"
 			],
-			"answer": ["A"],
+			"answer": ["D"],
 			"explanation": "",
 			"tags": []
 		},
