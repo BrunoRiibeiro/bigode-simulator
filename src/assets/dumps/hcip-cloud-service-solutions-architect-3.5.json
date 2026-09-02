@@ -1487,7 +1487,7 @@
 				{"key": "A", "label": "True", "value": true},
 				{"key": "B", "label": "False", "value": false}
 			],
-			"answer": true,
+			"answer": false,
 			"explanation": "",
 			"tags": []
 		},
