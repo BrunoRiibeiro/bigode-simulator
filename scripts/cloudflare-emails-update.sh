@@ -1,45 +1,45 @@
 #!/usr/bin/env bash
 
-set -a
-source $HOME/.local/www/cloudflare.env
-set +a
+. $HOME/.local/www/cloudflare/cloudflare.env
 
+[[ $# -eq 1 && -r "$1" ]] || { echo "Usage: $0 <emails-file>" >&2; exit 1; }
 EMAILS_FILE=$1
 
-emails_json="$(grep -vE '^\s*#|^\s*$' "$EMAILS_FILE" \
+emails_json="$(grep -vE '^[[:space:]]*#|^[[:space:]]*$' "$EMAILS_FILE" \
     | sed 's/^[[:space:]]*//;s/[[:space:]]*$//' \
     | tr '[:upper:]' '[:lower:]' \
-    | jq -R -s -c 'split("\n") | map(select(length>0)) | unique'
+	| jq -R -s -c 'split("\n") | map(select(length>0)) | unique'
 )"
 
-[[ "$emails_json" == "[]" ]] && { echo "No email found in $EMAILS_FILE."; exit 1; }
+email_count=$(jq 'length' <<< "$emails_json")
 
-echo "Updating policy with $(echo "$emails_json" | jq 'length') e-mails..."
+(( $email_count > 0 )) || { echo "No email found in $EMAILS_FILE." >&2; exit 1; }
+
+echo "Updating policy with $email_count e-mails..."
 
 current_policy_resp="$(curl -sS \
-	-H "Authorization: Bearer $CLOUDFLARE_API_TOKEN" \
+	-H "Authorization: Bearer $ZERO_TRUST_TOKEN" \
 	-H "Content-Type: application/json" \
-	"$BASE_URL/accounts/$ACCOUNT_ID/access/policies/$POLICY_ID"
+	"$API_BASE_URL/accounts/$ACCOUNT_ID/access/policies/$ZERO_TRUST_POLICY_ID"
 )"
 
 echo "$current_policy_resp" | grep -q '"success": true'
-[[ $? -ne 0 ]] && { echo "Error while search policy:"; echo "$current_policy_resp"; exit 1; }
+[[ $? -ne 0 ]] && { echo -e "Error while search policy:\n$current_policy_resp" >&2; exit 1; }
 
-policy_result="$(echo "$current_policy_resp" | jq '.result')"
+policy_result="$(jq '.result' <<< $current_policy_resp)"
 
-updated_payload="$(echo "$policy_result" | jq --argjson emails "$emails_json" '
-  .include = [ $emails[] | { email: { email: . } } ]
-')"
+updated_payload="$(jq --argjson emails "$emails_json" '
+  .include = [ $emails[] | { email: { email: . } } ] ' <<< $policy_result)"
 
 update_resp="$(curl -sS -X PUT \
-	-H "Authorization: Bearer $CLOUDFLARE_API_TOKEN" \
+	-H "Authorization: Bearer $ZERO_TRUST_TOKEN" \
 	-H "Content-Type: application/json" \
 	--data "$updated_payload" \
-  	"$BASE_URL/accounts/$ACCOUNT_ID/access/policies/$POLICY_ID"
+	"$API_BASE_URL/accounts/$ACCOUNT_ID/access/policies/$ZERO_TRUST_POLICY_ID"
 )"
 
 
 echo "$update_resp" | grep -q '"success": true'
-[[ $? -ne 0 ]] && { echo "Error whle updating policy:"; echo "$update_resp"; exit 1; }
+[[ $? -ne 0 ]] && { echo -e "Error while updating policy:\n$update_resp" >&2; exit 1; }
 
 echo "OK! Policy successfully updated."
