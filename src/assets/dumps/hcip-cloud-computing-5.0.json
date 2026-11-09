@@ -290,7 +290,7 @@
 				"C. Dividing resources of different projects in a VDC",
 				"D. Isolating R&D test resources from production services in the same VDC"
 			],
-			"answer": ["D"],
+			"answer": ["B"],
 			"explanation": "The correct answer is B. Managing the services or resources of branches across regions. In HUAWEI CLOUD Stack, resource sets are primarily used as an internal organizational and authorization tool within a tenant or VDC. They are well suited for grouping resources by department, project, or environment, such as production versus test resources. This means options A, C, and D are all typical and appropriate use cases because they involve structuring and controlling resources inside the same logical management domain. ()\n\nBy contrast, managing services or resources of branches across regions is broader than the normal scope of a resource set. Cross-region branch management usually involves higher-level multi-region organizational constructs, regional administration, or broader tenant/VDC design rather than simply creating a resource set. Resource sets help refine governance inside an established tenant structure: they are not the main mechanism for organizing geographically distributed branch operations across regions.\n\nSo after correcting the wording, the scenario that is not suitable for resource s ts is B, because it describes a cross-region management requirement that typically belongs to a higher-level cloud planning and governance model rather than a resource-set grouping function.",
 			"tags": []
 		},
