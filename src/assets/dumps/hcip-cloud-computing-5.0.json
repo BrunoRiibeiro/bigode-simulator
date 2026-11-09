@@ -360,7 +360,7 @@
 				"C. FusionCare",
 				"D. CloudNetDebug"
 			],
-			"answer": ["A"],
+			"answer": ["B"],
 			"explanation": "Comprehensive and Detailed 150 to 200 words of Explanation From HUAWEI CLOUD Computing Topics: The correct answer is B. AutoOps. In HUAWEI CLOUD Stack. AutoOps is the automation platform used for standardized O&M task execution. Its core value is that it can take individual atomic operations and organize them into automated workflows, allowing repeated maintenance and troubleshooting procedures to be executed in a consistent, efficient, and less error-prone manner. This makes it highly suitable for routine operational tasks, fault handling, and platform maintenance scenarios where manual execution would be slower and more risky.\n\nThe other options have different roles. CMDB is mainly used for configuration and dependency information management. FusionCare is more focused on inspection, health check, and troubleshooting support. CloudNetDebug is designed for network fault diagnosis, especially for virtual network path troubleshooting. None of these primarily serve as the orchestration and automation engine for O&M workflows.\n\nTherefore, when the requirement is to automate standardized operations and execute orchestration-based maintenance tasks in HUAWEI CLOUD Stack. the best answer is AutoOps, so the correct option is B.",
 			"tags": []
 		},
