@@ -501,7 +501,7 @@
 				"C. Application deployment topology display",
 				"D. Certificate replacement in batches"
 			],
-			"answer": ["A", "B", "C"],
+			"answer": ["A", "C"],
 			"explanation": "The correct answers are A and C. Huawei's cloud-service monitoring documentation shows that administrators can view the cloud service topology and dependencies between the current cloud service and other cloud services. This is exactly the kind of capability enabled by a CMDB's dynamic dependency model, and it clearly supports application deployment topology display, which corresponds to option C.\n\nDynamic dependency information is also highly relevant to root cause locating, because dependency graphs help O&M personnel trace failures from one service to dependent services and identify the likely upstream or downstream source of an issue. Huawei troubleshooting materials reference locating faults of dependent services, which aligns with option A.\n\nBy contrast, resource capacity planning is a capacity-management scenario rather than a dynamic-dependency scenario, and certificate replacement in batches is an operational maintenance task that does not primarily depend on CMDB dynamic dependencies.\n\nTherefore, the supported scenarios are A and C, making the verified answer A, C.",
 			"tags": []
 		},
