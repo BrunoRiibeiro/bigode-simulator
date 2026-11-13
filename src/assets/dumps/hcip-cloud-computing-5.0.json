@@ -727,6 +727,612 @@
 			],
 			"explanation": "The correct fill-in answer is hosts. Huawei documentation explicitly states that memory overcommitment must be enabled on the node where the VM is deployed before the VM can use that capability. In Huawei Cloud Stack usage and O&M materials, the node here is the compute host, and the docs also describe memory overcommitment behavior in terms of host resources and overcommitment ratios.\n\nHuawei O&M guidance further explains that host resource isolation must be enabled before memory overcommitment is enabled, which confirms that this setting is tied to the compute-host layer. Some Huawei documents also refer to enabling or disabling memory overcommitment for a host group, but the actual execution point is still the underlying hosts/nodes in that group. Because your fill-in statement says \"enable memory overcommitment on (),\" the most accurate and broadly supported answer is hosts.\n\nTherefore, after correcting the sentence, the verified answer is hosts.",
 			"tags": []
+		},
+		{
+			"id": "ren0001",
+			"type": "boolean",
+			"prompt": "In OpenStack, users can manage VM instances of all projects under the Compute panel group of the Project dashboard.",
+			"options": [
+				{"key": "A", "label": "True", "value": true},
+				{"key": "B", "label": "False", "value": false}
+			],
+			"answer": false,
+			"explanation": "The statement is FALSE. In Horizon, Project > Compute > Instances shows only the instances of the currently selected project. To see another project, the user must switch projects and needs a role in it. Managing instances of all projects is done in Admin > Compute > Instances, which is only visible to users with the admin role.\n\nProject dashboard: scope of the current project. Admin dashboard: global scope, admin only. Identity dashboard: users, projects, groups and roles.",
+			"tags": []
+		},
+		{
+			"id": "ren0002",
+			"type": "boolean",
+			"prompt": "In Horizon panel design, a panel is the bottom-level functional module.",
+			"options": [
+				{"key": "A", "label": "True", "value": true},
+				{"key": "B", "label": "False", "value": false}
+			],
+			"answer": true,
+			"explanation": "The statement is TRUE. Horizon is organized in three levels: Dashboard (top level, e.g. Project, Admin, Identity), PanelGroup (groups related panels, e.g. Compute, Network) and Panel (the lowest-level functional module, a specific page such as Instances or Images).\n\nExample: Project (Dashboard) > Compute (PanelGroup) > Instances (Panel). Tables, tabs, forms and workflows are UI elements inside a panel, not levels of the module hierarchy.",
+			"tags": []
+		},
+		{
+			"id": "ren0003",
+			"type": "multi",
+			"prompt": "Which of the following are not functions of Keystone roles?",
+			"options": [
+				"A. Managing projects and users as a top-level container",
+				"B. Defining service access addresses",
+				"C. Storing user passwords",
+				"D. Defining operation permissions of users"
+			],
+			"answer": ["A", "B", "C"],
+			"explanation": "The correct answers are A, B and C. The only function of a role is D: defining which operations a user can perform. Roles are assigned to a user or group on a project or domain, and each service's policy file checks the role to allow or deny the action.\n\nA describes a Domain (top-level container of projects, users and groups). B describes Endpoints (public, internal, admin) in the service catalog. C belongs to the User, stored in the identity backend (SQL or LDAP).",
+			"tags": []
+		},
+		{
+			"id": "ren0004",
+			"type": "single",
+			"prompt": "Which of the following files determines whether a user has the necessary permissions to perform operations in the RBAC mechanism?",
+			"options": [
+				"A. policy.json",
+				"B. policy.yaml",
+				"C. config.ini",
+				"D. config.yaml"
+			],
+			"answer": ["A"],
+			"explanation": "The correct answer is A. policy.json. OpenStack RBAC is implemented by oslo.policy, and each service has a policy file (e.g. /etc/nova/policy.json) mapping each API operation to a role-based rule, such as \"os_compute_api:servers:delete\": \"rule:admin_or_owner\". The service compares the roles in the Keystone token against this rule.\n\nNote: since Wallaby the default format is policy.yaml and JSON is deprecated. The HCIP material uses the classic name, so for a single-choice question choose policy.json. config.ini and config.yaml do not have this role; service configuration lives in files such as nova.conf and does not define permissions.",
+			"tags": []
+		},
+		{
+			"id": "ren0005",
+			"type": "boolean",
+			"prompt": "In OpenStack, the deactivated state of a Glance image restricts access only for common users. Administrators can continue using the image.",
+			"options": [
+				{"key": "A", "label": "True", "value": true},
+				{"key": "B", "label": "False", "value": false}
+			],
+			"answer": true,
+			"explanation": "The statement is TRUE. Deactivated is an image state in Glance. In this state, access to the image data is blocked for any non-admin user, while administrators can still download and use it. Typical use: the admin deactivates a faulty or vulnerable image to prevent new VMs from being created with it, then reactivates it later (openstack image set --deactivate / --activate).\n\nOther image states: queued, saving, active, deactivated, killed, deleted/pending_delete.",
+			"tags": []
+		},
+		{
+			"id": "ren0006",
+			"type": "single",
+			"prompt": "Which of the following resources is used by default by the Nova Filter Scheduler to calculate weights?",
+			"options": [
+				"A. CPU usage",
+				"B. Disk I/O",
+				"C. Network bandwidth",
+				"D. Idle memory"
+			],
+			"answer": ["D"],
+			"explanation": "The correct answer is D. Idle memory. The Filter Scheduler works in two steps: filtering (removes hosts that do not meet the request) and weighing (ranks the remaining hosts). The classic default weigher is RAMWeigher, which weighs hosts by free RAM. With the default positive ram_weight_multiplier the host with more free memory wins (spreading); a negative multiplier causes stacking.\n\nNewer releases include other weighers (CPUWeigher, DiskWeigher, IoOpsWeigher), but IoOpsWeigher counts in-progress operations, not disk I/O, and none measures network bandwidth.",
+			"tags": []
+		},
+		{
+			"id": "ren0007",
+			"type": "multi",
+			"prompt": "During Cinder volume attachment, which of the following information must be transmitted from Nova to Cinder?",
+			"options": [
+				"A. iSCSI initiator name",
+				"B. Host name",
+				"C. VM name",
+				"D. FC WWPNs"
+			],
+			"answer": ["A", "B", "D"],
+			"explanation": "The correct answers are A, B and D. During attach, Nova (through os-brick) collects the compute host properties and sends them to Cinder in the connector object of initialize_connection: ip, host, initiator (iSCSI IQN), wwpns/wwnns (FC HBAs), multipath, platform and os_type. The Cinder driver uses this to map the LUN to the host on the storage array and returns the connection info.\n\nThe VM name is not sent: the storage sees the physical host, not the VM. Nova/libvirt attaches the device to the VM afterwards.",
+			"tags": []
+		},
+		{
+			"id": "ren0008",
+			"type": "boolean",
+			"prompt": "In OpenStack, Swift is suitable for storing data that requires real-time frequent updates, such as database files.",
+			"options": [
+				{"key": "A", "label": "True", "value": true},
+				{"key": "B", "label": "False", "value": false}
+			],
+			"answer": false,
+			"explanation": "The statement is FALSE. Swift is object storage: objects are written and read as a whole through a REST API, with no partial updates or random block writes, and it uses eventual consistency. Databases need small, random, frequent writes with strong consistency, which is the role of Cinder (block storage).\n\nSwift fits unstructured, static data: images, videos, documents, backups, archives and Glance image storage. Manila provides shared file storage.",
+			"tags": []
+		},
+		{
+			"id": "ren0009",
+			"type": "single",
+			"prompt": "Which of the following can be used to assign IP addresses to VMs in Neutron?",
+			"options": [
+				"A. Router",
+				"B. Network",
+				"C. Subnet",
+				"D. Port"
+			],
+			"answer": ["C"],
+			"explanation": "The correct answer is C. Subnet. A subnet is an IPv4 or IPv6 address block from which IP addresses are assigned to VMs. It defines the CIDR, allocation pool, gateway and whether DHCP is enabled; the DHCP agent (dnsmasq) delivers the address.\n\nThe port holds the assigned IP and MAC, but the subnet is what provides the address. A network is only the L2 domain with no IP information, and the router handles routing and NAT.",
+			"tags": []
+		},
+		{
+			"id": "ren0010",
+			"type": "boolean",
+			"prompt": "In OpenStack, east-west traffic is the traffic between VMs and external networks, and north-south traffic is the traffic between VMs.",
+			"options": [
+				{"key": "A", "label": "True", "value": true},
+				{"key": "B", "label": "False", "value": false}
+			],
+			"answer": false,
+			"explanation": "The statement is FALSE because the concepts are swapped. East-west traffic flows between VMs inside the data center (same subnet via L2, or different subnets through the virtual router). North-south traffic flows between VMs and external networks, through the router with SNAT or floating IPs.\n\nRelated: DVR distributes east-west routing to each compute node; SNAT for north-south stays centralized on the network node, while floating IPs are handled on the compute node.",
+			"tags": []
+		},
+		{
+			"id": "ren0011",
+			"type": "multi",
+			"prompt": "Which of the following items are involved in communication between VMs in the same VLAN in OpenStack?",
+			"options": [
+				"A. Traffic forwarding by a virtual switch such as OVS",
+				"B. Route forwarding",
+				"C. VLAN tag processing",
+				"D. Checks on security group rules"
+			],
+			"answer": ["A", "C", "D"],
+			"explanation": "The correct answers are A, C and D. VMs in the same VLAN are in the same L2 domain, so communication is switching only. br-int forwards frames by MAC (A). br-int uses an internal local VLAN, which is translated to the real VLAN on the provider bridge when traffic leaves the host, and back on the destination host (C). Security group rules are enforced on each VM port, including traffic between VMs in the same network (D).\n\nRoute forwarding is only involved when VMs are in different subnets or access external networks.",
+			"tags": []
+		},
+		{
+			"id": "ren0012",
+			"type": "single",
+			"prompt": "Which of the following is not a function of the router component in Neutron?",
+			"options": [
+				"A. IP address assignment",
+				"B. Connection to a tenant internal network",
+				"C. External connectivity",
+				"D. NAT"
+			],
+			"answer": ["A"],
+			"explanation": "The correct answer is A. IP address assignment is done by the subnet (address pool) together with the DHCP agent. The router, implemented by the L3 agent in a qrouter namespace, connects tenant subnets through qr- interfaces, provides external connectivity through the qg- gateway, and performs NAT (SNAT for outbound access and DNAT for floating IPs).",
+			"tags": []
+		},
+		{
+			"id": "ren0013",
+			"type": "multi",
+			"prompt": "Which of the following are typical orchestration scenarios of Heat?",
+			"options": [
+				"A. Managing object storage containers",
+				"B. Automatically scaling web application clusters",
+				"C. Deploying an application consisting of web application and database layers",
+				"D. Creating a single virtual disk"
+			],
+			"answer": ["B", "C"],
+			"explanation": "The correct answers are B and C. Heat orchestrates sets of interdependent resources described in a HOT template and manages them as a stack. Auto scaling web clusters (OS::Heat::AutoScalingGroup and ScalingPolicy with Aodh alarms) and deploying a multi-tier application (VMs, networks, volumes, security groups, load balancer, with dependencies) are classic scenarios.\n\nManaging Swift containers and creating a single disk are isolated operations done directly through the service APIs. Rule of thumb: a single resource is not a typical Heat scenario.",
+			"tags": []
+		},
+		{
+			"id": "ren0014",
+			"type": "single",
+			"prompt": "Which of the following fields is mandatory when O&M personnel write a HOT template?",
+			"options": [
+				"A. outputs",
+				"B. parameters",
+				"C. conditions",
+				"D. resources"
+			],
+			"answer": ["D"],
+			"explanation": "The correct answer is D. resources. The resources section must define at least one resource; otherwise the template creates nothing. heat_template_version is also mandatory but is not among the options. description, parameters, parameter_groups, outputs and conditions are optional.",
+			"tags": []
+		},
+		{
+			"id": "ren0015",
+			"type": "boolean",
+			"prompt": "In OpenStack, both polling agents and notification agents can be scaled out horizontally to improve Ceilometer processing.",
+			"options": [
+				{"key": "A", "label": "True", "value": true},
+				{"key": "B", "label": "False", "value": false}
+			],
+			"answer": true,
+			"explanation": "The statement is TRUE. Ceilometer's architecture is designed so both agent types scale horizontally. Multiple notification agents can consume from the same message queue, and with workload partitioning they coordinate pipeline processing without duplicating data. Compute polling agents run on each compute node, and multiple central polling agents can run together, coordinated through tooz (Redis or ZooKeeper backend) to split resources between them.\n\nFlow: agents collect, pipeline transforms, publishers send to Gnocchi, Aodh evaluates alarms.",
+			"tags": []
+		},
+		{
+			"id": "ren0016",
+			"type": "single",
+			"prompt": "Which of the following is the main function of Panko in OpenStack?",
+			"options": [
+				"A. Saving resource operation event logs",
+				"B. Storing time series data",
+				"C. Collecting CPU usage",
+				"D. Triggering auto scaling based on alarm information"
+			],
+			"answer": ["A"],
+			"explanation": "The correct answer is A. Panko is the event storage service of OpenStack Telemetry. It stores events generated from service notifications (instance created, volume attached, VM deleted), providing an operation history for auditing and tracing.\n\nEach option matches one telemetry project: Panko (events), Gnocchi (time series), Ceilometer (data collection), Aodh (alarms that can trigger Heat auto scaling).",
+			"tags": []
+		},
+		{
+			"id": "ren0017",
+			"type": "single",
+			"prompt": "Which of the following statements is true about Combined API in HUAWEI CLOUD Stack?",
+			"options": [
+				"A. The Combined API only forwards requests. It does not process data.",
+				"B. During the creation of an ECS, the ECS API in the Combined API calls the VPC API in the Combined API.",
+				"C. When EIPs are applied for, the Combined API will not be called.",
+				"D. When a user submits a request for creating an ECS on the web page, the control flow is forwarded from a load balancer to the Combined API, and then the Combined API distributes the flow to the cluster on the UI."
+			],
+			"answer": ["B"],
+			"explanation": "The correct answer is B. Combined API is the cloud service API layer between the console and OpenStack. It aggregates and orchestrates native OpenStack APIs into complete services. Creating an ECS requires networking, so the ECS API calls the VPC API (ports, IPs, security groups, EIP), besides triggering Nova, Cinder and Neutron.\n\nA is wrong because it processes data (parameter validation, quota checks, business logic). C is wrong because EIP requests go through Combined API via the VPC API. D reverses the flow: UI, load balancer, service console, Combined API, OpenStack.",
+			"tags": []
+		},
+		{
+			"id": "ren0018",
+			"type": "boolean",
+			"prompt": "HUAWEI CLOUD Stack and HUAWEI CLOUD share the same architecture, APIs and backbone versions. They aim to deliver the same cloud service experience and share the same ecosystem.",
+			"options": [
+				{"key": "A", "label": "True", "value": true},
+				{"key": "B", "label": "False", "value": false}
+			],
+			"answer": true,
+			"explanation": "The statement is TRUE. It is Huawei's official positioning of HCS: same architecture, same APIs and same mainline version as the public HUAWEI CLOUD. The goal is the same experience (console, services, APIs), the same ecosystem (tools, partners, certified applications) and a consistent hybrid cloud. In practice HCS ships with a version lag and a subset of services, but the statement is true.",
+			"tags": []
+		},
+		{
+			"id": "ren0019",
+			"type": "boolean",
+			"prompt": "You can delete physical networks on Service OM and create them on the FusionSphere OpenStack Web Client.",
+			"options": [
+				{"key": "A", "label": "True", "value": true},
+				{"key": "B", "label": "False", "value": false}
+			],
+			"answer": true,
+			"explanation": "Probable answer: TRUE (not confirmed against official documentation). Creating a physical network involves host-level configuration (mapping the physnet to NICs or bonds and provider bridges), which is a platform task done through the FusionSphere OpenStack Web Client (backed by CPS). Service OM operates the existing logical resources. The asymmetry in the statement suggests it was taken from a specific documentation note.\n\nPoint of doubt: deleting a physnet would also require undoing the host mapping, which could point back to the Web Client.",
+			"tags": ["unverified"]
+		},
+		{
+			"id": "ren0020",
+			"type": "text",
+			"prompt": "In HUAWEI CLOUD Stack, to improve maintenance efficiency, FusionSphere collects audit items related to frequently reported alarms. Administrators can view and process these audit items on the () page to ensure service uptime. (Fill in the blank.)",
+			"options": [],
+			"answer": ["System Audit"],
+			"explanation": "Probable answer: System Audit. FusionSphere OpenStack has a system audit mechanism that checks consistency between OpenStack database records and the real state of resources (orphan VMs, VMs stuck in intermediate states, volumes registered in Cinder but missing on storage, ports without owners). These inconsistencies are often the source of recurring alarms. The related audit items are gathered on the System Audit page in Service OM, where the administrator can review and apply the suggested fix.\n\nThe exact page name may vary between versions.",
+			"tags": ["unverified"]
+		},
+		{
+			"id": "ren0021",
+			"type": "single",
+			"prompt": "Which of the following image-related operations cannot be performed by administrators on Service OM?",
+			"options": [
+				"A. Sharing images",
+				"B. Deleting images",
+				"C. Downloading images",
+				"D. Registering images"
+			],
+			"answer": ["C"],
+			"explanation": "Probable answer: C. Downloading images. Image operations on Service OM are catalog management for the resource pool: registering (including FTP/NFS for images larger than 6 GB), modifying attributes, sharing with other projects and deleting. Download is not among them; obtaining the image file is done through the Glance API/CLI (openstack image save) or other export methods.",
+			"tags": ["unverified"]
+		},
+		{
+			"id": "ren0022",
+			"type": "boolean",
+			"prompt": "In HUAWEI CLOUD Stack, an administrator can migrate shared disks using a general migration model.",
+			"options": [
+				{"key": "A", "label": "True", "value": true},
+				{"key": "B", "label": "False", "value": false}
+			],
+			"answer": false,
+			"explanation": "Probable answer: FALSE. Shared disks (attached to multiple ECSs at the same time) are among the cases not supported by general disk migration. General migration copies data from the source backend to the destination and then reconnects the volume to the VM; with a disk attached to several VMs, consistency during the copy and a coordinated reconnection cannot be guaranteed.\n\nOther common restrictions to check: disks with snapshots, disks in intermediate states and encrypted disks.",
+			"tags": ["unverified"]
+		},
+		{
+			"id": "ren0023",
+			"type": "single",
+			"prompt": "Which of the following statements about host groups on Service OM is false?",
+			"options": [
+				"A. A host can only be added to one host group.",
+				"B. Hosts of different virtualization types cannot be added to the same host group.",
+				"C. A host group can have only one resource type.",
+				"D. ARM and x86 servers cannot be added to the same host group."
+			],
+			"answer": ["A"],
+			"explanation": "Probable answer: A. A host group on Service OM corresponds to a Nova host aggregate, and in OpenStack a host can belong to multiple aggregates at the same time (e.g. an SSD aggregate and a GPU aggregate). The exclusivity rule applies to availability zones: a host can be in only one AZ.\n\nB and D are strong technical restrictions (mixing virtualization types or CPU architectures breaks scheduling). If A is not the expected answer, the second most likely false statement is C.",
+			"tags": ["unverified"]
+		},
+		{
+			"id": "ren0024",
+			"type": "boolean",
+			"prompt": "In HUAWEI CLOUD Stack, VBS can only back up EVS disks. It cannot back up an entire ECS.",
+			"options": [
+				{"key": "A", "label": "True", "value": true},
+				{"key": "B", "label": "False", "value": false}
+			],
+			"answer": true,
+			"explanation": "The statement is TRUE. VBS (Volume Backup Service) backs up individual EVS disks (system or data), one by one, with no concept of the ECS as a unit. CSBS (Cloud Server Backup Service) backs up the whole ECS, all disks together with crash consistency across disks, and can restore the complete VM. Both use storage snapshots plus permanent incremental backup.\n\nRelated services: VBS (disk), CSBS (whole ECS), CSDR (DR of ECS across AZs or sites), VHA (HA of ECS with synchronous replication).",
+			"tags": []
+		},
+		{
+			"id": "ren0025",
+			"type": "multi",
+			"prompt": "Which of the following scenarios can SFS be used for?",
+			"options": [
+				"A. Static website resources shared by multiple cloud servers",
+				"B. Massive product images of e-commerce platforms",
+				"C. Experimental datasets shared by scientific research teams",
+				"D. High-performance real-time transactional databases"
+			],
+			"answer": ["A", "C"],
+			"explanation": "The correct answers are A and C. SFS is shared file storage mounted via NFS (Linux) or CIFS/SMB (Windows) by multiple ECSs at the same time. Shared web content behind an ELB and shared research datasets (HPC) are typical scenarios.\n\nB fits OBS (massive unstructured data accessed over HTTP, often with CDN). D needs low latency and random block I/O, which is EVS. Rule: EVS for a single ECS disk or databases, SFS for files shared between ECSs, OBS for massive data via API.",
+			"tags": []
+		},
+		{
+			"id": "ren0026",
+			"type": "boolean",
+			"prompt": "In HUAWEI CLOUD Stack, an AS group can be associated with both an alarm policy and a scheduled policy to respond to service fluctuations.",
+			"options": [
+				{"key": "A", "label": "True", "value": true},
+				{"key": "B", "label": "False", "value": false}
+			],
+			"answer": true,
+			"explanation": "The statement is TRUE. An AS group can have multiple policies of different types at the same time. Alarm policies react to Cloud Eye metrics (unpredictable peaks), scheduled policies run once at a specific time (predictable peaks) and periodic policies repeat at regular intervals (recurring patterns).\n\nAll respect the group's minimum and maximum instance limits. The cooldown period blocks new alarm-triggered actions after a scaling action, but does not block scheduled or periodic policies.",
+			"tags": []
+		},
+		{
+			"id": "ren0027",
+			"type": "multi",
+			"prompt": "In HUAWEI CLOUD Stack, which of the following are conditions on which AS can trigger scaling actions?",
+			"options": [
+				"A. Alarm policies",
+				"B. Manual triggering",
+				"C. Image update frequency",
+				"D. Physical server faults",
+				"E. Scheduled tasks"
+			],
+			"answer": ["A", "B", "E"],
+			"explanation": "The correct answers are A, B and E. AS scaling can be triggered by alarm policies (Cloud Eye metrics), manually (changing the expected number of instances or executing a policy) and by scheduled or periodic policies.\n\nImage updates are done by changing the AS configuration and only affect new instances; they do not trigger scaling. Physical server faults are handled by platform HA (VM restart on another host). AS health checks replace unhealthy instances, but that maintains instance count rather than being a scaling trigger.",
+			"tags": []
+		},
+		{
+			"id": "ren0028",
+			"type": "single",
+			"prompt": "An e-commerce platform uses HUAWEI CLOUD Stack to provide services. The platform uses an AS group to manage ECSs, but the group does not trigger any scaling actions during a promotion, causing a website breakdown. Which of the following is the least likely cause?",
+			"options": [
+				"A. The maximum number of ECSs in the AS group is too low.",
+				"B. The ECS specifications are too low to process the traffic.",
+				"C. The alarm threshold in the corresponding AS policy is too high, for example, CPU usage > 95%.",
+				"D. The IMS service is faulty."
+			],
+			"answer": ["B"],
+			"explanation": "The correct answer is B. The problem is that no scaling action was triggered. Low ECS specifications do not prevent scaling; weak instances saturate CPU faster and would trigger the alarm policy earlier. It may explain the breakdown, but not why AS did nothing.\n\nA: if the group is already at its maximum, AS cannot add instances. C: the alarm fires too late or never. D: AS creates ECSs from the image in the AS configuration, so an IMS fault makes instance creation fail.",
+			"tags": []
+		},
+		{
+			"id": "ren0029",
+			"type": "multi",
+			"prompt": "In HUAWEI CLOUD Stack, after a user creates a private image using IMS, the message \"The image format is not supported\" is displayed when the user uses the image to create an ECS. Which of the following are not possible causes of this fault?",
+			"options": [
+				"A. The image was not correctly registered with Glance.",
+				"B. The image contains unauthorized software.",
+				"C. The OS of the image is not genuine.",
+				"D. A data disk was not detached during image creation."
+			],
+			"answer": ["B", "C"],
+			"explanation": "The correct answers are B and C. \"Image format is not supported\" is a technical error related to the image file or its metadata. Unauthorized software and a non-genuine OS are licensing and compliance issues; the image can still be technically valid and boot.\n\nA is plausible: a wrong disk_format or container_format (e.g. qcow2 registered as raw) or missing properties makes the image unusable. D is plausible: data disks still attached or referenced (e.g. in /etc/fstab) can leave an inconsistent disk structure, which is why Huawei recommends detaching data disks before creating a system private image.",
+			"tags": []
+		},
+		{
+			"id": "ren0030",
+			"type": "multi",
+			"prompt": "Which of the following statements are true about SFS constraints in HUAWEI CLOUD Stack?",
+			"options": [
+				"A. You can adjust the capacity of a file system only when the file system is in the Available state.",
+				"B. The automatic mount function can be used for NFS and CIFS file systems.",
+				"C. Before you delete a file system, ensure that the file system has been unmounted from the corresponding ECS.",
+				"D. Soft deleting a file system moves the file system to the recycle bin by default. The deleted file system is not counted towards the quota."
+			],
+			"answer": ["A", "C"],
+			"explanation": "Probable answer: A and C. Capacity expansion or reduction is only allowed when the file system is stable (Available). Deleting a mounted file system leaves hung mounts on ECSs and risks losing data still being written.\n\nB is likely false because automatic mounting is documented for NFS on Linux (/etc/fstab or boot script); CIFS on Windows has its own procedure. D is likely false because a file system in the recycle bin still occupies resources and still counts towards the quota.",
+			"tags": ["unverified"]
+		},
+		{
+			"id": "ren0031",
+			"type": "single",
+			"prompt": "A large medical organization uses a HUAWEI CLOUD Stack solution to provide services and uses OBS to store patient image data. Which of the following functions cannot be implemented?",
+			"options": [
+				"A. Labeling patient information using metadata",
+				"B. Efficient diagnosis based on block-level storage",
+				"C. Central storage of a huge number of images",
+				"D. Data encryption for high security"
+			],
+			"answer": ["B"],
+			"explanation": "The correct answer is B. OBS is object storage: data is accessed as whole objects through an HTTP API, not as blocks, and it cannot be mounted as a disk. Block-level access is an EVS characteristic.\n\nThe other options are OBS strengths: custom object metadata and bucket tags for labeling (A), virtually unlimited capacity for unstructured data such as DICOM images (C), and server-side encryption with KMS keys plus HTTPS transmission (D).",
+			"tags": []
+		},
+		{
+			"id": "ren0032",
+			"type": "single",
+			"prompt": "A financial company uses HUAWEI CLOUD Stack to provide services. In the DR solution used for its financial transaction system, which of the following functions does EVS not provide?",
+			"options": [
+				"A. Active-active clusters using shared disks",
+				"B. Cross-AZ data replication",
+				"C. Encrypted data transmission over public networks",
+				"D. Disk creation from an EVS snapshot"
+			],
+			"answer": ["C"],
+			"explanation": "The correct answer is C. Encrypting traffic over public networks is a network function (VPN/IPsec or TLS at the application). EVS is a block disk accessed over the internal storage network and never travels over the public network; its encryption is at rest (KMS-encrypted disks).\n\nEVS provides shared disks (SCSI or VBD) for cluster software such as Oracle RAC (A), cross-AZ replication when backed by HyperMetro on OceanStor, or asynchronous replication via CSDR (B), and disk creation from snapshots (D).",
+			"tags": []
+		},
+		{
+			"id": "ren0033",
+			"type": "single",
+			"prompt": "Which of the following scenarios is HUAWEI CLOUD Stack VPC peering suitable for?",
+			"options": [
+				"A. Communication between VPCs in the same region",
+				"B. Communication between VPCs in different regions",
+				"C. Secure communication between subnets in one VPC",
+				"D. Connection between local IDCs and VPCs"
+			],
+			"answer": ["A"],
+			"explanation": "The correct answer is A. VPC peering connects two VPCs in the same region using private IPs, for the same tenant or different tenants (with acceptance). Cross-region connectivity uses Cloud Connect / Enterprise Router or VPN. Subnets in the same VPC already communicate by default and are controlled with security groups and network ACLs. IDC to VPC uses VPN or Direct Connect.\n\nRestrictions: CIDRs cannot overlap, peering is not transitive, and routes must be added on both VPCs.",
+			"tags": []
+		},
+		{
+			"id": "ren0034",
+			"type": "boolean",
+			"prompt": "A HUAWEI CLOUD Stack VPC endpoint can enable an ECS in a VPC to securely access an ECS in a second VPC in the same region without using the Internet.",
+			"options": [
+				{"key": "A", "label": "True", "value": true},
+				{"key": "B", "label": "False", "value": false}
+			],
+			"answer": true,
+			"explanation": "The statement is TRUE. VPC Endpoint (VPCEP) provides private access from a VPC to an endpoint service in the same region, without Internet or EIP. The endpoint service can be a cloud service (OBS, DNS) or a private service you publish, backed by an ELB, an ECS or a VIP. Publishing the ECS in VPC B as an endpoint service lets the ECS in VPC A reach it privately.\n\nDifference from peering: peering connects whole networks and requires non-overlapping CIDRs; VPCEP exposes one specific service (IP and port), works with overlapping CIDRs and does not expose the rest of the network.",
+			"tags": []
+		},
+		{
+			"id": "ren0035",
+			"type": "single",
+			"prompt": "Which of the following is not an advantage of Enhanced Direct Connect in HUAWEI CLOUD Stack?",
+			"options": [
+				"A. Short deployment period and low operation costs",
+				"B. Physical isolation for high security",
+				"C. Low latency suitable for core services",
+				"D. High bandwidth and strong reliability"
+			],
+			"answer": ["A"],
+			"explanation": "The correct answer is A. Direct Connect uses a dedicated physical line between the customer data center and the cloud, requiring a carrier circuit, cabling and equipment on both ends. Deployment takes weeks or months and costs are high.\n\nPhysical isolation, low and stable latency, and high bandwidth with redundancy are real advantages. VPN is the opposite trade-off: fast and cheap to deploy over the Internet, but with variable latency. A common design uses Direct Connect as primary and VPN as backup.",
+			"tags": []
+		},
+		{
+			"id": "ren0036",
+			"type": "boolean",
+			"prompt": "HUAWEI CLOUD Stack VPC peering can provide reliable high-speed connections between local IDCs and VPCs.",
+			"options": [
+				{"key": "A", "label": "True", "value": true},
+				{"key": "B", "label": "False", "value": false}
+			],
+			"answer": false,
+			"explanation": "The statement is FALSE. VPC peering connects VPC to VPC in the same region and has no way to connect a local IDC to the cloud. The statement describes Direct Connect (dedicated line). The cheaper and faster but less stable alternative is VPN.\n\nConnectivity map: same VPC subnets (native), VPCs in the same region (peering or VPCEP), VPCs across regions (Cloud Connect / Enterprise Router), IDC to VPC (VPN or Direct Connect).",
+			"tags": []
+		},
+		{
+			"id": "ren0037",
+			"type": "multi",
+			"prompt": "An enterprise uses HUAWEI CLOUD Stack to provide services, and the VDC quota of each department is limited. When the R&D department requests resources beyond its quota, which of the following are possible results?",
+			"options": [
+				"A. The R&D department submits an online application for a larger quota. After the application is approved, the administrator adjusts the quota on the ManageOne operation portal.",
+				"B. Idle quotas of other departments are automatically used.",
+				"C. Storage resources within the quota can still be requested.",
+				"D. The request is automatically rejected, and a message is displayed indicating that the quota is insufficient."
+			],
+			"answer": ["A", "C", "D"],
+			"explanation": "The correct answers are A, C and D. ManageOne has a quota application flow with approval, after which the upper-level administrator adjusts the quota (A). Quotas are controlled per resource type (vCPU, memory, disk, EIP, ECS count), so exceeding the compute quota does not block storage requests within the storage quota (C). By default the system validates the request and rejects it with an insufficient quota message (D).\n\nB is wrong: there is no automatic borrowing between departments. The parent VDC administrator must manually reduce one quota and increase another. A child VDC quota can never exceed the parent's, and HCS supports up to 5 VDC levels.",
+			"tags": []
+		},
+		{
+			"id": "ren0038",
+			"type": "multi",
+			"prompt": "A government agency uses a HUAWEI CLOUD Stack solution to provide government services. To isolate resources of departments for high security, which of the following operations are appropriate?",
+			"options": [
+				"A. Configuring security groups and network ACLs",
+				"B. Multi-level VDC management",
+				"C. Management by enterprise project",
+				"D. Unified operations"
+			],
+			"answer": ["A", "B", "C"],
+			"explanation": "The correct answers are A, B and C. Each isolates department resources at a different layer: security groups (instance) and network ACLs (subnet) at the network layer; multi-level VDCs at the organizational and quota layer, with separate users, administrators and quotas; enterprise projects at the resource and permission layer inside a VDC.\n\nUnified operations centralizes management for efficiency, which is the opposite of isolation.",
+			"tags": []
+		},
+		{
+			"id": "ren0039",
+			"type": "boolean",
+			"prompt": "In HUAWEI CLOUD Stack, resources can be migrated between resource sets, but resource sets cannot be migrated across regions.",
+			"options": [
+				{"key": "A", "label": "True", "value": true},
+				{"key": "B", "label": "False", "value": false}
+			],
+			"answer": true,
+			"explanation": "Probable answer: TRUE. Moving a resource (ECS, disk, etc.) from one resource set to another is supported as a logical change of grouping and permissions, without recreating the resource. A resource set is a logical grouping and authorization construct with no data or infrastructure, so it is not migrated across regions; moving resources to another region requires real migration (image, data copy, CSDR).\n\nPoint of doubt: the wording is odd, since a resource set is not something that gets migrated. If the expected answer is FALSE, the reason is likely that resource sets are already visible in all regions of the VDC.",
+			"tags": ["unverified"]
+		},
+		{
+			"id": "ren0040",
+			"type": "multi",
+			"prompt": "If the host group tag does not match the VM flavor tag when an administrator creates an ECS in HUAWEI CLOUD Stack, which of the following statements are false?",
+			"options": [
+				"A. The system reports an error indicating that the ECS cannot be created.",
+				"B. A host group is randomly selected for ECS creation.",
+				"C. The system automatically ignores the tags and performs matching.",
+				"D. A message is displayed asking you to manually match the tags again."
+			],
+			"answer": ["B", "C", "D"],
+			"explanation": "The correct answers are B, C and D. The host group tag is the host aggregate metadata, and the flavor tag is the matching extra spec, compared by AggregateInstanceExtraSpecsFilter. If no host group matches, all hosts are filtered out, the scheduler returns NoValidHost and the ECS goes to error state, so only A is true.\n\nThere is no random fallback, the tags are never ignored (that would defeat the purpose of placing special flavors on specific hardware), and there is no manual re-match dialog; the administrator must fix the tags and create the ECS again.",
+			"tags": []
+		},
+		{
+			"id": "ren0041",
+			"type": "multi",
+			"prompt": "A financial enterprise uses HUAWEI CLOUD Stack to provide services. In addition to controlling costs, the enterprise also needs to ensure secure isolation of its core transaction system. Which of the following technical means can be used?",
+			"options": [
+				"A. Core resources are placed in a dedicated resource set, and only the O&M group is authorized to access the resources.",
+				"B. Core resources are deployed across regions to improve security through geographic isolation.",
+				"C. An independent VPC is configured for core resources, and strict subnet access rules are set.",
+				"D. Core resources are deployed in an independent VDC with strict quotas."
+			],
+			"answer": ["A", "C", "D"],
+			"explanation": "The correct answers are A, C and D. A dedicated resource set isolates permissions, an independent VPC with strict NACL and security group rules isolates the network, and an independent VDC with strict quotas isolates the organization while also controlling cost.\n\nB is wrong: deploying across regions is a DR and availability strategy, not security isolation, and it increases cost (duplicated infrastructure, replication, inter-region links). Geographic distance does not prevent unauthorized access.",
+			"tags": []
+		},
+		{
+			"id": "ren0042",
+			"type": "single",
+			"prompt": "You need to call the ModelArts AI model services of HUAWEI CLOUD in HUAWEI CLOUD Stack without developing new APIs. Which of the following is required?",
+			"options": [
+				"A. Cloud Federation",
+				"B. Two-level cloud",
+				"C. Management of services from third-party heterogeneous platforms",
+				"D. 10 Unified Access Specifications"
+			],
+			"answer": ["A"],
+			"explanation": "The correct answer is A. Cloud Federation is the HCS hybrid cloud function that federates public HUAWEI CLOUD services into HCS. Users access public services such as ModelArts directly from the HCS console with the same account, without custom integration, which is possible because HCS and HUAWEI CLOUD share the same architecture and APIs.\n\nTwo-level cloud is a two-tier private cloud architecture (e.g. provincial and city clouds). Heterogeneous platform management lets ManageOne manage third-party platforms such as VMware. The 10 Unified Access Specifications are an integration standard that would require development.",
+			"tags": []
+		},
+		{
+			"id": "ren0043",
+			"type": "boolean",
+			"prompt": "A city uses HUAWEI CLOUD Stack as the cloud foundation of its smart city project. 30-day recordings from 100,000 cameras need to be stored. EVS + distributed storage + lifecycle policy is the best storage solution.",
+			"options": [
+				{"key": "A", "label": "True", "value": true},
+				{"key": "B", "label": "False", "value": false}
+			],
+			"answer": false,
+			"explanation": "The statement is FALSE. The scenario is massive unstructured data (video) with continuous writes, occasional reads and time-based expiration, so the right solution is OBS + lifecycle policy.\n\nEVS is block storage attached to ECSs with per-disk capacity limits, which would require managing a huge number of disks and servers at high cost. Lifecycle policies are an OBS feature (expire objects after 30 days or transition Standard > Infrequent Access > Archive), not an EVS one.",
+			"tags": []
+		},
+		{
+			"id": "ren0044",
+			"type": "multi",
+			"prompt": "Which of the following can be recorded in tenant operation logs in HUAWEI CLOUD Stack?",
+			"options": [
+				"A. Security group rule changes",
+				"B. Administrator password changes",
+				"C. EVS disk capacity expansion",
+				"D. ECS creation time"
+			],
+			"answer": ["A", "C", "D"],
+			"explanation": "The correct answers are A, C and D. Tenant operation logs (recorded by CTS, Cloud Trace Service) capture operations performed by tenant users on cloud resources: who, what, which resource, when and the result. Security group rule changes, EVS expansion and ECS creation (with timestamp) are tenant resource operations.\n\nAdministrator password changes are platform management operations recorded in ManageOne O&M/security operation logs, not tenant operation logs.",
+			"tags": []
+		},
+		{
+			"id": "ren0045",
+			"type": "boolean",
+			"prompt": "In the HUAWEI CLOUD Stack O&M system, the data analysis platform is used to build a model based on resource-service associations.",
+			"options": [
+				{"key": "A", "label": "True", "value": true},
+				{"key": "B", "label": "False", "value": false}
+			],
+			"answer": false,
+			"explanation": "The statement is FALSE. The model based on associations between resources and services is built by the CMDB, which maintains configuration items (hosts, VMs, disks, networks, applications) and their static and dynamic relationships. The data analysis platform consumes this data for trend analysis, capacity forecasting, anomaly detection, reports and visualization, but does not build the model.\n\nCMDB: resource model and relationships. Monitoring/alarms: real-time state. Data analysis: insights from history.",
+			"tags": []
+		},
+		{
+			"id": "ren0046",
+			"type": "boolean",
+			"prompt": "SmartKit can perform health checks on GPaaS and AI DaaS services in HUAWEI CLOUD Stack.",
+			"options": [
+				{"key": "A", "label": "True", "value": true},
+				{"key": "B", "label": "False", "value": false}
+			],
+			"answer": true,
+			"explanation": "Probable answer: TRUE. SmartKit is Huawei's O&M tool for inspection, health checks, information collection and upgrade/expansion support. In HCS its inspection scope goes beyond infrastructure (servers, storage, network, FusionSphere OpenStack, ManageOne) and covers cloud services by category, including GPaaS (databases, middleware, containers) and AI DaaS (data and AI services).\n\nFusionCare also performs health checks, but focused on the virtualization and management platform.",
+			"tags": ["unverified"]
 		}
 	]
 }
