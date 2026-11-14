@@ -366,7 +366,7 @@
 		},
 		{
 			"id": "ice0027",
-			"type": "multi",
+			"type": "multiple",
 			"prompt": "Which of the following components are involved in Nova scheduling in OpenStack?",
 			"options": [
 				"A. Nova-Scheduler",
@@ -380,7 +380,7 @@
 		},
 		{
 			"id": "ice0028",
-			"type": "multi",
+			"type": "multiple",
 			"prompt": "Which of the following statements are true about the network resource management function of Service OM?",
 			"options": [
 				"A. Administrators can check the status of ports, for example, VM NIC ports.",
@@ -394,7 +394,7 @@
 		},
 		{
 			"id": "ice0029",
-			"type": "multi",
+			"type": "multiple",
 			"prompt": "In HUAWEI CLOUD Stack, which of the following features reflect the elasticity of ECSs?",
 			"options": [
 				"A. Quick creation of instances based on IMS images",
@@ -409,7 +409,7 @@
 		},
 		{
 			"id": "ice0030",
-			"type": "multi",
+			"type": "multiple",
 			"prompt": "A media company uses HUAWEI CLOUD Stack to provide services. It uses a combination of Elastic Cloud Server (ECS) and Object Storage Service (OBS) to store video files. Recently, a delay was found in access from ECS to OBS, causing videos to load slowly. Which of the following measures are inappropriate?",
 			"options": [
 				"A. Reduce the number of OBS buckets and store data centrally.",
@@ -423,7 +423,7 @@
 		},
 		{
 			"id": "ice0031",
-			"type": "multi",
+			"type": "multiple",
 			"prompt": "Different services require different types of disks in HUAWEI CLOUD Stack. Which of the following are major metrics of EVS disks?",
 			"options": [
 				"A. Throughput",
@@ -437,7 +437,7 @@
 		},
 		{
 			"id": "ice0032",
-			"type": "multi",
+			"type": "multiple",
 			"prompt": "If an ECS in a VPC cannot access the Internet in HUAWEI CLOUD Stack, which of the following are recommended troubleshooting operations for O&M personnel?",
 			"options": [
 				"A. Check NAT configurations.",
@@ -451,7 +451,7 @@
 		},
 		{
 			"id": "ice0033",
-			"type": "multi",
+			"type": "multiple",
 			"prompt": "Which of the following statements are true about security groups and network ACLs in HUAWEI CLOUD Stack?",
 			"options": [
 				"A. Security group and network ACL settings are both mandatory by default.",
@@ -465,7 +465,7 @@
 		},
 		{
 			"id": "ice0034",
-			"type": "multi",
+			"type": "multiple",
 			"prompt": "In HUAWEI CLOUD Stack, which of the following scenarios can Virtual Private Network (VPN) be used?",
 			"options": [
 				"A. Low-cost interconnection between VPCs across regions",
@@ -479,7 +479,7 @@
 		},
 		{
 			"id": "ice0035",
-			"type": "multi",
+			"type": "multiple",
 			"prompt": "In HUAWEI CLOUD Stack, bottleneck analysis provides algorithm configuration for bottleneck rules and helps users check for resource bottlenecks. Which of the following factors can be used by O&M administrators to check related information?",
 			"options": [
 				"A. AZs",
@@ -493,7 +493,7 @@
 		},
 		{
 			"id": "ice0036",
-			"type": "multi",
+			"type": "multiple",
 			"prompt": "Which of the following O&M scenarios can be supported by a CMDB's dynamic dependency in HUAWEI CLOUD Stack?",
 			"options": [
 				"A. Root cause locating",
@@ -754,7 +754,7 @@
 		},
 		{
 			"id": "ren0003",
-			"type": "multi",
+			"type": "multiple",
 			"prompt": "Which of the following are not functions of Keystone roles?",
 			"options": [
 				"A. Managing projects and users as a top-level container",
@@ -808,7 +808,7 @@
 		},
 		{
 			"id": "ren0007",
-			"type": "multi",
+			"type": "multiple",
 			"prompt": "During Cinder volume attachment, which of the following information must be transmitted from Nova to Cinder?",
 			"options": [
 				"A. iSCSI initiator name",
@@ -860,7 +860,7 @@
 		},
 		{
 			"id": "ren0011",
-			"type": "multi",
+			"type": "multiple",
 			"prompt": "Which of the following items are involved in communication between VMs in the same VLAN in OpenStack?",
 			"options": [
 				"A. Traffic forwarding by a virtual switch such as OVS",
@@ -888,7 +888,7 @@
 		},
 		{
 			"id": "ren0013",
-			"type": "multi",
+			"type": "multiple",
 			"prompt": "Which of the following are typical orchestration scenarios of Heat?",
 			"options": [
 				"A. Managing object storage containers",
@@ -1041,7 +1041,7 @@
 		},
 		{
 			"id": "ren0025",
-			"type": "multi",
+			"type": "multiple",
 			"prompt": "Which of the following scenarios can SFS be used for?",
 			"options": [
 				"A. Static website resources shared by multiple cloud servers",
@@ -1067,7 +1067,7 @@
 		},
 		{
 			"id": "ren0027",
-			"type": "multi",
+			"type": "multiple",
 			"prompt": "In HUAWEI CLOUD Stack, which of the following are conditions on which AS can trigger scaling actions?",
 			"options": [
 				"A. Alarm policies",
@@ -1096,7 +1096,7 @@
 		},
 		{
 			"id": "ren0029",
-			"type": "multi",
+			"type": "multiple",
 			"prompt": "In HUAWEI CLOUD Stack, after a user creates a private image using IMS, the message \"The image format is not supported\" is displayed when the user uses the image to create an ECS. Which of the following are not possible causes of this fault?",
 			"options": [
 				"A. The image was not correctly registered with Glance.",
@@ -1110,7 +1110,7 @@
 		},
 		{
 			"id": "ren0030",
-			"type": "multi",
+			"type": "multiple",
 			"prompt": "Which of the following statements are true about SFS constraints in HUAWEI CLOUD Stack?",
 			"options": [
 				"A. You can adjust the capacity of a file system only when the file system is in the Available state.",
@@ -1204,7 +1204,7 @@
 		},
 		{
 			"id": "ren0037",
-			"type": "multi",
+			"type": "multiple",
 			"prompt": "An enterprise uses HUAWEI CLOUD Stack to provide services, and the VDC quota of each department is limited. When the R&D department requests resources beyond its quota, which of the following are possible results?",
 			"options": [
 				"A. The R&D department submits an online application for a larger quota. After the application is approved, the administrator adjusts the quota on the ManageOne operation portal.",
@@ -1218,7 +1218,7 @@
 		},
 		{
 			"id": "ren0038",
-			"type": "multi",
+			"type": "multiple",
 			"prompt": "A government agency uses a HUAWEI CLOUD Stack solution to provide government services. To isolate resources of departments for high security, which of the following operations are appropriate?",
 			"options": [
 				"A. Configuring security groups and network ACLs",
@@ -1244,7 +1244,7 @@
 		},
 		{
 			"id": "ren0040",
-			"type": "multi",
+			"type": "multiple",
 			"prompt": "If the host group tag does not match the VM flavor tag when an administrator creates an ECS in HUAWEI CLOUD Stack, which of the following statements are false?",
 			"options": [
 				"A. The system reports an error indicating that the ECS cannot be created.",
@@ -1258,7 +1258,7 @@
 		},
 		{
 			"id": "ren0041",
-			"type": "multi",
+			"type": "multiple",
 			"prompt": "A financial enterprise uses HUAWEI CLOUD Stack to provide services. In addition to controlling costs, the enterprise also needs to ensure secure isolation of its core transaction system. Which of the following technical means can be used?",
 			"options": [
 				"A. Core resources are placed in a dedicated resource set, and only the O&M group is authorized to access the resources.",
@@ -1298,7 +1298,7 @@
 		},
 		{
 			"id": "ren0044",
-			"type": "multi",
+			"type": "multiple",
 			"prompt": "Which of the following can be recorded in tenant operation logs in HUAWEI CLOUD Stack?",
 			"options": [
 				"A. Security group rule changes",

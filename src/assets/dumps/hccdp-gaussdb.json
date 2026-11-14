@@ -1666,7 +1666,7 @@
 		},
 		{
 			"id": "q0127",
-			"type": "multi",
+			"type": "multiple",
 			"prompt": "Which of the following options are valid values for the argtype parameter of a stored procedure?",
 			"options": [
 				"A. %ROW",
@@ -1680,7 +1680,7 @@
 		},
 		{
 			"id": "q0128",
-			"type": "multi",
+			"type": "multiple",
 			"prompt": "Which of the following statements about the SELECT statement are correct?",
 			"options": [
 				"A. The SELECT statement often uses wildcard fields \"*\"",
@@ -1694,7 +1694,7 @@
 		},
 		{
 			"id": "q0129",
-			"type": "multi",
+			"type": "multiple",
 			"prompt": "When an energy customer uses DRS to migrate databases to GaussDB, which of the following permissions must the migration user have on databases in GaussDB?",
 			"options": [
 				"A. create",
@@ -1709,7 +1709,7 @@
 		},
 		{
 			"id": "q0130",
-			"type": "multi",
+			"type": "multiple",
 			"prompt": "In a highly concurrent online payment system, the choice of isolation level is critical to ensure data consistency and repeatable reads. Which of the following statements about isolation levels are true?",
 			"options": [
 				"A. At the read uncommitted isolation level, the read data may be the result of other transactions that have not been committed.",
@@ -1723,7 +1723,7 @@
 		},
 		{
 			"id": "q0131",
-			"type": "multi",
+			"type": "multiple",
 			"prompt": "Which of the following processes are involved in database object migration using the UGO?",
 			"options": [
 				"A. Migration",
@@ -1737,7 +1737,7 @@
 		},
 		{
 			"id": "q0132",
-			"type": "multi",
+			"type": "multiple",
 			"prompt": "You need to set the start time of the synchronization task properly to minimize the impact on the performance of the source and destination databases. Which of the following statements are correct about the DRS synchronization task?",
 			"options": [
 				"A. If the full synchronization fails due to network problems, the system automatically resumes the data for three times by default. If the full synchronization cannot be restored after three times of resuming the data, manually resumes the data.",
@@ -1751,7 +1751,7 @@
 		},
 		{
 			"id": "q0133",
-			"type": "multi",
+			"type": "multiple",
 			"prompt": "A large commercial bank chooses to migrate the original database to GaussDB. The number of original database nodes ranges from 2000 to 3000. The original database nodes are deployed on x86 servers to support core services on the open platform. A large amount of development is performed based on stored procedures to implement smooth service migration. The table structure needs to be rectified. Which of the following statements about the rectification solution are correct?",
 			"options": [
 				"A. For some common parameters and configuration tables, replication tables are used. The original MySQL cluster parameters can be different. The application needs to confirm that the same replication parameters are used.",
@@ -1765,7 +1765,7 @@
 		},
 		{
 			"id": "q0134",
-			"type": "multi",
+			"type": "multiple",
 			"prompt": "Which of the following distribution modes are supported by GaussDB?",
 			"options": [
 				"A. Replication",
@@ -1779,7 +1779,7 @@
 		},
 		{
 			"id": "q0135",
-			"type": "multi",
+			"type": "multiple",
 			"prompt": "When you use the UGO to create a database object migration task, you need to enter the connection information of the destination database. Which of the following database connection information needs to be set?",
 			"options": [
 				"A. Database IP address",
@@ -1794,7 +1794,7 @@
 		},
 		{
 			"id": "q0136",
-			"type": "multi",
+			"type": "multiple",
 			"prompt": "Which of the following options correctly describe the features of the real-time migration function in the DRS service?",
 			"options": [
 				"A. Only table data migration is supported.",
@@ -1808,7 +1808,7 @@
 		},
 		{
 			"id": "q0137",
-			"type": "multi",
+			"type": "multiple",
 			"prompt": "Which of the following are advantages of partitioned tables?",
 			"options": [
 				"A. Different storage engines can be used.",
@@ -1822,7 +1822,7 @@
 		},
 		{
 			"id": "q0138",
-			"type": "multi",
+			"type": "multiple",
 			"prompt": "Which of the following statements about the selection of distribution columns for Hash-distributed tables are correct?",
 			"options": [
 				"A. The distribution column can only be set to a single field.",
@@ -1836,7 +1836,7 @@
 		},
 		{
 			"id": "q0139",
-			"type": "multi",
+			"type": "multiple",
 			"prompt": "In a Python program, which of the following methods can be used to execute a given SQL statement and extract the query result set?",
 			"options": [
 				"A. execute",
@@ -1850,7 +1850,7 @@
 		},
 		{
 			"id": "q0140",
-			"type": "multi",
+			"type": "multiple",
 			"prompt": "Which of the following constraint types cannot be explicitly named?",
 			"options": [
 				"A. DEFAULT constraint",

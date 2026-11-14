@@ -1153,7 +1153,7 @@
 		},
 		{
 			"id": "rl0092",
-			"type": "multi",
+			"type": "multiple",
 			"prompt": "Which of the following scenarios is pay-per-use billing applicable to?",
 			"options": [
 				"A. Elastic Cloud Server (ECS) for enterprise official website deployment.",
@@ -1167,7 +1167,7 @@
 		},
 		{
 			"id": "rl0093",
-			"type": "multi",
+			"type": "multiple",
 			"prompt": "Which of the following statements are true about the two types of backups (Cloud server backup vs cloud disk backup)?",
 			"options": [
 				"A. Recommended scenario: Cloud server backup protects the entire cloud servers; cloud disk backup protects only the desired data disks because system disks do not contain application data.",
@@ -1181,7 +1181,7 @@
 		},
 		{
 			"id": "rl0094",
-			"type": "multi",
+			"type": "multiple",
 			"prompt": "A customer has purchased the Huawei Cloud VPN service, but the VPN connection remains in disconnected state. Which of the following may cause this problem?",
 			"options": [
 				"A. The pre-shared keys and negotiation information at the two ends of the VPN connection are inconsistent.",
@@ -1195,7 +1195,7 @@
 		},
 		{
 			"id": "rl0095",
-			"type": "multi",
+			"type": "multiple",
 			"prompt": "Which of the following statements are true about the precautions (SDRS)?",
 			"options": [
 				"A. If the DR site servers of a protection group are added to an enterprise project, the drill servers created will not be automatically added to the enterprise project.",
@@ -1209,7 +1209,7 @@
 		},
 		{
 			"id": "rl0096",
-			"type": "multi",
+			"type": "multiple",
 			"prompt": "Huawei Cloud database migration tools play an important role. Which of the following statements about the tools are true?",
 			"options": [
 				"A. Syntax migration: evaluates and converts heterogeneous database syntax.",
@@ -1223,7 +1223,7 @@
 		},
 		{
 			"id": "rl0097",
-			"type": "multi",
+			"type": "multiple",
 			"prompt": "Which of the following statements are true about the differences between a relational database and a non-relational database?",
 			"options": [
 				"A. Scalability: Relational databases have strong scalability.",
@@ -1237,7 +1237,7 @@
 		},
 		{
 			"id": "rl0098",
-			"type": "multi",
+			"type": "multiple",
 			"prompt": "Which of the following threats can WAF defend against?",
 			"options": [
 				"A. Vulnerabilities in third-party service frameworks and plug-ins.",
@@ -1251,7 +1251,7 @@
 		},
 		{
 			"id": "rl0099",
-			"type": "multi",
+			"type": "multiple",
 			"prompt": "Which of the following statements about CCE and CCI are true?",
 			"options": [
 				"A. Users do not need to create a cluster with CCI.",
@@ -1265,7 +1265,7 @@
 		},
 		{
 			"id": "rl0100",
-			"type": "multi",
+			"type": "multiple",
 			"prompt": "Which of the following statements about common controllers Deployments and StatefulSets are true?",
 			"options": [
 				"A. Deployments run stateless services, while StatefulSets run stateful services.",
@@ -1279,7 +1279,7 @@
 		},
 		{
 			"id": "rl0101",
-			"type": "multi",
+			"type": "multiple",
 			"prompt": "Which of the following statements about DevCloud and ServiceStage are true?",
 			"options": [
 				"A. You are advised to use DevCloud to develop new applications and manage projects.",
@@ -1293,7 +1293,7 @@
 		},
 		{
 			"id": "rl0102",
-			"type": "multi",
+			"type": "multiple",
 			"prompt": "Which of the following statements about Cloud Eye are false?",
 			"options": [
 				"A. All applications need to be redeveloped to adapt to the cloud environment.",
@@ -1307,7 +1307,7 @@
 		},
 		{
 			"id": "rl0103",
-			"type": "multi",
+			"type": "multiple",
 			"prompt": "Which of the following statements about AOM is false?",
 			"options": [
 				"A. The ICAgent installed on the host collects data about the process.",
@@ -1321,7 +1321,7 @@
 		},
 		{
 			"id": "rl0104",
-			"type": "multi",
+			"type": "multiple",
 			"prompt": "Which of the following statements about ROMA Connect are true?",
 			"options": [
 				"A. Service integration (APIC) encapsulates existing backend services, data sources, and custom functions into RESTful APIs so that these assets can be accessed externally.",
@@ -1335,7 +1335,7 @@
 		},
 		{
 			"id": "rl0105",
-			"type": "multi",
+			"type": "multiple",
 			"prompt": "Successful cloud-based architecture design requires appropriate product types and configurations and effective policy-based management. Which of the following measures reflect the five most essential factors for architecture design?",
 			"options": [
 				"A. Using Auto Scaling (AS) to adapt the system architecture to changing service requirements.",
@@ -1349,7 +1349,7 @@
 		},
 		{
 			"id": "rl0106",
-			"type": "multi",
+			"type": "multiple",
 			"prompt": "System performance affects user experience and needs to be considered at the beginning of the architecture design process. Which of the following statements are true about performance during architecture design?",
 			"options": [
 				"A. During system design, the highest performing product should be selected to ensure the system runs efficiently and stably.",
@@ -1363,7 +1363,7 @@
 		},
 		{
 			"id": "rl0107",
-			"type": "multi",
+			"type": "multiple",
 			"prompt": "You can view the basic information and execution logs of a bandwidth scaling policy. Policy execution logs record policy execution details. Which of the following details are included in policy execution logs?",
 			"options": [
 				"A. Target value",
@@ -1377,7 +1377,7 @@
 		},
 		{
 			"id": "rl0108",
-			"type": "multi",
+			"type": "multiple",
 			"prompt": "Cloud Backup and Recovery (CBR) lets you back up Elastic Cloud Servers (ECSs) and Elastic Volume Service (EVS) disks with ease. Which of the following statements are true about the two types of backups (Cloud server backup vs cloud disk backup)?",
 			"options": [
 				"A. Recommended scenario: Cloud server backup protects the entire cloud servers; cloud disk backup protects only the desired data disks because system disks do not contain application data.",
@@ -1391,7 +1391,7 @@
 		},
 		{
 			"id": "rl0109",
-			"type": "multi",
+			"type": "multiple",
 			"prompt": "Network Quality of Service (QoS) uses basic technologies to improve the quality of network communication. Which of the following are included in QoS?",
 			"options": [
 				"A. Maximum/assured bandwidth (Gbit/s)",
@@ -1405,7 +1405,7 @@
 		},
 		{
 			"id": "rl0110",
-			"type": "multi",
+			"type": "multiple",
 			"prompt": "Which of the following are involved when you create a virtual private cloud (VPC)?",
 			"options": [
 				"A. Route table",
@@ -1419,7 +1419,7 @@
 		},
 		{
 			"id": "rl0111",
-			"type": "multi",
+			"type": "multiple",
 			"prompt": "To migrate workloads to the cloud, you need to consider network planning in terms of isolation, scalability, and connectivity. Match the following features with their descriptions.",
 			"options": [
 				"A. Connectivity: Virtual private clouds (VPCs) can communicate with each other, the internet, and on-premises networks.",
@@ -1432,7 +1432,7 @@
 		},
 		{
 			"id": "rl0112",
-			"type": "multi",
+			"type": "multiple",
 			"prompt": "An individual user has deployed a personal blog platform on Huawei Cloud. The user shares their work experience on the blog but wants to store personal data separately. Which of the following services are recommended as cost-effective options?",
 			"options": [
 				"A. Scalable File Service (SFS)",
@@ -1446,7 +1446,7 @@
 		},
 		{
 			"id": "rl0113",
-			"type": "multi",
+			"type": "multiple",
 			"prompt": "Web Application Firewall (WAF) can examine website traffic, identify malicious request signatures, and defend against unknown threats. Which of the following are functions of WAF?",
 			"options": [
 				"A. WAF can examine only HTTP and HTTPS requests.",
@@ -1460,7 +1460,7 @@
 		},
 		{
 			"id": "rl0114",
-			"type": "multi",
+			"type": "multiple",
 			"prompt": "A company plans to migrate its application architecture to Huawei Cloud and secure it by purchasing the required security products. Match the security products to their descriptions.",
 			"options": [
 				"A. Managed Threat Detection (MTD): Monitors cloud service logs and reports alarms in real time.",
@@ -1474,7 +1474,7 @@
 		},
 		{
 			"id": "rl0115",
-			"type": "multi",
+			"type": "multiple",
 			"prompt": "Situation Awareness (SA) is a security management and situation analysis platform provided by Huawei Cloud. Which of the following statements about SA are true?",
 			"options": [
 				"A. SA standard and professional editions enable customers to view details about an attack source.",
@@ -1488,7 +1488,7 @@
 		},
 		{
 			"id": "rl0116",
-			"type": "multi",
+			"type": "multiple",
 			"prompt": "An Internet enterprise is challenged by frequent image processing, livestreaming/transcoding, and real-time data stream processing during peak hours. It plans to upload files to OBS to trigger a FunctionGraph function for data processing. Which of the following are true about this solution?",
 			"options": [
 				"A. Cloud Container Instance (CCI) serves as a compute engine to invoke the function to process uploaded files.",
@@ -1502,7 +1502,7 @@
 		},
 		{
 			"id": "rl0117",
-			"type": "multi",
+			"type": "multiple",
 			"prompt": "Cloud Container Engine (CCE) and Cloud Container Instance (CCI) from Huawei Cloud are elastic, powerful enterprise-class container services. Which of the following statements about the two services are true?",
 			"options": [
 				"A. Both provide container services using Kubernetes clusters.",
@@ -1516,7 +1516,7 @@
 		},
 		{
 			"id": "rl0118",
-			"type": "multi",
+			"type": "multiple",
 			"prompt": "The definition and architecture of cloud native technologies have changed going from Cloud Native 1.0 to 2.0. Which of the following are architecture design principles of Cloud Native 2.0?",
 			"options": [
 				"A. Microservice: loose coupling, service autonomy, and decentralization.",
@@ -1530,7 +1530,7 @@
 		},
 		{
 			"id": "rl0119",
-			"type": "multi",
+			"type": "multiple",
 			"prompt": "ServiceStage is an application management and O&M platform. Which of the following statements about ServiceStage are true?",
 			"options": [
 				"A. Web application hosting: multiple built-in runtime environments such as Tomcat, Java, Node.js, PHP, Python, and Docker.",
@@ -1544,7 +1544,7 @@
 		},
 		{
 			"id": "rl0120",
-			"type": "multi",
+			"type": "multiple",
 			"prompt": "ServiceStage provides industry-leading microservice application solutions. Which of the following statements about ServiceStage are true?",
 			"options": [
 				"A. ServiceStage provides complete microservice governance policies, including fault tolerance, rate limiting, service degradation, circuit breaker, fault injection, and blacklist and whitelist.",
@@ -1558,7 +1558,7 @@
 		},
 		{
 			"id": "rl0121",
-			"type": "multi",
+			"type": "multiple",
 			"prompt": "In the cloud era, more and more applications are deployed in the distributed microservice architecture. Which of the following services can address issues of metric association, high maintenance costs, and non-ideal performance?",
 			"options": [
 				"A. Cloud Performance Test Service (CPTS)",
@@ -1572,7 +1572,7 @@
 		},
 		{
 			"id": "rl0122",
-			"type": "multi",
+			"type": "multiple",
 			"prompt": "Application Operations Management (AOM) is a one-stop, multi-dimensional O&M platform for cloud applications. Which of the following statements are true?",
 			"options": [
 				"A. The ICAgent installed on a host automatically collects application information (such as process/component/container names).",
@@ -1586,7 +1586,7 @@
 		},
 		{
 			"id": "rl0123",
-			"type": "multi",
+			"type": "multiple",
 			"prompt": "Cloud native data lake MRS is a one-stop big data platform service provided by Huawei Cloud. Which of the following statements are true about using MRS?",
 			"options": [
 				"A. Decoupled storage and compute allows users to store data in OBS and use MRS clusters for data computing only. Object buckets are often used in big data decoupled storage and compute scenarios.",
@@ -1600,7 +1600,7 @@
 		},
 		{
 			"id": "rl0124",
-			"type": "multi",
+			"type": "multiple",
 			"prompt": "ROMA Connect is a full-stack application and data integration platform. Which of the following statements about ROMA Connect are true?",
 			"options": [
 				"A. Data Integration (FDI) supports the flexible conversion of multiple heterogeneous data sources by incorporating the data import capabilities of DRS and CDM.",
@@ -1614,7 +1614,7 @@
 		},
 		{
 			"id": "rl0125",
-			"type": "multi",
+			"type": "multiple",
 			"prompt": "Scalability measures the ability of a system to increase or decrease in performance in responses to changes in processing demands. A highly scalable system can increase the processing capability with few changes. Which of the following scenarios reflect scaling out?",
 			"options": [
 				"A. The specifications of a batch of ECSs are changed from 2 vCPUs and 4 GiB to 4 vCPUs and 8 GiB.",
@@ -1628,7 +1628,7 @@
 		},
 		{
 			"id": "rl0126",
-			"type": "multi",
+			"type": "multiple",
 			"prompt": "The cloud-based costs can be controlled only when appropriate billing modes are adopted for cost-effective products. Which of the following scenarios is pay-per-use billing applicable to?",
 			"options": [
 				"A. Object Storage Service (OBS) for training courses.",
@@ -1642,7 +1642,7 @@
 		},
 		{
 			"id": "rl0127",
-			"type": "multi",
+			"type": "multiple",
 			"prompt": "An image is a regional resource. If you want to use a private image in another region, you can replicate it to the target region. Which of the following determine the time required for cross-region image replication?",
 			"options": [
 				"A. Number of concurrent tasks",
@@ -1656,7 +1656,7 @@
 		},
 		{
 			"id": "rl0128",
-			"type": "multi",
+			"type": "multiple",
 			"prompt": "A customer has purchased Elastic Cloud Servers (ECSs) to deploy services. To reduce costs, they plan to stop some ECSs when the access traffic is light. Which of the following basic resources are not billed after ECSs are stopped?",
 			"options": [
 				"A. Memory",
@@ -1670,7 +1670,7 @@
 		},
 		{
 			"id": "rl0129",
-			"type": "multi",
+			"type": "multiple",
 			"prompt": "A customer has purchased the Huawei Cloud VPN service, but the VPN connection remains in disconnected state after the configuration is complete. Which of the following may cause this problem?",
 			"options": [
 				"A. The IPsec policies at the two ends of the VPN connection are inconsistent.",
@@ -1684,7 +1684,7 @@
 		},
 		{
 			"id": "rl0130",
-			"type": "multi",
+			"type": "multiple",
 			"prompt": "A customer purchases elastic IPs (EIPs) and binds the EIPs to cloud resources. Which of the following resources can have EIPs bound?",
 			"options": [
 				"A. Bare Metal Server (BMS)",
@@ -1698,7 +1698,7 @@
 		},
 		{
 			"id": "rl0131",
-			"type": "multi",
+			"type": "multiple",
 			"prompt": "Huawei Cloud database migration tools play an important role in the overall database migration solution. Which of the following statements about the tools are true?",
 			"options": [
 				"A. Traffic replay: maintains awareness of service stability and performance in advance through service simulation.",
@@ -1712,7 +1712,7 @@
 		},
 		{
 			"id": "rl0132",
-			"type": "multi",
+			"type": "multiple",
 			"prompt": "Which of the following information items are collected by Database and Application Migration UGO?",
 			"options": [
 				"A. SQL traffic and container information",
@@ -1726,7 +1726,7 @@
 		},
 		{
 			"id": "rl0133",
-			"type": "multi",
+			"type": "multiple",
 			"prompt": "Web Application Firewall (WAF) is an application security product provided by Huawei Cloud. Which of the following threats can WAF defend against?",
 			"options": [
 				"A. Server vulnerabilities",
@@ -1740,7 +1740,7 @@
 		},
 		{
 			"id": "rl0134",
-			"type": "multi",
+			"type": "multiple",
 			"prompt": "Web Application Firewall (WAF) can examine website traffic, identify malicious request signatures, and defend against unknown threats to protect origin servers from attacks and intrusions. Which of the following are functions of WAF?",
 			"options": [
 				"A. WAF can examine only HTTP and HTTPS requests.",
@@ -1754,7 +1754,7 @@
 		},
 		{
 			"id": "rl0135",
-			"type": "multi",
+			"type": "multiple",
 			"prompt": "An independent software vendor (ISV) often repeats environment deployments and configures services manually. Those processes take time and risk mistakes. In addition, individually maintaining multiple identical environments is expensive. The ISV plans to use Huawei Cloud Application Orchestration Service (AOS) to be more time- and cost-efficient. Which of the following AOS functions would help the ISV?",
 			"options": [
 				"A. Software lifecycle management, which enables one-click software upgrade and scaling",
@@ -1768,7 +1768,7 @@
 		},
 		{
 			"id": "rl0136",
-			"type": "multi",
+			"type": "multiple",
 			"prompt": "Kubernetes uses controllers to manage pods. A controller can create and manage multiple pods and provides replica control, rolling upgrade, and self-healing capabilities. Which of the following statements about common controllers Deployments and StatefulSets are true?",
 			"options": [
 				"A. Deployments run stateless services, while StatefulSets run stateful services.",
@@ -1782,7 +1782,7 @@
 		},
 		{
 			"id": "rl0137",
-			"type": "multi",
+			"type": "multiple",
 			"prompt": "DevCloud helps you complete the entire process - from requirement breakdown, code commit and build, testing and verification, to deployment and O&M. Which of the following processes are valid DevCloud configurations?",
 			"options": [
 				"A. CodeHub: Create a code repository > Configure the Git client > Clone/Push code > End",
@@ -1796,7 +1796,7 @@
 		},
 		{
 			"id": "rl0138",
-			"type": "multi",
+			"type": "multiple",
 			"prompt": "ServiceStage is an application management and O&M platform that lets you deploy, roll out, monitor, and maintain applications all in one place. Which of the following statements about ServiceStage are true?",
 			"options": [
 				"A. DevSecOps platform: one-stop, end-to-end, secure, and trusted cloud-native DevSecOps platform, provides services such as project management, code hosting, pipeline, code check, build, deployment, and release.",
@@ -1810,7 +1810,7 @@
 		},
 		{
 			"id": "rl0139",
-			"type": "multi",
+			"type": "multiple",
 			"prompt": "A company that deployed Java applications on Huawei Cloud found that their performance deteriorated during peak external requests. Application Performance Management (APM) and Application Operations Management (AOM) were both proposed for performance monitoring. Which of the following statements are true?",
 			"options": [
 				"A. If application performance is poor, resource configurations (such as CPU and memory) need to be upgraded first.",
@@ -1824,7 +1824,7 @@
 		},
 		{
 			"id": "rl0140",
-			"type": "multi",
+			"type": "multiple",
 			"prompt": "Network Quality of Service (QoS) uses basic technologies to improve the quality of network communication. You can query the QoS data of an ECS flavor from the specifications list. Which of the following are included in QoS?",
 			"options": [
 				"A. Maximum PPS (10,000)",
@@ -1838,7 +1838,7 @@
 		},
 		{
 			"id": "rl0141",
-			"type": "multi",
+			"type": "multiple",
 			"prompt": "An Internet company deployed its services on Huawei Cloud. The O&M personnel found that traffic surged by 30% to 40% on every Friday evening. To reduce costs, which of the following billing modes is the most cost-effective for purchasing ECSs to handle this surge?",
 			"options": [
 				"A. Yearly subscription",
@@ -1852,7 +1852,7 @@
 		},
 		{
 			"id": "rl0142",
-			"type": "multi",
+			"type": "multiple",
 			"prompt": "Huawei Cloud provides public NAT gateways and private NAT gateways. Which of the following constraints is false for using public NAT gateways?",
 			"options": [
 				"A. Users can configure only one destination NAT (DNAT) rule for each port on a server.",
@@ -1866,7 +1866,7 @@
 		},
 		{
 			"id": "rl0143",
-			"type": "multi",
+			"type": "multiple",
 			"prompt": "An Internet company uses OBS for dynamic data. To meet audit requirements, they use a template to create a bucket policy. Which actions are NOT included in the template by default?",
 			"options": [
 				"A. GetObject",
@@ -1880,7 +1880,7 @@
 		},
 		{
 			"id": "rl0144",
-			"type": "multi",
+			"type": "multiple",
 			"prompt": "Which of the following scenarios can Huawei Cloud Backup and Recovery (CBR) provide data protection for?",
 			"options": [
 				"A. Server breakdowns",
@@ -1894,7 +1894,7 @@
 		},
 		{
 			"id": "rl0145",
-			"type": "multi",
+			"type": "multiple",
 			"prompt": "An individual user deployed a blog on Huawei Cloud. Which services are recommended as cost-effective options for personal data storage?",
 			"options": [
 				"A. Scalable File Service (SFS)",
@@ -1908,7 +1908,7 @@
 		},
 		{
 			"id": "rl0146",
-			"type": "multi",
+			"type": "multiple",
 			"prompt": "Which of the following statements is false about the differences between Disaster Recovery (DR) and backup?",
 			"options": [
 				"A. DR system takes a few seconds for failover, backup takes hours to restore.",
@@ -1921,7 +1921,7 @@
 		},
 		{
 			"id": "rl0147",
-			"type": "multi",
+			"type": "multiple",
 			"prompt": "Which of the following statements are true about EVS disk types?",
 			"options": [
 				"A. General purpose SSD is good for mainstream high-performance applications.",
@@ -1935,7 +1935,7 @@
 		},
 		{
 			"id": "rl0148",
-			"type": "multi",
+			"type": "multiple",
 			"prompt": "A bank uses UGO to migrate transactions. Which service can be used by UGO as a proxy to connect securely to the destination database?",
 			"options": [
 				"A. VPN",
@@ -1949,7 +1949,7 @@
 		},
 		{
 			"id": "rl0149",
-			"type": "multi",
+			"type": "multiple",
 			"prompt": "Which of the following is NOT a Document Database Service (DDS) instance type?",
 			"options": [
 				"A. Single node",
@@ -1963,7 +1963,7 @@
 		},
 		{
 			"id": "rl0150",
-			"type": "multi",
+			"type": "multiple",
 			"prompt": "Which of the following are true about the specified databases?",
 			"options": [
 				"A. Cassandra stores logs.",
@@ -1977,7 +1977,7 @@
 		},
 		{
 			"id": "rl0151",
-			"type": "multi",
+			"type": "multiple",
 			"prompt": "Which of the following products is NOT designed to protect cloud workloads?",
 			"options": [
 				"A. Container Guard Service (CGS)",
@@ -1991,7 +1991,7 @@
 		},
 		{
 			"id": "rl0152",
-			"type": "multi",
+			"type": "multiple",
 			"prompt": "Which statement about Managed Threat Detection (MTD) is false?",
 			"options": [
 				"A. Users can upload intelligence lists to OBS.",
@@ -2005,7 +2005,7 @@
 		},
 		{
 			"id": "rl0153",
-			"type": "multi",
+			"type": "multiple",
 			"prompt": "Which threats can Web Application Firewall (WAF) defend against?",
 			"options": [
 				"A. Server vulnerabilities",
@@ -2019,7 +2019,7 @@
 		},
 		{
 			"id": "rl0154",
-			"type": "multi",
+			"type": "multiple",
 			"prompt": "A website suffers from a large number of malicious requests in a short period. Which service is most suitable for defending against this without affecting normal access?",
 			"options": [
 				"A. Advanced Anti-DDoS (AAD)",
@@ -2033,7 +2033,7 @@
 		},
 		{
 			"id": "rl0155",
-			"type": "multi",
+			"type": "multiple",
 			"prompt": "Which function is NOT provided by Host Security Service (HSS)?",
 			"options": [
 				"A. Detect attack vectors in real time.",
@@ -2047,7 +2047,7 @@
 		},
 		{
 			"id": "rl0156",
-			"type": "multi",
+			"type": "multiple",
 			"prompt": "Which components run on a Kubernetes master node?",
 			"options": [
 				"A. API server",
@@ -2061,7 +2061,7 @@
 		},
 		{
 			"id": "rl0157",
-			"type": "multi",
+			"type": "multiple",
 			"prompt": "Order the steps for using Docker (2-5-1-3-4 sequence).",
 			"options": [
 				"A. 5-3-2-1-4",
@@ -2075,7 +2075,7 @@
 		},
 		{
 			"id": "rl0158",
-			"type": "multi",
+			"type": "multiple",
 			"prompt": "Which of the following is false about FunctionGraph?",
 			"options": [
 				"A. Allows online code editing and supports triggers like OBS.",
@@ -2089,7 +2089,7 @@
 		},
 		{
 			"id": "rl0159",
-			"type": "multi",
+			"type": "multiple",
 			"prompt": "Which is false about Cloud Container Instance (CCI)?",
 			"options": [
 				"A. Has various network access modes.",
@@ -2103,7 +2103,7 @@
 		},
 		{
 			"id": "rl0160",
-			"type": "multi",
+			"type": "multiple",
 			"prompt": "Which of the following statements about YAML files are true?",
 			"options": [
 				"A. Supports object, array, and scalar types.",
@@ -2117,7 +2117,7 @@
 		},
 		{
 			"id": "rl0161",
-			"type": "multi",
+			"type": "multiple",
 			"prompt": "Which grayscale release mode is recommended to release on a smaller scale first?",
 			"options": [
 				"A. Canary release",
@@ -2131,7 +2131,7 @@
 		},
 		{
 			"id": "rl0162",
-			"type": "multi",
+			"type": "multiple",
 			"prompt": "Which statement about Service Mesh is false?",
 			"options": [
 				"A. Service Mesh is a group of lightweight proxies.",
@@ -2145,7 +2145,7 @@
 		},
 		{
 			"id": "rl0163",
-			"type": "multi",
+			"type": "multiple",
 			"prompt": "Which of the following processes are valid DevCloud configurations?",
 			"options": [
 				"A. CodeHub repository configuration.",
@@ -2159,7 +2159,7 @@
 		},
 		{
 			"id": "rl0164",
-			"type": "multi",
+			"type": "multiple",
 			"prompt": "Which of the following statements about SOA is false?",
 			"options": [
 				"A. No obvious boundary between system and services.",
@@ -2173,7 +2173,7 @@
 		},
 		{
 			"id": "rl0165",
-			"type": "multi",
+			"type": "multiple",
 			"prompt": "Prometheus monitoring data cannot be obtained but services are running. Cause?",
 			"options": [
 				"A. The exporters component is abnormal.",
@@ -2187,7 +2187,7 @@
 		},
 		{
 			"id": "rl0166",
-			"type": "multi",
+			"type": "multiple",
 			"prompt": "Which are true about APM and AOM for Java applications?",
 			"options": [
 				"A. APM monitors calls and locates problems. It is the best choice.",
@@ -2201,7 +2201,7 @@
 		},
 		{
 			"id": "rl0167",
-			"type": "multi",
+			"type": "multiple",
 			"prompt": "Which is false about Log Tank Service (LTS)?",
 			"options": [
 				"A. Allows fuzzy and keyword query.",
@@ -2215,7 +2215,7 @@
 		},
 		{
 			"id": "rl0168",
-			"type": "multi",
+			"type": "multiple",
 			"prompt": "Which is false about ModelArts?",
 			"options": [
 				"A. One-stop AI development platform.",
@@ -2229,7 +2229,7 @@
 		},
 		{
 			"id": "rl0169",
-			"type": "multi",
+			"type": "multiple",
 			"prompt": "Which of the following are true about MRS?",
 			"options": [
 				"A. Supports CarbonData technique.",

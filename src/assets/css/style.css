@@ -46,6 +46,11 @@ body {
 	margin-bottom: 24px;
 }
 
+.app__logo {
+	width: 100px;
+	object-fit: cover;
+}
+
 .panel,
 .question-card,
 .result-item {

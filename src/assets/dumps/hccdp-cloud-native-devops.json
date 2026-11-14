@@ -296,7 +296,7 @@
 		},
 		{
 			"id": "q0023",
-			"type": "multi",
+			"type": "multiple",
 			"prompt": "Which capabilities are provided in the development phase of Huawei Cloud CodeArts?",
 			"options": [
 				"A. Build",
@@ -310,7 +310,7 @@
 		},
 		{
 			"id": "q0025",
-			"type": "multi",
+			"type": "multiple",
 			"prompt": "Which capabilities are provided in the testing phase of Huawei Cloud CodeArts?",
 			"options": [
 				"A. Monitoring and alarmas",
@@ -324,7 +324,7 @@
 		},
 		{
 			"id": "q0026",
-			"type": "multi",
+			"type": "multiple",
 			"prompt": "Which of the following are features of CodeArts PerfTest?",
 			"options": [
 				"A. Millions of requests initiated in seconds",
@@ -338,7 +338,7 @@
 		},
 		{
 			"id": "q0027",
-			"type": "multi",
+			"type": "multiple",
 			"prompt": "Which of the following are included in decoupling architecture projects by microservice containerization?",
 			"options": [
 				"A. Application infrastructure",
@@ -352,7 +352,7 @@
 		},
 		{
 			"id": "q0028",
-			"type": "multi",
+			"type": "multiple",
 			"prompt": "What are the three levels of system coupling?",
 			"options": [
 				"A. Code-level",
@@ -366,7 +366,7 @@
 		},
 		{
 			"id": "q0029",
-			"type": "multi",
+			"type": "multiple",
 			"prompt": "Which of the following are functions of Database Security Service (DBSS)?",
 			"options": [
 				"A. Database audit",
@@ -380,7 +380,7 @@
 		},
 		{
 			"id": "q0030",
-			"type": "multi",
+			"type": "multiple",
 			"prompt": "Which of the following are the test exit conditions?",
 			"options": [
 				"A. The cost of identifying defects is higher than the cost of the defects themselves.",
@@ -394,7 +394,7 @@
 		},
 		{
 			"id": "q0027",
-			"type": "multi",
+			"type": "multiple",
 			"prompt": "Which of the following are the purposes of version management?",
 			"options": [
 				"A. To back up data",
