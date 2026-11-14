@@ -134,6 +134,7 @@ window.ExamService = (function () {
 				selected: selected,
 				correct: correct,
 				explanation: question.explanation,
+				tags: Array.isArray(question.tags) ? question.tags : [],
 				isAnswered: isAnswered,
 				isCorrect: isCorrect
 			};

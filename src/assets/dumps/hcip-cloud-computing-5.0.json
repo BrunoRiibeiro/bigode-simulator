@@ -738,7 +738,7 @@
 			],
 			"answer": false,
 			"explanation": "The statement is FALSE. In Horizon, Project > Compute > Instances shows only the instances of the currently selected project. To see another project, the user must switch projects and needs a role in it. Managing instances of all projects is done in Admin > Compute > Instances, which is only visible to users with the admin role.\n\nProject dashboard: scope of the current project. Admin dashboard: global scope, admin only. Identity dashboard: users, projects, groups and roles.",
-			"tags": []
+			"tags": ["ai-generated"]
 		},
 		{
 			"id": "ren0002",
@@ -750,7 +750,7 @@
 			],
 			"answer": true,
 			"explanation": "The statement is TRUE. Horizon is organized in three levels: Dashboard (top level, e.g. Project, Admin, Identity), PanelGroup (groups related panels, e.g. Compute, Network) and Panel (the lowest-level functional module, a specific page such as Instances or Images).\n\nExample: Project (Dashboard) > Compute (PanelGroup) > Instances (Panel). Tables, tabs, forms and workflows are UI elements inside a panel, not levels of the module hierarchy.",
-			"tags": []
+			"tags": ["ai-generated"]
 		},
 		{
 			"id": "ren0003",
@@ -764,7 +764,7 @@
 			],
 			"answer": ["A", "B", "C"],
 			"explanation": "The correct answers are A, B and C. The only function of a role is D: defining which operations a user can perform. Roles are assigned to a user or group on a project or domain, and each service's policy file checks the role to allow or deny the action.\n\nA describes a Domain (top-level container of projects, users and groups). B describes Endpoints (public, internal, admin) in the service catalog. C belongs to the User, stored in the identity backend (SQL or LDAP).",
-			"tags": []
+			"tags": ["ai-generated"]
 		},
 		{
 			"id": "ren0004",
@@ -778,7 +778,7 @@
 			],
 			"answer": ["A"],
 			"explanation": "The correct answer is A. policy.json. OpenStack RBAC is implemented by oslo.policy, and each service has a policy file (e.g. /etc/nova/policy.json) mapping each API operation to a role-based rule, such as \"os_compute_api:servers:delete\": \"rule:admin_or_owner\". The service compares the roles in the Keystone token against this rule.\n\nNote: since Wallaby the default format is policy.yaml and JSON is deprecated. The HCIP material uses the classic name, so for a single-choice question choose policy.json. config.ini and config.yaml do not have this role; service configuration lives in files such as nova.conf and does not define permissions.",
-			"tags": []
+			"tags": ["ai-generated"]
 		},
 		{
 			"id": "ren0005",
@@ -790,7 +790,7 @@
 			],
 			"answer": true,
 			"explanation": "The statement is TRUE. Deactivated is an image state in Glance. In this state, access to the image data is blocked for any non-admin user, while administrators can still download and use it. Typical use: the admin deactivates a faulty or vulnerable image to prevent new VMs from being created with it, then reactivates it later (openstack image set --deactivate / --activate).\n\nOther image states: queued, saving, active, deactivated, killed, deleted/pending_delete.",
-			"tags": []
+			"tags": ["ai-generated"]
 		},
 		{
 			"id": "ren0006",
@@ -804,7 +804,7 @@
 			],
 			"answer": ["D"],
 			"explanation": "The correct answer is D. Idle memory. The Filter Scheduler works in two steps: filtering (removes hosts that do not meet the request) and weighing (ranks the remaining hosts). The classic default weigher is RAMWeigher, which weighs hosts by free RAM. With the default positive ram_weight_multiplier the host with more free memory wins (spreading); a negative multiplier causes stacking.\n\nNewer releases include other weighers (CPUWeigher, DiskWeigher, IoOpsWeigher), but IoOpsWeigher counts in-progress operations, not disk I/O, and none measures network bandwidth.",
-			"tags": []
+			"tags": ["ai-generated"]
 		},
 		{
 			"id": "ren0007",
@@ -818,7 +818,7 @@
 			],
 			"answer": ["A", "B", "D"],
 			"explanation": "The correct answers are A, B and D. During attach, Nova (through os-brick) collects the compute host properties and sends them to Cinder in the connector object of initialize_connection: ip, host, initiator (iSCSI IQN), wwpns/wwnns (FC HBAs), multipath, platform and os_type. The Cinder driver uses this to map the LUN to the host on the storage array and returns the connection info.\n\nThe VM name is not sent: the storage sees the physical host, not the VM. Nova/libvirt attaches the device to the VM afterwards.",
-			"tags": []
+			"tags": ["ai-generated"]
 		},
 		{
 			"id": "ren0008",
@@ -830,7 +830,7 @@
 			],
 			"answer": false,
 			"explanation": "The statement is FALSE. Swift is object storage: objects are written and read as a whole through a REST API, with no partial updates or random block writes, and it uses eventual consistency. Databases need small, random, frequent writes with strong consistency, which is the role of Cinder (block storage).\n\nSwift fits unstructured, static data: images, videos, documents, backups, archives and Glance image storage. Manila provides shared file storage.",
-			"tags": []
+			"tags": ["ai-generated"]
 		},
 		{
 			"id": "ren0009",
@@ -844,7 +844,7 @@
 			],
 			"answer": ["C"],
 			"explanation": "The correct answer is C. Subnet. A subnet is an IPv4 or IPv6 address block from which IP addresses are assigned to VMs. It defines the CIDR, allocation pool, gateway and whether DHCP is enabled; the DHCP agent (dnsmasq) delivers the address.\n\nThe port holds the assigned IP and MAC, but the subnet is what provides the address. A network is only the L2 domain with no IP information, and the router handles routing and NAT.",
-			"tags": []
+			"tags": ["ai-generated"]
 		},
 		{
 			"id": "ren0010",
@@ -856,7 +856,7 @@
 			],
 			"answer": false,
 			"explanation": "The statement is FALSE because the concepts are swapped. East-west traffic flows between VMs inside the data center (same subnet via L2, or different subnets through the virtual router). North-south traffic flows between VMs and external networks, through the router with SNAT or floating IPs.\n\nRelated: DVR distributes east-west routing to each compute node; SNAT for north-south stays centralized on the network node, while floating IPs are handled on the compute node.",
-			"tags": []
+			"tags": ["ai-generated"]
 		},
 		{
 			"id": "ren0011",
@@ -870,7 +870,7 @@
 			],
 			"answer": ["A", "C", "D"],
 			"explanation": "The correct answers are A, C and D. VMs in the same VLAN are in the same L2 domain, so communication is switching only. br-int forwards frames by MAC (A). br-int uses an internal local VLAN, which is translated to the real VLAN on the provider bridge when traffic leaves the host, and back on the destination host (C). Security group rules are enforced on each VM port, including traffic between VMs in the same network (D).\n\nRoute forwarding is only involved when VMs are in different subnets or access external networks.",
-			"tags": []
+			"tags": ["ai-generated"]
 		},
 		{
 			"id": "ren0012",
@@ -884,7 +884,7 @@
 			],
 			"answer": ["A"],
 			"explanation": "The correct answer is A. IP address assignment is done by the subnet (address pool) together with the DHCP agent. The router, implemented by the L3 agent in a qrouter namespace, connects tenant subnets through qr- interfaces, provides external connectivity through the qg- gateway, and performs NAT (SNAT for outbound access and DNAT for floating IPs).",
-			"tags": []
+			"tags": ["ai-generated"]
 		},
 		{
 			"id": "ren0013",
@@ -898,7 +898,7 @@
 			],
 			"answer": ["B", "C"],
 			"explanation": "The correct answers are B and C. Heat orchestrates sets of interdependent resources described in a HOT template and manages them as a stack. Auto scaling web clusters (OS::Heat::AutoScalingGroup and ScalingPolicy with Aodh alarms) and deploying a multi-tier application (VMs, networks, volumes, security groups, load balancer, with dependencies) are classic scenarios.\n\nManaging Swift containers and creating a single disk are isolated operations done directly through the service APIs. Rule of thumb: a single resource is not a typical Heat scenario.",
-			"tags": []
+			"tags": ["ai-generated"]
 		},
 		{
 			"id": "ren0014",
@@ -912,7 +912,7 @@
 			],
 			"answer": ["D"],
 			"explanation": "The correct answer is D. resources. The resources section must define at least one resource; otherwise the template creates nothing. heat_template_version is also mandatory but is not among the options. description, parameters, parameter_groups, outputs and conditions are optional.",
-			"tags": []
+			"tags": ["ai-generated"]
 		},
 		{
 			"id": "ren0015",
@@ -924,7 +924,7 @@
 			],
 			"answer": true,
 			"explanation": "The statement is TRUE. Ceilometer's architecture is designed so both agent types scale horizontally. Multiple notification agents can consume from the same message queue, and with workload partitioning they coordinate pipeline processing without duplicating data. Compute polling agents run on each compute node, and multiple central polling agents can run together, coordinated through tooz (Redis or ZooKeeper backend) to split resources between them.\n\nFlow: agents collect, pipeline transforms, publishers send to Gnocchi, Aodh evaluates alarms.",
-			"tags": []
+			"tags": ["ai-generated"]
 		},
 		{
 			"id": "ren0016",
@@ -938,7 +938,7 @@
 			],
 			"answer": ["A"],
 			"explanation": "The correct answer is A. Panko is the event storage service of OpenStack Telemetry. It stores events generated from service notifications (instance created, volume attached, VM deleted), providing an operation history for auditing and tracing.\n\nEach option matches one telemetry project: Panko (events), Gnocchi (time series), Ceilometer (data collection), Aodh (alarms that can trigger Heat auto scaling).",
-			"tags": []
+			"tags": ["ai-generated"]
 		},
 		{
 			"id": "ren0017",
@@ -952,7 +952,7 @@
 			],
 			"answer": ["B"],
 			"explanation": "The correct answer is B. Combined API is the cloud service API layer between the console and OpenStack. It aggregates and orchestrates native OpenStack APIs into complete services. Creating an ECS requires networking, so the ECS API calls the VPC API (ports, IPs, security groups, EIP), besides triggering Nova, Cinder and Neutron.\n\nA is wrong because it processes data (parameter validation, quota checks, business logic). C is wrong because EIP requests go through Combined API via the VPC API. D reverses the flow: UI, load balancer, service console, Combined API, OpenStack.",
-			"tags": []
+			"tags": ["ai-generated"]
 		},
 		{
 			"id": "ren0018",
@@ -964,7 +964,7 @@
 			],
 			"answer": true,
 			"explanation": "The statement is TRUE. It is Huawei's official positioning of HCS: same architecture, same APIs and same mainline version as the public HUAWEI CLOUD. The goal is the same experience (console, services, APIs), the same ecosystem (tools, partners, certified applications) and a consistent hybrid cloud. In practice HCS ships with a version lag and a subset of services, but the statement is true.",
-			"tags": []
+			"tags": ["ai-generated"]
 		},
 		{
 			"id": "ren0019",
@@ -976,7 +976,7 @@
 			],
 			"answer": true,
 			"explanation": "Probable answer: TRUE (not confirmed against official documentation). Creating a physical network involves host-level configuration (mapping the physnet to NICs or bonds and provider bridges), which is a platform task done through the FusionSphere OpenStack Web Client (backed by CPS). Service OM operates the existing logical resources. The asymmetry in the statement suggests it was taken from a specific documentation note.\n\nPoint of doubt: deleting a physnet would also require undoing the host mapping, which could point back to the Web Client.",
-			"tags": ["unverified"]
+			"tags": ["ai-generated", "unverified"]
 		},
 		{
 			"id": "ren0020",
@@ -985,7 +985,7 @@
 			"options": [],
 			"answer": ["System Audit"],
 			"explanation": "Probable answer: System Audit. FusionSphere OpenStack has a system audit mechanism that checks consistency between OpenStack database records and the real state of resources (orphan VMs, VMs stuck in intermediate states, volumes registered in Cinder but missing on storage, ports without owners). These inconsistencies are often the source of recurring alarms. The related audit items are gathered on the System Audit page in Service OM, where the administrator can review and apply the suggested fix.\n\nThe exact page name may vary between versions.",
-			"tags": ["unverified"]
+			"tags": ["ai-generated", "unverified"]
 		},
 		{
 			"id": "ren0021",
@@ -999,7 +999,7 @@
 			],
 			"answer": ["C"],
 			"explanation": "Probable answer: C. Downloading images. Image operations on Service OM are catalog management for the resource pool: registering (including FTP/NFS for images larger than 6 GB), modifying attributes, sharing with other projects and deleting. Download is not among them; obtaining the image file is done through the Glance API/CLI (openstack image save) or other export methods.",
-			"tags": ["unverified"]
+			"tags": ["ai-generated", "unverified"]
 		},
 		{
 			"id": "ren0022",
@@ -1011,7 +1011,7 @@
 			],
 			"answer": false,
 			"explanation": "Probable answer: FALSE. Shared disks (attached to multiple ECSs at the same time) are among the cases not supported by general disk migration. General migration copies data from the source backend to the destination and then reconnects the volume to the VM; with a disk attached to several VMs, consistency during the copy and a coordinated reconnection cannot be guaranteed.\n\nOther common restrictions to check: disks with snapshots, disks in intermediate states and encrypted disks.",
-			"tags": ["unverified"]
+			"tags": ["ai-generated", "unverified"]
 		},
 		{
 			"id": "ren0023",
@@ -1025,7 +1025,7 @@
 			],
 			"answer": ["A"],
 			"explanation": "Probable answer: A. A host group on Service OM corresponds to a Nova host aggregate, and in OpenStack a host can belong to multiple aggregates at the same time (e.g. an SSD aggregate and a GPU aggregate). The exclusivity rule applies to availability zones: a host can be in only one AZ.\n\nB and D are strong technical restrictions (mixing virtualization types or CPU architectures breaks scheduling). If A is not the expected answer, the second most likely false statement is C.",
-			"tags": ["unverified"]
+			"tags": ["ai-generated", "unverified"]
 		},
 		{
 			"id": "ren0024",
@@ -1037,7 +1037,7 @@
 			],
 			"answer": true,
 			"explanation": "The statement is TRUE. VBS (Volume Backup Service) backs up individual EVS disks (system or data), one by one, with no concept of the ECS as a unit. CSBS (Cloud Server Backup Service) backs up the whole ECS, all disks together with crash consistency across disks, and can restore the complete VM. Both use storage snapshots plus permanent incremental backup.\n\nRelated services: VBS (disk), CSBS (whole ECS), CSDR (DR of ECS across AZs or sites), VHA (HA of ECS with synchronous replication).",
-			"tags": []
+			"tags": ["ai-generated"]
 		},
 		{
 			"id": "ren0025",
@@ -1051,7 +1051,7 @@
 			],
 			"answer": ["A", "C"],
 			"explanation": "The correct answers are A and C. SFS is shared file storage mounted via NFS (Linux) or CIFS/SMB (Windows) by multiple ECSs at the same time. Shared web content behind an ELB and shared research datasets (HPC) are typical scenarios.\n\nB fits OBS (massive unstructured data accessed over HTTP, often with CDN). D needs low latency and random block I/O, which is EVS. Rule: EVS for a single ECS disk or databases, SFS for files shared between ECSs, OBS for massive data via API.",
-			"tags": []
+			"tags": ["ai-generated"]
 		},
 		{
 			"id": "ren0026",
@@ -1063,7 +1063,7 @@
 			],
 			"answer": true,
 			"explanation": "The statement is TRUE. An AS group can have multiple policies of different types at the same time. Alarm policies react to Cloud Eye metrics (unpredictable peaks), scheduled policies run once at a specific time (predictable peaks) and periodic policies repeat at regular intervals (recurring patterns).\n\nAll respect the group's minimum and maximum instance limits. The cooldown period blocks new alarm-triggered actions after a scaling action, but does not block scheduled or periodic policies.",
-			"tags": []
+			"tags": ["ai-generated"]
 		},
 		{
 			"id": "ren0027",
@@ -1078,7 +1078,7 @@
 			],
 			"answer": ["A", "B", "E"],
 			"explanation": "The correct answers are A, B and E. AS scaling can be triggered by alarm policies (Cloud Eye metrics), manually (changing the expected number of instances or executing a policy) and by scheduled or periodic policies.\n\nImage updates are done by changing the AS configuration and only affect new instances; they do not trigger scaling. Physical server faults are handled by platform HA (VM restart on another host). AS health checks replace unhealthy instances, but that maintains instance count rather than being a scaling trigger.",
-			"tags": []
+			"tags": ["ai-generated"]
 		},
 		{
 			"id": "ren0028",
@@ -1092,7 +1092,7 @@
 			],
 			"answer": ["B"],
 			"explanation": "The correct answer is B. The problem is that no scaling action was triggered. Low ECS specifications do not prevent scaling; weak instances saturate CPU faster and would trigger the alarm policy earlier. It may explain the breakdown, but not why AS did nothing.\n\nA: if the group is already at its maximum, AS cannot add instances. C: the alarm fires too late or never. D: AS creates ECSs from the image in the AS configuration, so an IMS fault makes instance creation fail.",
-			"tags": []
+			"tags": ["ai-generated"]
 		},
 		{
 			"id": "ren0029",
@@ -1106,7 +1106,7 @@
 			],
 			"answer": ["B", "C"],
 			"explanation": "The correct answers are B and C. \"Image format is not supported\" is a technical error related to the image file or its metadata. Unauthorized software and a non-genuine OS are licensing and compliance issues; the image can still be technically valid and boot.\n\nA is plausible: a wrong disk_format or container_format (e.g. qcow2 registered as raw) or missing properties makes the image unusable. D is plausible: data disks still attached or referenced (e.g. in /etc/fstab) can leave an inconsistent disk structure, which is why Huawei recommends detaching data disks before creating a system private image.",
-			"tags": []
+			"tags": ["ai-generated"]
 		},
 		{
 			"id": "ren0030",
@@ -1120,7 +1120,7 @@
 			],
 			"answer": ["A", "C"],
 			"explanation": "Probable answer: A and C. Capacity expansion or reduction is only allowed when the file system is stable (Available). Deleting a mounted file system leaves hung mounts on ECSs and risks losing data still being written.\n\nB is likely false because automatic mounting is documented for NFS on Linux (/etc/fstab or boot script); CIFS on Windows has its own procedure. D is likely false because a file system in the recycle bin still occupies resources and still counts towards the quota.",
-			"tags": ["unverified"]
+			"tags": ["ai-generated", "unverified"]
 		},
 		{
 			"id": "ren0031",
@@ -1134,7 +1134,7 @@
 			],
 			"answer": ["B"],
 			"explanation": "The correct answer is B. OBS is object storage: data is accessed as whole objects through an HTTP API, not as blocks, and it cannot be mounted as a disk. Block-level access is an EVS characteristic.\n\nThe other options are OBS strengths: custom object metadata and bucket tags for labeling (A), virtually unlimited capacity for unstructured data such as DICOM images (C), and server-side encryption with KMS keys plus HTTPS transmission (D).",
-			"tags": []
+			"tags": ["ai-generated"]
 		},
 		{
 			"id": "ren0032",
@@ -1148,7 +1148,7 @@
 			],
 			"answer": ["C"],
 			"explanation": "The correct answer is C. Encrypting traffic over public networks is a network function (VPN/IPsec or TLS at the application). EVS is a block disk accessed over the internal storage network and never travels over the public network; its encryption is at rest (KMS-encrypted disks).\n\nEVS provides shared disks (SCSI or VBD) for cluster software such as Oracle RAC (A), cross-AZ replication when backed by HyperMetro on OceanStor, or asynchronous replication via CSDR (B), and disk creation from snapshots (D).",
-			"tags": []
+			"tags": ["ai-generated"]
 		},
 		{
 			"id": "ren0033",
@@ -1162,7 +1162,7 @@
 			],
 			"answer": ["A"],
 			"explanation": "The correct answer is A. VPC peering connects two VPCs in the same region using private IPs, for the same tenant or different tenants (with acceptance). Cross-region connectivity uses Cloud Connect / Enterprise Router or VPN. Subnets in the same VPC already communicate by default and are controlled with security groups and network ACLs. IDC to VPC uses VPN or Direct Connect.\n\nRestrictions: CIDRs cannot overlap, peering is not transitive, and routes must be added on both VPCs.",
-			"tags": []
+			"tags": ["ai-generated"]
 		},
 		{
 			"id": "ren0034",
@@ -1174,7 +1174,7 @@
 			],
 			"answer": true,
 			"explanation": "The statement is TRUE. VPC Endpoint (VPCEP) provides private access from a VPC to an endpoint service in the same region, without Internet or EIP. The endpoint service can be a cloud service (OBS, DNS) or a private service you publish, backed by an ELB, an ECS or a VIP. Publishing the ECS in VPC B as an endpoint service lets the ECS in VPC A reach it privately.\n\nDifference from peering: peering connects whole networks and requires non-overlapping CIDRs; VPCEP exposes one specific service (IP and port), works with overlapping CIDRs and does not expose the rest of the network.",
-			"tags": []
+			"tags": ["ai-generated"]
 		},
 		{
 			"id": "ren0035",
@@ -1188,7 +1188,7 @@
 			],
 			"answer": ["A"],
 			"explanation": "The correct answer is A. Direct Connect uses a dedicated physical line between the customer data center and the cloud, requiring a carrier circuit, cabling and equipment on both ends. Deployment takes weeks or months and costs are high.\n\nPhysical isolation, low and stable latency, and high bandwidth with redundancy are real advantages. VPN is the opposite trade-off: fast and cheap to deploy over the Internet, but with variable latency. A common design uses Direct Connect as primary and VPN as backup.",
-			"tags": []
+			"tags": ["ai-generated"]
 		},
 		{
 			"id": "ren0036",
@@ -1200,7 +1200,7 @@
 			],
 			"answer": false,
 			"explanation": "The statement is FALSE. VPC peering connects VPC to VPC in the same region and has no way to connect a local IDC to the cloud. The statement describes Direct Connect (dedicated line). The cheaper and faster but less stable alternative is VPN.\n\nConnectivity map: same VPC subnets (native), VPCs in the same region (peering or VPCEP), VPCs across regions (Cloud Connect / Enterprise Router), IDC to VPC (VPN or Direct Connect).",
-			"tags": []
+			"tags": ["ai-generated"]
 		},
 		{
 			"id": "ren0037",
@@ -1214,7 +1214,7 @@
 			],
 			"answer": ["A", "C", "D"],
 			"explanation": "The correct answers are A, C and D. ManageOne has a quota application flow with approval, after which the upper-level administrator adjusts the quota (A). Quotas are controlled per resource type (vCPU, memory, disk, EIP, ECS count), so exceeding the compute quota does not block storage requests within the storage quota (C). By default the system validates the request and rejects it with an insufficient quota message (D).\n\nB is wrong: there is no automatic borrowing between departments. The parent VDC administrator must manually reduce one quota and increase another. A child VDC quota can never exceed the parent's, and HCS supports up to 5 VDC levels.",
-			"tags": []
+			"tags": ["ai-generated"]
 		},
 		{
 			"id": "ren0038",
@@ -1228,7 +1228,7 @@
 			],
 			"answer": ["A", "B", "C"],
 			"explanation": "The correct answers are A, B and C. Each isolates department resources at a different layer: security groups (instance) and network ACLs (subnet) at the network layer; multi-level VDCs at the organizational and quota layer, with separate users, administrators and quotas; enterprise projects at the resource and permission layer inside a VDC.\n\nUnified operations centralizes management for efficiency, which is the opposite of isolation.",
-			"tags": []
+			"tags": ["ai-generated"]
 		},
 		{
 			"id": "ren0039",
@@ -1240,7 +1240,7 @@
 			],
 			"answer": true,
 			"explanation": "Probable answer: TRUE. Moving a resource (ECS, disk, etc.) from one resource set to another is supported as a logical change of grouping and permissions, without recreating the resource. A resource set is a logical grouping and authorization construct with no data or infrastructure, so it is not migrated across regions; moving resources to another region requires real migration (image, data copy, CSDR).\n\nPoint of doubt: the wording is odd, since a resource set is not something that gets migrated. If the expected answer is FALSE, the reason is likely that resource sets are already visible in all regions of the VDC.",
-			"tags": ["unverified"]
+			"tags": ["ai-generated", "unverified"]
 		},
 		{
 			"id": "ren0040",
@@ -1254,7 +1254,7 @@
 			],
 			"answer": ["B", "C", "D"],
 			"explanation": "The correct answers are B, C and D. The host group tag is the host aggregate metadata, and the flavor tag is the matching extra spec, compared by AggregateInstanceExtraSpecsFilter. If no host group matches, all hosts are filtered out, the scheduler returns NoValidHost and the ECS goes to error state, so only A is true.\n\nThere is no random fallback, the tags are never ignored (that would defeat the purpose of placing special flavors on specific hardware), and there is no manual re-match dialog; the administrator must fix the tags and create the ECS again.",
-			"tags": []
+			"tags": ["ai-generated"]
 		},
 		{
 			"id": "ren0041",
@@ -1268,7 +1268,7 @@
 			],
 			"answer": ["A", "C", "D"],
 			"explanation": "The correct answers are A, C and D. A dedicated resource set isolates permissions, an independent VPC with strict NACL and security group rules isolates the network, and an independent VDC with strict quotas isolates the organization while also controlling cost.\n\nB is wrong: deploying across regions is a DR and availability strategy, not security isolation, and it increases cost (duplicated infrastructure, replication, inter-region links). Geographic distance does not prevent unauthorized access.",
-			"tags": []
+			"tags": ["ai-generated"]
 		},
 		{
 			"id": "ren0042",
@@ -1282,7 +1282,7 @@
 			],
 			"answer": ["A"],
 			"explanation": "The correct answer is A. Cloud Federation is the HCS hybrid cloud function that federates public HUAWEI CLOUD services into HCS. Users access public services such as ModelArts directly from the HCS console with the same account, without custom integration, which is possible because HCS and HUAWEI CLOUD share the same architecture and APIs.\n\nTwo-level cloud is a two-tier private cloud architecture (e.g. provincial and city clouds). Heterogeneous platform management lets ManageOne manage third-party platforms such as VMware. The 10 Unified Access Specifications are an integration standard that would require development.",
-			"tags": []
+			"tags": ["ai-generated"]
 		},
 		{
 			"id": "ren0043",
@@ -1294,7 +1294,7 @@
 			],
 			"answer": false,
 			"explanation": "The statement is FALSE. The scenario is massive unstructured data (video) with continuous writes, occasional reads and time-based expiration, so the right solution is OBS + lifecycle policy.\n\nEVS is block storage attached to ECSs with per-disk capacity limits, which would require managing a huge number of disks and servers at high cost. Lifecycle policies are an OBS feature (expire objects after 30 days or transition Standard > Infrequent Access > Archive), not an EVS one.",
-			"tags": []
+			"tags": ["ai-generated"]
 		},
 		{
 			"id": "ren0044",
@@ -1308,7 +1308,7 @@
 			],
 			"answer": ["A", "C", "D"],
 			"explanation": "The correct answers are A, C and D. Tenant operation logs (recorded by CTS, Cloud Trace Service) capture operations performed by tenant users on cloud resources: who, what, which resource, when and the result. Security group rule changes, EVS expansion and ECS creation (with timestamp) are tenant resource operations.\n\nAdministrator password changes are platform management operations recorded in ManageOne O&M/security operation logs, not tenant operation logs.",
-			"tags": []
+			"tags": ["ai-generated"]
 		},
 		{
 			"id": "ren0045",
@@ -1320,7 +1320,7 @@
 			],
 			"answer": false,
 			"explanation": "The statement is FALSE. The model based on associations between resources and services is built by the CMDB, which maintains configuration items (hosts, VMs, disks, networks, applications) and their static and dynamic relationships. The data analysis platform consumes this data for trend analysis, capacity forecasting, anomaly detection, reports and visualization, but does not build the model.\n\nCMDB: resource model and relationships. Monitoring/alarms: real-time state. Data analysis: insights from history.",
-			"tags": []
+			"tags": ["ai-generated"]
 		},
 		{
 			"id": "ren0046",
@@ -1332,7 +1332,7 @@
 			],
 			"answer": true,
 			"explanation": "Probable answer: TRUE. SmartKit is Huawei's O&M tool for inspection, health checks, information collection and upgrade/expansion support. In HCS its inspection scope goes beyond infrastructure (servers, storage, network, FusionSphere OpenStack, ManageOne) and covers cloud services by category, including GPaaS (databases, middleware, containers) and AI DaaS (data and AI services).\n\nFusionCare also performs health checks, but focused on the virtualization and management platform.",
-			"tags": ["unverified"]
+			"tags": ["ai-generated", "unverified"]
 		}
 	]
 }

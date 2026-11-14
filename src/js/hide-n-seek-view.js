@@ -32,6 +32,16 @@ window.HideNSeekView = (function () {
 		);
 	}
 
+	function buildExplanationBadges(question) {
+		const tags = Array.isArray(question.tags) ? question.tags : [];
+		if (!tags.includes("ai-generated")) { return ""; }
+		return (
+			'<span class="result-item__badge result-item__badge--ai">' +
+			'<span aria-hidden="true">✦</span> AI Generated' +
+			'</span>'
+		);
+	}
+
 	function buildQuestionCard(question, index) {
 		const badgeId = AppUtils.escapeHtml(question.id);
 		const badgeText = AppUtils.escapeHtml(getTypeLabel(question.type));
@@ -50,7 +60,15 @@ window.HideNSeekView = (function () {
 			'<div class="question-card__prompt">' + AppUtils.nl2br(question.prompt) + "</div>" +
 			buildAnswerContent(question) +
 			(question.explanation
-				? '<div class="result-item__explanation"><strong>Explanation:</strong> ' + AppUtils.nl2br(question.explanation) + "</div>"
+				? '<div class="result-item__explanation">' +
+				'<div class="result-item__explanation-header">' +
+				'<strong>Explanation:</strong>' +
+				buildExplanationBadges(question) +
+				'</div>' +
+				'<div class="result-item__explanation-content">' +
+				AppUtils.nl2br(question.explanation) +
+				'</div>' +
+				'</div>'
 				: "") +
 			"</article>"
 		);
