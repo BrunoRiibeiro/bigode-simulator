@@ -32,16 +32,6 @@ window.HideNSeekView = (function () {
 		);
 	}
 
-	function buildExplanationBadges(question) {
-		const tags = Array.isArray(question.tags) ? question.tags : [];
-		if (!tags.includes("ai-generated")) { return ""; }
-		return (
-			'<span class="result-item__badge result-item__badge--ai">' +
-			'<span aria-hidden="true">✦</span> AI Generated' +
-			'</span>'
-		);
-	}
-
 	function buildQuestionCard(question, index) {
 		const badgeId = AppUtils.escapeHtml(question.id);
 		const badgeText = AppUtils.escapeHtml(getTypeLabel(question.type));
@@ -59,17 +49,7 @@ window.HideNSeekView = (function () {
 			"</header>" +
 			'<div class="question-card__prompt">' + AppUtils.nl2br(question.prompt) + "</div>" +
 			buildAnswerContent(question) +
-			(question.explanation
-				? '<div class="result-item__explanation">' +
-				'<div class="result-item__explanation-header">' +
-				'<strong>Explanation:</strong>' +
-				buildExplanationBadges(question) +
-				'</div>' +
-				'<div class="result-item__explanation-content">' +
-				AppUtils.nl2br(question.explanation) +
-				'</div>' +
-				'</div>'
-				: "") +
+			QuestionContentView.buildExplanation(question) +
 			"</article>"
 		);
 	}
@@ -79,7 +59,7 @@ window.HideNSeekView = (function () {
 			return (
 				'<div class="answer-key__accepted">' +
 				"<strong>Accepted answer(s):</strong> " +
-				formatTextAnswers(question.answer) +
+				QuestionContentView.formatTextAnswers(question.answer) +
 				"</div>"
 			);
 		}
@@ -118,18 +98,6 @@ window.HideNSeekView = (function () {
 		}
 
 		return AppUtils.normalizeAnswerList(question.answer || []);
-	}
-
-	function formatTextAnswers(answer) {
-		const answers = Array.isArray(answer) ? answer : [];
-
-		if (!answers.length) { return "—"; }
-
-		return answers
-			.map(function (item) {
-				return AppUtils.escapeHtml(String(item));
-			})
-			.join(" / ");
 	}
 
 	function getTypeLabel(type) {

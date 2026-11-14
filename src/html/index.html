@@ -12,7 +12,7 @@
 	<body>
 		<div class="app">
 			<header class="app__header">
-				<img src="/img/icon.png" style="width: 100px; object-fit: cover;">
+				<img src="/img/icon.png" alt="moustache" class="app__logo">
 				<h1>bigode simulator</h1>
 			</header>
 
@@ -20,7 +20,7 @@
 				<section class="panel panel--loader">
 
 					<div class="field">
-						<label for="jsonFile">Load a question dump</label>
+						<label for="jsonPreset">Load a question dump</label>
 						<select id="jsonPreset">
 							<option value="">Select...</option>
 
@@ -106,7 +106,9 @@
 		<script defer src="/js/app-state.js"></script>
 		<script defer src="/js/question-issues.js"></script>
 		<script defer src="/js/file-loader.js"></script>
+		<script defer src="/js/question-bank-loader.js"></script>
 		<script defer src="/js/exam-service.js"></script>
+		<script defer src="/js/question-content-view.js"></script>
 		<script defer src="/js/exam-view.js"></script>
 		<script defer src="/js/result-view.js"></script>
 		<script defer src="/js/main.js"></script>

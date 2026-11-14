@@ -73,82 +73,65 @@ function onJsonPresetChange() {
 	loadPresetJson(filePath);
 }
 
-async function loadPresetJson(filePath) {
+async function loadPresetJson(filePath, isDefault) {
 	refs.generateExamBtn.disabled = true;
 	setStatus("Loading question dump...", "info");
 
 	try {
-		const response = await fetch(filePath);
-
-		if (!response.ok) {
-			throw new Error("Could not load the selected file.");
-		}
-
-		const data = await response.json();
-		const result = FileLoader.validateAndNormalize(data);
+		const result = await QuestionBankLoader.loadPreset(filePath);
 
 		AppState.setQuestionBank(result.questions, filePath);
 		adjustQuestionCountInput();
 		updateBankInfo();
 		clearExamAndResults();
 
-		refs.generateExamBtn.disabled = result.questions.length === 0;
-		setStatus('Dump "' + (filePath ||"").split('/').pop().replace(/\.[^/.]+$/, "") + '" loaded successfully.', "success");
+		refs.generateExamBtn.disabled = false;
 
+		const message = isDefault
+			? 'Default file "' + result.fileName + '" loaded successfully.'
+			: 'Dump "' + result.fileName.replace(/\.[^/.]+$/, "") + '" loaded successfully.';
+
+		setStatus(message, "success");
 	} catch (error) {
 		console.error(error);
 		AppState.reset();
 		clearExamAndResults();
 		updateBankInfo();
+
 		refs.generateExamBtn.disabled = true;
-		setStatus('Could not load the file "' + filePath + '".', "error");
+
+		if (isDefault) {
+			setStatus(
+				"Could not automatically load the default JSON. Please use the file selector.",
+				"info"
+			);
+		} else {
+			setStatus('Could not load the file "' + filePath + '".', "error");
+		}
 	}
 }
 
-async function tryLoadDefaultJson() {
-	try {
-		const fileName = "hcia-cloud-service-3.5.json";
-		const response = await fetch("./dumps/" + fileName);
-
-		if (!response.ok) {
-			throw new Error("Could not load the default file.");
-		}
-
-		const data = await response.json();
-		const result = FileLoader.validateAndNormalize(data);
-
-		AppState.setQuestionBank(result.questions, fileName);
-		adjustQuestionCountInput();
-		updateBankInfo();
-		clearExamAndResults();
-
-		refs.generateExamBtn.disabled = result.questions.length === 0;
-		setStatus('Default file "' + fileName + '" loaded successfully.', "success");
-
-	} catch (error) {
-		setStatus("Could not automatically load the default JSON. Please use the file selector", "info");
-	}
+function tryLoadDefaultJson() {
+	return loadPresetJson("./dumps/hcia-cloud-service-3.5.json", true);
 }
 
 async function onFileSelected(event) {
 	const file = event.target.files[0];
 
-	if (!file) {
-		return;
-	}
+	if (!file) { return; }
 
 	refs.generateExamBtn.disabled = true;
 	setStatus("Loading question dump...", "info");
 
 	try {
-		const result = await FileLoader.loadQuestionBankFromFile(file);
+		const result = await QuestionBankLoader.loadFile(file);
 
-		AppState.setQuestionBank(result.questions, file.name);
+		AppState.setQuestionBank(result.questions, result.fileName);
 		adjustQuestionCountInput();
 		updateBankInfo();
-
-		refs.generateExamBtn.disabled = result.questions.length === 0;
 		clearExamAndResults();
+
+		refs.generateExamBtn.disabled = false;
 
 		if (result.discarded > 0) {
 			setStatus(
@@ -172,7 +155,7 @@ async function onFileSelected(event) {
 		refs.generateExamBtn.disabled = true;
 		clearExamAndResults();
 		updateBankInfo();
-		setStatus(error.message || "Erro loading the file.", "error");
+		setStatus(error.message || "Error loading the file.", "error");
 	}
 }
 

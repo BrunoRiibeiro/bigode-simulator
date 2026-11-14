@@ -2,16 +2,19 @@ window.ResultView = (function () {
 	function renderResults(result, refs) {
 		refs.summary.innerHTML =
 			'<div class="result-grid">' +
-			'<div class="result-box"><strong>Total</strong><span>' + result.totalQuestions + "</span></div>" +
-			'<div class="result-box"><strong>Answered</strong><span>' + result.answeredQuestions + "</span></div>" +
-			'<div class="result-box"><strong>Correct</strong><span>' + result.correctCount + "</span></div>" +
-			'<div class="result-box"><strong>Wrong</strong><span>' + result.wrongCount + "</span></div>" +
-			'<div class="result-box"><strong>Unanswered</strong><span>' + result.blankCount + "</span></div>" +
-			'<div class="result-box"><strong>Score</strong><span>' + AppUtils.formatPercent(result.scorePercent) + "</span></div>" +
+			'<div class="result-box"><strong>Total</strong><span>' +
+			result.totalQuestions + "</span></div>" +
+			'<div class="result-box"><strong>Answered</strong><span>' +
+			result.answeredQuestions + "</span></div>" +
+			'<div class="result-box"><strong>Correct</strong><span>' +
+			result.correctCount + "</span></div>" +
+			'<div class="result-box"><strong>Wrong</strong><span>' +
+			result.wrongCount + "</span></div>" +
+			'<div class="result-box"><strong>Unanswered</strong><span>' +
+			result.blankCount + "</span></div>" +
+			'<div class="result-box"><strong>Score</strong><span>' +
+			AppUtils.formatPercent(result.scorePercent) + "</span></div>" +
 			"</div>";
-
-		console.log("Result items:", result.items);
-		console.log("First item tags:", result.items[0]?.tags);
 
 		refs.list.innerHTML = result.items
 			.map(function (item) {
@@ -55,16 +58,6 @@ window.ResultView = (function () {
 			}).join(separator || ", ");
 	}
 
-	function buildExplanationBadges(item) {
-		const tags = Array.isArray(item.tags) ? item.tags : [];
-		if (!tags.includes("ai-generated")) { return ""; }
-		return (
-			'<span class="result-item__badge result-item__badge--ai">' +
-			'<span aria-hidden="true">✦</span> AI Generated' +
-			'</span>'
-		);
-	}
-
 	function buildResultItem(item) {
 		const statusText = item.isCorrect
 			? "Correct"
@@ -79,8 +72,10 @@ window.ResultView = (function () {
 			: "result-item--blank";
 
 		let badgeId = item.id;
-		const issueUrl = window.GitHubIssuesFeature ? window.GitHubIssuesFeature.buildIssueSearchUrl(item) : "";
-		const issueRef = window.GitHubIssuesFeature ? window.GitHubIssuesFeature.getQuestionRef(item) : "";
+		const issueUrl = window.GitHubIssuesFeature ?
+			window.GitHubIssuesFeature.buildIssueSearchUrl(item) : "";
+		const issueRef = window.GitHubIssuesFeature ?
+			window.GitHubIssuesFeature.getQuestionRef(item) : "";
 		const issueLinkHtml = issueUrl ? '<a class="question-card__issue-link" href="' +
 			AppUtils.escapeHtml(issueUrl) + '" target="_blank" rel="noopener noreferrer" title="Open GitHub issues for ' +
 			AppUtils.escapeHtml(issueRef) + '">Discuss question</a>' : "";
@@ -103,17 +98,7 @@ window.ResultView = (function () {
 			(item.options.length
 				? '<ul class="result-item__options">' + buildOptionList(item) + "</ul>"
 				: "") +
-			(item.explanation
-				? '<div class="result-item__explanation">' +
-				'<div class="result-item__explanation-header">' +
-				'<strong>Explanation:</strong>' +
-				buildExplanationBadges(item) +
-				'</div>' +
-				'<div class="result-item__explanation-content">' +
-				AppUtils.nl2br(item.explanation) +
-				'</div>' +
-				'</div>'
-				: "") +
+			QuestionContentView.buildExplanation(item) +
 			"</article>"
 		);
 	}

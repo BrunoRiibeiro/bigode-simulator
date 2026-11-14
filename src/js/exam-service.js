@@ -35,43 +35,6 @@ window.ExamService = (function () {
 		});
 	}
 
-	function toTextAnswerList(value) {
-		if (Array.isArray(value)) {
-			return value.map(function (item) {
-					return String(item || "").trim();
-				}).filter(function (item) {
-					return item !== "";
-				});
-		}
-
-		const singleValue = String(value || "").trim();
-		return singleValue ? [singleValue] : [];
-	}
-
-	function normalizeTextValue(value) {
-		return String(value || "")
-			.normalize("NFD")
-			.replace(/[\u0300-\u036f]/g, "")
-			.toLowerCase()
-			.replace(/[^\p{L}\p{N}]+/gu, " ")
-			.trim()
-			.replace(/\s+/g, " ");
-	}
-
-	function isTextAnswerCorrect(selectedAnswers, correctAnswers) {
-		if (!selectedAnswers.length || !correctAnswers.length) {
-			return false;
-		}
-
-		return selectedAnswers.some(function (selectedAnswer) {
-			const normalizedSelected = normalizeTextValue(selectedAnswer);
-
-			return correctAnswers.some(function (correctAnswer) {
-				return normalizeTextValue(correctAnswer) === normalizedSelected;
-			});
-		});
-	}
-
 	function getBooleanOptionValue(question, key) {
 		if (!question || !question.optionValues) { return null; }
 
@@ -95,6 +58,40 @@ window.ExamService = (function () {
 		return typeof selectedValue === "boolean" && selectedValue === question.answer;
 	}
 
+	function evaluateQuestion(question, selectedAnswers) {
+		const isTextQuestion = question.type === "text";
+		const isBooleanQuestion = question.type === "boolean";
+
+		const selected = isTextQuestion
+			? toTextAnswerList(selectedAnswers)
+			: AppUtils.normalizeAnswerList(selectedAnswers || []);
+
+		const booleanCorrectKey = isBooleanQuestion
+			? getBooleanCorrectKey(question)
+			: "";
+
+		const correct = isTextQuestion
+			? toTextAnswerList(question.answer || [])
+			: isBooleanQuestion
+			? (booleanCorrectKey ? [booleanCorrectKey] : [])
+			: AppUtils.normalizeAnswerList(question.answer || []);
+
+		const isAnswered = selected.length > 0;
+
+		const isCorrect = isTextQuestion
+			? isTextAnswerCorrect(selected, correct)
+			: isBooleanQuestion
+			? isBooleanAnswerCorrect(question, selected)
+			: AppUtils.sameAnswers(selected, correct);
+
+		return {
+			selected: selected,
+			correct: correct,
+			isAnswered: isAnswered,
+			isCorrect: isCorrect
+		};
+	}
+
 	function createRandomExam(questionBank, requestedCount) {
 		if (!Array.isArray(questionBank) || !questionBank.length) {
 			throw new Error("No question dump loaded.");
@@ -108,22 +105,8 @@ window.ExamService = (function () {
 
 	function gradeExam(examQuestions, userAnswers) {
 		const items = examQuestions.map(function (question, index) {
-			const isTextQuestion = question.type === "text";
-			const isBooleanQuestion = question.type === "boolean";
-			const selected = isTextQuestion
-				? toTextAnswerList((userAnswers && userAnswers[question.id]) || [])
-				: AppUtils.normalizeAnswerList((userAnswers && userAnswers[question.id]) || []);
-			const correct = isTextQuestion
-				? toTextAnswerList(question.answer || [])
-				: isBooleanQuestion
-				? (getBooleanCorrectKey(question) ? [getBooleanCorrectKey(question)] : [])
-				: AppUtils.normalizeAnswerList(question.answer || []);
-			const isAnswered = selected.length > 0;
-			const isCorrect = isTextQuestion
-				? isTextAnswerCorrect(selected, correct)
-				: isBooleanQuestion
-				? isBooleanAnswerCorrect(question, selected)
-				: AppUtils.sameAnswers(selected, correct);
+			const userAnswer = userAnswers && userAnswers[question.id];
+			const evaluation = evaluateQuestion(question, userAnswer);
 
 			return {
 				number: index + 1,
@@ -131,12 +114,12 @@ window.ExamService = (function () {
 				prompt: question.prompt,
 				type: question.type,
 				options: question.options.slice(),
-				selected: selected,
-				correct: correct,
+				selected: evaluation.selected,
+				correct: evaluation.correct,
 				explanation: question.explanation,
 				tags: Array.isArray(question.tags) ? question.tags : [],
-				isAnswered: isAnswered,
-				isCorrect: isCorrect
+				isAnswered: evaluation.isAnswered,
+				isCorrect: evaluation.isCorrect
 			};
 		});
 
@@ -164,6 +147,7 @@ window.ExamService = (function () {
 
 	return {
 		createRandomExam,
+		evaluateQuestion,
 		gradeExam
 	};
 })();

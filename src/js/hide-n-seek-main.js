@@ -43,19 +43,11 @@
 		setStatus("Loading question dump...", "info");
 
 		try {
-			const response = await fetch(filePath);
-
-			if (!response.ok) { throw new Error("Could not load the selected file."); }
-
-			const data = await response.json();
-			const result = FileLoader.validateAndNormalize(data);
-			const fileName = (filePath || "").split("/").pop() || filePath;
-
-			AppState.setQuestionBank(result.questions, fileName);
+			const result = await QuestionBankLoader.loadPreset(filePath);
+			AppState.setQuestionBank(result.questions, result.fileName);
 			updateBankInfo();
 			renderAnswerKey(result.questions);
-
-			setStatus('Dump "' + fileName + '" loaded successfully.', "success");
+			setStatus('Dump "' + result.fileName + '" loaded successfully.', "success");
 		} catch (error) {
 			console.error(error);
 			AppState.reset();
@@ -74,15 +66,15 @@
 		setStatus("Loading question dump...", "info");
 
 		try {
-			const result = await FileLoader.loadQuestionBankFromFile(file);
+			const result = await QuestionBankLoader.loadFile(file);
 
-			AppState.setQuestionBank(result.questions, file.name);
+			AppState.setQuestionBank(result.questions, result.fileName);
 			updateBankInfo();
 			renderAnswerKey(result.questions);
 
 			if (result.discarded > 0) {
 				setStatus(
-					'Dump "' + file.name + '" loaded with ' +
+					'Dump "' + result.fileName + '" loaded with ' +
 					result.questions.length +
 					" valid questions. " +
 					result.discarded +
@@ -91,7 +83,8 @@
 				);
 			} else {
 				setStatus(
-					'Dump "' + file.name + '" loaded successfully. Total valid questions: ' +
+					'Dump "' + result.fileName +
+					'" loaded successfully. Total valid questions: ' +
 					result.questions.length +
 					".",
 					"success"

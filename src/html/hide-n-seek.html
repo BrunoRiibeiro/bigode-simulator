@@ -15,52 +15,56 @@
 				<h1>bigode simulator</h1>
 			</header>
 
-			<section class="panel">
-				<div class="field">
-					<label for="jsonPreset">Load a dump and show the full answer
-						key.</label>
-					<select id="jsonPreset">
-						<option value="">Select...</option>
-
-						<!-- HCCDP -->
-						<option value="/dumps/hccdp-cloud-native-devops.json">HCCDP Cloud Native DevOps</option>
-						<option value="/dumps/hccdp-gaussdb.json">HCCDP GaussDB</option>
-
-						<!-- HCIA -->
-						<option value="/dumps/hcia-cloud-service-3.5.json">HCIA Cloud Service 3.5v</option>
-
-						<!-- HCIP -->
-						<option value="/dumps/hcip-cloud-computing-5.0.json">HCIP Cloud Computing 5.0v</option>
-						<option value="/dumps/hcip-cloud-service-solutions-architect-3.0.json">HCIP Cloud Service Solutions Architect 3.0v</option>
-						<option value="/dumps/hcip-cloud-service-solutions-architect-3.5.json">HCIP Cloud Service Solutions Architect 3.5v</option>
-					</select>
-				</div>
-
-				<!--
+			<main class="app__content">
+				<section class="panel">
 					<div class="field">
-					<label for="jsonFile">Or upload a local dump</label>
-					<input id="jsonFile" type="file" accept=".json,application/json" />
+						<label for="jsonPreset">Load a dump and show the full answer
+							key.</label>
+						<select id="jsonPreset">
+							<option value="">Select...</option>
+
+							<!-- HCCDP -->
+							<option value="/dumps/hccdp-cloud-native-devops.json">HCCDP Cloud Native DevOps</option>
+							<option value="/dumps/hccdp-gaussdb.json">HCCDP GaussDB</option>
+
+							<!-- HCIA -->
+							<option value="/dumps/hcia-cloud-service-3.5.json">HCIA Cloud Service 3.5v</option>
+
+							<!-- HCIP -->
+							<option value="/dumps/hcip-cloud-computing-5.0.json">HCIP Cloud Computing 5.0v</option>
+							<option value="/dumps/hcip-cloud-service-solutions-architect-3.0.json">HCIP Cloud Service Solutions Architect 3.0v</option>
+							<option value="/dumps/hcip-cloud-service-solutions-architect-3.5.json">HCIP Cloud Service Solutions Architect 3.5v</option>
+						</select>
 					</div>
-				-->
 
-				<p id="bankInfo" class="bank-info">No question dump loaded.</p>
-				<p id="statusMessage" class="status" data-type="info"></p>
-			</section>
+					<!--
+						<div class="field">
+						<label for="jsonFile">Or upload a local dump</label>
+						<input id="jsonFile" type="file" accept=".json,application/json" />
+						</div>
+					-->
 
-			<section id="answerKeySection" class="panel hidden">
-				<div class="section-header">
-					<h2>Answer key</h2>
-				</div>
+					<p id="bankInfo" class="bank-info">No question dump loaded.</p>
+					<p id="statusMessage" class="status" data-type="info"></p>
+				</section>
 
-				<div id="answerKeySummary"></div>
-				<div id="answerKeyList"></div>
-			</section>
+				<section id="answerKeySection" class="panel hidden">
+					<div class="section-header">
+						<h2>Answer key</h2>
+					</div>
+
+					<div id="answerKeySummary"></div>
+					<div id="answerKeyList"></div>
+				</section>
+			</main>
 		</div>
 
-		<script src="/js/utils.js"></script>
-		<script src="/js/app-state.js"></script>
-		<script src="/js/file-loader.js"></script>
-		<script src="/js/hide-n-seek-view.js"></script>
-		<script src="/js/hide-n-seek-main.js"></script>
+		<script defer src="/js/utils.js"></script>
+		<script defer src="/js/app-state.js"></script>
+		<script defer src="/js/file-loader.js"></script>
+		<script defer src="/js/question-bank-loader.js"></script>
+		<script defer src="/js/question-content-view.js"></script>
+		<script defer src="/js/hide-n-seek-view.js"></script>
+		<script defer src="/js/hide-n-seek-main.js"></script>
 	</body>
 </html>

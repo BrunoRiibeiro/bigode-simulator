@@ -48,16 +48,13 @@ window.FileLoader = (function () {
 	}
 
 	function normalizeTextAnswers(rawAnswer) {
-		if (Array.isArray(rawAnswer)) {
-			return rawAnswer.map(function (answer) {
-					return String(answer || "").trim();
-				}).filter(function (answer) {
-					return answer !== "";
-				});
-		}
+		const answers = Array.isArray(rawAnswer) ? rawAnswer : [rawAnswer];
 
-		const singleAnswer = String(rawAnswer || "").trim();
-		return singleAnswer ? [singleAnswer] : [];
+		return answers
+			.map(function (answer) {
+				return String(answer || "").trim();
+			})
+			.filter(Boolean);
 	}
 
 	function stripOptionPrefix(optionText) {
@@ -159,38 +156,42 @@ window.FileLoader = (function () {
 		return optionMatch ? optionMatch.value : null;
 	}
 
+	function isValidQuestionType(type) {
+		return ["single", "multiple", "boolean", "text"].includes(type);
+	}
+
 	function normalizeQuestion(rawQuestion, index) {
-		if (!rawQuestion || typeof rawQuestion !== "object") {
+		if (!rawQuestion || typeof rawQuestion !== "object" || Array.isArray(rawQuestion)) {
 			return null;
 		}
 
 		const prompt = String(rawQuestion.prompt || "").trim();
-		const rawType = String(rawQuestion.type || "").trim().toLowerCase();
-		const isTextQuestion = rawType === "text";
-		const isBooleanQuestion =
-			rawType === "boolean" ||
-			rawType === "bool" ||
-			rawType === "tf" ||
-			rawType === "truefalse" ||
-			rawType === "true-false";
+		const type = String(rawQuestion.type || "").trim().toLowerCase();
+
+		if (!prompt || !isValidQuestionType(type)) { return null; }
 
 		let options = [];
 		let answers = [];
 		let optionValues = null;
 
-		if (isTextQuestion) {
+		if (type === "text") {
 			answers = normalizeTextAnswers(rawQuestion.answer);
-		} else if (isBooleanQuestion) {
+			if (!answers.length) { return null; }
+		} else if (type === "boolean") {
 			const booleanOptions = normalizeBooleanOptions(rawQuestion.options);
-			const booleanAnswer = normalizeBooleanAnswer(rawQuestion.answer, booleanOptions || []);
+			const booleanAnswer = normalizeBooleanAnswer(rawQuestion.answer,
+				booleanOptions || []);
 
-			if (!booleanOptions || typeof booleanAnswer !== "boolean") { return null; }
+			if (!booleanOptions || typeof booleanAnswer !== "boolean") {
+				return null;
+			}
 
 			options = booleanOptions.map(function (option) {
 				return option.key + ". " + option.label;
 			});
 
 			optionValues = {};
+
 			booleanOptions.forEach(function (option) {
 				optionValues[option.key] = option.value;
 			});
@@ -208,15 +209,11 @@ window.FileLoader = (function () {
 				: [];
 
 			answers = AppUtils.normalizeAnswerList(rawQuestion.answer);
-		}
 
-		if (!prompt) { return null; }
-		if (isTextQuestion && answers.length < 1) { return null; }
-		if (!isTextQuestion && !isBooleanQuestion) {
-			if (options.length < 2 || answers.length < 1) { return null; }
+			if (options.length < 2 || !answers.length) { return null; }
 
-			const optionKeys = options.map(function (option, indexOption) {
-				return AppUtils.extractOptionKey(option, indexOption);
+			const optionKeys = options.map(function (option, optionIndex) {
+				return AppUtils.extractOptionKey(option, optionIndex);
 			});
 
 			const allAnswersExist = answers.every(function (answerKey) {
@@ -224,18 +221,11 @@ window.FileLoader = (function () {
 			});
 
 			if (!allAnswersExist) { return null; }
-		}
 
-		const type =
-			isTextQuestion
-			? "text"
-			: isBooleanQuestion
-			? "boolean"
-			: rawType === "multiple" ||
-			rawType === "multi" ||
-			answers.length > 1
-			? "multiple"
-			: "single";
+			if (type === "multiple" && answers.length < 2) {
+				return null;
+			}
+		}
 
 		const normalizedQuestion = {
 			id: String(rawQuestion.id || "q" + String(index + 1).padStart(4, "0")),
@@ -251,7 +241,7 @@ window.FileLoader = (function () {
 			: []
 		};
 
-		if (isBooleanQuestion) { normalizedQuestion.optionValues = optionValues; }
+		if (optionValues) { normalizedQuestion.optionValues = optionValues; }
 
 		return normalizedQuestion;
 	}

@@ -1,52 +1,7 @@
 window.ExamView = (function () {
-	function normalizeTextValue(value) {
-		return String(value || "")
-			.normalize("NFD")
-			.replace(/[\u0300-\u036f]/g, "")
-			.toLowerCase()
-			.replace(/[^\p{L}\p{N}]+/gu, " ")
-			.trim()
-			.replace(/\s+/g, " ");
-	}
 
-	function isTextAnswerCorrect(selectedAnswers, correctAnswers) {
-		const selected = Array.isArray(selectedAnswers) ? selectedAnswers : [];
-		const correct = Array.isArray(correctAnswers) ? correctAnswers : [];
 
-		if (!selected.length || !correct.length) { return false; }
 
-		return selected.some(function (selectedAnswer) {
-			const normalizedSelected = normalizeTextValue(selectedAnswer);
-
-			return correct.some(function (correctAnswer) {
-				return normalizeTextValue(correctAnswer) === normalizedSelected;
-			});
-		});
-	}
-
-	function getBooleanCorrectKey(question) {
-		if (!question || !question.optionValues) { return ""; }
-
-		return Object.keys(question.optionValues).find(function (key) {
-			return question.optionValues[key] === question.answer;
-		}) || "";
-	}
-
-	function isBooleanAnswerCorrect(question, selectedAnswers) {
-		const selected = Array.isArray(selectedAnswers) ? selectedAnswers : [];
-
-		if (!question || !question.optionValues || !selected.length) {
-			return false;
-		}
-
-		const selectedKey = selected[0];
-
-		if (!Object.prototype.hasOwnProperty.call(question.optionValues, selectedKey)) {
-			return false;
-		}
-
-		return question.optionValues[selectedKey] === question.answer;
-	}
 
 	function renderExam(examQuestions, refs) {
 		refs.container.innerHTML = examQuestions
@@ -182,24 +137,18 @@ window.ExamView = (function () {
 	}
 
 	function applyStepCorrection(form, question, selectedAnswers) {
-		const card = form.querySelector('[data-question-id="' + question.id + '"]');
+		const card = Array.from(form.querySelectorAll(".question-card"))
+			.find(function (element) {
+				return element.dataset.questionId === String(question.id);
+			});
+
 		if (!card) { return; }
 
+		const evaluation = ExamService.evaluateQuestion(question, selectedAnswers);
+		const selected = evaluation.selected;
+		const correct = evaluation.correct;
+		const isCorrectAnswer = evaluation.isCorrect;
 		const isTextQuestion = question.type === "text";
-		const isBooleanQuestion = question.type === "boolean";
-		const selected = isTextQuestion
-			? (Array.isArray(selectedAnswers) ? selectedAnswers : [])
-			: AppUtils.normalizeAnswerList(selectedAnswers || []);
-		const correct = isTextQuestion
-			? (Array.isArray(question.answer) ? question.answer : [])
-			: isBooleanQuestion
-			? (getBooleanCorrectKey(question) ? [getBooleanCorrectKey(question)] : [])
-			: AppUtils.normalizeAnswerList(question.answer || []);
-		const isCorrectAnswer = isTextQuestion
-			? isTextAnswerCorrect(selected, correct)
-			: isBooleanQuestion
-			? isBooleanAnswerCorrect(question, selected)
-			: AppUtils.sameAnswers(selected, correct);
 
 		card.classList.remove("question-card--correct", "question-card--wrong",
 			"question-card--blank");
