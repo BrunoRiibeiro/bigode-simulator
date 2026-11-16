@@ -157,7 +157,7 @@
 		{
 			"id": "ice0012",
 			"type": "single",
-			"prompt": "In HUAWEI CLOUD Stack, which of the following is the main function of Service OM?",
+			"prompt": "In Huawei Cloud Stack, which of the following is the main function of Service OM?",
 			"options": [
 				"A. Infrastructure hardware monitoring",
 				"B. Centralized cross-product monitoring",
@@ -179,7 +179,7 @@
 				"D. Resources are unavailable after backup and restoration."
 			],
 			"answer": ["B"],
-			"explanation": "The correct answer is B. VM performance deteriorates. Huawei's official Resource Audit Overview for HUAWEI CLOUD Stack explains that Service OM resource audit is designed for high-frequency exception types caused by unplanned system failures, such as host reboot, process restart, or backup recovery. Huawei explicitly states that resource audit is used when problems such as residual resources and unavailable resources occur after those events. This directly matches options C and D. The same audit section also covers scenarios like abnormal VM states, orphan VMs, fake VMs, and image or volume inconsistencies caused by restoration or failed processes.\n\nBy contrast, VM performance deterioration is a performance management or capacity tuning issue, not a resource-audit exception type. Huawei's compute resource management materials discuss performance tuning separately, such as changing VM flavors or adjusting resources, which shows that performance degradation is not handled by the Service OM resource-audit function itself.\n\nTherefore, among the four options, the issue that cannot be handled by Service OM's resource audit is B.",
+			"explanation": "The correct answer is B. VM performance deteriorates. Huawei's official Resource Audit Overview for Huawei Cloud Stack explains that Service OM resource audit is designed for high-frequency exception types caused by unplanned system failures, such as host reboot, process restart, or backup recovery. Huawei explicitly states that resource audit is used when problems such as residual resources and unavailable resources occur after those events. This directly matches options C and D. The same audit section also covers scenarios like abnormal VM states, orphan VMs, fake VMs, and image or volume inconsistencies caused by restoration or failed processes.\n\nBy contrast, VM performance deterioration is a performance management or capacity tuning issue, not a resource-audit exception type. Huawei's compute resource management materials discuss performance tuning separately, such as changing VM flavors or adjusting resources, which shows that performance degradation is not handled by the Service OM resource-audit function itself.\n\nTherefore, among the four options, the issue that cannot be handled by Service OM's resource audit is B.",
 			"tags": []
 		},
 		{
@@ -207,13 +207,13 @@
 				"D. Virtual Private Network (VPN)"
 			],
 			"answer": ["D"],
-			"explanation": "The correct answer is D. Virtual Private Network (VPN). Huawei's official HUAWEI CLOUD Stack VPN documentation states that a VPN connection is an encrypted communications channel established between the VPN gateway in a VPC and the gateway in an external or local data center. Huawei also describes VPN as a way to connect a local data center to cloud resources through a secure and reliable encrypted tunnel over the Internet. This directly matches the requirement in the question for encrypting connections between cloud resources and local data centers.\n\nBy contrast, Direct Connect provides a dedicated, high-speed, low-latency connection, but the cited Huawei description emphasizes dedicated connectivity and stability rather than the VPN-style encrypted tunnel itself. ElP is only a public IP addressing service, and VPCEP is used for private access to services, not site-to-cloud encrypted interconnection. For small- and medium-sized enterprises that want a practical, secure, and relatively simple hybrid-cloud connection, Huawei documentation supports VPN as the best fit.\n\nTherefore, the verified answer is D.",
+			"explanation": "The correct answer is D. Virtual Private Network (VPN). Huawei's official Huawei Cloud Stack VPN documentation states that a VPN connection is an encrypted communications channel established between the VPN gateway in a VPC and the gateway in an external or local data center. Huawei also describes VPN as a way to connect a local data center to cloud resources through a secure and reliable encrypted tunnel over the Internet. This directly matches the requirement in the question for encrypting connections between cloud resources and local data centers.\n\nBy contrast, Direct Connect provides a dedicated, high-speed, low-latency connection, but the cited Huawei description emphasizes dedicated connectivity and stability rather than the VPN-style encrypted tunnel itself. ElP is only a public IP addressing service, and VPCEP is used for private access to services, not site-to-cloud encrypted interconnection. For small- and medium-sized enterprises that want a practical, secure, and relatively simple hybrid-cloud connection, Huawei documentation supports VPN as the best fit.\n\nTherefore, the verified answer is D.",
 			"tags": []
 		},
 		{
 			"id": "ice0016",
 			"type": "single",
-			"prompt": "In HUAWEI CLOUD Stack, to view details about a specific instance, you can run openstack server () The <server> parameter specifies the instance ID or name. Which of the following parameters should be entered in the blank?",
+			"prompt": "In Huawei Cloud Stack, to view details about a specific instance, you can run openstack server () The <server> parameter specifies the instance ID or name. Which of the following parameters should be entered in the blank?",
 			"options": [
 				"A. list",
 				"B. query",
@@ -221,7 +221,7 @@
 				"D. conf"
 			],
 			"answer": ["C"],
-			"explanation": "The correct answer is C. show. Official OpenStack command-line documentation explicitly lists the command openstack server show < server> and explains that it is used to show server details. The same documentation states that the ‹server> argument represents the server name or ID, which matches the wording in your question exactly.\n\nThe other options are not correct in this context. openstack server list displays a list of servers rather than the details of one specific instance. query and conf are not valid standard subcommands for this OpenStack server-detail operation.\n\nSince HUAWEI CLOUD Stack operations in this area follow OpenStack command syntax for instance inspection and lifecycle management, the proper command for viewing one instance's details is openstack server show «server».\n\nTherefore, after correcting the sentence format, the blank should be filled with show, and the full verified command is openstack server show «server». That makes the correct answer C.",
+			"explanation": "The correct answer is C. show. Official OpenStack command-line documentation explicitly lists the command openstack server show < server> and explains that it is used to show server details. The same documentation states that the ‹server> argument represents the server name or ID, which matches the wording in your question exactly.\n\nThe other options are not correct in this context. openstack server list displays a list of servers rather than the details of one specific instance. query and conf are not valid standard subcommands for this OpenStack server-detail operation.\n\nSince Huawei Cloud Stack operations in this area follow OpenStack command syntax for instance inspection and lifecycle management, the proper command for viewing one instance's details is openstack server show «server».\n\nTherefore, after correcting the sentence format, the blank should be filled with show, and the full verified command is openstack server show «server». That makes the correct answer C.",
 			"tags": []
 		},
 		{
@@ -235,13 +235,13 @@
 				"D. Direct access to physical hardware such as GPUs and FPGAs"
 			],
 			"answer": ["C"],
-			"explanation": "The correct answer is C. Quick and elastic adjustment of CPUs and memory. Huawei's official HUAWEI CLOUD Stack materials describe Bare Metal Server (BMS) as dedicated physical servers that provide excellent or remarkable computing performance and direct access to physical resources. Huawei also explains that Ironic works with Nova and Neutron to manage BMS resources, highlighting the physical-server nature of the service. These characteristics support advantages such as physical isolation, no hypervisor performance overhead, and direct access to specialized hardware.\n\nBy contrast, Huawei's ECS Advantages documentation explicitly says that with ECS, administrators can modify an ECS flavor, including the number of CPUs and memory size. That kind of quick and elastic CPU/memory adjustment is therefore an ECS advantage, not a BMS-over-ECS advantage.\n\nSo after correcting the option formatting. A. B. and D are all real BMS strengths, while C belongs more to virtualized ECS elasticity.\n\nTherefore, the verified answer is C.",
+			"explanation": "The correct answer is C. Quick and elastic adjustment of CPUs and memory. Huawei's official Huawei Cloud Stack materials describe Bare Metal Server (BMS) as dedicated physical servers that provide excellent or remarkable computing performance and direct access to physical resources. Huawei also explains that Ironic works with Nova and Neutron to manage BMS resources, highlighting the physical-server nature of the service. These characteristics support advantages such as physical isolation, no hypervisor performance overhead, and direct access to specialized hardware.\n\nBy contrast, Huawei's ECS Advantages documentation explicitly says that with ECS, administrators can modify an ECS flavor, including the number of CPUs and memory size. That kind of quick and elastic CPU/memory adjustment is therefore an ECS advantage, not a BMS-over-ECS advantage.\n\nSo after correcting the option formatting. A. B. and D are all real BMS strengths, while C belongs more to virtualized ECS elasticity.\n\nTherefore, the verified answer is C.",
 			"tags": []
 		},
 		{
 			"id": "ice0018",
 			"type": "single",
-			"prompt": "Suppose that an enterprise plans to deploy web applications using HUAWEI CLOUD Stack. Which of the following cloud services is not required to provide quick deployment, high cost-effectiveness, elastic scaling, and automatic fault recovery?",
+			"prompt": "Suppose that an enterprise plans to deploy web applications using Huawei Cloud Stack. Which of the following cloud services is not required to provide quick deployment, high cost-effectiveness, elastic scaling, and automatic fault recovery?",
 			"options": [
 				"A. ELB",
 				"B. BMS",
@@ -249,13 +249,13 @@
 				"D. AS"
 			],
 			"answer": ["B"],
-			"explanation": "The correct answer is B. BMS. For a typical web application architecture on HUAWEI CLOUD Stack, ECS provides the compute instances, IMS provides reusable images for quick deployment, AS enables elastic scale-out and scale-in based on demand, and ELB distributes traffic and improves availability. Huawei's ECS and IMS documentation explicitly notes that ECS images can be used with Auto Scaling for dynamic expansion to meet peak demand, which directly supports quick deployment and elasticity.",
+			"explanation": "The correct answer is B. BMS. For a typical web application architecture on Huawei Cloud Stack, ECS provides the compute instances, IMS provides reusable images for quick deployment, AS enables elastic scale-out and scale-in based on demand, and ELB distributes traffic and improves availability. Huawei's ECS and IMS documentation explicitly notes that ECS images can be used with Auto Scaling for dynamic expansion to meet peak demand, which directly supports quick deployment and elasticity.",
 			"tags": []
 		},
 		{
 			"id": "ice0019",
 			"type": "single",
-			"prompt": "In HUAWEI CLOUD Stack, which of the following is not a method that an administrator can use to access OBS?",
+			"prompt": "In Huawei Cloud Stack, which of the following is not a method that an administrator can use to access OBS?",
 			"options": [
 				"A. Using the console to perform visual operations",
 				"B. RESTful APIs",
@@ -269,7 +269,7 @@
 		{
 			"id": "ice0020",
 			"type": "single",
-			"prompt": "In HUAWEI CLOUD Stack, which of the following is a function of Destination Network Address Translation (DNAT)?",
+			"prompt": "In Huawei Cloud Stack, which of the following is a function of Destination Network Address Translation (DNAT)?",
 			"options": [
 				"A. Converting the private IP address that an Elastic Cloud Server (ECS) uses to access the Internet",
 				"B. Sharing a private IP address among multiple servers",
@@ -277,13 +277,13 @@
 				"D. Forwarding requests from public IP addresses to private IP addresses of servers in the cloud"
 			],
 			"answer": ["D"],
-			"explanation": "The correct answer is D. Huaweis official HUAWEI CLOUD Stack NAT Gateway documentation explains that DNAT is used to map the private IP address and port of a cloud server in a VPC to a public IP address and port by binding an EIP. In practical terms. DNAT allows requests that arrive at a public IP address to be forwarded to the private IP address of a server inside the cloud network. That matches option D exactly.\n\nOption A describes SNAT. not DNAT. Huawei explicitly states that SNAT translates a private IP address into an extranet/public IP address so cloud servers can access the Internet.\n\nOption B is also related to SNAT behavior, because Huawei notes that multiple cloud servers in a VPC can share an EIP for outbound Internet access through SNAT.\n\nOption C describes a filtering or firewall-style function rather than NAT translation.\n\nTherefore, in Huawei Cloud Stack networking. DNAT is specifically used for inbound mapping from public addresses to private cloud-server addresses, so the verified answer is D.",
+			"explanation": "The correct answer is D. Huaweis official Huawei Cloud Stack NAT Gateway documentation explains that DNAT is used to map the private IP address and port of a cloud server in a VPC to a public IP address and port by binding an EIP. In practical terms. DNAT allows requests that arrive at a public IP address to be forwarded to the private IP address of a server inside the cloud network. That matches option D exactly.\n\nOption A describes SNAT. not DNAT. Huawei explicitly states that SNAT translates a private IP address into an extranet/public IP address so cloud servers can access the Internet.\n\nOption B is also related to SNAT behavior, because Huawei notes that multiple cloud servers in a VPC can share an EIP for outbound Internet access through SNAT.\n\nOption C describes a filtering or firewall-style function rather than NAT translation.\n\nTherefore, in Huawei Cloud Stack networking. DNAT is specifically used for inbound mapping from public addresses to private cloud-server addresses, so the verified answer is D.",
 			"tags": []
 		},
 		{
 			"id": "ice0021",
 			"type": "single",
-			"prompt": "Which of the following scenarios is not suitable for resource sets in HUAWEI CLOUD Stack?",
+			"prompt": "Which of the following scenarios is not suitable for resource sets in Huawei Cloud Stack?",
 			"options": [
 				"A. Simplifying batch authorization of finance department resources",
 				"B. Managing the services or resources of branches across regions",
@@ -291,13 +291,13 @@
 				"D. Isolating R&D test resources from production services in the same VDC"
 			],
 			"answer": ["B"],
-			"explanation": "The correct answer is B. Managing the services or resources of branches across regions. In HUAWEI CLOUD Stack, resource sets are primarily used as an internal organizational and authorization tool within a tenant or VDC. They are well suited for grouping resources by department, project, or environment, such as production versus test resources. This means options A, C, and D are all typical and appropriate use cases because they involve structuring and controlling resources inside the same logical management domain. ()\n\nBy contrast, managing services or resources of branches across regions is broader than the normal scope of a resource set. Cross-region branch management usually involves higher-level multi-region organizational constructs, regional administration, or broader tenant/VDC design rather than simply creating a resource set. Resource sets help refine governance inside an established tenant structure: they are not the main mechanism for organizing geographically distributed branch operations across regions.\n\nSo after correcting the wording, the scenario that is not suitable for resource s ts is B, because it describes a cross-region management requirement that typically belongs to a higher-level cloud planning and governance model rather than a resource-set grouping function.",
+			"explanation": "The correct answer is B. Managing the services or resources of branches across regions. In Huawei Cloud Stack, resource sets are primarily used as an internal organizational and authorization tool within a tenant or VDC. They are well suited for grouping resources by department, project, or environment, such as production versus test resources. This means options A, C, and D are all typical and appropriate use cases because they involve structuring and controlling resources inside the same logical management domain. ()\n\nBy contrast, managing services or resources of branches across regions is broader than the normal scope of a resource set. Cross-region branch management usually involves higher-level multi-region organizational constructs, regional administration, or broader tenant/VDC design rather than simply creating a resource set. Resource sets help refine governance inside an established tenant structure: they are not the main mechanism for organizing geographically distributed branch operations across regions.\n\nSo after correcting the wording, the scenario that is not suitable for resource s ts is B, because it describes a cross-region management requirement that typically belongs to a higher-level cloud planning and governance model rather than a resource-set grouping function.",
 			"tags": []
 		},
 		{
 			"id": "ice0022",
 			"type": "single",
-			"prompt": "In HUAWEI CLOUD Stack, which of the following items is not included in the \"10 Unified Access Specifications\"?",
+			"prompt": "In Huawei Cloud Stack, which of the following items is not included in the \"10 Unified Access Specifications\"?",
 			"options": [
 				"A. Unified service catalog",
 				"B. Unified authentication",
@@ -319,13 +319,13 @@
 				"D. Call chain"
 			],
 			"answer": ["A"],
-			"explanation": "The best verified answer is A. AutoOps built-in scripts. Huawei's HUAWEI CLOUD Stack O&M documentation states that Automated Jobs automatically detect faults of each cloud service, and that the automation scripts or jobs of each cloud service are displayed and can be centrally managed. That makes AutoOps built-in scripts the most suitable choice for quick diagnosis when VM migration failures happen repeatedly, because this is exactly the kind of recurrent platform-side fault scenario where automated diagnosis scripts are useful.\n\nThe other tools are more specialized for different problem domains. CloudNetDebug is described by Huawei as a network diagnosis tool on virtual networks and is mainly used to detect network traffic interruption, packet loss, and full-link virtual network faults. Call chain is associated with application tracing or APM-style request tracing, not VM migration troubleshooting. ECS storage troubleshooting tools are aimed at storage-related fault analysis rather than general VM migration diagnosis.\n\nTherefore, for fast diagnosis of frequent VM migration failures in Huawei Cloud Stack O&M, the most appropriate tool is AutoOps built-in scripts, so the verified answer is A.",
+			"explanation": "The best verified answer is A. AutoOps built-in scripts. Huawei's Huawei Cloud Stack O&M documentation states that Automated Jobs automatically detect faults of each cloud service, and that the automation scripts or jobs of each cloud service are displayed and can be centrally managed. That makes AutoOps built-in scripts the most suitable choice for quick diagnosis when VM migration failures happen repeatedly, because this is exactly the kind of recurrent platform-side fault scenario where automated diagnosis scripts are useful.\n\nThe other tools are more specialized for different problem domains. CloudNetDebug is described by Huawei as a network diagnosis tool on virtual networks and is mainly used to detect network traffic interruption, packet loss, and full-link virtual network faults. Call chain is associated with application tracing or APM-style request tracing, not VM migration troubleshooting. ECS storage troubleshooting tools are aimed at storage-related fault analysis rather than general VM migration diagnosis.\n\nTherefore, for fast diagnosis of frequent VM migration failures in Huawei Cloud Stack O&M, the most appropriate tool is AutoOps built-in scripts, so the verified answer is A.",
 			"tags": []
 		},
 		{
 			"id": "ice0024",
 			"type": "single",
-			"prompt": "Which of the following cannot be checked using HUAWEI CLOUD Stack FusionCare?",
+			"prompt": "Which of the following cannot be checked using Huawei Cloud Stack FusionCare?",
 			"options": [
 				"A. Service OM",
 				"B. eSight",
@@ -339,7 +339,7 @@
 		{
 			"id": "ice0025",
 			"type": "single",
-			"prompt": "Which of the following scenarios are covered by the service monitoring in the comprehensive monitoring in HUAWEI CLOUD Stack?",
+			"prompt": "Which of the following scenarios are covered by the service monitoring in the comprehensive monitoring in Huawei Cloud Stack?",
 			"options": [
 				"A. Health status of the physical server power supply",
 				"B. Virtual network congestion",
@@ -361,7 +361,7 @@
 				"D. CloudNetDebug"
 			],
 			"answer": ["B"],
-			"explanation": "Comprehensive and Detailed 150 to 200 words of Explanation From HUAWEI CLOUD Computing Topics: The correct answer is B. AutoOps. In HUAWEI CLOUD Stack. AutoOps is the automation platform used for standardized O&M task execution. Its core value is that it can take individual atomic operations and organize them into automated workflows, allowing repeated maintenance and troubleshooting procedures to be executed in a consistent, efficient, and less error-prone manner. This makes it highly suitable for routine operational tasks, fault handling, and platform maintenance scenarios where manual execution would be slower and more risky.\n\nThe other options have different roles. CMDB is mainly used for configuration and dependency information management. FusionCare is more focused on inspection, health check, and troubleshooting support. CloudNetDebug is designed for network fault diagnosis, especially for virtual network path troubleshooting. None of these primarily serve as the orchestration and automation engine for O&M workflows.\n\nTherefore, when the requirement is to automate standardized operations and execute orchestration-based maintenance tasks in HUAWEI CLOUD Stack. the best answer is AutoOps, so the correct option is B.",
+			"explanation": "Comprehensive and Detailed 150 to 200 words of Explanation From Huawei Cloud Computing Topics: The correct answer is B. AutoOps. In HUAWEI CLOUD Stack. AutoOps is the automation platform used for standardized O&M task execution. Its core value is that it can take individual atomic operations and organize them into automated workflows, allowing repeated maintenance and troubleshooting procedures to be executed in a consistent, efficient, and less error-prone manner. This makes it highly suitable for routine operational tasks, fault handling, and platform maintenance scenarios where manual execution would be slower and more risky.\n\nThe other options have different roles. CMDB is mainly used for configuration and dependency information management. FusionCare is more focused on inspection, health check, and troubleshooting support. CloudNetDebug is designed for network fault diagnosis, especially for virtual network path troubleshooting. None of these primarily serve as the orchestration and automation engine for O&M workflows.\n\nTherefore, when the requirement is to automate standardized operations and execute orchestration-based maintenance tasks in HUAWEI CLOUD Stack. the best answer is AutoOps, so the correct option is B.",
 			"tags": []
 		},
 		{
@@ -395,7 +395,7 @@
 		{
 			"id": "ice0029",
 			"type": "multiple",
-			"prompt": "In HUAWEI CLOUD Stack, which of the following features reflect the elasticity of ECSs?",
+			"prompt": "In Huawei Cloud Stack, which of the following features reflect the elasticity of ECSs?",
 			"options": [
 				"A. Quick creation of instances based on IMS images",
 				"B. Automatic scaling of instances in combination with AS",
@@ -410,7 +410,7 @@
 		{
 			"id": "ice0030",
 			"type": "multiple",
-			"prompt": "A media company uses HUAWEI CLOUD Stack to provide services. It uses a combination of Elastic Cloud Server (ECS) and Object Storage Service (OBS) to store video files. Recently, a delay was found in access from ECS to OBS, causing videos to load slowly. Which of the following measures are inappropriate?",
+			"prompt": "A media company uses Huawei Cloud Stack to provide services. It uses a combination of Elastic Cloud Server (ECS) and Object Storage Service (OBS) to store video files. Recently, a delay was found in access from ECS to OBS, causing videos to load slowly. Which of the following measures are inappropriate?",
 			"options": [
 				"A. Reduce the number of OBS buckets and store data centrally.",
 				"B. Replace ECS with BMS to improve performance.",
@@ -424,7 +424,7 @@
 		{
 			"id": "ice0031",
 			"type": "multiple",
-			"prompt": "Different services require different types of disks in HUAWEI CLOUD Stack. Which of the following are major metrics of EVS disks?",
+			"prompt": "Different services require different types of disks in Huawei Cloud Stack. Which of the following are major metrics of EVS disks?",
 			"options": [
 				"A. Throughput",
 				"B. Maximum snapshots",
@@ -438,7 +438,7 @@
 		{
 			"id": "ice0032",
 			"type": "multiple",
-			"prompt": "If an ECS in a VPC cannot access the Internet in HUAWEI CLOUD Stack, which of the following are recommended troubleshooting operations for O&M personnel?",
+			"prompt": "If an ECS in a VPC cannot access the Internet in Huawei Cloud Stack, which of the following are recommended troubleshooting operations for O&M personnel?",
 			"options": [
 				"A. Check NAT configurations.",
 				"B. Check inbound rules of network ACLs.",
@@ -452,7 +452,7 @@
 		{
 			"id": "ice0033",
 			"type": "multiple",
-			"prompt": "Which of the following statements are true about security groups and network ACLs in HUAWEI CLOUD Stack?",
+			"prompt": "Which of the following statements are true about security groups and network ACLs in Huawei Cloud Stack?",
 			"options": [
 				"A. Security group and network ACL settings are both mandatory by default.",
 				"B. Security group rules are combined when they conflict with each other, while network ACL rules are sorted by priority.",
@@ -466,7 +466,7 @@
 		{
 			"id": "ice0034",
 			"type": "multiple",
-			"prompt": "In HUAWEI CLOUD Stack, which of the following scenarios can Virtual Private Network (VPN) be used?",
+			"prompt": "In Huawei Cloud Stack, which of the following scenarios can Virtual Private Network (VPN) be used?",
 			"options": [
 				"A. Low-cost interconnection between VPCs across regions",
 				"B. Temporary connection between local IDCs and Virtual Private Clouds (VPCs)",
@@ -480,7 +480,7 @@
 		{
 			"id": "ice0035",
 			"type": "multiple",
-			"prompt": "In HUAWEI CLOUD Stack, bottleneck analysis provides algorithm configuration for bottleneck rules and helps users check for resource bottlenecks. Which of the following factors can be used by O&M administrators to check related information?",
+			"prompt": "In Huawei Cloud Stack, bottleneck analysis provides algorithm configuration for bottleneck rules and helps users check for resource bottlenecks. Which of the following factors can be used by O&M administrators to check related information?",
 			"options": [
 				"A. AZs",
 				"B. Applications",
@@ -494,7 +494,7 @@
 		{
 			"id": "ice0036",
 			"type": "multiple",
-			"prompt": "Which of the following O&M scenarios can be supported by a CMDB's dynamic dependency in HUAWEI CLOUD Stack?",
+			"prompt": "Which of the following O&M scenarios can be supported by a CMDB's dynamic dependency in Huawei Cloud Stack?",
 			"options": [
 				"A. Root cause locating",
 				"B. Resource capacity planning",
@@ -592,7 +592,7 @@
 		{
 			"id": "ice0044",
 			"type": "boolean",
-			"prompt": "In HUAWEI CLOUD Stack, FusionCare is deployed on a single node by default and runs on the PUB-SRV-01 management VM.",
+			"prompt": "In Huawei Cloud Stack, FusionCare is deployed on a single node by default and runs on the PUB-SRV-01 management VM.",
 			"options": [
 				{"key": "A", "label": "True", "value": true},
 				{"key": "B", "label": "False", "value": false}
@@ -604,7 +604,7 @@
 		{
 			"id": "ice0045",
 			"type": "boolean",
-			"prompt": "In HUAWEI CLOUD Stack, Combined API serves as the server end of the ManageOne console. It connects a console Ul to OpenStack on the backend, and it must be deployed in the Global zone.",
+			"prompt": "In Huawei Cloud Stack, Combined API serves as the server end of the ManageOne console. It connects a console Ul to OpenStack on the backend, and it must be deployed in the Global zone.",
 			"options": [
 				{"key": "A", "label": "True", "value": true},
 				{"key": "B", "label": "False", "value": false}
@@ -616,7 +616,7 @@
 		{
 			"id": "ice0046",
 			"type": "boolean",
-			"prompt": "In HUAWEI CLOUD Stack, the weak affinity policy of a VM group schedules VMs in the same group to one host when resources are sufficient. If resources are insufficient, the rule can be broken.",
+			"prompt": "In Huawei Cloud Stack, the weak affinity policy of a VM group schedules VMs in the same group to one host when resources are sufficient. If resources are insufficient, the rule can be broken.",
 			"options": [
 				{"key": "A", "label": "True", "value": true},
 				{"key": "B", "label": "False", "value": false}
@@ -628,7 +628,7 @@
 		{
 			"id": "ice0047",
 			"type": "boolean",
-			"prompt": "A dummy external network is created by default during HUAWEI CLOUD Stack installation. Users need to bind the network to tenants to ensure that VPCs can be created properly.",
+			"prompt": "A dummy external network is created by default during Huawei Cloud Stack installation. Users need to bind the network to tenants to ensure that VPCs can be created properly.",
 			"options": [
 				{"key": "A", "label": "True", "value": true},
 				{"key": "B", "label": "False", "value": false}
@@ -640,31 +640,31 @@
 		{
 			"id": "ice0048",
 			"type": "boolean",
-			"prompt": "In HUAWEI CLOUD Stack, a storage backend can contain one or more storage pools in a storage array, but each storage backend can only belong to one AZ.",
+			"prompt": "In Huawei Cloud Stack, a storage backend can contain one or more storage pools in a storage array, but each storage backend can only belong to one AZ.",
 			"options": [
 				{"key": "A", "label": "True", "value": true},
 				{"key": "B", "label": "False", "value": false}
 			],
 			"answer": true,
-			"explanation": "The statement is TRUE. Huawei's official HUAWEI CLOUD Stack storage-resource documentation explicitly states that a storage backend can contain one or more storage pools of the same cloud block storage system, and it also clearly states that a storage backend only belongs to one AZ. This matches the wording of the question almost exactly. ()\n\nHuawei's more recent resource-provisioning documentation repeats the same architecture principles: a storage pool belongs to only one storage backend, a disk type belongs to only one AZ, and a storage backend device can contain one or more storage pools. This design helps keep storage planning and fault-domain boundaries clear in multi-AZ cloud deployments. ()\n\nIn practical HUAWEI CLOUD Stack operation, this means one backend can aggregate multiple pools from the same storage system for service use, but the backend itself is still scoped to a single availability zone for resource isolation and service planning.\n\nTherefore, the verified answer is A (TRUE).",
+			"explanation": "The statement is TRUE. Huawei's official Huawei Cloud Stack storage-resource documentation explicitly states that a storage backend can contain one or more storage pools of the same cloud block storage system, and it also clearly states that a storage backend only belongs to one AZ. This matches the wording of the question almost exactly. ()\n\nHuawei's more recent resource-provisioning documentation repeats the same architecture principles: a storage pool belongs to only one storage backend, a disk type belongs to only one AZ, and a storage backend device can contain one or more storage pools. This design helps keep storage planning and fault-domain boundaries clear in multi-AZ cloud deployments. ()\n\nIn practical HUAWEI CLOUD Stack operation, this means one backend can aggregate multiple pools from the same storage system for service use, but the backend itself is still scoped to a single availability zone for resource isolation and service planning.\n\nTherefore, the verified answer is A (TRUE).",
 			"tags": []
 		},
 		{
 			"id": "ice0049",
 			"type": "boolean",
-			"prompt": "HUAWEI CLOUD Stack resources can be migrated between resource sets, but resource sets cannot be migrated across tenants.",
+			"prompt": "Huawei Cloud Stack resources can be migrated between resource sets, but resource sets cannot be migrated across tenants.",
 			"options": [
 				{"key": "A", "label": "True", "value": true},
 				{"key": "B", "label": "False", "value": false}
 			],
 			"answer": true,
-			"explanation": "iThe statement is TRUE. In HUAWEI CLOUD Stack, a resource set is a logical grouping of cloud resources under a tenant or VDC for purposes such as authorization, organization, and management. Huawei documentation describes resource sets as being used to classify and manage resources within a tenant context, which means their scope is tied to the tenant's own resource domain. This is why resource sets are commonly used to separate production, test, departmental, or project resources inside the same tenant or VDC rather than as a cross-tenant migration mechanism. ()\n\nOperationally, resources can be reassigned or moved between resource sets when administrators need to reorganize management boundaries, but the resource-set model itself is not designed to move resource sets across tenants. Cross-tenant transfer would break the tenant-based isolation and authorization structure that Huawei Cloud Stack uses for cloud governance.\n\nThis is consistent with Huawei's hierarchical cloud management approach, where tenants are major security and administration boundaries, while resource sets are subordinate organizational tools.\n\nTherefore, the verified answer is A (TRUE) because resource migration between resource sets is allowed within the management domain, but resource sets themselves are not intended for migration across tenants. ()",
+			"explanation": "iThe statement is TRUE. In Huawei Cloud Stack, a resource set is a logical grouping of cloud resources under a tenant or VDC for purposes such as authorization, organization, and management. Huawei documentation describes resource sets as being used to classify and manage resources within a tenant context, which means their scope is tied to the tenant's own resource domain. This is why resource sets are commonly used to separate production, test, departmental, or project resources inside the same tenant or VDC rather than as a cross-tenant migration mechanism. ()\n\nOperationally, resources can be reassigned or moved between resource sets when administrators need to reorganize management boundaries, but the resource-set model itself is not designed to move resource sets across tenants. Cross-tenant transfer would break the tenant-based isolation and authorization structure that Huawei Cloud Stack uses for cloud governance.\n\nThis is consistent with Huawei's hierarchical cloud management approach, where tenants are major security and administration boundaries, while resource sets are subordinate organizational tools.\n\nTherefore, the verified answer is A (TRUE) because resource migration between resource sets is allowed within the management domain, but resource sets themselves are not intended for migration across tenants. ()",
 			"tags": []
 		},
 		{
 			"id": "ice0050",
 			"type": "boolean",
-			"prompt": "HUAWEI CLOUD Stack operation administrators and VDC administrators both can create custom approval processes, but only the approval processes created by operation administrators are globally visible.",
+			"prompt": "Huawei Cloud Stack operation administrators and VDC administrators both can create custom approval processes, but only the approval processes created by operation administrators are globally visible.",
 			"options": [
 				{"key": "A", "label": "True", "value": true},
 				{"key": "B", "label": "False", "value": false}
@@ -681,35 +681,35 @@
 			"answer": [
 				"FTP"
 			],
-			"explanation": "The correct fill-in answer is FTP. Huawei documentation for image registration on Service OM shows that images can be uploaded using different modes, including local upload, FTP, and NFS. The guidance indicates that for larger image files, administrators should use a network-based upload mode rather than simple local browser upload. In the Huawei document snippet, the upload options explicitly include NFS, and the paired option used in this context is FTP, which matches the exam sentence structure:\"select () or NFS.\"\n\nThis makes sense operationally in HUAWEI CLOUD Stack because large image files are more reliably transferred through shared file or server-based methods, especially in enterprise O&M scenarios. Local browser-based uploads are less suitable for very large images due to session stability, browser limits, and transfer reliability. Using FTP or NFS improves image registration efficiency and reduces the chance of interrupted uploads during image onboarding.\n\nTherefore, after correcting the sentence, the blank should be filled with FTP.",
+			"explanation": "The correct fill-in answer is FTP. Huawei documentation for image registration on Service OM shows that images can be uploaded using different modes, including local upload, FTP, and NFS. The guidance indicates that for larger image files, administrators should use a network-based upload mode rather than simple local browser upload. In the Huawei document snippet, the upload options explicitly include NFS, and the paired option used in this context is FTP, which matches the exam sentence structure:\"select () or NFS.\"\n\nThis makes sense operationally in Huawei Cloud Stack because large image files are more reliably transferred through shared file or server-based methods, especially in enterprise O&M scenarios. Local browser-based uploads are less suitable for very large images due to session stability, browser limits, and transfer reliability. Using FTP or NFS improves image registration efficiency and reduces the chance of interrupted uploads during image onboarding.\n\nTherefore, after correcting the sentence, the blank should be filled with FTP.",
 			"tags": []
 		},
 		{
 			"id": "ice0052",
 			"type": "text",
-			"prompt": "In HUAWEI CLOUD Stack, the management of BMSs depends on the component (), which manages physical servers throughout their lifecycle. (Fill in the blank.)",
+			"prompt": "In Huawei Cloud Stack, the management of BMSs depends on the component (), which manages physical servers throughout their lifecycle. (Fill in the blank.)",
 			"options": [],
 			"answer": [
 				"Ironic"
 			],
-			"explanation": "The correct fill-in answer is Ironic. Huawei's official HUAWEI CLOUD Stack documentation clearly states that Ironic provides BMS management services by working with components such as Nova and Neutron. Huawei's BMS usage guide also explicitly refers to BMS lifecycle management operations, including actions such as starting, stopping, forcibly stopping, and other lifecycle tasks. This confirms that Ironic is the component responsible for managing physical servers through their lifecycle in a Huawei Cloud Stack environment.\n\nThis is consistent with standard OpenStack architecture as well, where Ironic is the OpenStack Bare Metal service used to provision and manage physical machines similarly to how Nova manages virtual machines. In Huawei Cloud Stack, BMS Is not handled as a simple ECS variant; instead, it relies on Ironic for provisioning, state transitions, and lifecycle orchestration of dedicated hardware resources.\n\nTherefore, after correcting the sentence, the blank should be filled with Ironic, and the fully verified answer is Ironic.",
+			"explanation": "The correct fill-in answer is Ironic. Huawei's official Huawei Cloud Stack documentation clearly states that Ironic provides BMS management services by working with components such as Nova and Neutron. Huawei's BMS usage guide also explicitly refers to BMS lifecycle management operations, including actions such as starting, stopping, forcibly stopping, and other lifecycle tasks. This confirms that Ironic is the component responsible for managing physical servers through their lifecycle in a Huawei Cloud Stack environment.\n\nThis is consistent with standard OpenStack architecture as well, where Ironic is the OpenStack Bare Metal service used to provision and manage physical machines similarly to how Nova manages virtual machines. In Huawei Cloud Stack, BMS Is not handled as a simple ECS variant; instead, it relies on Ironic for provisioning, state transitions, and lifecycle orchestration of dedicated hardware resources.\n\nTherefore, after correcting the sentence, the blank should be filled with Ironic, and the fully verified answer is Ironic.",
 			"tags": []
 		},
 		{
 			"id": "ice0053",
 			"type": "text",
-			"prompt": "In HUAWEI CLOUD Stack, the maximum size of a Scalable File System (SFS) file is 240 TB. The capacity of a file system can be increased to (). (Fill in the blank.)",
+			"prompt": "In Huawei Cloud Stack, the maximum size of a Scalable File System (SFS) file is 240 TB. The capacity of a file system can be increased to (). (Fill in the blank.)",
 			"options": [],
 			"answer": [
 				"PB level"
 			],
-			"explanation": "The correct fill-in answer is PB level. Huawei's official HUAWEI CLOUD Stack SFS documentation states that the maximum capacity of a single file is 240 TB, and it further explains that the file system capacity can be scaled to the PB level. This is the exact Huawei wording used to describe the upper expansion capability of SFS.\n\nThis reflects the design goal of SFS in Huawei Cloud Stack: to provide managed, shared file storage for applications that require large-scale file-system growth over time. In other words, the size of one individual file and the total expandable capacity of the file system are two different things. A single file has a stated upper limit, but the whole file system can continue to grow far beyond that limit, reaching petabyte-scale capacity.\n\nTherefore, after correcting the sentence structure, the blank should be filled with PB level, which is the official Huawei description of the scalable upper capacity for the file system.",
+			"explanation": "The correct fill-in answer is PB level. Huawei's official Huawei Cloud Stack SFS documentation states that the maximum capacity of a single file is 240 TB, and it further explains that the file system capacity can be scaled to the PB level. This is the exact Huawei wording used to describe the upper expansion capability of SFS.\n\nThis reflects the design goal of SFS in Huawei Cloud Stack: to provide managed, shared file storage for applications that require large-scale file-system growth over time. In other words, the size of one individual file and the total expandable capacity of the file system are two different things. A single file has a stated upper limit, but the whole file system can continue to grow far beyond that limit, reaching petabyte-scale capacity.\n\nTherefore, after correcting the sentence structure, the blank should be filled with PB level, which is the official Huawei description of the scalable upper capacity for the file system.",
 			"tags": []
 		},
 		{
 			"id": "ice0054",
 			"type": "text",
-			"prompt": "In HUAWEI CLOUD Stack, you can bind an Elastic IP (EIP) to a load balancer, NAT gateway, or () so that multiple Elastic Cloud Servers (ECSs) can share the same EIP to save EIP resources. (Fill in the blank.)",
+			"prompt": "In Huawei Cloud Stack, you can bind an Elastic IP (EIP) to a load balancer, NAT gateway, or () so that multiple Elastic Cloud Servers (ECSs) can share the same EIP to save EIP resources. (Fill in the blank.)",
 			"options": [],
 			"answer": [
 				"VPN gateway"
@@ -720,7 +720,7 @@
 		{
 			"id": "ice0055",
 			"type": "text",
-			"prompt": "HUAWEI CLOUD Stack administrators can enable memory overcommitment on () when necessary. (Fill in the blank.)",
+			"prompt": "Huawei Cloud Stack administrators can enable memory overcommitment on () when necessary. (Fill in the blank.)",
 			"options": [],
 			"answer": [
 				"hosts"
@@ -943,7 +943,7 @@
 		{
 			"id": "ren0017",
 			"type": "single",
-			"prompt": "Which of the following statements is true about Combined API in HUAWEI CLOUD Stack?",
+			"prompt": "Which of the following statements is true about Combined API in Huawei Cloud Stack?",
 			"options": [
 				"A. The Combined API only forwards requests. It does not process data.",
 				"B. During the creation of an ECS, the ECS API in the Combined API calls the VPC API in the Combined API.",
@@ -957,13 +957,13 @@
 		{
 			"id": "ren0018",
 			"type": "boolean",
-			"prompt": "HUAWEI CLOUD Stack and HUAWEI CLOUD share the same architecture, APIs and backbone versions. They aim to deliver the same cloud service experience and share the same ecosystem.",
+			"prompt": "Huawei Cloud Stack and HUAWEI CLOUD share the same architecture, APIs and backbone versions. They aim to deliver the same cloud service experience and share the same ecosystem.",
 			"options": [
 				{"key": "A", "label": "True", "value": true},
 				{"key": "B", "label": "False", "value": false}
 			],
 			"answer": true,
-			"explanation": "The statement is TRUE. It is Huawei's official positioning of HCS: same architecture, same APIs and same mainline version as the public HUAWEI CLOUD. The goal is the same experience (console, services, APIs), the same ecosystem (tools, partners, certified applications) and a consistent hybrid cloud. In practice HCS ships with a version lag and a subset of services, but the statement is true.",
+			"explanation": "The statement is TRUE. It is Huawei's official positioning of HCS: same architecture, same APIs and same mainline version as the public Huawei Cloud. The goal is the same experience (console, services, APIs), the same ecosystem (tools, partners, certified applications) and a consistent hybrid cloud. In practice HCS ships with a version lag and a subset of services, but the statement is true.",
 			"tags": ["ai-generated"]
 		},
 		{
@@ -981,7 +981,7 @@
 		{
 			"id": "ren0020",
 			"type": "text",
-			"prompt": "In HUAWEI CLOUD Stack, to improve maintenance efficiency, FusionSphere collects audit items related to frequently reported alarms. Administrators can view and process these audit items on the () page to ensure service uptime. (Fill in the blank.)",
+			"prompt": "In Huawei Cloud Stack, to improve maintenance efficiency, FusionSphere collects audit items related to frequently reported alarms. Administrators can view and process these audit items on the () page to ensure service uptime. (Fill in the blank.)",
 			"options": [],
 			"answer": ["System Audit"],
 			"explanation": "Probable answer: System Audit. FusionSphere OpenStack has a system audit mechanism that checks consistency between OpenStack database records and the real state of resources (orphan VMs, VMs stuck in intermediate states, volumes registered in Cinder but missing on storage, ports without owners). These inconsistencies are often the source of recurring alarms. The related audit items are gathered on the System Audit page in Service OM, where the administrator can review and apply the suggested fix.\n\nThe exact page name may vary between versions.",
@@ -1004,7 +1004,7 @@
 		{
 			"id": "ren0022",
 			"type": "boolean",
-			"prompt": "In HUAWEI CLOUD Stack, an administrator can migrate shared disks using a general migration model.",
+			"prompt": "In Huawei Cloud Stack, an administrator can migrate shared disks using a general migration model.",
 			"options": [
 				{"key": "A", "label": "True", "value": true},
 				{"key": "B", "label": "False", "value": false}
@@ -1030,7 +1030,7 @@
 		{
 			"id": "ren0024",
 			"type": "boolean",
-			"prompt": "In HUAWEI CLOUD Stack, VBS can only back up EVS disks. It cannot back up an entire ECS.",
+			"prompt": "In Huawei Cloud Stack, VBS can only back up EVS disks. It cannot back up an entire ECS.",
 			"options": [
 				{"key": "A", "label": "True", "value": true},
 				{"key": "B", "label": "False", "value": false}
@@ -1056,7 +1056,7 @@
 		{
 			"id": "ren0026",
 			"type": "boolean",
-			"prompt": "In HUAWEI CLOUD Stack, an AS group can be associated with both an alarm policy and a scheduled policy to respond to service fluctuations.",
+			"prompt": "In Huawei Cloud Stack, an AS group can be associated with both an alarm policy and a scheduled policy to respond to service fluctuations.",
 			"options": [
 				{"key": "A", "label": "True", "value": true},
 				{"key": "B", "label": "False", "value": false}
@@ -1068,7 +1068,7 @@
 		{
 			"id": "ren0027",
 			"type": "multiple",
-			"prompt": "In HUAWEI CLOUD Stack, which of the following are conditions on which AS can trigger scaling actions?",
+			"prompt": "In Huawei Cloud Stack, which of the following are conditions on which AS can trigger scaling actions?",
 			"options": [
 				"A. Alarm policies",
 				"B. Manual triggering",
@@ -1083,7 +1083,7 @@
 		{
 			"id": "ren0028",
 			"type": "single",
-			"prompt": "An e-commerce platform uses HUAWEI CLOUD Stack to provide services. The platform uses an AS group to manage ECSs, but the group does not trigger any scaling actions during a promotion, causing a website breakdown. Which of the following is the least likely cause?",
+			"prompt": "An e-commerce platform uses Huawei Cloud Stack to provide services. The platform uses an AS group to manage ECSs, but the group does not trigger any scaling actions during a promotion, causing a website breakdown. Which of the following is the least likely cause?",
 			"options": [
 				"A. The maximum number of ECSs in the AS group is too low.",
 				"B. The ECS specifications are too low to process the traffic.",
@@ -1097,7 +1097,7 @@
 		{
 			"id": "ren0029",
 			"type": "multiple",
-			"prompt": "In HUAWEI CLOUD Stack, after a user creates a private image using IMS, the message \"The image format is not supported\" is displayed when the user uses the image to create an ECS. Which of the following are not possible causes of this fault?",
+			"prompt": "In Huawei Cloud Stack, after a user creates a private image using IMS, the message \"The image format is not supported\" is displayed when the user uses the image to create an ECS. Which of the following are not possible causes of this fault?",
 			"options": [
 				"A. The image was not correctly registered with Glance.",
 				"B. The image contains unauthorized software.",
@@ -1111,7 +1111,7 @@
 		{
 			"id": "ren0030",
 			"type": "multiple",
-			"prompt": "Which of the following statements are true about SFS constraints in HUAWEI CLOUD Stack?",
+			"prompt": "Which of the following statements are true about SFS constraints in Huawei Cloud Stack?",
 			"options": [
 				"A. You can adjust the capacity of a file system only when the file system is in the Available state.",
 				"B. The automatic mount function can be used for NFS and CIFS file systems.",
@@ -1125,7 +1125,7 @@
 		{
 			"id": "ren0031",
 			"type": "single",
-			"prompt": "A large medical organization uses a HUAWEI CLOUD Stack solution to provide services and uses OBS to store patient image data. Which of the following functions cannot be implemented?",
+			"prompt": "A large medical organization uses a Huawei Cloud Stack solution to provide services and uses OBS to store patient image data. Which of the following functions cannot be implemented?",
 			"options": [
 				"A. Labeling patient information using metadata",
 				"B. Efficient diagnosis based on block-level storage",
@@ -1139,7 +1139,7 @@
 		{
 			"id": "ren0032",
 			"type": "single",
-			"prompt": "A financial company uses HUAWEI CLOUD Stack to provide services. In the DR solution used for its financial transaction system, which of the following functions does EVS not provide?",
+			"prompt": "A financial company uses Huawei Cloud Stack to provide services. In the DR solution used for its financial transaction system, which of the following functions does EVS not provide?",
 			"options": [
 				"A. Active-active clusters using shared disks",
 				"B. Cross-AZ data replication",
@@ -1153,7 +1153,7 @@
 		{
 			"id": "ren0033",
 			"type": "single",
-			"prompt": "Which of the following scenarios is HUAWEI CLOUD Stack VPC peering suitable for?",
+			"prompt": "Which of the following scenarios is Huawei Cloud Stack VPC peering suitable for?",
 			"options": [
 				"A. Communication between VPCs in the same region",
 				"B. Communication between VPCs in different regions",
@@ -1167,7 +1167,7 @@
 		{
 			"id": "ren0034",
 			"type": "boolean",
-			"prompt": "A HUAWEI CLOUD Stack VPC endpoint can enable an ECS in a VPC to securely access an ECS in a second VPC in the same region without using the Internet.",
+			"prompt": "A Huawei Cloud Stack VPC endpoint can enable an ECS in a VPC to securely access an ECS in a second VPC in the same region without using the Internet.",
 			"options": [
 				{"key": "A", "label": "True", "value": true},
 				{"key": "B", "label": "False", "value": false}
@@ -1179,7 +1179,7 @@
 		{
 			"id": "ren0035",
 			"type": "single",
-			"prompt": "Which of the following is not an advantage of Enhanced Direct Connect in HUAWEI CLOUD Stack?",
+			"prompt": "Which of the following is not an advantage of Enhanced Direct Connect in Huawei Cloud Stack?",
 			"options": [
 				"A. Short deployment period and low operation costs",
 				"B. Physical isolation for high security",
@@ -1193,7 +1193,7 @@
 		{
 			"id": "ren0036",
 			"type": "boolean",
-			"prompt": "HUAWEI CLOUD Stack VPC peering can provide reliable high-speed connections between local IDCs and VPCs.",
+			"prompt": "Huawei Cloud Stack VPC peering can provide reliable high-speed connections between local IDCs and VPCs.",
 			"options": [
 				{"key": "A", "label": "True", "value": true},
 				{"key": "B", "label": "False", "value": false}
@@ -1205,7 +1205,7 @@
 		{
 			"id": "ren0037",
 			"type": "multiple",
-			"prompt": "An enterprise uses HUAWEI CLOUD Stack to provide services, and the VDC quota of each department is limited. When the R&D department requests resources beyond its quota, which of the following are possible results?",
+			"prompt": "An enterprise uses Huawei Cloud Stack to provide services, and the VDC quota of each department is limited. When the R&D department requests resources beyond its quota, which of the following are possible results?",
 			"options": [
 				"A. The R&D department submits an online application for a larger quota. After the application is approved, the administrator adjusts the quota on the ManageOne operation portal.",
 				"B. Idle quotas of other departments are automatically used.",
@@ -1219,7 +1219,7 @@
 		{
 			"id": "ren0038",
 			"type": "multiple",
-			"prompt": "A government agency uses a HUAWEI CLOUD Stack solution to provide government services. To isolate resources of departments for high security, which of the following operations are appropriate?",
+			"prompt": "A government agency uses a Huawei Cloud Stack solution to provide government services. To isolate resources of departments for high security, which of the following operations are appropriate?",
 			"options": [
 				"A. Configuring security groups and network ACLs",
 				"B. Multi-level VDC management",
@@ -1233,7 +1233,7 @@
 		{
 			"id": "ren0039",
 			"type": "boolean",
-			"prompt": "In HUAWEI CLOUD Stack, resources can be migrated between resource sets, but resource sets cannot be migrated across regions.",
+			"prompt": "In Huawei Cloud Stack, resources can be migrated between resource sets, but resource sets cannot be migrated across regions.",
 			"options": [
 				{"key": "A", "label": "True", "value": true},
 				{"key": "B", "label": "False", "value": false}
@@ -1245,7 +1245,7 @@
 		{
 			"id": "ren0040",
 			"type": "multiple",
-			"prompt": "If the host group tag does not match the VM flavor tag when an administrator creates an ECS in HUAWEI CLOUD Stack, which of the following statements are false?",
+			"prompt": "If the host group tag does not match the VM flavor tag when an administrator creates an ECS in Huawei Cloud Stack, which of the following statements are false?",
 			"options": [
 				"A. The system reports an error indicating that the ECS cannot be created.",
 				"B. A host group is randomly selected for ECS creation.",
@@ -1259,7 +1259,7 @@
 		{
 			"id": "ren0041",
 			"type": "multiple",
-			"prompt": "A financial enterprise uses HUAWEI CLOUD Stack to provide services. In addition to controlling costs, the enterprise also needs to ensure secure isolation of its core transaction system. Which of the following technical means can be used?",
+			"prompt": "A financial enterprise uses Huawei Cloud Stack to provide services. In addition to controlling costs, the enterprise also needs to ensure secure isolation of its core transaction system. Which of the following technical means can be used?",
 			"options": [
 				"A. Core resources are placed in a dedicated resource set, and only the O&M group is authorized to access the resources.",
 				"B. Core resources are deployed across regions to improve security through geographic isolation.",
@@ -1273,7 +1273,7 @@
 		{
 			"id": "ren0042",
 			"type": "single",
-			"prompt": "You need to call the ModelArts AI model services of HUAWEI CLOUD in HUAWEI CLOUD Stack without developing new APIs. Which of the following is required?",
+			"prompt": "You need to call the ModelArts AI model services of Huawei Cloud in HUAWEI CLOUD Stack without developing new APIs. Which of the following is required?",
 			"options": [
 				"A. Cloud Federation",
 				"B. Two-level cloud",
@@ -1281,13 +1281,13 @@
 				"D. 10 Unified Access Specifications"
 			],
 			"answer": ["A"],
-			"explanation": "The correct answer is A. Cloud Federation is the HCS hybrid cloud function that federates public HUAWEI CLOUD services into HCS. Users access public services such as ModelArts directly from the HCS console with the same account, without custom integration, which is possible because HCS and HUAWEI CLOUD share the same architecture and APIs.\n\nTwo-level cloud is a two-tier private cloud architecture (e.g. provincial and city clouds). Heterogeneous platform management lets ManageOne manage third-party platforms such as VMware. The 10 Unified Access Specifications are an integration standard that would require development.",
+			"explanation": "The correct answer is A. Cloud Federation is the HCS hybrid cloud function that federates public Huawei Cloud services into HCS. Users access public services such as ModelArts directly from the HCS console with the same account, without custom integration, which is possible because HCS and HUAWEI CLOUD share the same architecture and APIs.\n\nTwo-level cloud is a two-tier private cloud architecture (e.g. provincial and city clouds). Heterogeneous platform management lets ManageOne manage third-party platforms such as VMware. The 10 Unified Access Specifications are an integration standard that would require development.",
 			"tags": ["ai-generated"]
 		},
 		{
 			"id": "ren0043",
 			"type": "boolean",
-			"prompt": "A city uses HUAWEI CLOUD Stack as the cloud foundation of its smart city project. 30-day recordings from 100,000 cameras need to be stored. EVS + distributed storage + lifecycle policy is the best storage solution.",
+			"prompt": "A city uses Huawei Cloud Stack as the cloud foundation of its smart city project. 30-day recordings from 100,000 cameras need to be stored. EVS + distributed storage + lifecycle policy is the best storage solution.",
 			"options": [
 				{"key": "A", "label": "True", "value": true},
 				{"key": "B", "label": "False", "value": false}
@@ -1299,7 +1299,7 @@
 		{
 			"id": "ren0044",
 			"type": "multiple",
-			"prompt": "Which of the following can be recorded in tenant operation logs in HUAWEI CLOUD Stack?",
+			"prompt": "Which of the following can be recorded in tenant operation logs in Huawei Cloud Stack?",
 			"options": [
 				"A. Security group rule changes",
 				"B. Administrator password changes",
@@ -1313,7 +1313,7 @@
 		{
 			"id": "ren0045",
 			"type": "boolean",
-			"prompt": "In the HUAWEI CLOUD Stack O&M system, the data analysis platform is used to build a model based on resource-service associations.",
+			"prompt": "In the Huawei Cloud Stack O&M system, the data analysis platform is used to build a model based on resource-service associations.",
 			"options": [
 				{"key": "A", "label": "True", "value": true},
 				{"key": "B", "label": "False", "value": false}
@@ -1325,7 +1325,7 @@
 		{
 			"id": "ren0046",
 			"type": "boolean",
-			"prompt": "SmartKit can perform health checks on GPaaS and AI DaaS services in HUAWEI CLOUD Stack.",
+			"prompt": "SmartKit can perform health checks on GPaaS and AI DaaS services in Huawei Cloud Stack.",
 			"options": [
 				{"key": "A", "label": "True", "value": true},
 				{"key": "B", "label": "False", "value": false}
@@ -1333,6 +1333,432 @@
 			"answer": true,
 			"explanation": "Probable answer: TRUE. SmartKit is Huawei's O&M tool for inspection, health checks, information collection and upgrade/expansion support. In HCS its inspection scope goes beyond infrastructure (servers, storage, network, FusionSphere OpenStack, ManageOne) and covers cloud services by category, including GPaaS (databases, middleware, containers) and AI DaaS (data and AI services).\n\nFusionCare also performs health checks, but focused on the virtualization and management platform.",
 			"tags": ["ai-generated", "unverified"]
+		},
+		{
+			"id": "berg0001",
+			"type": "single",
+			"prompt": "Which of the following statements is true about the relationship between OpenStack and AWS?",
+			"options": [
+				"A. The two are totally unrelated.",
+				"B. OpenStack has been benchmarked against AWS and adopts AWS technologies.",
+				"C. The two have the same functions.",
+				"D. OpenStack is an open-source version of AWS. It is an important fork."
+			],
+			"answer": ["B"],
+			"explanation": "OpenStack is an independent open-source project that used AWS services as a reference and offers partial compatibility, such as the EC2 API and CloudFormation-style templates in Heat. It is not a fork, because AWS is proprietary and there is no code to fork. The functions are similar but not identical.",
+			"tags": ["ai-generated"]
+		},
+		{
+			"id": "berg0002",
+			"type": "multiple",
+			"prompt": "Which of the following steps are included in the Horizon page rendering process in OpenStack?",
+			"options": [
+				"A. Render components into HTML segments.",
+				"B. Identify page components.",
+				"C. Compile Python code.",
+				"D. Combine HTML segments into a complete HTML page."
+			],
+			"answer": ["A", "B", "D"],
+			"explanation": "Horizon is built on Django. To render a page it identifies the components (panels, tables, tabs, workflows), renders each one into HTML segments with Django templates, and combines the segments into the final page. Compiling Python code is not part of page rendering.",
+			"tags": ["ai-generated"]
+		},
+		{
+			"id": "berg0003",
+			"type": "boolean",
+			"prompt": "Keystone is the only identity authentication service in OpenStack. Other services depend on Keystone for authentication.",
+			"options": [
+				{"key": "A", "label": "True", "value": true},
+				{"key": "B", "label": "False", "value": false}
+			],
+			"answer": true,
+			"explanation": "Keystone authenticates users and services, issues tokens and keeps the endpoint catalog. Nova, Neutron, Cinder, Glance and the other services validate tokens with Keystone before handling requests. LDAP or SAML integrations work as Keystone backends or federation, not as separate authentication services.",
+			"tags": ["ai-generated"]
+		},
+		{
+			"id": "berg0004",
+			"type": "multiple",
+			"prompt": "In OpenStack, which of the following are the advantages of Glance v2 APIs compared with Glance v1 APIs?",
+			"options": [
+				"A. Multiple storage backends",
+				"B. Direct operations on databases, with fewer intermediate steps",
+				"C. A simplified architecture for higher efficiency",
+				"D. Dependency on glance-registry to process metadata"
+			],
+			"answer": ["B", "C"],
+			"explanation": "In v1, glance-api passed metadata requests to glance-registry, which accessed the database. In v2, glance-api accesses the database directly, removing the registry hop and simplifying the architecture. Dependency on glance-registry is a v1 trait. Multiple storage backends come from Glance Store and are not specific to v2.",
+			"tags": ["ai-generated"]
+		},
+		{
+			"id": "berg0005",
+			"type": "text",
+			"prompt": "In OpenStack, if VM instance live migration fails, () operations will be performed on the target node to clear migration information. (Fill in the blank.)",
+			"options": [],
+			"answer": ["rollback"],
+			"explanation": "When live migration fails, Nova runs rollback_live_migration, and on the destination node rollback_live_migration_at_destination cleans up what was prepared: volume connections, network ports and the partial domain on the hypervisor. The VM keeps running on the source node.",
+			"tags": ["ai-generated"]
+		},
+		{
+			"id": "berg0006",
+			"type": "multiple",
+			"prompt": "During Cinder volume mounting, which of the following information must be transmitted from Nova to Cinder?",
+			"options": [
+				"A. VM name",
+				"B. iSCSI initiator name",
+				"C. Host name",
+				"D. FC WWPNs"
+			],
+			"answer": ["B", "C", "D"],
+			"explanation": "Nova sends Cinder a connector dictionary describing the compute host: IP, host name, iSCSI initiator (IQN) and FC WWPNs when present. Cinder uses it to grant the host access on the storage (LUN mapping or zoning). Access is granted to the physical host, so the VM name is not needed.",
+			"tags": ["ai-generated"]
+		},
+		{
+			"id": "berg0007",
+			"type": "boolean",
+			"prompt": "In OpenStack, Swift is suitable for storing data that requires real-time, frequent updates, such as database files.",
+			"options": [
+				{"key": "A", "label": "True", "value": true},
+				{"key": "B", "label": "False", "value": false}
+			],
+			"answer": false,
+			"explanation": "Swift is eventually consistent object storage. Updating an object means uploading it again in full, with no partial writes or locking. Database files need small frequent writes and strong consistency, which is a block storage (Cinder) use case. Swift fits static data such as images, videos, backups and archives.",
+			"tags": ["ai-generated"]
+		},
+		{
+			"id": "berg0008",
+			"type": "single",
+			"prompt": "Which of the following drivers is used by the Neutron ML2 plugin to connect to underlying network devices such as OVS?",
+			"options": [
+				"A. Type Driver",
+				"B. Core Driver",
+				"C. Service Driver",
+				"D. Mechanism Driver"
+			],
+			"answer": ["D"],
+			"explanation": "ML2 has two driver types. Type Drivers define network types (flat, VLAN, VXLAN, GRE) and manage segment IDs. Mechanism Drivers implement the network on the underlying devices such as OVS, Linux Bridge, SR-IOV or vendor switches. Core Driver and Service Driver are not ML2 drivers.",
+			"tags": ["ai-generated"]
+		},
+		{
+			"id": "berg0009",
+			"type": "boolean",
+			"prompt": "In OpenStack, Linux Bridge and Open vSwitch both can implement Layer 2 forwarding, but Open vSwitch is simpler.",
+			"options": [
+				{"key": "A", "label": "True", "value": true},
+				{"key": "B", "label": "False", "value": false}
+			],
+			"answer": false,
+			"explanation": "Both provide Layer 2 forwarding, but Linux Bridge is the simpler one: a native kernel module with few features. Open vSwitch is more complex and feature-rich, with OpenFlow, flow tables, VXLAN/GRE tunnels, QoS and SDN controller integration.",
+			"tags": ["ai-generated"]
+		},
+		{
+			"id": "berg0010",
+			"type": "single",
+			"prompt": "Which of the following fields is mandatory when O&M personnel write a HOT template in OpenStack?",
+			"options": [
+				"A. parameters",
+				"B. conditions",
+				"C. outputs",
+				"D. resources"
+			],
+			"answer": ["D"],
+			"explanation": "A HOT template requires heat_template_version and resources. The parameters, conditions and outputs sections are optional.",
+			"tags": ["ai-generated"]
+		},
+		{
+			"id": "berg0011",
+			"type": "boolean",
+			"prompt": "In Heat, OS::Heat::AutoScalingGroup is used to define the conditions and adjustment methods of auto scaling.",
+			"options": [
+				{"key": "A", "label": "True", "value": true},
+				{"key": "B", "label": "False", "value": false}
+			],
+			"answer": false,
+			"explanation": "OS::Heat::AutoScalingGroup defines the group itself: the resource to replicate and min_size/max_size. The adjustment method (adjustment type, amount, cooldown) is defined by OS::Heat::ScalingPolicy, and the trigger conditions come from alarms such as OS::Aodh::Alarm.",
+			"tags": ["ai-generated"]
+		},
+		{
+			"id": "berg0012",
+			"type": "boolean",
+			"prompt": "In OpenStack, both polling agents and notification agents can be scaled out horizontally to improve Ceilometer's processing.",
+			"options": [
+				{"key": "A", "label": "True", "value": true},
+				{"key": "B", "label": "False", "value": false}
+			],
+			"answer": true,
+			"explanation": "Ceilometer documentation states both agent types scale horizontally. Polling agents split the resources to poll among themselves using tooz coordination, and notification agents consume message bus queues in parallel.",
+			"tags": ["ai-generated"]
+		},
+		{
+			"id": "berg0013",
+			"type": "multiple",
+			"prompt": "In Huawei Cloud Stack, which of the following operations can be implemented using FusionSphere OpenStack?",
+			"options": [
+				"A. Checking NIC details and quality of service (QoS) information",
+				"B. Managing the lifecycle of Nova component",
+				"C. Modifying VM specifications",
+				"D. Managing and controlling physical hardware devices"
+			],
+			"answer": ["A", "B", "C", "D"],
+			"explanation": "FusionSphere OpenStack is Huawei's commercial OpenStack. It exposes NIC and QoS information through Neutron extensions, resizes VMs through Nova, manages component lifecycle (deploy, configure, start, stop, upgrade) through CPS, and manages physical servers through BMC integration. Low confidence: B and D are the most likely to be excluded by the official key.",
+			"tags": ["ai-generated"]
+		},
+		{
+			"id": "berg0014",
+			"type": "single",
+			"prompt": "In Huawei Cloud Stack, which of the following parameters can be limited by a QoS policy to ensure the storage performance of key services?",
+			"options": [
+				"A. The disk capacity and partition",
+				"B. The VM CPU usage",
+				"C. The IOPS and bandwidth",
+				"D. The number of disk arrays"
+			],
+			"answer": ["C"],
+			"explanation": "Storage QoS policies in HCS (and Cinder) cap, and on some backends guarantee, IOPS and throughput per volume, so noisy workloads do not degrade critical services on the same storage. Capacity is allocation, CPU usage is compute QoS and the number of arrays is hardware configuration.",
+			"tags": ["ai-generated"]
+		},
+		{
+			"id": "berg0015",
+			"type": "text",
+			"prompt": "In Huawei Cloud Stack, to improve maintenance efficiency, FusionSphere collects audit items related to frequently reported alarms. Administrators can view and process these audit items on the () page to ensure service uptime. (Fill in the blank.)",
+			"options": [],
+			"answer": ["Resource Audit", "System Audit"],
+			"explanation": "Huawei's Resource Audit Overview describes the audit function on Service OM as targeting high-frequency exceptions caused by unplanned events (host reboot, process restart, backup restoration), listing items such as residual or unavailable resources for the administrator to handle. In chat the answer given was 'System Audit'; the bank item ice0013 points to 'Resource Audit' as the official name.",
+			"tags": ["ai-generated"]
+		},
+		{
+			"id": "berg0016",
+			"type": "single",
+			"prompt": "Which of the following statements is false about the differences between Bare Metal Servers (BMSs) and Elastic Cloud Servers (ECSs)?",
+			"options": [
+				"A. BMSs are suitable for high-performance scenarios while ECSs are suitable for more general scenarios.",
+				"B. ECSs support auto scaling while BMSs do not.",
+				"C. BMSs have no virtualization layer. They are more stable than ECSs in performance.",
+				"D. BMSs exclusively occupy physical hardware while ECSs share physical resources."
+			],
+			"answer": ["B"],
+			"explanation": "A, C and D are the textbook differences: BMS uses dedicated hardware without a hypervisor and fits high-performance workloads. B is chosen by elimination: the claim that BMS cannot be used with auto scaling is the statement Huawei material treats as wrong, although BMS support in AS varies by version.",
+			"tags": ["ai-generated"]
+		},
+		{
+			"id": "berg0017",
+			"type": "multiple",
+			"prompt": "An enterprise uses Huawei Cloud Stack to provide services. The core database is deployed using Bare Metal Servers (BMSs). Recently, the database response latency increased. The BMS monitoring shows that the CPU usage has been staying higher than 80%. Which of the following troubleshooting or improvement measures are incorrect?",
+			"options": [
+				"A. Restart the BMSs to release resources.",
+				"B. Increase CPU cores for each BMS.",
+				"C. Check for the statements that take a long time for the database to execute.",
+				"D. Switch to ECS-based deployment to improve elasticity."
+			],
+			"answer": ["A", "B", "D"],
+			"explanation": "Restarting does not fix the cause and interrupts a core database. A BMS is a physical server, so CPU cores cannot be added like vCPUs. Moving a critical database to ECS adds virtualization overhead. Checking slow SQL statements is the correct first step.",
+			"tags": ["ai-generated"]
+		},
+		{
+			"id": "berg0018",
+			"type": "boolean",
+			"prompt": "In Huawei Cloud Stack, no matter what role your account has been assigned to, you can only view storage backend information on Service OM but cannot add or delete any storage backends.",
+			"options": [
+				{"key": "A", "label": "True", "value": true},
+				{"key": "B", "label": "False", "value": false}
+			],
+			"answer": true,
+			"explanation": "Storage backends are configured during FusionSphere OpenStack installation and expansion (CPS or HCC Turnkey), which binds Cinder drivers to storage devices. Service OM displays backend status, capacity and usage. Low confidence: 'no matter what role' is a typical marker of a false statement, so verify against the official key.",
+			"tags": ["ai-generated"]
+		},
+		{
+			"id": "berg0019",
+			"type": "boolean",
+			"prompt": "In Huawei Cloud Stack, the EVS architecture is based on a distributed file system. Data of one tenant can be isolated from another.",
+			"options": [
+				{"key": "A", "label": "True", "value": true},
+				{"key": "B", "label": "False", "value": false}
+			],
+			"answer": false,
+			"explanation": "EVS is block storage built on Cinder, backed by centralized SAN (OceanStor) or distributed block storage (FusionStorage or OceanStor Pacific), not a distributed file system. Tenant isolation is correct, but the architecture claim makes the statement false.",
+			"tags": ["ai-generated"]
+		},
+		{
+			"id": "berg0020",
+			"type": "single",
+			"prompt": "In Huawei Cloud Stack, objects are basic units stored in OBS. Which of the following is not a part of an object?",
+			"options": [
+				"A. Data",
+				"B. Index",
+				"C. Key",
+				"D. Metadata"
+			],
+			"answer": ["B"],
+			"explanation": "An OBS object consists of a key (unique name in the bucket), data (the content) and metadata (system and user-defined key-value pairs). Indexes exist inside the system to locate objects but are not part of the object.",
+			"tags": ["ai-generated"]
+		},
+		{
+			"id": "berg0021",
+			"type": "multiple",
+			"prompt": "Which of the following statements are true about Huawei Cloud Stack Scalable File Service (SFS) constraints?",
+			"options": [
+				"A. File systems with unlimited capacity do not support capacity expansion.",
+				"B. You can adjust the capacity of a file system only when the file system is not in use.",
+				"C. After the OS of an ECS is reinstalled or changed, file systems can be mounted automatically.",
+				"D. File systems can be mounted to all ECSs that support NFS and CIFS protocols."
+			],
+			"answer": ["A"],
+			"explanation": "A file system with unlimited capacity has nothing to expand. Capacity can be changed online, so B is false. After an OS reinstall or change the mount is lost and must be redone, so C is false. Mounting requires the ECS to be in the authorized VPC, so 'all ECSs' in D is false. If two answers are required, D is the next candidate.",
+			"tags": ["ai-generated"]
+		},
+		{
+			"id": "berg0022",
+			"type": "boolean",
+			"prompt": "Huawei Cloud Stack VPC Endpoint (VPCEP) can enable an ECS in a VPC to securely access a second ECS (user private service) in a second VPC in the same region without using the Internet.",
+			"options": [
+				{"key": "A", "label": "True", "value": true},
+				{"key": "B", "label": "False", "value": false}
+			],
+			"answer": true,
+			"explanation": "VPCEP has endpoint services, which can be cloud services or user private services on ECS or behind ELB, and endpoints created in the consumer VPC. Traffic stays on the internal network, without the Internet or VPC peering.",
+			"tags": ["ai-generated"]
+		},
+		{
+			"id": "berg0023",
+			"type": "single",
+			"prompt": "Which of the following statements is false about VPC Endpoint (VPCEP) in Huawei Cloud Stack (for example, ECS1 in VPC1 accesses ECS2 in VPC2)?",
+			"options": [
+				"A. ECS1 connects to ECS2 (with a VPC endpoint service deployed) through a VPC endpoint to implement unidirectional access across VPCs.",
+				"B. VXLAN packets are encapsulated on the EGW node. Full NAT is performed for inner packets.",
+				"C. After the traffic reaches the compute node where ECS2 is deployed, VXLAN decapsulation is performed. Then the traffic is sent to ECS2.",
+				"D. You can determine the frontend VTEP IP address of an EGW on a compute node based on the IP address of the VPC endpoint you use. Then VXLAN encapsulation is executed on the compute node to send traffic to the EGW node."
+			],
+			"answer": ["B"],
+			"explanation": "Flow: the compute node of ECS1 encapsulates traffic in VXLAN toward the EGW frontend VTEP (D). The EGW decapsulates the packet, performs full NAT on the inner packet and re-encapsulates it toward ECS2's compute node, which decapsulates and delivers it (C). Access is unidirectional (A). B is chosen because the first EGW step is decapsulation, not encapsulation. Low confidence, since the EGW does both.",
+			"tags": ["ai-generated"]
+		},
+		{
+			"id": "berg0024",
+			"type": "single",
+			"prompt": "Which of the following statements is false about security groups and network ACLs in Huawei Cloud Stack?",
+			"options": [
+				"A. Both security group rules and network ACL rules can provide fine-grained control over inbound and outbound traffic.",
+				"B. Security groups only support allow rules. Network ACLs support both allow and deny rules.",
+				"C. Security group rules have a larger scope of application than network ACL rules.",
+				"D. Security groups are stateful while network ACLs are stateless."
+			],
+			"answer": ["C"],
+			"explanation": "Security groups apply at the instance (NIC) level and network ACLs at the subnet level, so ACLs have the larger scope. The other statements match HCS training material.",
+			"tags": ["ai-generated"]
+		},
+		{
+			"id": "berg0025",
+			"type": "multiple",
+			"prompt": "An enterprise uses Huawei Cloud Stack to provide services. The VDC quota of each department is limited. When the R&D department requests resources beyond the corresponding quota, which of the following are possible results?",
+			"options": [
+				"A. Idle quotas of other departments are automatically used.",
+				"B. Storage resources within the quota can be requested.",
+				"C. The request is automatically rejected, and a message is displayed indicating that the quota is insufficient.",
+				"D. The R&D department submits an application online to request a larger quota. After the application is approved, the administrator adjusts the quota on ManageOne Operation Portal."
+			],
+			"answer": ["C", "D"],
+			"explanation": "ManageOne checks quotas before provisioning, so an over-quota request is rejected with a quota message, and the department can request a larger quota through approval. Quotas are isolated per VDC, so other departments' idle quota is not used automatically. B is true in general but is not a result of the over-quota request; if three answers are required, add B.",
+			"tags": ["ai-generated"]
+		},
+		{
+			"id": "berg0026",
+			"type": "single",
+			"prompt": "A company uses Huawei Cloud Stack to create its services. The operation administrator of the company assigns the security auditor permissions to employee C. Which of the following operations can employee C perform?",
+			"options": [
+				"A. Manage logs.",
+				"B. Manage licenses.",
+				"C. Check online users.",
+				"D. Update ACL policies."
+			],
+			"answer": ["A"],
+			"explanation": "The security auditor role exists for separation of duties: it views and manages operation, security and system logs. Licenses, online user monitoring and ACL policies belong to security or system administrators.",
+			"tags": ["ai-generated"]
+		},
+		{
+			"id": "berg0027",
+			"type": "boolean",
+			"prompt": "You can create a first-level VDC and enterprise when you create a tenant in Huawei Cloud Stack ManageOne. Multiple first- to fifth-level VDCs can be created in this tenant.",
+			"options": [
+				{"key": "A", "label": "True", "value": true},
+				{"key": "B", "label": "False", "value": false}
+			],
+			"answer": false,
+			"explanation": "Creating a tenant creates its first-level VDC, and each tenant maps to exactly one first-level VDC. Sub-VDCs from the second to the fifth level can be created under it, but not multiple first-level VDCs.",
+			"tags": ["ai-generated"]
+		},
+		{
+			"id": "berg0028",
+			"type": "single",
+			"prompt": "In Huawei Cloud Stack, if the metering and pricing functions are enabled and your VDC account balance is insufficient, which of the following will be affected?",
+			"options": [
+				"A. Compute resources cannot be requested.",
+				"B. Requested network resources will be forcibly deleted.",
+				"C. Only the requested storage resources can be used.",
+				"D. There are no impacts. You can continue to request resources."
+			],
+			"answer": ["A"],
+			"explanation": "With metering enabled, ManageOne checks the VDC balance on new requests and blocks them when it is insufficient. Existing resources keep running, so nothing is forcibly deleted, and there is no storage-only restriction.",
+			"tags": ["ai-generated"]
+		},
+		{
+			"id": "berg0029",
+			"type": "boolean",
+			"prompt": "Huawei Cloud Stack unified backup management supports both full and incremental backup.",
+			"options": [
+				{"key": "A", "label": "True", "value": true},
+				{"key": "B", "label": "False", "value": false}
+			],
+			"answer": true,
+			"explanation": "HCS backup services (VBS, CSBS, with eBackup underneath) take a full backup first and then incremental backups of changed blocks (CBT). Each restore point behaves like a full copy.",
+			"tags": ["ai-generated"]
+		},
+		{
+			"id": "berg0030",
+			"type": "boolean",
+			"prompt": "A city uses Huawei Cloud Stack as its smart city project's cloud foundation. There are 30-day recordings from 100,000 cameras to be stored. Elastic Volume Service (EVS) + distributed storage + lifecycle policy is the best storage solution.",
+			"options": [
+				{"key": "A", "label": "True", "value": true},
+				{"key": "B", "label": "False", "value": false}
+			],
+			"answer": false,
+			"explanation": "Massive write-once, read-rarely video fits OBS: it scales to petabytes, costs less per GB and supports lifecycle rules to expire or tier data after 30 days. EVS is block storage tied to ECS, and lifecycle policies are an OBS feature.",
+			"tags": ["ai-generated"]
+		},
+		{
+			"id": "berg0031",
+			"type": "multiple",
+			"prompt": "Which of the following can be recorded in tenant operation logs in Huawei Cloud Stack?",
+			"options": [
+				"A. ECS creation times",
+				"B. Security group rule changes",
+				"C. Administrator password changes",
+				"D. EVS disk capacity expansion"
+			],
+			"answer": ["A", "B", "D"],
+			"explanation": "Tenant operation logs (CTS) record actions on cloud resources: who, when, which resource, result. ECS creation, security group changes and EVS expansion qualify. Administrator password changes are platform management events recorded in ManageOne or Service OM logs.",
+			"tags": ["ai-generated"]
+		},
+		{
+			"id": "berg0032",
+			"type": "boolean",
+			"prompt": "Huawei Cloud Stack AutoOps supports built-in O&M scripts and allows you to download and customize extension scripts from the Huawei Support website to meet specific requirements.",
+			"options": [
+				{"key": "A", "label": "True", "value": true},
+				{"key": "B", "label": "False", "value": false}
+			],
+			"answer": true,
+			"explanation": "AutoOps ships built-in scripts for routine tasks (inspection, log collection, health checks) and accepts extension packages published on the Huawei Support site, which administrators can adapt and import.",
+			"tags": ["ai-generated"]
+		},
+		{
+			"id": "berg0033",
+			"type": "boolean",
+			"prompt": "SmartKit can perform health checks on gPaaS & AI DaaS services in Huawei Cloud Stack.",
+			"options": [
+				{"key": "A", "label": "True", "value": true},
+				{"key": "B", "label": "False", "value": false}
+			],
+			"answer": true,
+			"explanation": "SmartKit health checks cover the IaaS layer and, through per-service check packages, gPaaS and AI DaaS services. Support depends on the HCS version and installed packages.",
+			"tags": ["ai-generated"]
 		}
 	]
 }
