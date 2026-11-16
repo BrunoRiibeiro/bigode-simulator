@@ -165,27 +165,29 @@ window.ExamView = (function () {
 				else if (isCorrectAnswer) { textInput.classList.add("text-answer--correct"); }
 				else { textInput.classList.add("text-answer--wrong"); }
 			}
-			return;
+		} else {
+
+			const optionLabels = card.querySelectorAll(".option");
+
+			optionLabels.forEach(function (label) {
+				const input = label.querySelector("input");
+
+				if (!input) { return; }
+
+				const key = AppUtils.normalizeAnswerValue(input.value);
+				const isSelected = selected.includes(key);
+				const isCorrect = correct.includes(key);
+
+				label.classList.remove("option--correct", "option--wrong");
+
+				if (isCorrect) { label.classList.add("option--correct"); }
+				if (isSelected && !isCorrect) { label.classList.add("option--wrong"); }
+
+				input.disabled = true;
+			});
 		}
-
-		const optionLabels = card.querySelectorAll(".option");
-
-		optionLabels.forEach(function (label) {
-			const input = label.querySelector("input");
-
-			if (!input) { return; }
-
-			const key = AppUtils.normalizeAnswerValue(input.value);
-			const isSelected = selected.includes(key);
-			const isCorrect = correct.includes(key);
-
-			label.classList.remove("option--correct", "option--wrong");
-
-			if (isCorrect) { label.classList.add("option--correct"); }
-			if (isSelected && !isCorrect) { label.classList.add("option--wrong"); }
-
-			input.disabled = true;
-		});
+		card.insertAdjacentHTML("beforeend",
+			QuestionContentView.buildExplanation(question));
 	}
 
 	return {
