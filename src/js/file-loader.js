@@ -1,60 +1,12 @@
 window.FileLoader = (function () {
-	async function loadQuestionBankFromFile(file) {
-		if (!file) {
-			throw new Error("Select a dump file.");
-		}
 
-		const text = await file.text();
-
-		let data;
-
-		try {
-			data = JSON.parse(text);
-		} catch (error) {
-			throw new Error("The selected file does not contain valid JSON.");
-		}
-
-		return validateAndNormalize(data);
-	}
-
-	function validateAndNormalize(data) {
-		if (!data || !Array.isArray(data.questions)) {
-			throw new Error('The JSON must contain the "questions" property as an array.');
-		}
-
-		let discarded = 0;
-
-		const questions = data.questions
-			.map(function (question, index) {
-				return normalizeQuestion(question, index);
-			})
-			.filter(function (question) {
-				if (!question) {
-					discarded += 1;
-					return false;
-				}
-				return true;
-			});
-
-		if (!questions.length) {
-			throw new Error("No valid questions were found in the file.");
-		}
-
-		return {
-			questions,
-			discarded,
-			totalOriginal: data.questions.length
-		};
-	}
-
-	function normalizeTextAnswers(rawAnswer) {
+	/* text normalisation and helpers */
+	function normaliseTextAnswers(rawAnswer) {
 		const answers = Array.isArray(rawAnswer) ? rawAnswer : [rawAnswer];
 
-		return answers
-			.map(function (answer) {
-				return String(answer || "").trim();
-			})
-			.filter(Boolean);
+		return answers.map(function (answer) {
+			return String(answer || "").trim();
+		}).filter(Boolean);
 	}
 
 	function stripOptionPrefix(optionText) {
@@ -62,14 +14,14 @@ window.FileLoader = (function () {
 	}
 
 	function inferBooleanValue(label) {
-		const normalized = stripOptionPrefix(label).toLowerCase();
-
-		if (normalized === "true") { return true; }
-		if (normalized === "false") { return false; }
+		const normalised = stripOptionPrefix(label).toLowerCase();
+		if (normalised === "true") return true;
+		if (normalised === "false") return false;
 		return null;
 	}
 
-	function normalizeBooleanOptions(rawOptions) {
+	/* boolean normalisation */
+	function normaliseBooleanOptions(rawOptions) {
 		const source = Array.isArray(rawOptions) && rawOptions.length
 			? rawOptions
 			: [
@@ -77,114 +29,162 @@ window.FileLoader = (function () {
 				{ key: "B", label: "False", value: false }
 			];
 
-		const normalized = source
+		const normalised = source
 			.map(function (option, index) {
 				if (option && typeof option === "object" && !Array.isArray(option)) {
-					const key = String(option.key || String.fromCharCode(65 + index))
-						.trim()
-						.toUpperCase();
+					const key = String(option.key || String.fromCharCode(65 +
+						index)).trim().toUpperCase();
 
 					const label = String(option.label || "").trim();
 					const value = typeof option.value === "boolean"
 						? option.value
 						: inferBooleanValue(label);
 
-					if (!label || typeof value !== "boolean") { return null; }
+					if (!key || !label || typeof value !== "boolean")
+						return null;
 
-					return {
-						key: key,
-						label: label,
-						value: value
-					};
+					return { key: key, label: label, value: value };
 				}
 
 				const optionText = String(option || "").trim();
-				if (!optionText) { return null; }
+				if (!optionText) return null;
 
 				const key = AppUtils.extractOptionKey(optionText, index);
 				const label = stripOptionPrefix(optionText);
 				const value = inferBooleanValue(label);
 
-				if (!label || typeof value !== "boolean") { return null; }
+				if (!label || typeof value !== "boolean") return null;
 
-				return {
-					key: key,
-					label: label,
-					value: value
-				};
-			})
-			.filter(Boolean);
+				return { key: key, label: label, value: value };
+			}).filter(Boolean);
 
-		const hasTrue = normalized.some(function (option) {
+		const hasTrue = normalised.some(function (option) {
 			return option.value === true;
 		});
 
-		const hasFalse = normalized.some(function (option) {
+		const hasFalse = normalised.some(function (option) {
 			return option.value === false;
 		});
 
-		const uniqueKeys = new Set(
-			normalized.map(function (option) {
-				return option.key;
-			})
+		const uniqueKeys = new Set(normalised.map(function (option) {
+			return option.key;
+		})
 		);
 
-		if (normalized.length < 2 || !hasTrue || !hasFalse || uniqueKeys.size !== normalized.length) {
-			return null;
-		}
+		if (normalised.length !== 2 || !hasTrue || !hasFalse || uniqueKeys.size
+			!== normalised.length) return null;
 
-		return normalized;
+		return normalised;
 	}
 
-	function normalizeBooleanAnswer(rawAnswer, booleanOptions) {
-		if (typeof rawAnswer === "boolean") { return rawAnswer; }
+	function normaliseBooleanAnswer(rawAnswer, booleanOptions) {
+		if (typeof rawAnswer === "boolean") return rawAnswer;
 
 		const first = Array.isArray(rawAnswer) ? rawAnswer[0] : rawAnswer;
 
-		if (typeof first === "boolean") { return first; }
+		if (typeof first === "boolean") return first;
 
-		const normalized = String(first || "").trim().toLowerCase();
+		const normalised = String(first || "").trim().toLowerCase();
 
-		if (normalized === "true") { return true; }
-
-		if (normalized === "false") { return false; }
+		if (normalised === "true") return true;
+		if (normalised === "false") return false;
 
 		const optionMatch = (booleanOptions || []).find(function (option) {
-			return String(option.key).toLowerCase() === normalized;
+			return String(option.key).toLowerCase() === normalised;
 		});
 
 		return optionMatch ? optionMatch.value : null;
 	}
 
-	function isValidQuestionType(type) {
-		return ["single", "multiple", "boolean", "text"].includes(type);
+	/* matching normalisation */
+	function normaliseMatchingItems(rawItems) {
+		if (!Array.isArray(rawItems) || rawItems.length < 2) return null;
+
+		const items = rawItems.map(function (item) {
+			if (!item || typeof item !== "object" || Array.isArray(item))
+				return null;
+
+			const id = String(item.id || "").trim();
+			const text = String(item.text || "").trim();
+			if (!id || !text) return null;
+			return { id, text };
+		});
+
+		if (items.some(function (item) { return !item; })) return null;
+		const ids = items.map(function (item) { return item.id; });
+		if (new Set(ids).size !== ids.length) return null;
+		return items;
 	}
 
-	function normalizeQuestion(rawQuestion, index) {
-		if (!rawQuestion || typeof rawQuestion !== "object" || Array.isArray(rawQuestion)) {
-			return null;
+	function normaliseMatchingAnswer(rawAnswer, left, right) {
+		if (!rawAnswer || typeof rawAnswer !== "object" ||
+			Array.isArray(rawAnswer)) return null;
+
+		const answerKeys = Object.keys(rawAnswer);
+		const leftIds = left.map(function (item) { return item.id; });
+		const rightIds = right.map(function (item) { return item.id; });
+
+		if (answerKeys.length !== leftIds.length) return null;
+
+		const usedRightIds = new Set();
+
+		for (const leftId of leftIds) {
+			const rightId = rawAnswer[leftId];
+
+			if (!Object.prototype.hasOwnProperty.call(rawAnswer, leftId) ||
+				typeof rightId !== "string" || !rightIds.includes(rightId) ||
+				usedRightIds.has(rightId))
+				return null;
+
+			usedRightIds.add(rightId);
 		}
+
+		return Object.fromEntries(leftIds.map(function (leftId) {
+			return [leftId, rawAnswer[leftId]];
+		})
+		);
+	}
+
+	function normaliseMatchingQuestion(rawQuestion) {
+		const left = normaliseMatchingItems(rawQuestion.left);
+		const right = normaliseMatchingItems(rawQuestion.right);
+		if (!left || !right || left.length !== right.length) return null;
+
+		const answer = normaliseMatchingAnswer(rawQuestion.answer, left, right);
+		if (!answer) return null;
+
+		return { left, right, answer };
+	}
+
+	/* questions validation and normalisation */
+	function isValidQuestionType(type) {
+		return ["single", "multiple", "boolean", "text", "matching"].includes(type);
+	}
+
+	function normaliseQuestion(rawQuestion, index) {
+		if (!rawQuestion || typeof rawQuestion !== "object" ||
+			Array.isArray(rawQuestion)) return null;
 
 		const prompt = String(rawQuestion.prompt || "").trim();
 		const type = String(rawQuestion.type || "").trim().toLowerCase();
 
-		if (!prompt || !isValidQuestionType(type)) { return null; }
+		if (!prompt || !isValidQuestionType(type)) return null;
 
 		let options = [];
 		let answers = [];
 		let optionValues = null;
+		let matchingItems = null;
 
 		if (type === "text") {
-			answers = normalizeTextAnswers(rawQuestion.answer);
-			if (!answers.length) { return null; }
+			answers = normaliseTextAnswers(rawQuestion.answer);
+			if (!answers.length) return null;
 		} else if (type === "boolean") {
-			const booleanOptions = normalizeBooleanOptions(rawQuestion.options);
-			const booleanAnswer = normalizeBooleanAnswer(rawQuestion.answer,
+			const booleanOptions = normaliseBooleanOptions(rawQuestion.options);
+			const booleanAnswer = normaliseBooleanAnswer(rawQuestion.answer,
 				booleanOptions || []);
 
-			if (!booleanOptions || typeof booleanAnswer !== "boolean") {
+			if (!booleanOptions || typeof booleanAnswer !== "boolean")
 				return null;
-			}
 
 			options = booleanOptions.map(function (option) {
 				return option.key + ". " + option.label;
@@ -197,20 +197,22 @@ window.FileLoader = (function () {
 			});
 
 			answers = booleanAnswer;
+		} else if (type === "matching") {
+			matchingItems = normaliseMatchingQuestion(rawQuestion);
+			if (!matchingItems) return null;
+			answers = matchingItems.answer;
 		} else {
 			options = Array.isArray(rawQuestion.options)
-				? rawQuestion.options
-				.map(function (option) {
+				? rawQuestion.options.map(function (option) {
 					return String(option);
-				})
-				.filter(function (option) {
+				}).filter(function (option) {
 					return option.trim() !== "";
 				})
 				: [];
 
-			answers = AppUtils.normalizeAnswerList(rawQuestion.answer);
+			answers = AppUtils.normaliseAnswerList(rawQuestion.answer);
 
-			if (options.length < 2 || !answers.length) { return null; }
+			if (options.length < 2 || !answers.length) return null;
 
 			const optionKeys = options.map(function (option, optionIndex) {
 				return AppUtils.extractOptionKey(option, optionIndex);
@@ -220,18 +222,17 @@ window.FileLoader = (function () {
 				return optionKeys.includes(answerKey);
 			});
 
-			if (!allAnswersExist) { return null; }
-
-			if (type === "multiple" && answers.length < 2) {
-				return null;
-			}
+			if (!allAnswersExist) return null;
+			if (type === "single" && answers.length !== 1) return null;
+			if (type === "multiple" && answers.length < 2) return null;
 		}
 
-		const normalizedQuestion = {
-			id: String(rawQuestion.id || "q" + String(index + 1).padStart(4, "0")),
+		const id = String(rawQuestion.id || "").trim() || "q" +
+			String(index + 1).padStart(4, "0");
+		const normalisedQuestion = {
+			id: id,
 			type: type,
 			prompt: prompt,
-			options: options,
 			answer: answers,
 			explanation: String(rawQuestion.explanation || "").trim(),
 			tags: Array.isArray(rawQuestion.tags)
@@ -241,13 +242,62 @@ window.FileLoader = (function () {
 			: []
 		};
 
-		if (optionValues) { normalizedQuestion.optionValues = optionValues; }
+		if (matchingItems) {
+			normalisedQuestion.left = matchingItems.left;
+			normalisedQuestion.right = matchingItems.right;
+		} else normalisedQuestion.options = options;
 
-		return normalizedQuestion;
+		if (optionValues) normalisedQuestion.optionValues = optionValues;
+
+		return normalisedQuestion;
+	}
+
+	/* question bank validation */
+	function validateAndNormalise(data) {
+		if (!data || !Array.isArray(data.questions))
+			throw new Error('The JSON must contain the "questions" property as an array.');
+
+		let discarded = 0;
+		const usedIds = new Set();
+
+		const questions = data.questions.map(function (question, index) {
+			const normalisedQuestion = normaliseQuestion(question, index);
+			if (!normalisedQuestion || usedIds.has(normalisedQuestion.id)) {
+				discarded += 1;
+				return null;
+			}
+			usedIds.add(normalisedQuestion.id);
+			return normalisedQuestion;
+		}).filter(Boolean);
+
+		if (!questions.length)
+			throw new Error("No valid questions were found in the file.");
+
+		return {
+			questions,
+			discarded,
+			totalOriginal: data.questions.length
+		};
+	}
+
+	/* file loading */
+	async function loadQuestionBankFromFile(file) {
+		if (!file) throw new Error("Select a dump file.");
+
+		const text = await file.text();
+		let data;
+
+		try {
+			data = JSON.parse(text);
+		} catch (error) {
+			throw new Error("The selected file does not contain valid JSON.");
+		}
+
+		return validateAndNormalise(data);
 	}
 
 	return {
 		loadQuestionBankFromFile,
-		validateAndNormalize
+		validateAndNormalise
 	};
 })();

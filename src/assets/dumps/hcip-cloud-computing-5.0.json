@@ -1335,6 +1335,44 @@
 			"tags": ["ai-generated", "unverified"]
 		},
 		{
+			"id": "ren0047",
+			"type": "matching",
+			"prompt": "Match the following Elastic Load Balance (ELB) concepts with their descriptions in Huawei Cloud Stack.",
+			"left": [
+				{"id": "a", "text": "Load balancing algorithm"},
+				{"id": "b", "text": "Listener"},
+				{"id": "c", "text": "session persistence"},
+				{"id": "d", "text": "Health check"}
+			],
+			"right": [
+				{"id": "1", "text": "Algorithms used by load balancers"},
+				{"id": "2", "text": "A listener is a process that checks for connection requests"},
+				{"id": "3", "text": "The purpose is to always distribute access requests from the same user to the same backend"},
+				{"id": "4", "text": "A health check is an evaluation of the status of the backend servers and ensure that a load balancer sends requests only to servers that are running properly"}
+			],
+			"answer": {"a": "1", "b": "2", "c": "3", "d": "4"},
+			"explanation": "ELB uses load balancing algorithms to distribute incoming requests among backend servers. A listener monitors connection requests and receives incoming traffic. Session persistence ensures that requests from the same user are directed to the same backend server. Health checks evaluate backend server status so that traffic is sent only to servers operating properly.",
+			"tags": [ "ai-generated" ]
+		},
+		{
+			"id": "ren0048",
+			"type": "matching",
+			"prompt": "Match the following Huawei Cloud Stack Cloud Configuration Service (CCS) components with their functions.",
+			"left": [
+				{"id": "a", "text": "CCS Console"},
+				{"id": "b", "text": "CCS Client"},
+				{"id": "c", "text": "CCS API"}
+			],
+			"right": [
+				{"id": "1", "text": "Provide administrators with visualized CCS tagging."},
+				{"id": "2", "text": "Provide the service logic of CCS tagging."},
+				{"id": "3", "text": "Provide administrators with cloud service tagging using CCS command lines."}
+			],
+			"answer": {"a": "1", "b": "3", "c": "2"},
+			"explanation": "The CCS Console provides administrators with a visualised interface for managing cloud service tags. The CCS Client allows administrators to manage tagging through command-line operations. The CCS API provides the underlying service logic that implements CCS tagging functionality.",
+			"tags": [ "ai-generated" ]
+		},
+		{
 			"id": "berg0001",
 			"type": "single",
 			"prompt": "Which of the following statements is true about the relationship between OpenStack and AWS?",
@@ -1736,6 +1774,26 @@
 			"answer": true,
 			"explanation": "SmartKit health checks cover the IaaS layer and, through per-service check packages, gPaaS and AI DaaS services. Support depends on the HCS version and installed packages.",
 			"tags": ["ai-generated"]
+		},
+		{
+			"id": "berg0034",
+			"type": "matching",
+			"prompt": "Match the following auto scaling concepts with their descriptions in Huawei Cloud Stack.",
+			"left": [
+				{"id": "a", "text": "AS group"},
+				{"id": "b", "text": "AS policy"},
+				{"id": "c", "text": "AS configuration"},
+				{"id": "d", "text": "AS action"}
+			],
+			"right": [
+				{"id": "1", "text": "Specify the conditions for triggering an AS action."},
+				{"id": "2", "text": "A set of instances with the same application scenario"},
+				{"id": "3", "text": "Define the specifications of the instance to be added."},
+				{"id": "4", "text": "Its purpose is to keep the number of instances in the application system the same as expected."}
+			],
+			"answer": {"a": "2", "b": "1", "c": "3", "d": "4"},
+			"explanation": "The AS group holds instances of one application scenario. The AS policy defines when to scale (alarm, schedule or periodic). The AS configuration is the template for new instances (flavor, image, disks, key pair). The AS action adds or removes instances until the group reaches the expected count.",
+			"tags": [ "ai-generated" ]
 		}
 	]
 }

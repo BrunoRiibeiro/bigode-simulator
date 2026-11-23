@@ -23,22 +23,12 @@ window.ResultView = (function () {
 			.join("");
 	}
 
-	function formatAnswerList(values, separator) {
-		const list = Array.isArray(values) ? values : [];
-		if (!list.length) { return "—"; }
-		return list
-			.map(function (value) {
-				return AppUtils.escapeHtml(String(value));
-			})
-			.join(separator || ", ");
-	}
-
 	function stripOptionPrefix(optionText) {
 		return String(optionText || "").replace(/^[A-Z]\.\s*/, "").trim();
 	}
 
 	function resolveAnswerLabel(item, answerKey) {
-		if (item.type !== "boolean") { return String(answerKey); }
+		if (item.type !== "boolean") return String(answerKey);
 
 		const match = (item.options || []).find(function (optionText, index) {
 			return AppUtils.extractOptionKey(optionText, index) === answerKey;
@@ -50,12 +40,63 @@ window.ResultView = (function () {
 	function formatDisplayAnswerList(item, values, separator) {
 		const list = Array.isArray(values) ? values : [];
 
-		if (!list.length) { return "—"; }
+		if (!list.length) return "—";
 
 		return list
 			.map(function (value) {
 				return AppUtils.escapeHtml(resolveAnswerLabel(item, value));
 			}).join(separator || ", ");
+	}
+
+	function resolveMatchingText(items, itemId) {
+		const match = (items || []).find(function (item) {
+			return item.id === itemId;
+		});
+
+		return match ? match.text : "—";
+	}
+
+	function buildMatchingResult(item) {
+		const selected = item.selected || {};
+		const correct = item.correct || {};
+
+		return (
+			'<div class="result-matching">' +
+			'<div class="result-matching__header">' +
+			'<span>Item</span>' +
+			'<span>Your match</span>' +
+			'<span>Correct match</span>' +
+			'</div>' +
+			item.left.map(function (leftItem) {
+				const selectedId = selected[leftItem.id];
+				const correctId = correct[leftItem.id];
+
+				const selectedClass = !selectedId
+					? ""
+					: selectedId === correctId
+					? "result-matching__value--correct"
+					: "result-matching__value--wrong";
+
+				return (
+					'<div class="result-matching__row">' +
+					'<span class="result-matching__item">' +
+					AppUtils.escapeHtml(leftItem.text) +
+					'</span>' +
+					'<span class="result-matching__value ' + selectedClass + '">' +
+					AppUtils.escapeHtml(
+						resolveMatchingText(item.right, selectedId)
+					) +
+					'</span>' +
+					'<span class="result-matching__value result-matching__value--correct">' +
+					AppUtils.escapeHtml(
+						resolveMatchingText(item.right, correctId)
+					) +
+					'</span>' +
+					'</div>'
+				);
+			}).join("") +
+			'</div>'
+		);
 	}
 
 	function buildResultItem(item) {
@@ -72,15 +113,24 @@ window.ResultView = (function () {
 			: "result-item--blank";
 
 		let badgeId = item.id;
-		const issueUrl = window.GitHubIssuesFeature ?
-			window.GitHubIssuesFeature.buildIssueSearchUrl(item) : "";
-		const issueRef = window.GitHubIssuesFeature ?
-			window.GitHubIssuesFeature.getQuestionRef(item) : "";
+		const issuesFeature = window.GitHubIssuesFeature;
+		const issueUrl = issuesFeature ? issuesFeature.buildIssueSearchUrl(item) : "";
+		const issueRef = issuesFeature ? issuesFeature.getQuestionRef(item) : "";
 		const issueLinkHtml = issueUrl ? '<a class="question-card__issue-link" href="' +
 			AppUtils.escapeHtml(issueUrl) + '" target="_blank" rel="noopener noreferrer" title="Open GitHub issues for ' +
 			AppUtils.escapeHtml(issueRef) + '">Discuss question</a>' : "";
 
 		const answerSeparator = item.type === "text" ? " / " : ", ";
+		const answerHtml = item.type === "matching"
+			? buildMatchingResult(item)
+			: (
+				"<p><strong>Selected:</strong> " +
+				formatDisplayAnswerList(item, item.selected, answerSeparator) +
+				"</p>" +
+				"<p><strong>Correct:</strong> " +
+				formatDisplayAnswerList(item, item.correct, answerSeparator) +
+				"</p>"
+			);
 
 		return (
 			'<article class="result-item ' + statusClass + '">' +
@@ -93,9 +143,8 @@ window.ResultView = (function () {
 			'</div>' +
 			"</header>" +
 			'<div class="result-item__prompt">' + AppUtils.nl2br(item.prompt) + "</div>" +
-			"<p><strong>Selected:</strong> " + formatDisplayAnswerList(item, item.selected, answerSeparator) + "</p>" +
-			"<p><strong>Correct:</strong> " + formatDisplayAnswerList(item, item.correct, answerSeparator) + "</p>" +
-			(item.options.length
+			answerHtml +
+			(item.type !== "matching" && item.options.length
 				? '<ul class="result-item__options">' + buildOptionList(item) + "</ul>"
 				: "") +
 			QuestionContentView.buildExplanation(item) +
@@ -109,13 +158,11 @@ window.ResultView = (function () {
 				const key = AppUtils.extractOptionKey(optionText, index);
 				const classNames = ["result-option"];
 
-				if (item.selected.includes(key)) {
+				if (item.selected.includes(key))
 					classNames.push("result-option--selected");
-				}
 
-				if (item.correct.includes(key)) {
+				if (item.correct.includes(key))
 					classNames.push("result-option--correct");
-				}
 
 				const flags = [
 					item.selected.includes(key) ? "<em>Selected</em>" : "",

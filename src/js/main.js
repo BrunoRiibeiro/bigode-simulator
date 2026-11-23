@@ -31,10 +31,10 @@ function ison(ref, event, handler) { if (ref) ref.addEventListener(event, handle
 
 function syncExamModeToggle(mode) {
 	const buttons = document.querySelectorAll(".exam-mode-toggle__btn");
-	const normalizedMode = mode === "step" ? "step" : "full";
+	const normalisedMode = mode === "step" ? "step" : "full";
 	buttons.forEach(function (button) {
-		button.classList.toggle("is-active", button.dataset.mode === normalizedMode);
-		button.setAttribute("aria-pressed", button.dataset.mode === normalizedMode ? "true" : "false");
+		button.classList.toggle("is-active", button.dataset.mode === normalisedMode);
+		button.setAttribute("aria-pressed", button.dataset.mode === normalisedMode ? "true" : "false");
 	});
 }
 

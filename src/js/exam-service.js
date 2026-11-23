@@ -1,21 +1,18 @@
 window.ExamService = (function () {
-	function toTextAnswerList(value) {
-		if (Array.isArray(value)) {
-			return value
-				.map(function (item) {
-					return String(item || "").trim();
-				})
-				.filter(function (item) {
-					return item !== "";
-				});
-		}
 
-		const singleValue = String(value || "").trim();
+	/* text normalisation and validation */
+	function toTextAnswerList(value) {
+		if (Array.isArray(value))
+			return value.map(function (item) {
+					return String(item ?? "").trim();
+				}).filter(Boolean);
+
+		const singleValue = String(value ?? "").trim();
 		return singleValue ? [singleValue] : [];
 	}
 
-	function normalizeTextValue(value) {
-		return String(value || "")
+	function normaliseTextValue(value) {
+		return String(value ?? "")
 			.normalize("NFD")
 			.replace(/[\u0300-\u036f]/g, "")
 			.toLowerCase()
@@ -24,17 +21,19 @@ window.ExamService = (function () {
 			.replace(/\s+/g, " ");
 	}
 
+	/* text validation */
 	function isTextAnswerCorrect(selectedAnswers, correctAnswers) {
 		if (!selectedAnswers.length || !correctAnswers.length) { return false; }
 
 		return selectedAnswers.some(function (selectedAnswer) {
-			const normalizedSelected = normalizeTextValue(selectedAnswer);
+			const normalisedSelected = normaliseTextValue(selectedAnswer);
 			return correctAnswers.some(function (correctAnswer) {
-				return normalizeTextValue(correctAnswer) === normalizedSelected;
+				return normaliseTextValue(correctAnswer) === normalisedSelected;
 			});
 		});
 	}
 
+	/* boolean value consulting and validation */
 	function getBooleanOptionValue(question, key) {
 		if (!question || !question.optionValues) { return null; }
 
@@ -58,27 +57,54 @@ window.ExamService = (function () {
 		return typeof selectedValue === "boolean" && selectedValue === question.answer;
 	}
 
+	/* matching validation */
+	function isMatchingAnswerCorrect(selectedAnswers, correctAnswers, leftItems) {
+		if (!selectedAnswers || !correctAnswers || !leftItems.length)
+			return false;
+
+		return leftItems.every(function (item) {
+			return Object.prototype.hasOwnProperty.call(selectedAnswers, item.id) &&
+				selectedAnswers[item.id] === correctAnswers[item.id];
+		}) && Object.keys(selectedAnswers).length === leftItems.length;
+	}
+
+	/* centralised validation */
 	function evaluateQuestion(question, selectedAnswers) {
 		const isTextQuestion = question.type === "text";
 		const isBooleanQuestion = question.type === "boolean";
+		const isMatchingQuestion = question.type === "matching";
 
-		const selected = isTextQuestion
+		const selected = isMatchingQuestion
+			? (selectedAnswers && typeof selectedAnswers === "object" &&
+				!Array.isArray(selectedAnswers)
+				? selectedAnswers
+				: {}
+			)
+			: isTextQuestion
 			? toTextAnswerList(selectedAnswers)
-			: AppUtils.normalizeAnswerList(selectedAnswers || []);
+			: AppUtils.normaliseAnswerList(selectedAnswers || []);
 
 		const booleanCorrectKey = isBooleanQuestion
 			? getBooleanCorrectKey(question)
 			: "";
 
-		const correct = isTextQuestion
+		const correct = isMatchingQuestion
+			? question.answer || {}
+			: isTextQuestion
 			? toTextAnswerList(question.answer || [])
 			: isBooleanQuestion
 			? (booleanCorrectKey ? [booleanCorrectKey] : [])
-			: AppUtils.normalizeAnswerList(question.answer || []);
+			: AppUtils.normaliseAnswerList(question.answer || []);
 
-		const isAnswered = selected.length > 0;
+		const isAnswered = isMatchingQuestion
+			? Object.values(selected).some(function (value) {
+				return value !== null && value !== undefined && value !== "";
+			})
+			: selected.length > 0;
 
-		const isCorrect = isTextQuestion
+		const isCorrect = isMatchingQuestion
+			? isMatchingAnswerCorrect(selected, correct, question.left)
+			: isTextQuestion
 			? isTextAnswerCorrect(selected, correct)
 			: isBooleanQuestion
 			? isBooleanAnswerCorrect(question, selected)
@@ -92,13 +118,17 @@ window.ExamService = (function () {
 		};
 	}
 
+	/* exam generation and grading */
 	function createRandomExam(questionBank, requestedCount) {
 		if (!Array.isArray(questionBank) || !questionBank.length) {
 			throw new Error("No question dump loaded.");
 		}
 
-		const parsedCount = Number(requestedCount) || 60;
-		const safeCount = Math.max(1, Math.min(parsedCount, questionBank.length));
+		const parsedCount = Number(requestedCount);
+		const requested = Number.isFinite(parsedCount) && parsedCount !== 0
+			? Math.floor(parsedCount)
+			: 60;
+		const safeCount = Math.max(1, Math.min(requested, questionBank.length));
 
 		return AppUtils.sample(questionBank, safeCount);
 	}
@@ -108,12 +138,14 @@ window.ExamService = (function () {
 			const userAnswer = userAnswers && userAnswers[question.id];
 			const evaluation = evaluateQuestion(question, userAnswer);
 
-			return {
+			const item = {
 				number: index + 1,
 				id: question.id,
 				prompt: question.prompt,
 				type: question.type,
-				options: question.options.slice(),
+				options: Array.isArray(question.options)
+				? question.options.slice()
+				: [],
 				selected: evaluation.selected,
 				correct: evaluation.correct,
 				explanation: question.explanation,
@@ -121,6 +153,13 @@ window.ExamService = (function () {
 				isAnswered: evaluation.isAnswered,
 				isCorrect: evaluation.isCorrect
 			};
+
+			if (question.type === "matching") {
+				item.left = question.left;
+				item.right = question.right;
+			}
+
+			return item;
 		});
 
 		const correctCount = items.filter(function (item) {

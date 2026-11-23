@@ -14,11 +14,12 @@ window.HideNSeekView = (function () {
 			single: 0,
 			multiple: 0,
 			boolean: 0,
-			text: 0
+			text: 0,
+			matching: 0
 		};
 
 		questions.forEach(function (question) {
-			if (counts.hasOwnProperty(question.type)) { counts[question.type] += 1; }
+			if (counts.hasOwnProperty(question.type)) counts[question.type] += 1;
 		});
 
 		return (
@@ -28,6 +29,7 @@ window.HideNSeekView = (function () {
 			'<div class="result-box"><strong>Multiple</strong><span>' + counts.multiple + "</span></div>" +
 			'<div class="result-box"><strong>Boolean</strong><span>' + counts.boolean + "</span></div>" +
 			'<div class="result-box"><strong>Text</strong><span>' + counts.text + "</span></div>" +
+			'<div class="result-box"><strong>Matching</strong><span>' + counts.matching + "</span></div>" +
 			"</div>"
 		);
 	}
@@ -54,15 +56,76 @@ window.HideNSeekView = (function () {
 		);
 	}
 
+	function buildMatchingAnswer(question) {
+		const leftItems = question.left.map(function (item, index) {
+			const label = getMatchingLabel(index);
+
+			return (
+				'<div class="matching-item matching-item--matched">' +
+				'<span class="matching-item__text">' +
+				AppUtils.escapeHtml(item.text) +
+				"</span>" +
+				'<span class="matching-item__badge">' + label + "</span>" +
+				"</div>"
+			);
+		}).join("");
+
+		const rightLabels = {};
+
+		question.left.forEach(function (leftItem, index) {
+			rightLabels[question.answer[leftItem.id]] = getMatchingLabel(index);
+		});
+
+		const rightItems = question.right.map(function (item) {
+			const label = rightLabels[item.id] || "";
+
+			return (
+				'<div class="matching-item matching-item--matched">' +
+				'<span class="matching-item__text">' +
+				AppUtils.escapeHtml(item.text) +
+				"</span>" +
+				(label
+					? '<span class="matching-item__badge">' + label + "</span>"
+					: "") +
+				"</div>"
+			);
+		}).join("");
+
+		return (
+			'<div class="question-card__matching">' +
+			'<div class="matching-column">' +
+			'<h4 class="matching-column__title">Items</h4>' +
+			leftItems +
+			"</div>" +
+			'<div class="matching-column">' +
+			'<h4 class="matching-column__title">Matches</h4>' +
+			rightItems +
+			"</div>" +
+			"</div>"
+		);
+	}
+
+	function getMatchingLabel(index) {
+		let label = "";
+		let number = index + 1;
+
+		while (number > 0) {
+			number--;
+			label = String.fromCharCode(65 + number % 26) + label;
+			number = Math.floor(number / 26);
+		}
+		return label;
+	}
+
 	function buildAnswerContent(question) {
-		if (question.type === "text") {
+		if (question.type === "text")
 			return (
 				'<div class="answer-key__accepted">' +
 				"<strong>Accepted answer(s):</strong> " +
 				QuestionContentView.formatTextAnswers(question.answer) +
 				"</div>"
 			);
-		}
+		if (question.type === "matching") return buildMatchingAnswer(question);
 
 		return buildOptions(question);
 	}
@@ -75,7 +138,7 @@ window.HideNSeekView = (function () {
 				const key = AppUtils.extractOptionKey(optionText, index);
 				const classNames = ["option"];
 
-				if (correctKeys.includes(key)) { classNames.push("option--correct"); }
+				if (correctKeys.includes(key)) classNames.push("option--correct");
 
 				return (
 					'<div class="' + classNames.join(" ") + '">' +
@@ -90,20 +153,21 @@ window.HideNSeekView = (function () {
 
 	function getCorrectKeys(question) {
 		if (question.type === "boolean") {
-			if (!question.optionValues) { return []; }
+			if (!question.optionValues) return [];
 
 			return Object.keys(question.optionValues).filter(function (key) {
 				return question.optionValues[key] === question.answer;
 			});
 		}
 
-		return AppUtils.normalizeAnswerList(question.answer || []);
+		return AppUtils.normaliseAnswerList(question.answer || []);
 	}
 
 	function getTypeLabel(type) {
-		if (type === "multiple") { return "Multiple choice"; }
-		if (type === "boolean") { return "Boolean"; }
-		if (type === "text") { return "Answer in text"; }
+		if (type === "multiple") return "Multiple choice";
+		if (type === "boolean") return "Boolean";
+		if (type === "text") return "Answer in text";
+		if (type === "matching") return "Matching";
 		return "Single choice";
 	}
 

@@ -7,7 +7,7 @@ window.QuestionBankLoader = (function () {
 		}
 
 		const data = await response.json();
-		const result = FileLoader.validateAndNormalize(data);
+		const result = FileLoader.validateAndNormalise(data);
 
 		return Object.assign({}, result, {
 			fileName: getFileName(filePath)

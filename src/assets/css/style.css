@@ -74,7 +74,7 @@ body {
 }
 
 .field__hint {
-	color: #475467;
+	color: var(--color-text-muted);
 	font-size: 12px;
 	line-height: 1.4;
 }
@@ -85,7 +85,7 @@ body {
 	gap: 4px;
 	padding: 4px;
 	background: #f2f4f7;
-	border: 1px solid #e5e7eb;
+	border: 1px solid var(--color-border);
 	border-radius: 12px;
 	width: fit-content;
 }
@@ -107,7 +107,7 @@ body {
 }
 
 .exam-mode-toggle__btn.is-active {
-	background: #ffffff;
+	background: var(--color-bg-card);
 	color: #175cd3;
 	box-shadow: 0 1px 2px rgba(16, 24, 40, 0.08);
 }
@@ -242,6 +242,189 @@ body {
 	margin-top: 3px;
 }
 
+.question-card__matching {
+	display: grid;
+	grid-template-columns: repeat(2, minmax(0, 1fr));
+	gap: 20px;
+}
+
+.matching-column {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+}
+
+.matching-column__title {
+	margin: 0 0 4px;
+	font-size: 14px;
+	color: var(--color-text-muted);
+}
+
+.matching-item {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: 12px;
+
+	width: 100%;
+	min-height: 48px;
+	padding: 10px 12px;
+
+	border: 1px solid var(--color-border);
+	border-radius: var(--radius-md);
+
+	background: var(--color-bg-card);
+	color: var(--color-text);
+
+	font: inherit;
+	font-size: 14px;
+	text-align: left;
+
+	transition:
+	background-color 0.15s ease,
+	border-color 0.15s ease;
+}
+
+.matching-item__text {
+	flex: 1;
+	min-width: 0;
+	line-height: 1.4;
+}
+
+.matching-item[draggable="true"] {
+	cursor: grab;
+}
+
+.matching-item[draggable="true"]:active {
+	cursor: grabbing;
+}
+
+.matching-item--target {
+	background: var(--color-bg-soft);
+	cursor: pointer;
+}
+
+.matching-item:hover {
+	border-color: var(--color-neutral);
+}
+
+.matching-item:focus-visible {
+	outline: 2px solid var(--color-neutral);
+	outline-offset: 2px;
+}
+
+.matching-item--selected {
+	border-color: var(--color-warning);
+	background: var(--color-warning-bg);
+}
+
+.matching-item--matched {
+	border-color: var(--color-success);
+	background: var(--color-success-bg);
+}
+
+.matching-item--drag-over {
+	border-color: var(--color-success);
+	background: var(--color-success-bg);
+}
+
+.matching-item__badge {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	flex-shrink: 0;
+	margin-left: auto;
+
+	min-width: 26px;
+	height: 26px;
+	padding: 0 6px;
+
+	border: 1px solid var(--color-success);
+	border-radius: 50%;
+
+	background: var(--color-bg-card);
+	color: var(--color-success);
+
+	font-size: 12px;
+	font-weight: 700;
+}
+
+.result-matching {
+	display: grid;
+	gap: 8px;
+	margin: 16px 0;
+}
+
+.result-matching__header,
+.result-matching__row {
+	display: grid;
+	grid-template-columns: repeat(3, minmax(0, 1fr));
+	gap: 10px;
+	align-items: center;
+}
+
+.result-matching__header {
+	font-size: 12px;
+	font-weight: 700;
+	color: var(--color-text-muted);
+}
+
+.result-matching__row > span {
+	padding: 10px;
+	border: 1px solid var(--color-border);
+	border-radius: var(--radius-sm);
+	font-size: 13px;
+}
+
+.result-matching__value--correct {
+	border-color: var(--color-success) !important;
+	background: var(--color-success-bg);
+}
+
+.result-matching__value--wrong {
+	border-color: var(--color-error) !important;
+	background: var(--color-error-bg);
+}
+
+.matching-item--correct {
+	border-color: var(--color-success);
+	background: var(--color-success-bg);
+}
+
+.matching-item--wrong {
+	border-color: var(--color-error);
+	background: var(--color-error-bg);
+}
+
+.matching-item--blank {
+	border-style: dashed;
+	opacity: 0.7;
+}
+
+.matching-item__badge--correct {
+	border-color: var(--color-success);
+	background: var(--color-success-bg);
+	color: var(--color-success);
+}
+
+.matching-item__badge--wrong {
+	border-color: var(--color-error);
+	background: var(--color-error-bg);
+	color: var(--color-error);
+}
+
+@media (max-width: 600px) {
+	.question-card__matching {
+		grid-template-columns: 1fr;
+		gap: 16px;
+	}
+
+	.result-matching__header,
+	.result-matching__row {
+		grid-template-columns: 1fr;
+	}
+}
+
 .result-grid {
 	display: grid;
 	grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
@@ -250,7 +433,7 @@ body {
 }
 
 .result-box {
-	background: #fff;
+	background: var(--color-bg-card);
 	border-radius: var(--radius-md);
 	padding: 12px;
 }

@@ -38,7 +38,7 @@ window.AppUtils = (function () {
     return String.fromCharCode(65 + index);
   }
 
-  function normalizeAnswerValue(value) {
+  function normaliseAnswerValue(value) {
     const text = String(value ?? "").trim();
     const match = text.match(/^([A-Z])(?:[\.\)\-:]\s*.+)?$/i);
 
@@ -49,7 +49,7 @@ window.AppUtils = (function () {
     return text.toUpperCase();
   }
 
-  function normalizeAnswerList(answer) {
+  function normaliseAnswerList(answer) {
     const list = Array.isArray(answer)
       ? answer
       : answer != null
@@ -59,7 +59,7 @@ window.AppUtils = (function () {
     return Array.from(
       new Set(
         list
-          .map(normalizeAnswerValue)
+          .map(normaliseAnswerValue)
           .map(function (item) {
             return item.trim();
           })
@@ -69,15 +69,15 @@ window.AppUtils = (function () {
   }
 
   function sameAnswers(a, b) {
-    const normalizedA = normalizeAnswerList(a);
-    const normalizedB = normalizeAnswerList(b);
+    const normalisedA = normaliseAnswerList(a);
+    const normalisedB = normaliseAnswerList(b);
 
-    if (normalizedA.length !== normalizedB.length) {
+    if (normalisedA.length !== normalisedB.length) {
       return false;
     }
 
-    return normalizedA.every(function (value, index) {
-      return value === normalizedB[index];
+    return normalisedA.every(function (value, index) {
+      return value === normalisedB[index];
     });
   }
 
@@ -91,8 +91,8 @@ window.AppUtils = (function () {
     escapeHtml,
     nl2br,
     extractOptionKey,
-    normalizeAnswerValue,
-    normalizeAnswerList,
+    normaliseAnswerValue,
+    normaliseAnswerList,
     sameAnswers,
     formatPercent
   };
