@@ -93,9 +93,9 @@
 				"C. Dedicated load balancers support IPv4/IPv6 dual stack and can be deployed in multiple AZs.",
 				"D. Shared load balancers are deployed in clusters, providing high performance that meets your service requirements."
 			],
-			"answer": ["B"],
-			"explanation": "",
-			"tags": []
+			"answer": ["D"],
+			"explanation": "Dedicated load balancers use exclusive underlying resources, ensuring predictable performance that is not affected by other load balancers. They also offer multiple specifications and support IPv4/IPv6 dual-stack networking and multi-AZ deployment. Shared load balancers are deployed in clusters but share underlying resources with other instances. Although they can provide guaranteed performance within defined limits, they are designed for less demanding workloads and do not offer the same dedicated high-performance capabilities. Therefore, option D is false.",
+			"tags": ["ai-generated"]
 		},
 		{
 			"id": "q0008",
@@ -444,8 +444,8 @@
 				"D. Dedicated Enterprise Storage Service (DESS)"
 			],
 			"answer": ["B"],
-			"explanation": "",
-			"tags": []
+			"explanation": "Object Storage Service (OBS) is the most cost-effective option for this scenario. It provides scalable object storage for different types of data and supports pay-per-use billing, allowing users to pay according to their actual storage consumption. SFS is designed for shared file storage, while DSS and DESS provide dedicated storage resources intended for more demanding enterprise workloads. Therefore, OBS is the most appropriate choice for an individual user who wants to store personal data separately without investing in dedicated storage infrastructure.",
+			"tags": ["ai-generated"]
 		},
 		{
 			"id": "q0033",
@@ -532,7 +532,7 @@
 		},
 		{
 			"id": "q0039",
-			"type": "single",
+			"type": "multiple",
 			"prompt": "An independent software vendor (ISV) often repeats environment deployments and configures services manually. Those processes take time and risk mistakes. In addition, individually maintaining multiple identical environments is expensive. The ISV plans to use Huawei Cloud Application Orchestration Service (AOS) to be more time- and cost-efficient. Which of the following AOS functions would help the ISV?",
 			"options": [
 				"A. Templates, which enable one-click deployment of software and resource provisioning",
@@ -540,9 +540,9 @@
 				"C. Software lifecycle management, which enables one-click software upgrade and scaling",
 				"D. Fixed templates, in which all the required resources are defined instead of manually set"
 			],
-			"answer": ["A"],
-			"explanation": "",
-			"tags": []
+			"answer": ["A", "C", "D"],
+			"explanation": "AOS helps ISVs automate repetitive deployments and simplify the maintenance of multiple environments. Templates enable one-click deployment of software and automatic provisioning of the required cloud resources. Defining these resources in templates avoids repetitive manual configuration and reduces deployment errors. In addition, software lifecycle management supports unified maintenance operations, including software updates and scaling. Therefore, options A, C, and D describe relevant AOS capabilities. Option B is incorrect because free application templates cannot be assumed to satisfy every enterprise requirement or all diversified service scenarios.",
+			"tags": ["ai-generated"]
 		},
 		{
 			"id": "q0040",
@@ -759,14 +759,14 @@
 			"type": "multiple",
 			"prompt": "Which of the following statements are true about the differences between a relational database and a non-relational database?",
 			"options": [
-				"A. Scalability: Relational databases have strong scalability...",
-				"B. Storage: Relational databases can normalize logical tables to avoid data duplication... ",
-				"C. Storage structure: Relational databases use structured tables to store data, and non-relational databases can store semi-structured data. ",
-				"D. Transaction: Relational databases support transactions, and non-relational databases do not support transactions. (Note: Some NoSQL now support them, but in this context, it's often a differentiator) "
+				"A. Scalability: Relational databases generally have stronger scalability than non-relational databases.",
+				"B. Storage: Relational databases can normalize logical tables to avoid data duplication and save space. Non-relational databases store data in data sets. Data may be duplicated but easier to read and write.",
+				"C. Storage structure: Relational databases use structured tables to store data, and non-relational databases can store semi-structured data.",
+				"D. Transaction: Relational databases support transactions, and non-relational databases do not support transactions."
 			],
-			"answer": ["B", "C", "D"],
-			"explanation": "",
-			"tags": []
+			"answer": ["B", "C"],
+			"explanation": "Relational databases organize data into structured tables consisting of rows and columns, while non-relational databases support more flexible data models, including semi-structured and unstructured data. Relational databases commonly use normalization to reduce data redundancy and maintain consistency. Non-relational databases may use denormalized data models, allowing data duplication to optimize specific read and write access patterns. Although relational databases traditionally provide strong ACID transaction support, many modern NoSQL databases also support transactions. Furthermore, NoSQL databases are generally designed to facilitate horizontal scalability across multiple nodes. Therefore, statements B and C are correct.",
+			"tags": ["ai-generated"]
 		},
 		{
 			"id": "q0056",
@@ -857,10 +857,10 @@
 			"type": "multiple",
 			"prompt": "Which of the following statements about ROMA Connect are true?",
 			"options": [
-				"A. Service integration (APIC) encapsulates existing backend services... ",
-				"B. ROMA Connect is compatible with the MQTT protocol... ",
-				"C. Integration applications need to be created on the \"Instances\" > \"View Console\" page... ",
-				"D. Data integration (FDI) supports the flexible conversion of multiple heterogeneous data sources... "
+				"A. Service integration (APIC) encapsulates existing backend services, data sources, and custom functions into RESTful APIs so that these assets can be accessed externally.",
+				"B. ROMA Connect is compatible with the MQTT protocol. It supports IoT device access, management, and control, as well as data collection.",
+				"C. Integration applications need to be created on the \"Instances\" > \"View Console\" page on the ROMA Connect console.",
+				"D. Data integration (FDI) supports the flexible conversion of multiple heterogeneous data sources."
 			],
 			"answer": ["A", "B", "C", "D"],
 			"explanation": "",
@@ -1006,20 +1006,6 @@
 			"tags": []
 		},
 		{
-			"id": "q0073",
-			"type": "multiple",
-			"prompt": "Which of the following statements are true about the differences between a relational database and a non-relational database?",
-			"options": [
-				"A. Transaction: Relational databases support transactions, and non-relational databases do not support transactions.",
-				"B. Storage structure: Relational databases use structured tables to store data, and non-relational databases can store semi-structured data.",
-				"C. Storage: Relational databases can normalize logical tables to avoid data duplication and save space. Non-relational databases store data in data sets. Data may be duplicated but easier to read and write.",
-				"D. Scalability: Relational databases have strong scalability, while non-relational databases are less scalable than relational databases."
-			],
-			"answer": ["B", "C"],
-			"explanation": "",
-			"tags": []
-		},
-		{
 			"id": "q0074",
 			"type": "multiple",
 			"prompt": "Which of the following statements are true about the Elastic Volume Service (EVS) disk types and their application scenarios?",
@@ -1099,9 +1085,9 @@
 				"C. Database performance and object complexity",
 				"D. Object compatibility and syntax reconstruction points"
 			],
-			"answer": ["C", "D"],
-			"explanation": "",
-			"tags": []
+			"answer": ["A", "C", "D"],
+			"explanation": "UGO collects basic source database information, including database metadata and objects, as well as performance data. It analyzes object complexity and evaluates syntax compatibility between source and target databases. Based on these analyses, it identifies compatibility issues and syntax reconstruction points to help estimate migration workload. Although UGO can capture SQL traffic for application migration, the inclusion of container information in option B is not supported by the documented collection capabilities. Therefore, A, C, and D are the correct answers.",
+			"tags": ["ai-generated"]
 		},
 		{
 			"id": "q0080",
@@ -1113,9 +1099,9 @@
 				"C. Both support Kata containers.",
 				"D. CCE and CCI intercommunicate through ingresses, not Services."
 			],
-			"answer": ["B", "C"],
-			"explanation": "",
-			"tags": []
+			"answer": ["A", "B", "C"],
+			"explanation": "Both CCE and CCI provide container services based on Kubernetes. However, they differ in cluster management: CCE requires users to create and manage clusters and worker nodes, while CCI uses a serverless architecture that allows users to deploy workloads without creating or managing clusters. Both services support Kata containers: CCE Turbo supports Kata as a secure container runtime, and CCI uses Kata containers to provide virtualization-level isolation. Finally, CCE and CCI workloads can communicate through Kubernetes Services, such as ClusterIP Services, rather than relying exclusively on Ingress resources. Therefore, statements A, B, and C are correct, while D is incorrect.",
+			"tags": ["ai-generated"]
 		},
 		{
 			"id": "q0081",
@@ -1504,18 +1490,6 @@
 			"tags": []
 		},
 		{
-			"id": "q0112",
-			"type": "boolean",
-			"prompt": "To migrate workloads to the cloud, an IT infrastructure resource pool for resource sharing is needed. This resource pool should include hardware resource pooling, software integration, and automated operations.",
-			"options": [
-				{"key": "A", "label": "True", "value": true},
-				{"key": "B", "label": "False", "value": false}
-			],
-			"answer": true,
-			"explanation": "",
-			"tags": []
-		},
-		{
 			"id": "q0113",
 			"type": "boolean",
 			"prompt": "Auto Scaling supports four instance removal policies: oldest instance, newest instance, oldest instance created from oldest Auto Scaling configuration, and newest instance created from oldest Auto Scaling configuration. If you want to test a new Auto Scaling configuration but do not want to retain it in production, the oldest instance removal policy can help.",
@@ -1536,8 +1510,8 @@
 				{"key": "B", "label": "False", "value": false}
 			],
 			"answer": false,
-			"explanation": "",
-			"tags": []
+			"explanation": "When an ECS is associated with multiple security groups, traffic rules are matched according to the association sequence of the security groups and then according to the priorities of the rules within each security group. However, using multiple security groups may deteriorate network performance. Huawei Cloud recommends associating an ECS with no more than five security groups, not ten. Therefore, the statement is false.",
+			"tags": ["ai-generated"]
 		},
 		{
 			"id": "q0115",
@@ -1947,10 +1921,7 @@
 				"C. A P2C VPN consists of the VPN gateway, customer gateway, VPN proxy service, and client.",
 				"D. A client with VPN client software deployed establishes a VPN connection with a server to remotely access cloud resources or services."
 			],
-			"answer": [
-				"A",
-				"D"
-			],
+			"answer": ["A", "D"],
 			"explanation": "",
 			"tags": []
 		},
@@ -2067,10 +2038,7 @@
 				"C. Kafka",
 				"D. Cassandra"
 			],
-			"answer": [
-				"A",
-				"D"
-			],
+			"answer": ["A", "D"],
 			"explanation": "",
 			"tags": []
 		},
@@ -2101,11 +2069,7 @@
 				"C. CCI allows users to create HPA policies to scale containers in or out within seconds.",
 				"D. CCI uses lightweight virtualization technology to ensure fast container startup and VM-level security."
 			],
-			"answer": [
-				"A",
-				"B",
-				"D"
-			],
+			"answer": ["A", "B", "D"],
 			"explanation": "",
 			"tags": []
 		},

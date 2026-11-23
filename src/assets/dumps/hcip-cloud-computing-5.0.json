@@ -277,7 +277,7 @@
 				"D. Forwarding requests from public IP addresses to private IP addresses of servers in the cloud"
 			],
 			"answer": ["D"],
-			"explanation": "The correct answer is D. Huaweis official Huawei Cloud Stack NAT Gateway documentation explains that DNAT is used to map the private IP address and port of a cloud server in a VPC to a public IP address and port by binding an EIP. In practical terms. DNAT allows requests that arrive at a public IP address to be forwarded to the private IP address of a server inside the cloud network. That matches option D exactly.\n\nOption A describes SNAT. not DNAT. Huawei explicitly states that SNAT translates a private IP address into an extranet/public IP address so cloud servers can access the Internet.\n\nOption B is also related to SNAT behavior, because Huawei notes that multiple cloud servers in a VPC can share an EIP for outbound Internet access through SNAT.\n\nOption C describes a filtering or firewall-style function rather than NAT translation.\n\nTherefore, in Huawei Cloud Stack networking. DNAT is specifically used for inbound mapping from public addresses to private cloud-server addresses, so the verified answer is D.",
+			"explanation": "The correct answer is D. Huawei's official Huawei Cloud Stack NAT Gateway documentation explains that DNAT is used to map the private IP address and port of a cloud server in a VPC to a public IP address and port by binding an EIP. In practical terms. DNAT allows requests that arrive at a public IP address to be forwarded to the private IP address of a server inside the cloud network. That matches option D exactly.\n\nOption A describes SNAT. not DNAT. Huawei explicitly states that SNAT translates a private IP address into an extranet/public IP address so cloud servers can access the Internet.\n\nOption B is also related to SNAT behavior, because Huawei notes that multiple cloud servers in a VPC can share an EIP for outbound Internet access through SNAT.\n\nOption C describes a filtering or firewall-style function rather than NAT translation.\n\nTherefore, in Huawei Cloud Stack networking. DNAT is specifically used for inbound mapping from public addresses to private cloud-server addresses, so the verified answer is D.",
 			"tags": []
 		},
 		{
@@ -347,7 +347,7 @@
 				"D. Latency of the distributed tracing system"
 			],
 			"answer": ["C"],
-			"explanation": "The correct answer is C. Tenant application response time. Huawei's comprehensive monitoring documentation states that service monitoring tests the health of the current application and locates application exceptions based on monitoring metrics such as response time and availability. That directly matches the scenario of monitoring tenant application response time. The other options belong to different monitoring domains. Health status of the physical server power supply is hardware or infrastructure monitoring, not service monitoring. Virtual network congestion is a network-layer performance issue rather than an application service-monitoring scenario. Latency of the distributed tracing system is closer to tracing or APM platform internals than to the application service-monitoring scenario explicitly described in Huawei's cited service-monitoring definition. Huaweis wording focuses on the monitored application's health, response time, and availability, not hardware power modules or tracing-platform latency.\n\nTherefore, based on Huawei's official description of comprehensive service monitoring, the scenario clearly covered is tenant application response time, making the verified answer C.",
+			"explanation": "The correct answer is C. Tenant application response time. Huawei's comprehensive monitoring documentation states that service monitoring tests the health of the current application and locates application exceptions based on monitoring metrics such as response time and availability. That directly matches the scenario of monitoring tenant application response time. The other options belong to different monitoring domains. Health status of the physical server power supply is hardware or infrastructure monitoring, not service monitoring. Virtual network congestion is a network-layer performance issue rather than an application service-monitoring scenario. Latency of the distributed tracing system is closer to tracing or APM platform internals than to the application service-monitoring scenario explicitly described in Huawei's cited service-monitoring definition. Huawei's wording focuses on the monitored application's health, response time, and availability, not hardware power modules or tracing-platform latency.\n\nTherefore, based on Huawei's official description of comprehensive service monitoring, the scenario clearly covered is tenant application response time, making the verified answer C.",
 			"tags": []
 		},
 		{
@@ -1516,15 +1516,6 @@
 			"tags": ["ai-generated"]
 		},
 		{
-			"id": "berg0015",
-			"type": "text",
-			"prompt": "In Huawei Cloud Stack, to improve maintenance efficiency, FusionSphere collects audit items related to frequently reported alarms. Administrators can view and process these audit items on the () page to ensure service uptime. (Fill in the blank.)",
-			"options": [],
-			"answer": ["Resource Audit", "System Audit"],
-			"explanation": "Huawei's Resource Audit Overview describes the audit function on Service OM as targeting high-frequency exceptions caused by unplanned events (host reboot, process restart, backup restoration), listing items such as residual or unavailable resources for the administrator to handle. In chat the answer given was 'System Audit'; the bank item ice0013 points to 'Resource Audit' as the official name.",
-			"tags": ["ai-generated"]
-		},
-		{
 			"id": "berg0016",
 			"type": "single",
 			"prompt": "Which of the following statements is false about the differences between Bare Metal Servers (BMSs) and Elastic Cloud Servers (ECSs)?",
@@ -1592,7 +1583,7 @@
 		},
 		{
 			"id": "berg0021",
-			"type": "multiple",
+			"type": "single",
 			"prompt": "Which of the following statements are true about Huawei Cloud Stack Scalable File Service (SFS) constraints?",
 			"options": [
 				"A. File systems with unlimited capacity do not support capacity expansion.",
@@ -1720,20 +1711,6 @@
 			],
 			"answer": false,
 			"explanation": "Massive write-once, read-rarely video fits OBS: it scales to petabytes, costs less per GB and supports lifecycle rules to expire or tier data after 30 days. EVS is block storage tied to ECS, and lifecycle policies are an OBS feature.",
-			"tags": ["ai-generated"]
-		},
-		{
-			"id": "berg0031",
-			"type": "multiple",
-			"prompt": "Which of the following can be recorded in tenant operation logs in Huawei Cloud Stack?",
-			"options": [
-				"A. ECS creation times",
-				"B. Security group rule changes",
-				"C. Administrator password changes",
-				"D. EVS disk capacity expansion"
-			],
-			"answer": ["A", "B", "D"],
-			"explanation": "Tenant operation logs (CTS) record actions on cloud resources: who, when, which resource, result. ECS creation, security group changes and EVS expansion qualify. Administrator password changes are platform management events recorded in ManageOne or Service OM logs.",
 			"tags": ["ai-generated"]
 		},
 		{
