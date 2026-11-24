@@ -123,6 +123,9 @@ window.ResultView = (function () {
 		const answerSeparator = item.type === "text" ? " / " : ", ";
 		const answerHtml = item.type === "matching"
 			? buildMatchingResult(item)
+			: item.type === "text"
+			? QuestionContentView.buildTextAnswerResult(item.selected,
+				item.correct, item.isCorrect, item.isAnswered)
 			: (
 				"<p><strong>Selected:</strong> " +
 				formatDisplayAnswerList(item, item.selected, answerSeparator) +

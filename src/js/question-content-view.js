@@ -31,11 +31,37 @@ window.QuestionContentView = (function () {
 			.map(function (item) {
 				return AppUtils.escapeHtml(String(item));
 			})
-			.join(" / ");
+			.join(" | ");
+	}
+
+	function buildTextAnswerResult(selected, correct, isCorrect, isAnswered) {
+		const selectedClass = !isAnswered
+			? "text-answer__value--blank"
+			: isCorrect
+			? "text-answer__value--correct"
+			: "text-answer__value--wrong";
+
+		return (
+			'<div class="text-answer__result">' +
+			'<div class="text-answer__result-group">' +
+			'<strong>Selected:</strong>' +
+			'<div class="text-answer__value ' + selectedClass + '">' +
+			formatTextAnswers(selected) +
+			'</div>' +
+			'</div>' +
+			'<div class="text-answer__result-group">' +
+			'<strong>Correct:</strong>' +
+			'<div class="text-answer__value text-answer__value--correct">' +
+			formatTextAnswers(correct) +
+			'</div>' +
+			'</div>' +
+			'</div>'
+		);
 	}
 
 	return {
 		buildExplanation,
-		formatTextAnswers
+		formatTextAnswers,
+		buildTextAnswerResult
 	};
 })();

@@ -230,6 +230,40 @@ body {
 	border: 1px solid var(--color-border);
 }
 
+.text-answer__result {
+	display: grid;
+	gap: 12px;
+	margin-top: 12px;
+}
+
+.text-answer__result-group {
+	display: grid;
+	gap: 6px;
+}
+
+.text-answer__value {
+	padding: 10px 12px;
+	border: 1px solid var(--color-border);
+	border-radius: var(--radius-md);
+	background: var(--color-bg-soft);
+	line-height: 1.5;
+}
+
+.text-answer__value--correct {
+	border-color: var(--color-success);
+	background: var(--color-success-bg);
+}
+
+.text-answer__value--wrong {
+	border-color: var(--color-error);
+	background: var(--color-error-bg);
+}
+
+.text-answer__value--blank {
+	border-color: var(--color-neutral);
+	background: var(--color-bg-soft);
+}
+
 .option {
 	display: flex;
 	align-items: flex-start;

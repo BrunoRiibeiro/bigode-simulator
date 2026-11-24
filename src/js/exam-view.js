@@ -456,6 +456,10 @@ window.ExamView = (function () {
 				else if (isCorrectAnswer)
 					textInput.classList.add("text-answer--correct");
 				else textInput.classList.add("text-answer--wrong");
+
+				textInput.parentElement.insertAdjacentHTML("beforeend",
+					QuestionContentView.buildTextAnswerResult(selected, correct,
+						evaluation.isCorrect, evaluation.isAnswered));
 			}
 		} else if (isMatchingQuestion)
 			applyMatchingCorrection(card, question, evaluation);
